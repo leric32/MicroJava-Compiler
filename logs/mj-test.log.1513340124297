@@ -1,0 +1,64 @@
+INFO  07:42:12,192 - Compiling source file: C:\Users\db\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  07:42:12,209 - #2 program
+INFO  07:42:12,209 - #15 MJProgram
+INFO  07:42:12,210 - #15 int
+INFO  07:42:12,210 - #15 x
+INFO  07:42:12,211 - #5 ;
+INFO  07:42:12,211 - #15 int
+INFO  07:42:12,212 - #15 y
+INFO  07:42:12,212 - #5 ;
+INFO  07:42:12,212 - #3 {
+INFO  07:42:12,212 - #15 int
+INFO  07:42:12,212 - #15 k
+INFO  07:42:12,212 - #6 (
+INFO  07:42:12,213 - #7 )
+INFO  07:42:12,213 - #15 int
+INFO  07:42:12,213 - #15 c
+INFO  07:42:12,213 - #5 ;
+INFO  07:42:12,214 - #3 {
+INFO  07:42:12,214 - #15 c
+INFO  07:42:12,214 - #12 =
+INFO  07:42:12,214 - #14 0
+INFO  07:42:12,215 - #5 ;
+INFO  07:42:12,215 - #10 return
+INFO  07:42:12,216 - #15 c
+INFO  07:42:12,216 - #11 +
+INFO  07:42:12,216 - #14 3
+INFO  07:42:12,216 - #5 ;
+INFO  07:42:12,217 - #4 }
+INFO  07:42:12,217 - #15 int
+INFO  07:42:12,217 - #15 main
+INFO  07:42:12,218 - #6 (
+INFO  07:42:12,218 - #7 )
+INFO  07:42:12,218 - #3 {
+INFO  07:42:12,218 - #9 print
+INFO  07:42:12,218 - #6 (
+INFO  07:42:12,218 - #14 1
+INFO  07:42:12,218 - #7 )
+INFO  07:42:12,218 - #5 ;
+INFO  07:42:12,218 - #15 x
+INFO  07:42:12,218 - #12 =
+INFO  07:42:12,218 - #15 y
+INFO  07:42:12,218 - #11 +
+INFO  07:42:12,218 - #14 3
+INFO  07:42:12,218 - #5 ;
+INFO  07:42:12,218 - #15 k
+INFO  07:42:12,218 - #6 (
+INFO  07:42:12,219 - #7 )
+INFO  07:42:12,219 - #5 ;
+INFO  07:42:12,219 - #9 print
+INFO  07:42:12,219 - #6 (
+INFO  07:42:12,219 - #14 2
+INFO  07:42:12,219 - #7 )
+INFO  07:42:12,219 - #5 ;
+INFO  07:42:12,219 - #4 }
+INFO  07:42:12,220 - #4 }
+INFO  07:42:12,226 - Deklarisana promenljiva x na liniji 2
+INFO  07:42:12,226 - Deklarisana promenljiva y na liniji 2
+INFO  07:42:12,226 - Obradjuje se funkcija k na liniji 5
+INFO  07:42:12,226 - Deklarisana promenljiva c na liniji 5
+INFO  07:42:12,226 - Obradjuje se funkcija main na liniji 10
+INFO  07:42:12,226 - Pronadjen poziv funkcije k na liniji 13
+ERROR 07:42:12,226 - Semanticka greska na liniji 10: funcija main nema return iskaz!
+INFO  07:42:12,226 - Print calls = 2
+ERROR 07:42:12,227 - Parsiranje NIJE uspesno zavrseno!
