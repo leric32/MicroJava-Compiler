@@ -1,0 +1,123 @@
+INFO  02:07:10,536 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:07:10,579 - #2 program
+INFO  02:07:10,579 - #48 MJProgram
+INFO  02:07:10,579 - #8 const
+INFO  02:07:10,583 - #48 int
+INFO  02:07:10,583 - #48 i
+INFO  02:07:10,584 - #33 =
+INFO  02:07:10,584 - #47 1
+INFO  02:07:10,584 - #36 ;
+INFO  02:07:10,585 - #8 const
+INFO  02:07:10,585 - #48 bool
+INFO  02:07:10,585 - #48 i
+INFO  02:07:10,585 - #33 =
+INFO  02:07:10,586 - #47 1
+INFO  02:07:10,586 - #36 ;
+INFO  02:07:10,586 - #44 {
+INFO  02:07:10,586 - #14 void
+INFO  02:07:10,586 - #48 f
+INFO  02:07:10,586 - #40 (
+INFO  02:07:10,587 - #48 int
+INFO  02:07:10,587 - #48 a
+INFO  02:07:10,588 - #42 [
+INFO  02:07:10,588 - #43 ]
+INFO  02:07:10,588 - #38 ,
+INFO  02:07:10,589 - #48 bool
+INFO  02:07:10,589 - #48 b
+INFO  02:07:10,589 - #41 )
+INFO  02:07:10,590 - #44 {
+INFO  02:07:10,590 - #45 }
+INFO  02:07:10,591 - #14 void
+INFO  02:07:10,591 - #48 main
+INFO  02:07:10,591 - #40 (
+INFO  02:07:10,591 - #41 )
+INFO  02:07:10,591 - #44 {
+INFO  02:07:10,591 - #45 }
+INFO  02:07:10,591 - #45 }
+INFO  02:07:10,596 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      ConstDeclaration(
+        Type(
+         int
+        ) [Type]
+        ConstantValueNumber(
+         i
+         1
+        ) [ConstantValueNumber]
+        EndOfListOfCharDeclarations(
+        ) [EndOfListOfCharDeclarations]
+      ) [ConstDeclaration]
+    ) [ConstDeclarations]
+    ConstDeclaration(
+      Type(
+       bool
+      ) [Type]
+      ConstantValueNumber(
+       i
+       1
+      ) [ConstantValueNumber]
+      EndOfListOfCharDeclarations(
+      ) [EndOfListOfCharDeclarations]
+    ) [ConstDeclaration]
+  ) [ConstDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         f
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          ListOfParameters(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             a
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [SingleFormalParameter]
+            SingleOrEndOfListParameter(
+              SingleFormalParameter(
+                Type(
+                 bool
+                ) [Type]
+               b
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [SingleFormalParameter]
+            ) [SingleOrEndOfListParameter]
+          ) [ListOfParameters]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:07:10,597 - ====================================
+ERROR 02:07:10,599 - SEMANTICKA GRESKA: Ime i je vec deklarisano! na liniji 3
+INFO  02:07:10,599 - Definicija funkcije f na liniji 5
+INFO  02:07:10,599 - Definicija funkcije main na liniji 7
+INFO  02:07:10,599 - Print count calls = 0
+INFO  02:07:10,599 - ====================================

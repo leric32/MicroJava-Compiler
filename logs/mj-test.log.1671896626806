@@ -1,0 +1,273 @@
+INFO  16:43:18,973 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  16:43:19,031 - #2 program
+INFO  16:43:19,031 - #47 test301
+INFO  16:43:19,032 - #8 const
+INFO  16:43:19,033 - #47 int
+INFO  16:43:19,033 - #47 nula
+INFO  16:43:19,033 - #32 =
+INFO  16:43:19,034 - #46 0
+INFO  16:43:19,034 - #35 ;
+INFO  16:43:19,034 - #8 const
+INFO  16:43:19,035 - #47 int
+INFO  16:43:19,035 - #47 jedan
+INFO  16:43:19,035 - #32 =
+INFO  16:43:19,035 - #46 1
+INFO  16:43:19,036 - #35 ;
+INFO  16:43:19,036 - #8 const
+INFO  16:43:19,036 - #47 int
+INFO  16:43:19,036 - #47 pet
+INFO  16:43:19,036 - #32 =
+INFO  16:43:19,036 - #46 5
+INFO  16:43:19,036 - #35 ;
+INFO  16:43:19,036 - #47 int
+INFO  16:43:19,036 - #47 niz
+INFO  16:43:19,036 - #41 [
+INFO  16:43:19,036 - #42 ]
+INFO  16:43:19,037 - #37 ,
+INFO  16:43:19,037 - #47 niz2
+INFO  16:43:19,038 - #41 [
+INFO  16:43:19,038 - #42 ]
+INFO  16:43:19,038 - #37 ,
+INFO  16:43:19,038 - #47 a
+INFO  16:43:19,038 - #37 ,
+INFO  16:43:19,038 - #47 b
+INFO  16:43:19,039 - #35 ;
+INFO  16:43:19,039 - #47 char
+INFO  16:43:19,039 - #47 nizch
+INFO  16:43:19,039 - #41 [
+INFO  16:43:19,039 - #42 ]
+INFO  16:43:19,039 - #35 ;
+INFO  16:43:19,039 - #43 {
+INFO  16:43:19,039 - #47 bool
+INFO  16:43:19,040 - #47 p
+INFO  16:43:19,040 - #39 (
+INFO  16:43:19,040 - #40 )
+INFO  16:43:19,040 - #43 {
+INFO  16:43:19,041 - #4 return
+INFO  16:43:19,042 - #49 true
+INFO  16:43:19,042 - #35 ;
+INFO  16:43:19,043 - #44 }
+INFO  16:43:19,044 - #14 void
+INFO  16:43:19,044 - #47 main
+INFO  16:43:19,044 - #39 (
+INFO  16:43:19,044 - #40 )
+INFO  16:43:19,044 - #47 int
+INFO  16:43:19,045 - #47 i
+INFO  16:43:19,045 - #35 ;
+INFO  16:43:19,045 - #47 bool
+INFO  16:43:19,045 - #47 k
+INFO  16:43:19,045 - #35 ;
+INFO  16:43:19,045 - #43 {
+INFO  16:43:19,045 - #47 nula
+INFO  16:43:19,046 - #39 (
+INFO  16:43:19,046 - #47 i
+INFO  16:43:19,046 - #40 )
+INFO  16:43:19,047 - #35 ;
+INFO  16:43:19,047 - #44 }
+INFO  16:43:19,047 - #44 }
+INFO  16:43:19,051 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               nula
+               0
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             jedan
+             1
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           pet
+           5
+          ) [ConstantValueNumber]
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationNotLast(
+          NotLastVarDeclarations(
+           niz
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [NotLastVarDeclarations]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             niz2
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               a
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclarationNotLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         nizch
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        ReturnMethodTypeName(
+          Type(
+           bool
+          ) [Type]
+         p
+        ) [ReturnMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          StatementReturnExpr(
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  BooleanConstFactor(
+                   true
+                  ) [BooleanConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementReturnExpr]
+        ) [Statements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               i
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             k
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          DesignatorFuncCall(
+            FunctionCallName(
+              SimpleDesignator(
+               nula
+              ) [SimpleDesignator]
+            ) [FunctionCallName]
+            Actuals(
+              ActualParam(
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         i
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [ActualParam]
+            ) [Actuals]
+          ) [DesignatorFuncCall]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:43:19,051 - ====================================
+INFO  16:43:19,055 - Kreirana je promenjiva niz[] na liniji 7
+INFO  16:43:19,055 - Kreirana je promenjiva niz2[] na liniji 7
+INFO  16:43:19,055 - Kreirana je promenjiva a na liniji 7
+INFO  16:43:19,055 - Kreirana je promenjiva b na liniji 7
+INFO  16:43:19,055 - Kreirana je promenjiva nizch[] na liniji 8
+INFO  16:43:19,055 - Definicija funkcije p na liniji 11
+INFO  16:43:19,055 - Definicija funkcije main na liniji 16
+INFO  16:43:19,055 - Kreirana je promenjiva i na liniji 17
+INFO  16:43:19,055 - Kreirana je promenjiva k na liniji 18
+ERROR 16:43:19,056 - SEMANTICKA GRESKA: Ime nula ne predstavlja funkciju  na liniji 20
+INFO  16:43:19,056 - Print count calls = 0
+INFO  16:43:19,056 - ====================================

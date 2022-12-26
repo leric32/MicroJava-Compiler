@@ -1,0 +1,216 @@
+INFO  12:46:42,169 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  12:46:42,216 - #2 program
+INFO  12:46:42,216 - #48 test301
+INFO  12:46:42,217 - #8 const
+INFO  12:46:42,218 - #48 int
+INFO  12:46:42,218 - #48 nula
+INFO  12:46:42,219 - #33 =
+INFO  12:46:42,219 - #47 0
+INFO  12:46:42,219 - #36 ;
+INFO  12:46:42,220 - #8 const
+INFO  12:46:42,220 - #48 int
+INFO  12:46:42,220 - #48 jedan
+INFO  12:46:42,221 - #33 =
+INFO  12:46:42,221 - #47 1
+INFO  12:46:42,221 - #36 ;
+INFO  12:46:42,221 - #8 const
+INFO  12:46:42,221 - #48 int
+INFO  12:46:42,221 - #48 pet
+INFO  12:46:42,221 - #33 =
+INFO  12:46:42,221 - #47 5
+INFO  12:46:42,221 - #36 ;
+INFO  12:46:42,222 - #48 int
+INFO  12:46:42,222 - #48 niz
+INFO  12:46:42,222 - #42 [
+INFO  12:46:42,222 - #43 ]
+INFO  12:46:42,222 - #38 ,
+INFO  12:46:42,223 - #48 niz2
+INFO  12:46:42,223 - #42 [
+INFO  12:46:42,223 - #43 ]
+INFO  12:46:42,223 - #38 ,
+INFO  12:46:42,223 - #48 a
+INFO  12:46:42,224 - #38 ,
+INFO  12:46:42,224 - #48 b
+INFO  12:46:42,224 - #36 ;
+INFO  12:46:42,224 - #48 char
+INFO  12:46:42,225 - #48 nizch
+INFO  12:46:42,225 - #42 [
+INFO  12:46:42,225 - #43 ]
+INFO  12:46:42,225 - #36 ;
+INFO  12:46:42,225 - #44 {
+INFO  12:46:42,225 - #14 void
+INFO  12:46:42,225 - #48 main
+INFO  12:46:42,226 - #40 (
+INFO  12:46:42,226 - #41 )
+INFO  12:46:42,226 - #48 int
+INFO  12:46:42,227 - #48 bodovi
+INFO  12:46:42,227 - #36 ;
+INFO  12:46:42,227 - #48 bool
+INFO  12:46:42,227 - #48 bt
+INFO  12:46:42,227 - #36 ;
+INFO  12:46:42,228 - #44 {
+INFO  12:46:42,228 - #48 int
+INFO  12:46:42,229 - #48 a
+ERROR 12:46:42,229 - 
+Sintaksna greska na liniji 16
+INFO  12:46:42,229 - #33 =
+INFO  12:46:42,229 - #47 1
+INFO  12:46:42,229 - #36 ;
+INFO  12:46:42,230 - #45 }
+INFO  12:46:42,230 - #45 }
+ERROR 12:46:42,230 - Izvrsen oporavak do ; u liniji 16
+INFO  12:46:42,235 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               nula
+               0
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             jedan
+             1
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           pet
+           5
+          ) [ConstantValueNumber]
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationNotLast(
+          NotLastVarDeclarations(
+           niz
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [NotLastVarDeclarations]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             niz2
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               a
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclarationNotLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         nizch
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               bodovi
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             bt
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          ErrorDesignatorAssignment(
+          ) [ErrorDesignatorAssignment]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  12:46:42,235 - ====================================
+INFO  12:46:42,239 - Kreirana je promenjiva niz[]. na liniji 7
+INFO  12:46:42,239 - Kreirana je promenjiva niz2[]. na liniji 7
+INFO  12:46:42,239 - Kreirana je promenjiva a. na liniji 7
+INFO  12:46:42,239 - Kreirana je promenjiva b. na liniji 7
+INFO  12:46:42,239 - Kreirana je promenjiva nizch[]. na liniji 8
+INFO  12:46:42,239 - Definicija funkcije main na liniji 11
+INFO  12:46:42,239 - Kreirana je promenjiva bodovi. na liniji 12
+INFO  12:46:42,239 - Kreirana je promenjiva bt. na liniji 13
+INFO  12:46:42,240 - Print count calls = 0
+INFO  12:46:42,240 - ====================================

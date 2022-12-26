@@ -1,0 +1,77 @@
+INFO  01:49:40,915 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:49:40,960 - #2 program
+INFO  01:49:40,960 - #48 MJProgram
+INFO  01:49:40,960 - #44 {
+INFO  01:49:40,961 - #14 void
+INFO  01:49:40,962 - #48 f
+INFO  01:49:40,962 - #40 (
+INFO  01:49:40,962 - #48 int
+INFO  01:49:40,962 - #48 a
+INFO  01:49:40,963 - #41 )
+INFO  01:49:40,966 - #44 {
+INFO  01:49:40,967 - #45 }
+INFO  01:49:40,967 - #14 void
+INFO  01:49:40,967 - #48 main
+INFO  01:49:40,968 - #40 (
+INFO  01:49:40,968 - #41 )
+INFO  01:49:40,968 - #44 {
+INFO  01:49:40,968 - #45 }
+INFO  01:49:40,968 - #45 }
+INFO  01:49:40,974 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         f
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          SingleOrEndOfListParameter(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             a
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [SingleFormalParameter]
+          ) [SingleOrEndOfListParameter]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:49:40,975 - ====================================
+INFO  01:49:40,978 - Definicija funkcije f na liniji 4
+INFO  01:49:40,978 - 1
+INFO  01:49:40,978 - 2
+INFO  01:49:40,978 - 3
+INFO  01:49:40,978 - 4
+INFO  01:49:40,978 - Definicija funkcije main na liniji 6
+INFO  01:49:40,978 - 1
+INFO  01:49:40,978 - 2
+INFO  01:49:40,978 - 3
+INFO  01:49:40,978 - 4
+INFO  01:49:40,979 - Print count calls = 0
+INFO  01:49:40,979 - ====================================

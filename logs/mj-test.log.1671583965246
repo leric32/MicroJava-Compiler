@@ -1,0 +1,69 @@
+INFO  01:52:26,240 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:52:26,285 - #2 program
+INFO  01:52:26,285 - #48 MJProgram
+INFO  01:52:26,285 - #44 {
+INFO  01:52:26,286 - #14 void
+INFO  01:52:26,287 - #48 main
+INFO  01:52:26,287 - #40 (
+INFO  01:52:26,287 - #41 )
+INFO  01:52:26,287 - #44 {
+INFO  01:52:26,288 - #45 }
+INFO  01:52:26,289 - #14 void
+INFO  01:52:26,289 - #48 f
+INFO  01:52:26,289 - #40 (
+INFO  01:52:26,289 - #48 int
+INFO  01:52:26,289 - #48 a
+INFO  01:52:26,290 - #41 )
+INFO  01:52:26,291 - #44 {
+INFO  01:52:26,291 - #45 }
+INFO  01:52:26,292 - #45 }
+INFO  01:52:26,298 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         main
+        ) [VoidMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       f
+      ) [VoidMethodTypeName]
+      FormalParameters(
+        SingleOrEndOfListParameter(
+          SingleFormalParameter(
+            Type(
+             int
+            ) [Type]
+           a
+            VarDeclarationOfNotArray(
+            ) [VarDeclarationOfNotArray]
+          ) [SingleFormalParameter]
+        ) [SingleOrEndOfListParameter]
+      ) [FormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:52:26,300 - ====================================
+INFO  01:52:26,303 - Definicija funkcije main na liniji 5
+INFO  01:52:26,303 - Definicija funkcije f na liniji 7
+INFO  01:52:26,303 - Print count calls = 0
+INFO  01:52:26,303 - ====================================

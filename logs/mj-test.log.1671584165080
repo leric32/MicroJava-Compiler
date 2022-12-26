@@ -1,0 +1,61 @@
+INFO  01:53:01,220 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:53:01,269 - #2 program
+INFO  01:53:01,270 - #48 MJProgram
+INFO  01:53:01,270 - #44 {
+INFO  01:53:01,271 - #48 int
+INFO  01:53:01,272 - #48 f
+INFO  01:53:01,273 - #40 (
+INFO  01:53:01,273 - #41 )
+INFO  01:53:01,273 - #44 {
+INFO  01:53:01,274 - #45 }
+INFO  01:53:01,275 - #14 void
+INFO  01:53:01,276 - #48 main
+INFO  01:53:01,276 - #40 (
+INFO  01:53:01,276 - #41 )
+INFO  01:53:01,276 - #44 {
+INFO  01:53:01,276 - #45 }
+INFO  01:53:01,276 - #45 }
+INFO  01:53:01,282 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        ReturnMethodTypeName(
+          Type(
+           int
+          ) [Type]
+         f
+        ) [ReturnMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:53:01,282 - ====================================
+INFO  01:53:01,285 - Definicija funkcije f na liniji 4
+ERROR 01:53:01,285 - SEMANTICKA GRESKA: na liniji 4: funcija f nema return iskaz! na liniji 4
+INFO  01:53:01,285 - Definicija funkcije main na liniji 6
+INFO  01:53:01,285 - Print count calls = 0
+INFO  01:53:01,285 - ====================================

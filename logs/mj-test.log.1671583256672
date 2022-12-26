@@ -1,0 +1,69 @@
+INFO  01:38:41,963 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:38:42,007 - #2 program
+INFO  01:38:42,008 - #48 MJProgram
+INFO  01:38:42,008 - #44 {
+INFO  01:38:42,009 - #14 void
+INFO  01:38:42,010 - #48 f
+INFO  01:38:42,010 - #40 (
+INFO  01:38:42,010 - #48 int
+INFO  01:38:42,010 - #48 a
+INFO  01:38:42,011 - #41 )
+INFO  01:38:42,012 - #44 {
+INFO  01:38:42,013 - #45 }
+INFO  01:38:42,014 - #14 void
+INFO  01:38:42,014 - #48 main
+INFO  01:38:42,014 - #40 (
+INFO  01:38:42,014 - #41 )
+INFO  01:38:42,014 - #44 {
+INFO  01:38:42,015 - #45 }
+INFO  01:38:42,015 - #45 }
+INFO  01:38:42,020 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         f
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          SingleOrEndOfListParameter(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             a
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [SingleFormalParameter]
+          ) [SingleOrEndOfListParameter]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:38:42,022 - ====================================
+INFO  01:38:42,024 - Definicija funkcije f na liniji 4
+INFO  01:38:42,024 - Definicija funkcije main na liniji 6
+INFO  01:38:42,024 - Print count calls = 0
+INFO  01:38:42,024 - ====================================

@@ -1,0 +1,115 @@
+INFO  02:33:45,988 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:33:46,095 - #2 program
+INFO  02:33:46,095 - #47 test301
+INFO  02:33:46,096 - #8 const
+INFO  02:33:46,098 - #47 int
+INFO  02:33:46,099 - #47 nula
+INFO  02:33:46,100 - #32 =
+INFO  02:33:46,100 - #46 0
+INFO  02:33:46,100 - #35 ;
+INFO  02:33:46,102 - #43 {
+INFO  02:33:46,102 - #14 void
+INFO  02:33:46,103 - #47 main
+INFO  02:33:46,104 - #39 (
+INFO  02:33:46,104 - #40 )
+INFO  02:33:46,104 - #47 int
+INFO  02:33:46,107 - #47 bodovi
+INFO  02:33:46,107 - #35 ;
+INFO  02:33:46,109 - #43 {
+INFO  02:33:46,110 - #47 bodovi
+INFO  02:33:46,111 - #32 =
+INFO  02:33:46,113 - #47 bodovi
+INFO  02:33:46,113 - #19 +
+INFO  02:33:46,115 - #47 nula
+INFO  02:33:46,117 - #35 ;
+INFO  02:33:46,117 - #44 }
+INFO  02:33:46,118 - #44 }
+INFO  02:33:46,128 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    ConstDeclaration(
+      Type(
+       int
+      ) [Type]
+      ConstantValueNumber(
+       nula
+       0
+      ) [ConstantValueNumber]
+      EndOfListOfCharDeclarations(
+      ) [EndOfListOfCharDeclarations]
+    ) [ConstDeclaration]
+  ) [ConstDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             bodovi
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          DesignatorAssignment(
+            SimpleDesignator(
+             bodovi
+            ) [SimpleDesignator]
+            AddExpr(
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    DesignatorFactor(
+                      SimpleDesignator(
+                       bodovi
+                      ) [SimpleDesignator]
+                    ) [DesignatorFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+              PlusOperator(
+              ) [PlusOperator]
+              Term(
+                SingleFactor(
+                  DesignatorFactor(
+                    SimpleDesignator(
+                     nula
+                    ) [SimpleDesignator]
+                  ) [DesignatorFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [AddExpr]
+          ) [DesignatorAssignment]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:33:46,129 - ====================================
+INFO  02:33:46,137 - Definicija funkcije main na liniji 6
+INFO  02:33:46,138 - Kreirana je promenjiva bodovi. na liniji 7
+ERROR 02:33:46,138 - SEMANTICKA GRESKA: Tip izrzaza koji se negira mora biti int na liniji 10
+ERROR 02:33:46,138 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli! na liniji 10
+INFO  02:33:46,139 - Print count calls = 0
+INFO  02:33:46,139 - ====================================

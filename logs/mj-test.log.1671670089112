@@ -1,0 +1,123 @@
+INFO  02:07:21,968 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:07:22,017 - #2 program
+INFO  02:07:22,017 - #48 MJProgram
+INFO  02:07:22,017 - #8 const
+INFO  02:07:22,019 - #48 int
+INFO  02:07:22,019 - #48 i
+INFO  02:07:22,020 - #33 =
+INFO  02:07:22,020 - #47 1
+INFO  02:07:22,021 - #36 ;
+INFO  02:07:22,024 - #8 const
+INFO  02:07:22,024 - #48 bool
+INFO  02:07:22,024 - #48 j
+INFO  02:07:22,024 - #33 =
+INFO  02:07:22,024 - #47 1
+INFO  02:07:22,024 - #36 ;
+INFO  02:07:22,024 - #44 {
+INFO  02:07:22,024 - #14 void
+INFO  02:07:22,025 - #48 f
+INFO  02:07:22,025 - #40 (
+INFO  02:07:22,025 - #48 int
+INFO  02:07:22,025 - #48 a
+INFO  02:07:22,027 - #42 [
+INFO  02:07:22,027 - #43 ]
+INFO  02:07:22,027 - #38 ,
+INFO  02:07:22,028 - #48 bool
+INFO  02:07:22,028 - #48 b
+INFO  02:07:22,028 - #41 )
+INFO  02:07:22,028 - #44 {
+INFO  02:07:22,029 - #45 }
+INFO  02:07:22,029 - #14 void
+INFO  02:07:22,030 - #48 main
+INFO  02:07:22,030 - #40 (
+INFO  02:07:22,030 - #41 )
+INFO  02:07:22,030 - #44 {
+INFO  02:07:22,030 - #45 }
+INFO  02:07:22,030 - #45 }
+INFO  02:07:22,035 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  ConstDeclarations(
+    ConstDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      ConstDeclaration(
+        Type(
+         int
+        ) [Type]
+        ConstantValueNumber(
+         i
+         1
+        ) [ConstantValueNumber]
+        EndOfListOfCharDeclarations(
+        ) [EndOfListOfCharDeclarations]
+      ) [ConstDeclaration]
+    ) [ConstDeclarations]
+    ConstDeclaration(
+      Type(
+       bool
+      ) [Type]
+      ConstantValueNumber(
+       j
+       1
+      ) [ConstantValueNumber]
+      EndOfListOfCharDeclarations(
+      ) [EndOfListOfCharDeclarations]
+    ) [ConstDeclaration]
+  ) [ConstDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         f
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          ListOfParameters(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             a
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [SingleFormalParameter]
+            SingleOrEndOfListParameter(
+              SingleFormalParameter(
+                Type(
+                 bool
+                ) [Type]
+               b
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [SingleFormalParameter]
+            ) [SingleOrEndOfListParameter]
+          ) [ListOfParameters]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:07:22,035 - ====================================
+ERROR 02:07:22,038 - SEMANTICKA GRESKA: Tip int nije isti tip vrednosti kao i 5! na liniji 3
+INFO  02:07:22,038 - Definicija funkcije f na liniji 5
+INFO  02:07:22,038 - Definicija funkcije main na liniji 7
+INFO  02:07:22,038 - Print count calls = 0
+INFO  02:07:22,038 - ====================================

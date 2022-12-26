@@ -1,0 +1,37 @@
+INFO  12:54:07,918 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  12:54:07,989 - #2 program
+INFO  12:54:07,989 - #48 MJProgram
+INFO  12:54:07,989 - #44 {
+INFO  12:54:07,990 - #14 void
+INFO  12:54:07,991 - #48 main
+INFO  12:54:07,991 - #40 (
+INFO  12:54:07,992 - #41 )
+INFO  12:54:07,992 - #44 {
+INFO  12:54:07,993 - #45 }
+INFO  12:54:07,994 - #45 }
+INFO  12:54:08,002 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  12:54:08,003 - ====================================
+ERROR 12:54:08,018 - SEMANTICKA GRESKA: Glavni metod sa potpisom: void main() {...} metod nije pronadjen!
+INFO  12:54:08,019 - Print count calls = 0
+INFO  12:54:08,019 - ====================================

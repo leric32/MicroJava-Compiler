@@ -1,0 +1,264 @@
+INFO  02:58:45,792 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:58:46,031 - #2 program
+INFO  02:58:46,032 - #47 test301
+INFO  02:58:46,032 - #8 const
+INFO  02:58:46,038 - #47 int
+INFO  02:58:46,039 - #47 nula
+INFO  02:58:46,041 - #32 =
+INFO  02:58:46,042 - #46 0
+INFO  02:58:46,043 - #35 ;
+INFO  02:58:46,046 - #8 const
+INFO  02:58:46,049 - #47 int
+INFO  02:58:46,049 - #47 jedan
+INFO  02:58:46,050 - #32 =
+INFO  02:58:46,050 - #46 1
+INFO  02:58:46,051 - #35 ;
+INFO  02:58:46,051 - #8 const
+INFO  02:58:46,052 - #47 int
+INFO  02:58:46,052 - #47 pet
+INFO  02:58:46,052 - #32 =
+INFO  02:58:46,053 - #46 5
+INFO  02:58:46,054 - #35 ;
+INFO  02:58:46,056 - #47 int
+INFO  02:58:46,057 - #47 niz
+INFO  02:58:46,057 - #41 [
+INFO  02:58:46,057 - #42 ]
+INFO  02:58:46,058 - #37 ,
+INFO  02:58:46,067 - #47 niz2
+INFO  02:58:46,068 - #41 [
+INFO  02:58:46,068 - #42 ]
+INFO  02:58:46,069 - #37 ,
+INFO  02:58:46,069 - #47 a
+INFO  02:58:46,070 - #37 ,
+INFO  02:58:46,074 - #47 b
+INFO  02:58:46,074 - #35 ;
+INFO  02:58:46,075 - #47 char
+INFO  02:58:46,076 - #47 nizch
+INFO  02:58:46,076 - #41 [
+INFO  02:58:46,077 - #42 ]
+INFO  02:58:46,077 - #35 ;
+INFO  02:58:46,077 - #43 {
+INFO  02:58:46,078 - #47 bool
+INFO  02:58:46,082 - #47 p
+INFO  02:58:46,083 - #39 (
+INFO  02:58:46,083 - #40 )
+INFO  02:58:46,084 - #43 {
+INFO  02:58:46,090 - #4 return
+INFO  02:58:46,092 - #49 true
+INFO  02:58:46,092 - #35 ;
+INFO  02:58:46,098 - #44 }
+INFO  02:58:46,101 - #14 void
+INFO  02:58:46,102 - #47 main
+INFO  02:58:46,103 - #39 (
+INFO  02:58:46,103 - #40 )
+INFO  02:58:46,104 - #47 int
+INFO  02:58:46,104 - #47 i
+INFO  02:58:46,105 - #35 ;
+INFO  02:58:46,105 - #47 bool
+INFO  02:58:46,105 - #47 k
+INFO  02:58:46,106 - #35 ;
+INFO  02:58:46,106 - #43 {
+INFO  02:58:46,106 - #47 nula
+INFO  02:58:46,107 - #32 =
+INFO  02:58:46,108 - #46 1
+INFO  02:58:46,108 - #35 ;
+INFO  02:58:46,109 - #44 }
+INFO  02:58:46,111 - #44 }
+INFO  02:58:46,136 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               nula
+               0
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             jedan
+             1
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           pet
+           5
+          ) [ConstantValueNumber]
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationNotLast(
+          NotLastVarDeclarations(
+           niz
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [NotLastVarDeclarations]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             niz2
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               a
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclarationNotLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         nizch
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        ReturnMethodTypeName(
+          Type(
+           bool
+          ) [Type]
+         p
+        ) [ReturnMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          StatementReturnExpr(
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  BooleanConstFactor(
+                   true
+                  ) [BooleanConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementReturnExpr]
+        ) [Statements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               i
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             k
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          DesignatorAssignment(
+            SimpleDesignator(
+             nula
+            ) [SimpleDesignator]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   1
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [DesignatorAssignment]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:58:46,137 - ====================================
+INFO  02:58:46,154 - Kreirana je promenjiva niz[] na liniji 7
+INFO  02:58:46,154 - Kreirana je promenjiva niz2[] na liniji 7
+INFO  02:58:46,155 - Kreirana je promenjiva a na liniji 7
+INFO  02:58:46,155 - Kreirana je promenjiva b na liniji 7
+INFO  02:58:46,155 - Kreirana je promenjiva nizch[] na liniji 8
+INFO  02:58:46,155 - Definicija funkcije p na liniji 11
+INFO  02:58:46,156 - Definicija funkcije main na liniji 16
+INFO  02:58:46,156 - Kreirana je promenjiva i na liniji 17
+INFO  02:58:46,156 - Kreirana je promenjiva k na liniji 18
+ERROR 02:58:46,157 - SEMANTICKA GRESKA: Designator nije promelnjiva, element niza ili polje unutar objekta  na liniji 20
+INFO  02:58:46,157 - Print count calls = 0
+INFO  02:58:46,157 - ====================================

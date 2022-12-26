@@ -1,0 +1,65 @@
+// Test301
+
+program test301
+
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[], niz2[], a, b;
+	char nizch[];
+	
+{
+	void main()	
+		int bodovi;
+		bool bt;
+	{
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi);
+			
+		
+		niz = new int[3];
+		niz[nula] = jedan;
+		niz[1] = 2;
+		niz[niz[jedan]] = niz[niz[0]] * 3;
+		bodovi = niz[2]/niz[0];
+		print(bodovi);
+		print(niz[2]);
+		
+		
+		[a,b] = niz;
+		print(a);	// niz[0] -> 1
+		print(b);	// niz[1] -> 2
+		
+		
+		[,a,] = niz;
+		print(a);	// niz[1] -> 2
+
+		niz2 = new int[2];
+		[niz2[0],,niz2[niz[nula]]] = niz;
+
+		print(niz2[0]);	// niz[0] -> 1
+		print(niz2[1]); // niz[2] -> 6 
+		
+		// [niz2[0],,,niz2[niz[nula]]] = niz; // runtime error!
+		
+		nizch = new char[3];
+		nizch[0] = 'a';
+		nizch[jedan] = 'b';
+		nizch[pet - 3] = 'c';
+		print(nizch[1]);
+		print(nizch[jedan * 2]);
+			
+		
+		read(bodovi);
+		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);
+			
+	}
+}
+
+

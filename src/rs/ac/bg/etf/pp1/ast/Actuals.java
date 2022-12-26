@@ -1,11 +1,11 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/11/2017 14:22:56
+// 25/11/2022 22:27:57
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Actuals extends ActualPars {
+public class Actuals extends ActPars {
 
     private ActualParamList ActualParamList;
 

@@ -1,0 +1,57 @@
+INFO  01:38:28,983 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:38:29,030 - #2 program
+INFO  01:38:29,030 - #48 MJProgram
+INFO  01:38:29,031 - #44 {
+INFO  01:38:29,032 - #14 void
+INFO  01:38:29,032 - #48 f
+INFO  01:38:29,033 - #40 (
+INFO  01:38:29,033 - #41 )
+INFO  01:38:29,033 - #44 {
+INFO  01:38:29,034 - #45 }
+INFO  01:38:29,035 - #14 void
+INFO  01:38:29,035 - #48 main
+INFO  01:38:29,035 - #40 (
+INFO  01:38:29,036 - #41 )
+INFO  01:38:29,036 - #44 {
+INFO  01:38:29,036 - #45 }
+INFO  01:38:29,036 - #45 }
+INFO  01:38:29,042 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         f
+        ) [VoidMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:38:29,044 - ====================================
+INFO  01:38:29,047 - Definicija funkcije f na liniji 4
+INFO  01:38:29,047 - Definicija funkcije main na liniji 6
+INFO  01:38:29,047 - Print count calls = 0
+INFO  01:38:29,047 - ====================================

@@ -1,0 +1,66 @@
+program p
+const int size = 10;
+class Table {
+    int pos[], neg[], factor; {
+        Table(int factor) {
+            this.factor = factor;
+        }
+        void putp(int a, int idx) {
+            this.pos[idx] = a;
+        }
+        void putn(int a, int idx) {
+            this.neg[idx] = a;
+        }
+        int getp(int idx) {
+            return pos[idx];
+        }
+        int getn(int idx) {
+            return neg[idx];
+        }
+    }
+}
+
+Table val;
+Int rows, columns; 
+
+{
+    void f(char ch, int a, int arg)
+    int x; {
+        x = arg;
+    }
+    void main() int x, i;
+    char c; int arr[]; {
+        val = new Table(2);
+        arr = new int[3];
+        i = 0;
+        while (i < 3) {
+            arr[i] = i;
+            i++;
+        }
+        arr.foreach(x => print(x););
+        val.pos = new int[size];
+        val.neg = new int[size];
+        read(x);
+        [i, , x] = arr;
+        while (i < size) {
+            val.putp(0, i);
+            val.putn(0, i);
+            i++;
+        }
+
+        f(c, x, i);
+
+        read(rows);
+        x = rows;
+        while (true) {
+            if (x <= 0) break;
+            if (0 <= x && x < size) {
+                val.putp(val.getp(x) + 1);
+            } else if (-size < x && x < 0) {
+                val.putn(val.getn(-x) + 1);
+            }
+            read(x);
+        }
+
+    }
+}

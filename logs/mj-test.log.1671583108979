@@ -1,0 +1,63 @@
+INFO  01:38:16,961 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:38:17,006 - #2 program
+INFO  01:38:17,006 - #48 MJProgram
+INFO  01:38:17,006 - #44 {
+INFO  01:38:17,007 - #14 void
+INFO  01:38:17,009 - #48 f
+INFO  01:38:17,009 - #40 (
+INFO  01:38:17,009 - #48 int
+INFO  01:38:17,009 - #48 a
+INFO  01:38:17,010 - #38 ,
+INFO  01:38:17,011 - #48 bool
+INFO  01:38:17,011 - #48 c
+INFO  01:38:17,011 - #41 )
+INFO  01:38:17,011 - #44 {
+INFO  01:38:17,012 - #45 }
+INFO  01:38:17,012 - #45 }
+INFO  01:38:17,018 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       f
+      ) [VoidMethodTypeName]
+      FormalParameters(
+        ListOfParameters(
+          SingleFormalParameter(
+            Type(
+             int
+            ) [Type]
+           a
+            VarDeclarationOfNotArray(
+            ) [VarDeclarationOfNotArray]
+          ) [SingleFormalParameter]
+          SingleOrEndOfListParameter(
+            SingleFormalParameter(
+              Type(
+               bool
+              ) [Type]
+             c
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [SingleFormalParameter]
+          ) [SingleOrEndOfListParameter]
+        ) [ListOfParameters]
+      ) [FormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:38:17,019 - ====================================
+INFO  01:38:17,023 - Definicija funkcije f na liniji 4
+ERROR 01:38:17,023 - SEMANTICKA GRESKA: Glavni metod sa potpisom: void main() {...} metod nije pronadjen!
+INFO  01:38:17,023 - Print count calls = 0
+INFO  01:38:17,023 - ====================================

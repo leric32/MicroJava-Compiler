@@ -1,0 +1,437 @@
+INFO  00:10:05,849 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:10:05,899 - #2 program
+INFO  00:10:05,899 - #47 test301
+INFO  00:10:05,899 - #8 const
+INFO  00:10:05,900 - #47 int
+INFO  00:10:05,901 - #47 nula
+INFO  00:10:05,902 - #32 =
+INFO  00:10:05,902 - #46 0
+INFO  00:10:05,902 - #35 ;
+INFO  00:10:05,903 - #8 const
+INFO  00:10:05,903 - #47 int
+INFO  00:10:05,903 - #47 jedan
+INFO  00:10:05,903 - #32 =
+INFO  00:10:05,903 - #46 1
+INFO  00:10:05,903 - #35 ;
+INFO  00:10:05,903 - #8 const
+INFO  00:10:05,904 - #47 int
+INFO  00:10:05,904 - #47 pet
+INFO  00:10:05,904 - #32 =
+INFO  00:10:05,904 - #46 5
+INFO  00:10:05,904 - #35 ;
+INFO  00:10:05,904 - #47 int
+INFO  00:10:05,905 - #47 niz
+INFO  00:10:05,905 - #41 [
+INFO  00:10:05,905 - #42 ]
+INFO  00:10:05,905 - #37 ,
+INFO  00:10:05,906 - #47 niz2
+INFO  00:10:05,906 - #41 [
+INFO  00:10:05,906 - #42 ]
+INFO  00:10:05,906 - #37 ,
+INFO  00:10:05,906 - #47 a
+INFO  00:10:05,906 - #37 ,
+INFO  00:10:05,907 - #47 b
+INFO  00:10:05,907 - #35 ;
+INFO  00:10:05,907 - #47 char
+INFO  00:10:05,907 - #47 nizch
+INFO  00:10:05,907 - #41 [
+INFO  00:10:05,907 - #42 ]
+INFO  00:10:05,907 - #35 ;
+INFO  00:10:05,907 - #5 class
+INFO  00:10:05,907 - #47 Predmet
+INFO  00:10:05,907 - #43 {
+INFO  00:10:05,908 - #43 {
+INFO  00:10:05,908 - #44 }
+INFO  00:10:05,908 - #44 }
+INFO  00:10:05,909 - #5 class
+INFO  00:10:05,909 - #47 Predmet2
+INFO  00:10:05,909 - #15 extends
+INFO  00:10:05,909 - #47 Predmet
+INFO  00:10:05,909 - #43 {
+INFO  00:10:05,909 - #43 {
+INFO  00:10:05,909 - #44 }
+INFO  00:10:05,909 - #44 }
+INFO  00:10:05,909 - #43 {
+INFO  00:10:05,910 - #14 void
+INFO  00:10:05,910 - #47 p
+INFO  00:10:05,910 - #39 (
+INFO  00:10:05,910 - #47 int
+INFO  00:10:05,910 - #47 z
+INFO  00:10:05,910 - #37 ,
+INFO  00:10:05,910 - #47 bool
+INFO  00:10:05,910 - #47 h
+INFO  00:10:05,911 - #37 ,
+INFO  00:10:05,911 - #47 char
+INFO  00:10:05,911 - #47 d
+INFO  00:10:05,911 - #37 ,
+INFO  00:10:05,911 - #47 int
+INFO  00:10:05,911 - #47 m
+INFO  00:10:05,911 - #41 [
+INFO  00:10:05,911 - #42 ]
+INFO  00:10:05,911 - #40 )
+INFO  00:10:05,911 - #43 {
+INFO  00:10:05,912 - #44 }
+INFO  00:10:05,912 - #14 void
+INFO  00:10:05,912 - #47 main
+INFO  00:10:05,912 - #39 (
+INFO  00:10:05,913 - #40 )
+INFO  00:10:05,913 - #47 Predmet
+INFO  00:10:05,913 - #47 predmeti
+INFO  00:10:05,913 - #41 [
+INFO  00:10:05,913 - #42 ]
+INFO  00:10:05,913 - #35 ;
+INFO  00:10:05,913 - #43 {
+INFO  00:10:05,913 - #47 predmeti
+INFO  00:10:05,913 - #32 =
+INFO  00:10:05,913 - #12 new
+INFO  00:10:05,914 - #47 Predmet
+INFO  00:10:05,914 - #41 [
+INFO  00:10:05,914 - #46 6
+INFO  00:10:05,914 - #42 ]
+INFO  00:10:05,915 - #35 ;
+INFO  00:10:05,915 - #47 p
+INFO  00:10:05,916 - #39 (
+INFO  00:10:05,916 - #47 i
+INFO  00:10:05,916 - #37 ,
+INFO  00:10:05,916 - #47 k
+INFO  00:10:05,916 - #37 ,
+INFO  00:10:05,916 - #47 nizch
+INFO  00:10:05,917 - #41 [
+INFO  00:10:05,917 - #46 1
+INFO  00:10:05,917 - #42 ]
+INFO  00:10:05,917 - #37 ,
+INFO  00:10:05,918 - #47 niz
+INFO  00:10:05,918 - #40 )
+INFO  00:10:05,918 - #35 ;
+INFO  00:10:05,918 - #44 }
+INFO  00:10:05,919 - #44 }
+INFO  00:10:05,924 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ClassDeclarations(
+    ClassDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          ConstDeclarations(
+            ConstDeclarations(
+              ConstDeclarations(
+                NoVarDecl(
+                ) [NoVarDecl]
+                ConstDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstantValueNumber(
+                   nula
+                   0
+                  ) [ConstantValueNumber]
+                  EndOfListOfCharDeclarations(
+                  ) [EndOfListOfCharDeclarations]
+                ) [ConstDeclaration]
+              ) [ConstDeclarations]
+              ConstDeclaration(
+                Type(
+                 int
+                ) [Type]
+                ConstantValueNumber(
+                 jedan
+                 1
+                ) [ConstantValueNumber]
+                EndOfListOfCharDeclarations(
+                ) [EndOfListOfCharDeclarations]
+              ) [ConstDeclaration]
+            ) [ConstDeclarations]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               pet
+               5
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               niz
+                VarDeclarationOfArray(
+                ) [VarDeclarationOfArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationNotLast(
+                NotLastVarDeclarations(
+                 niz2
+                  VarDeclarationOfArray(
+                  ) [VarDeclarationOfArray]
+                ) [NotLastVarDeclarations]
+                VarDeclarationNotLast(
+                  NotLastVarDeclarations(
+                   a
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [NotLastVarDeclarations]
+                  VarDeclarationLast(
+                    LastVarDeclarations(
+                     b
+                      VarDeclarationOfNotArray(
+                      ) [VarDeclarationOfNotArray]
+                    ) [LastVarDeclarations]
+                  ) [VarDeclarationLast]
+                ) [VarDeclarationNotLast]
+              ) [VarDeclarationNotLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        VarDeclaration(
+          Type(
+           char
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             nizch
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      ClassDeclaration(
+        NameOfClass(
+         Predmet
+        ) [NameOfClass]
+        ClassIsNotExtended(
+        ) [ClassIsNotExtended]
+        ClassBodyNoMethodWithEmptyBrackets(
+          NoClassVariables(
+          ) [NoClassVariables]
+        ) [ClassBodyNoMethodWithEmptyBrackets]
+      ) [ClassDeclaration]
+    ) [ClassDeclarations]
+    ClassDeclaration(
+      NameOfClass(
+       Predmet2
+      ) [NameOfClass]
+      ClassIsExtended(
+        Type(
+         Predmet
+        ) [Type]
+      ) [ClassIsExtended]
+      ClassBodyNoMethodWithEmptyBrackets(
+        NoClassVariables(
+        ) [NoClassVariables]
+      ) [ClassBodyNoMethodWithEmptyBrackets]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         p
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          ListOfParameters(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             z
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [SingleFormalParameter]
+            ListOfParameters(
+              SingleFormalParameter(
+                Type(
+                 bool
+                ) [Type]
+               h
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [SingleFormalParameter]
+              ListOfParameters(
+                SingleFormalParameter(
+                  Type(
+                   char
+                  ) [Type]
+                 d
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+                SingleOrEndOfListParameter(
+                  SingleFormalParameter(
+                    Type(
+                     int
+                    ) [Type]
+                   m
+                    VarDeclarationOfArray(
+                    ) [VarDeclarationOfArray]
+                  ) [SingleFormalParameter]
+                ) [SingleOrEndOfListParameter]
+              ) [ListOfParameters]
+            ) [ListOfParameters]
+          ) [ListOfParameters]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           Predmet
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             predmeti
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          StatementDesignator(
+            DesignatorAssignment(
+              SimpleDesignator(
+               predmeti
+              ) [SimpleDesignator]
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    NewArrayOperatorFactor(
+                      Type(
+                       Predmet
+                      ) [Type]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             6
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [NewArrayOperatorFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [DesignatorAssignment]
+          ) [StatementDesignator]
+        ) [Statements]
+        StatementDesignator(
+          DesignatorFuncCall(
+            FunctionCallName(
+              SimpleDesignator(
+               p
+              ) [SimpleDesignator]
+            ) [FunctionCallName]
+            Actuals(
+              ActualParams(
+                ActualParams(
+                  ActualParams(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               i
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             k
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [ActualParams]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          ArrayDesignator(
+                            SimpleDesignator(
+                             nizch
+                            ) [SimpleDesignator]
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  NumberConstFactor(
+                                   1
+                                  ) [NumberConstFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [ArrayDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [ActualParams]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         niz
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [ActualParams]
+            ) [Actuals]
+          ) [DesignatorFuncCall]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:10:05,924 - ====================================
+INFO  00:10:05,928 - Kreirana je promenjiva niz[] na liniji 6
+INFO  00:10:05,928 - Kreirana je promenjiva niz2[] na liniji 6
+INFO  00:10:05,928 - Kreirana je promenjiva a na liniji 6
+INFO  00:10:05,928 - Kreirana je promenjiva b na liniji 6
+INFO  00:10:05,928 - Kreirana je promenjiva nizch[] na liniji 7
+INFO  00:10:05,928 - Kreirana je klasa Predmet na liniji 9
+INFO  00:10:05,928 - Kreirana je klasa Predmet2 na liniji 17
+INFO  00:10:05,928 - Definicija funkcije p na liniji 26
+INFO  00:10:05,929 - Definicija funkcije main na liniji 31
+INFO  00:10:05,929 - Kreirana je promenjiva predmeti[] na liniji 31
+ERROR 00:10:05,929 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom i na liniji 34
+ERROR 00:10:05,929 - SEMANTICKA GRESKA: Formalni parametar funkcije p koji je tipa int nije kompatibilan sa stvarnim argumentom koji je tipa none na liniji 34
+ERROR 00:10:05,929 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom k na liniji 34
+ERROR 00:10:05,929 - SEMANTICKA GRESKA: Formalni parametar funkcije p koji je tipa bool nije kompatibilan sa stvarnim argumentom koji je tipa none na liniji 34
+INFO  00:10:05,929 - Pristup elemntu niza nizch na liniji 34
+INFO  00:10:05,929 - Print count calls = 0
+INFO  00:10:05,929 - ====================================
+ERROR 00:10:05,930 - Parsiranje NIJE uspesno zavrseno!

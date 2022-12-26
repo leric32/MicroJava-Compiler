@@ -1,0 +1,55 @@
+INFO  01:12:43,698 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:12:43,745 - #2 program
+INFO  01:12:43,745 - #48 MJProgram
+INFO  01:12:43,745 - #44 {
+INFO  01:12:43,747 - #14 void
+INFO  01:12:43,748 - #48 main
+INFO  01:12:43,748 - #40 (
+INFO  01:12:43,748 - #41 )
+INFO  01:12:43,749 - #44 {
+INFO  01:12:43,750 - #45 }
+INFO  01:12:43,750 - #14 void
+INFO  01:12:43,751 - #48 main
+INFO  01:12:43,751 - #40 (
+INFO  01:12:43,751 - #41 )
+INFO  01:12:43,751 - #44 {
+INFO  01:12:43,751 - #45 }
+INFO  01:12:43,751 - #45 }
+INFO  01:12:43,757 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         main
+        ) [VoidMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:12:43,760 - ====================================
+INFO  01:12:43,763 - Definicija funkcije main na liniji 4
+ERROR 01:12:43,763 - SEMANTICKA GRESKA: Ime metode main je ranije vec deklarisano! na liniji 6

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/11/2017 14:22:56
+// 25/11/2022 22:27:57
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,19 +11,19 @@ public class Term implements SyntaxNode {
     private int line;
     public rs.etf.pp1.symboltable.concepts.Struct struct = null;
 
-    private Factor Factor;
+    private ListOfFactors ListOfFactors;
 
-    public Term (Factor Factor) {
-        this.Factor=Factor;
-        if(Factor!=null) Factor.setParent(this);
+    public Term (ListOfFactors ListOfFactors) {
+        this.ListOfFactors=ListOfFactors;
+        if(ListOfFactors!=null) ListOfFactors.setParent(this);
     }
 
-    public Factor getFactor() {
-        return Factor;
+    public ListOfFactors getListOfFactors() {
+        return ListOfFactors;
     }
 
-    public void setFactor(Factor Factor) {
-        this.Factor=Factor;
+    public void setListOfFactors(ListOfFactors ListOfFactors) {
+        this.ListOfFactors=ListOfFactors;
     }
 
     public SyntaxNode getParent() {
@@ -47,16 +47,16 @@ public class Term implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Factor!=null) Factor.accept(visitor);
+        if(ListOfFactors!=null) ListOfFactors.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Factor!=null) Factor.traverseTopDown(visitor);
+        if(ListOfFactors!=null) ListOfFactors.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Factor!=null) Factor.traverseBottomUp(visitor);
+        if(ListOfFactors!=null) ListOfFactors.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -65,8 +65,8 @@ public class Term implements SyntaxNode {
         buffer.append(tab);
         buffer.append("Term(\n");
 
-        if(Factor!=null)
-            buffer.append(Factor.toString("  "+tab));
+        if(ListOfFactors!=null)
+            buffer.append(ListOfFactors.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

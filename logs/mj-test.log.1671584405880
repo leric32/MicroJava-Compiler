@@ -1,0 +1,84 @@
+INFO  01:59:48,386 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:59:48,447 - #2 program
+INFO  01:59:48,447 - #48 MJProgram
+INFO  01:59:48,447 - #44 {
+INFO  01:59:48,448 - #14 void
+INFO  01:59:48,448 - #48 f
+INFO  01:59:48,448 - #40 (
+INFO  01:59:48,449 - #48 int
+INFO  01:59:48,449 - #48 a
+INFO  01:59:48,449 - #42 [
+INFO  01:59:48,449 - #43 ]
+INFO  01:59:48,449 - #38 ,
+INFO  01:59:48,450 - #48 bool
+INFO  01:59:48,450 - #48 b
+INFO  01:59:48,450 - #41 )
+INFO  01:59:48,451 - #44 {
+INFO  01:59:48,452 - #45 }
+INFO  01:59:48,452 - #14 void
+INFO  01:59:48,453 - #48 main
+INFO  01:59:48,453 - #40 (
+INFO  01:59:48,453 - #41 )
+INFO  01:59:48,454 - #44 {
+INFO  01:59:48,455 - #45 }
+INFO  01:59:48,455 - #45 }
+INFO  01:59:48,461 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         f
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          ListOfParameters(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             a
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [SingleFormalParameter]
+            SingleOrEndOfListParameter(
+              SingleFormalParameter(
+                Type(
+                 bool
+                ) [Type]
+               b
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [SingleFormalParameter]
+            ) [SingleOrEndOfListParameter]
+          ) [ListOfParameters]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:59:48,461 - ====================================
+INFO  01:59:48,469 - Definicija funkcije f na liniji 4
+INFO  01:59:48,469 - Definicija funkcije main na liniji 6
+INFO  01:59:48,469 - Print count calls = 0
+INFO  01:59:48,469 - ====================================

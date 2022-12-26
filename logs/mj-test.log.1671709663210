@@ -1,0 +1,202 @@
+INFO  12:47:31,737 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  12:47:31,783 - #2 program
+INFO  12:47:31,783 - #48 test301
+INFO  12:47:31,783 - #8 const
+INFO  12:47:31,786 - #48 int
+INFO  12:47:31,786 - #48 nula
+INFO  12:47:31,787 - #33 =
+INFO  12:47:31,787 - #47 0
+INFO  12:47:31,787 - #36 ;
+INFO  12:47:31,789 - #8 const
+INFO  12:47:31,789 - #48 int
+INFO  12:47:31,789 - #48 jedan
+INFO  12:47:31,789 - #33 =
+INFO  12:47:31,789 - #47 1
+INFO  12:47:31,789 - #36 ;
+INFO  12:47:31,789 - #8 const
+INFO  12:47:31,789 - #48 int
+INFO  12:47:31,790 - #48 pet
+INFO  12:47:31,790 - #33 =
+INFO  12:47:31,790 - #47 5
+INFO  12:47:31,790 - #36 ;
+INFO  12:47:31,791 - #48 int
+INFO  12:47:31,791 - #48 niz
+INFO  12:47:31,791 - #42 [
+INFO  12:47:31,792 - #43 ]
+INFO  12:47:31,792 - #38 ,
+INFO  12:47:31,792 - #48 niz2
+INFO  12:47:31,793 - #42 [
+INFO  12:47:31,793 - #43 ]
+INFO  12:47:31,793 - #38 ,
+INFO  12:47:31,793 - #48 a
+INFO  12:47:31,793 - #38 ,
+INFO  12:47:31,794 - #48 b
+INFO  12:47:31,794 - #36 ;
+INFO  12:47:31,794 - #48 char
+INFO  12:47:31,795 - #48 nizch
+INFO  12:47:31,795 - #42 [
+INFO  12:47:31,795 - #43 ]
+INFO  12:47:31,795 - #36 ;
+INFO  12:47:31,795 - #44 {
+INFO  12:47:31,796 - #14 void
+INFO  12:47:31,796 - #48 main
+INFO  12:47:31,797 - #40 (
+INFO  12:47:31,797 - #41 )
+INFO  12:47:31,797 - #48 int
+INFO  12:47:31,798 - #48 bodovi
+INFO  12:47:31,798 - #36 ;
+INFO  12:47:31,798 - #48 bool
+INFO  12:47:31,798 - #48 bt
+INFO  12:47:31,798 - #36 ;
+INFO  12:47:31,798 - #44 {
+INFO  12:47:31,799 - #45 }
+INFO  12:47:31,799 - #45 }
+INFO  12:47:31,803 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               nula
+               0
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             jedan
+             1
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           pet
+           5
+          ) [ConstantValueNumber]
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationNotLast(
+          NotLastVarDeclarations(
+           niz
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [NotLastVarDeclarations]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             niz2
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               a
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclarationNotLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         nizch
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               bodovi
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             bt
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  12:47:31,804 - ====================================
+INFO  12:47:31,807 - Kreirana je promenjiva niz[]. na liniji 7
+INFO  12:47:31,807 - Kreirana je promenjiva niz2[]. na liniji 7
+INFO  12:47:31,807 - Kreirana je promenjiva a. na liniji 7
+INFO  12:47:31,807 - Kreirana je promenjiva b. na liniji 7
+INFO  12:47:31,807 - Kreirana je promenjiva nizch[]. na liniji 8
+INFO  12:47:31,807 - Definicija funkcije main na liniji 11
+INFO  12:47:31,807 - Kreirana je promenjiva bodovi. na liniji 12
+INFO  12:47:31,807 - Kreirana je promenjiva bt. na liniji 13
+INFO  12:47:31,807 - Print count calls = 0
+INFO  12:47:31,807 - ====================================

@@ -1,0 +1,71 @@
+INFO  01:40:56,675 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:40:56,720 - #2 program
+INFO  01:40:56,720 - #48 MJProgram
+INFO  01:40:56,720 - #44 {
+INFO  01:40:56,721 - #14 void
+INFO  01:40:56,722 - #48 f
+INFO  01:40:56,722 - #40 (
+INFO  01:40:56,722 - #48 int
+INFO  01:40:56,722 - #48 a
+INFO  01:40:56,723 - #41 )
+INFO  01:40:56,724 - #44 {
+INFO  01:40:56,724 - #45 }
+INFO  01:40:56,725 - #14 void
+INFO  01:40:56,725 - #48 main
+INFO  01:40:56,725 - #40 (
+INFO  01:40:56,725 - #41 )
+INFO  01:40:56,725 - #44 {
+INFO  01:40:56,726 - #45 }
+INFO  01:40:56,726 - #45 }
+INFO  01:40:56,731 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         f
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          SingleOrEndOfListParameter(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             a
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [SingleFormalParameter]
+          ) [SingleOrEndOfListParameter]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:40:56,732 - ====================================
+INFO  01:40:56,735 - Definicija funkcije f na liniji 4
+ERROR 01:40:56,736 - SEMANTICKA GRESKA: na liniji 4: funcija f nema return iskaz! na liniji 4
+INFO  01:40:56,736 - Definicija funkcije main na liniji 6
+ERROR 01:40:56,736 - SEMANTICKA GRESKA: na liniji 6: funcija main nema return iskaz! na liniji 6
+INFO  01:40:56,736 - Print count calls = 0
+INFO  01:40:56,736 - ====================================

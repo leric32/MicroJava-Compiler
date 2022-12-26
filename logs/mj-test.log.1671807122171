@@ -1,0 +1,208 @@
+INFO  15:51:29,795 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  15:51:29,837 - #2 program
+INFO  15:51:29,837 - #47 test301
+INFO  15:51:29,837 - #8 const
+INFO  15:51:29,838 - #47 int
+INFO  15:51:29,838 - #47 nula
+INFO  15:51:29,839 - #32 =
+INFO  15:51:29,839 - #46 0
+INFO  15:51:29,839 - #35 ;
+INFO  15:51:29,840 - #8 const
+INFO  15:51:29,840 - #47 int
+INFO  15:51:29,840 - #47 jedan
+INFO  15:51:29,841 - #32 =
+INFO  15:51:29,841 - #46 1
+INFO  15:51:29,841 - #35 ;
+INFO  15:51:29,841 - #8 const
+INFO  15:51:29,841 - #47 int
+INFO  15:51:29,841 - #47 pet
+INFO  15:51:29,841 - #32 =
+INFO  15:51:29,841 - #46 5
+INFO  15:51:29,841 - #35 ;
+INFO  15:51:29,842 - #47 int
+INFO  15:51:29,842 - #47 niz
+INFO  15:51:29,842 - #41 [
+INFO  15:51:29,842 - #42 ]
+INFO  15:51:29,842 - #37 ,
+INFO  15:51:29,844 - #47 niz2
+INFO  15:51:29,844 - #41 [
+INFO  15:51:29,844 - #42 ]
+INFO  15:51:29,844 - #37 ,
+INFO  15:51:29,844 - #47 a
+INFO  15:51:29,844 - #37 ,
+INFO  15:51:29,845 - #47 b
+INFO  15:51:29,845 - #35 ;
+INFO  15:51:29,845 - #47 char
+INFO  15:51:29,846 - #47 nizch
+INFO  15:51:29,846 - #41 [
+INFO  15:51:29,846 - #42 ]
+INFO  15:51:29,846 - #35 ;
+INFO  15:51:29,846 - #43 {
+INFO  15:51:29,846 - #14 void
+INFO  15:51:29,847 - #47 main
+INFO  15:51:29,847 - #39 (
+INFO  15:51:29,847 - #40 )
+INFO  15:51:29,847 - #47 int
+INFO  15:51:29,849 - #47 i
+INFO  15:51:29,849 - #35 ;
+INFO  15:51:29,849 - #43 {
+INFO  15:51:29,849 - #47 j
+INFO  15:51:29,850 - #32 =
+INFO  15:51:29,850 - #46 5
+INFO  15:51:29,850 - #35 ;
+INFO  15:51:29,850 - #44 }
+INFO  15:51:29,851 - #44 }
+INFO  15:51:29,856 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               nula
+               0
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             jedan
+             1
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           pet
+           5
+          ) [ConstantValueNumber]
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationNotLast(
+          NotLastVarDeclarations(
+           niz
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [NotLastVarDeclarations]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             niz2
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               a
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclarationNotLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    VarDeclaration(
+      Type(
+       char
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         nizch
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          DesignatorAssignment(
+            SimpleDesignator(
+             j
+            ) [SimpleDesignator]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   5
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [DesignatorAssignment]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:51:29,856 - ====================================
+INFO  15:51:29,860 - Kreirana je promenjiva niz[] na liniji 7
+INFO  15:51:29,860 - Kreirana je promenjiva niz2[] na liniji 7
+INFO  15:51:29,860 - Kreirana je promenjiva a na liniji 7
+INFO  15:51:29,860 - Kreirana je promenjiva b na liniji 7
+INFO  15:51:29,860 - Kreirana je promenjiva nizch[] na liniji 8
+INFO  15:51:29,860 - Definicija funkcije main na liniji 11
+INFO  15:51:29,860 - Kreirana je promenjiva i na liniji 12
+ERROR 15:51:29,860 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenomj na liniji 14
+ERROR 15:51:29,861 - SEMANTICKA GRESKA: Promenljiva sa leve strane nije deklarisana  na liniji 14
+INFO  15:51:29,861 - Print count calls = 0
+INFO  15:51:29,861 - ====================================

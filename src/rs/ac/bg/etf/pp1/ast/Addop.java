@@ -1,16 +1,15 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/11/2017 14:22:56
+// 25/11/2022 22:27:57
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Addop implements SyntaxNode {
+public abstract class Addop implements SyntaxNode {
 
     private SyntaxNode parent;
+
     private int line;
-    public Addop () {
-    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -28,28 +27,11 @@ public class Addop implements SyntaxNode {
         this.line=line;
     }
 
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
-    }
+    public abstract void accept(Visitor visitor);
+    public abstract void childrenAccept(Visitor visitor);
+    public abstract void traverseTopDown(Visitor visitor);
+    public abstract void traverseBottomUp(Visitor visitor);
 
-    public void childrenAccept(Visitor visitor) {
-    }
-
-    public void traverseTopDown(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public void traverseBottomUp(Visitor visitor) {
-        accept(visitor);
-    }
-
-    public String toString(String tab) {
-        StringBuffer buffer=new StringBuffer();
-        buffer.append(tab);
-        buffer.append("Addop(\n");
-
-        buffer.append(tab);
-        buffer.append(") [Addop]");
-        return buffer.toString();
-    }
+    public String toString() { return toString(""); }
+    public abstract String toString(String tab);
 }
