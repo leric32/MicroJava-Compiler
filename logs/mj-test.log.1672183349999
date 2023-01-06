@@ -1,0 +1,260 @@
+INFO  00:21:57,231 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:21:57,277 - #2 program
+INFO  00:21:57,277 - #47 test301
+INFO  00:21:57,277 - #8 const
+INFO  00:21:57,278 - #47 int
+INFO  00:21:57,278 - #47 nula
+INFO  00:21:57,279 - #32 =
+INFO  00:21:57,279 - #46 0
+INFO  00:21:57,279 - #35 ;
+INFO  00:21:57,279 - #8 const
+INFO  00:21:57,280 - #47 int
+INFO  00:21:57,280 - #47 jedan
+INFO  00:21:57,280 - #32 =
+INFO  00:21:57,280 - #46 1
+INFO  00:21:57,280 - #35 ;
+INFO  00:21:57,280 - #8 const
+INFO  00:21:57,280 - #47 int
+INFO  00:21:57,280 - #47 pet
+INFO  00:21:57,280 - #32 =
+INFO  00:21:57,281 - #46 5
+INFO  00:21:57,281 - #35 ;
+INFO  00:21:57,281 - #47 int
+INFO  00:21:57,281 - #47 niz
+INFO  00:21:57,281 - #41 [
+INFO  00:21:57,281 - #42 ]
+INFO  00:21:57,281 - #37 ,
+INFO  00:21:57,283 - #47 niz2
+INFO  00:21:57,283 - #41 [
+INFO  00:21:57,283 - #42 ]
+INFO  00:21:57,283 - #37 ,
+INFO  00:21:57,283 - #47 a
+INFO  00:21:57,283 - #37 ,
+INFO  00:21:57,284 - #47 b
+INFO  00:21:57,284 - #35 ;
+INFO  00:21:57,284 - #47 char
+INFO  00:21:57,286 - #47 nizch
+INFO  00:21:57,286 - #41 [
+INFO  00:21:57,286 - #42 ]
+INFO  00:21:57,286 - #35 ;
+INFO  00:21:57,286 - #5 class
+INFO  00:21:57,286 - #47 Kvadar
+INFO  00:21:57,287 - #43 {
+INFO  00:21:57,287 - #47 int
+INFO  00:21:57,289 - #47 a
+INFO  00:21:57,289 - #37 ,
+INFO  00:21:57,289 - #47 b
+INFO  00:21:57,289 - #37 ,
+INFO  00:21:57,289 - #47 c
+INFO  00:21:57,289 - #35 ;
+INFO  00:21:57,290 - #43 {
+INFO  00:21:57,290 - #47 Kvadar
+INFO  00:21:57,290 - #39 (
+INFO  00:21:57,290 - #40 )
+INFO  00:21:57,290 - #43 {
+INFO  00:21:57,291 - #3 print
+INFO  00:21:57,292 - #39 (
+INFO  00:21:57,292 - #46 1
+INFO  00:21:57,292 - #40 )
+INFO  00:21:57,293 - #35 ;
+INFO  00:21:57,293 - #44 }
+INFO  00:21:57,293 - #44 }
+INFO  00:21:57,293 - #44 }
+INFO  00:21:57,294 - #43 {
+INFO  00:21:57,294 - #14 void
+INFO  00:21:57,295 - #47 main
+INFO  00:21:57,295 - #39 (
+INFO  00:21:57,295 - #40 )
+INFO  00:21:57,295 - #43 {
+INFO  00:21:57,296 - #44 }
+INFO  00:21:57,296 - #44 }
+INFO  00:21:57,301 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ClassDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            ConstDeclarations(
+              NoVarDecl(
+              ) [NoVarDecl]
+              ConstDeclaration(
+                Type(
+                 int
+                ) [Type]
+                ConstantValueNumber(
+                 nula
+                 0
+                ) [ConstantValueNumber]
+                EndOfListOfCharDeclarations(
+                ) [EndOfListOfCharDeclarations]
+              ) [ConstDeclaration]
+            ) [ConstDeclarations]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               jedan
+               1
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             pet
+             5
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             niz
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               niz2
+                VarDeclarationOfArray(
+                ) [VarDeclarationOfArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationNotLast(
+                NotLastVarDeclarations(
+                 a
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [NotLastVarDeclarations]
+                VarDeclarationLast(
+                  LastVarDeclarations(
+                   b
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [LastVarDeclarations]
+                ) [VarDeclarationLast]
+              ) [VarDeclarationNotLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationLast(
+          LastVarDeclarations(
+           nizch
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [LastVarDeclarations]
+        ) [VarDeclarationLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    ClassDeclaration(
+      NameOfClass(
+       Kvadar
+      ) [NameOfClass]
+      ClassIsNotExtended(
+      ) [ClassIsNotExtended]
+      ClassBodyNoMethodWithConstructor(
+        ClassVariables(
+          NoClassVariables(
+          ) [NoClassVariables]
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            ClassVarDecNotLast(
+              ClassVarDecNotLast(
+                ClassVarDecLast(
+                  ClassVariable(
+                   a
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [ClassVariable]
+                ) [ClassVarDecLast]
+                ClassVariable(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecNotLast]
+              ClassVariable(
+               c
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [ClassVariable]
+            ) [ClassVarDecNotLast]
+          ) [ClassVarDeclaration]
+        ) [ClassVariables]
+        SingleOrLastConstructorDeclaration(
+          ConstructorDeclaration(
+            ConstructorDeclarationName(
+             Kvadar
+            ) [ConstructorDeclarationName]
+            NoFormalParameters(
+            ) [NoFormalParameters]
+            ConstructorWithoutVar(
+            ) [ConstructorWithoutVar]
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementPrintWithoutWidth(
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      NumberConstFactor(
+                       1
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementPrintWithoutWidth]
+            ) [Statements]
+          ) [ConstructorDeclaration]
+        ) [SingleOrLastConstructorDeclaration]
+      ) [ClassBodyNoMethodWithConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:21:57,301 - ====================================
+INFO  00:21:57,308 - Kreirana je promenjiva niz[] na liniji 6
+INFO  00:21:57,308 - Kreirana je promenjiva niz2[] na liniji 6
+INFO  00:21:57,308 - Kreirana je promenjiva a na liniji 6
+INFO  00:21:57,308 - Kreirana je promenjiva b na liniji 6
+INFO  00:21:57,308 - Kreirana je promenjiva nizch[] na liniji 7
+INFO  00:21:57,308 - Kreirana je klasa Kvadar na liniji 9
+INFO  00:21:57,308 - 0
+INFO  00:21:57,308 - Prepoznata naredba print
+INFO  00:21:57,308 - Definicija funkcije main na liniji 22
+INFO  00:21:57,309 - Print count calls = 1
+INFO  00:21:57,309 - ====================================
+INFO  00:21:57,309 - Parsiranje uspesno zavrseno!

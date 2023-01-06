@@ -1,0 +1,314 @@
+INFO  03:06:31,808 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  03:06:31,853 - #2 program
+INFO  03:06:31,854 - #47 test301
+INFO  03:06:31,854 - #8 const
+INFO  03:06:31,855 - #47 int
+INFO  03:06:31,855 - #47 nula
+INFO  03:06:31,855 - #32 =
+INFO  03:06:31,855 - #46 0
+INFO  03:06:31,855 - #35 ;
+INFO  03:06:31,856 - #8 const
+INFO  03:06:31,857 - #47 int
+INFO  03:06:31,857 - #47 jedan
+INFO  03:06:31,857 - #32 =
+INFO  03:06:31,857 - #46 1
+INFO  03:06:31,857 - #35 ;
+INFO  03:06:31,857 - #8 const
+INFO  03:06:31,858 - #47 int
+INFO  03:06:31,858 - #47 pet
+INFO  03:06:31,858 - #32 =
+INFO  03:06:31,858 - #46 5
+INFO  03:06:31,858 - #35 ;
+INFO  03:06:31,863 - #47 int
+INFO  03:06:31,863 - #47 niz
+INFO  03:06:31,863 - #41 [
+INFO  03:06:31,863 - #42 ]
+INFO  03:06:31,863 - #37 ,
+INFO  03:06:31,864 - #47 niz2
+INFO  03:06:31,864 - #41 [
+INFO  03:06:31,864 - #42 ]
+INFO  03:06:31,864 - #37 ,
+INFO  03:06:31,864 - #47 a
+INFO  03:06:31,864 - #37 ,
+INFO  03:06:31,865 - #47 b
+INFO  03:06:31,865 - #35 ;
+INFO  03:06:31,865 - #47 char
+INFO  03:06:31,866 - #47 nizch
+INFO  03:06:31,866 - #41 [
+INFO  03:06:31,866 - #42 ]
+INFO  03:06:31,866 - #35 ;
+INFO  03:06:31,866 - #5 class
+INFO  03:06:31,866 - #47 Kvadar
+INFO  03:06:31,866 - #43 {
+INFO  03:06:31,866 - #47 int
+INFO  03:06:31,867 - #47 a
+INFO  03:06:31,867 - #37 ,
+INFO  03:06:31,867 - #47 b
+INFO  03:06:31,867 - #37 ,
+INFO  03:06:31,867 - #47 c
+INFO  03:06:31,868 - #35 ;
+INFO  03:06:31,868 - #43 {
+INFO  03:06:31,868 - #47 Kvadar
+INFO  03:06:31,868 - #39 (
+INFO  03:06:31,868 - #40 )
+INFO  03:06:31,869 - #43 {
+INFO  03:06:31,869 - #44 }
+INFO  03:06:31,870 - #44 }
+INFO  03:06:31,870 - #44 }
+INFO  03:06:31,870 - #43 {
+INFO  03:06:31,870 - #14 void
+INFO  03:06:31,871 - #47 p
+INFO  03:06:31,871 - #39 (
+INFO  03:06:31,871 - #47 int
+INFO  03:06:31,871 - #47 z
+INFO  03:06:31,871 - #37 ,
+INFO  03:06:31,872 - #47 bool
+INFO  03:06:31,872 - #47 h
+INFO  03:06:31,872 - #37 ,
+INFO  03:06:31,872 - #47 char
+INFO  03:06:31,872 - #47 d
+INFO  03:06:31,872 - #37 ,
+INFO  03:06:31,872 - #47 int
+INFO  03:06:31,872 - #47 m
+INFO  03:06:31,873 - #41 [
+INFO  03:06:31,873 - #42 ]
+INFO  03:06:31,873 - #40 )
+INFO  03:06:31,873 - #43 {
+INFO  03:06:31,874 - #44 }
+INFO  03:06:31,874 - #14 void
+INFO  03:06:31,874 - #47 main
+INFO  03:06:31,874 - #39 (
+INFO  03:06:31,874 - #40 )
+INFO  03:06:31,875 - #43 {
+INFO  03:06:31,875 - #44 }
+INFO  03:06:31,875 - #44 }
+INFO  03:06:31,879 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ClassDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            ConstDeclarations(
+              NoVarDecl(
+              ) [NoVarDecl]
+              ConstDeclaration(
+                Type(
+                 int
+                ) [Type]
+                ConstantValueNumber(
+                 nula
+                 0
+                ) [ConstantValueNumber]
+                EndOfListOfCharDeclarations(
+                ) [EndOfListOfCharDeclarations]
+              ) [ConstDeclaration]
+            ) [ConstDeclarations]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               jedan
+               1
+              ) [ConstantValueNumber]
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             pet
+             5
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             niz
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               niz2
+                VarDeclarationOfArray(
+                ) [VarDeclarationOfArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationNotLast(
+                NotLastVarDeclarations(
+                 a
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [NotLastVarDeclarations]
+                VarDeclarationLast(
+                  LastVarDeclarations(
+                   b
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [LastVarDeclarations]
+                ) [VarDeclarationLast]
+              ) [VarDeclarationNotLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationLast(
+          LastVarDeclarations(
+           nizch
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [LastVarDeclarations]
+        ) [VarDeclarationLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    ClassDeclaration(
+      NameOfClass(
+       Kvadar
+      ) [NameOfClass]
+      ClassIsNotExtended(
+      ) [ClassIsNotExtended]
+      ClassBodyNoMethodWithConstructor(
+        ClassVariables(
+          NoClassVariables(
+          ) [NoClassVariables]
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            ClassVarDecNotLast(
+              ClassVarDecNotLast(
+                ClassVarDecLast(
+                  ClassVariable(
+                   a
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [ClassVariable]
+                ) [ClassVarDecLast]
+                ClassVariable(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecNotLast]
+              ClassVariable(
+               c
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [ClassVariable]
+            ) [ClassVarDecNotLast]
+          ) [ClassVarDeclaration]
+        ) [ClassVariables]
+        SingleOrLastConstructorDeclaration(
+          ConstructorDeclaration(
+            ConstructorDeclarationName(
+             Kvadar
+            ) [ConstructorDeclarationName]
+            NoFormalParameters(
+            ) [NoFormalParameters]
+            ConstructorWithoutVar(
+            ) [ConstructorWithoutVar]
+            NoStatements(
+            ) [NoStatements]
+          ) [ConstructorDeclaration]
+        ) [SingleOrLastConstructorDeclaration]
+      ) [ClassBodyNoMethodWithConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         p
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          ListOfParameters(
+            SingleFormalParameter(
+              Type(
+               int
+              ) [Type]
+             z
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [SingleFormalParameter]
+            ListOfParameters(
+              SingleFormalParameter(
+                Type(
+                 bool
+                ) [Type]
+               h
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [SingleFormalParameter]
+              ListOfParameters(
+                SingleFormalParameter(
+                  Type(
+                   char
+                  ) [Type]
+                 d
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+                SingleOrEndOfListParameter(
+                  SingleFormalParameter(
+                    Type(
+                     int
+                    ) [Type]
+                   m
+                    VarDeclarationOfArray(
+                    ) [VarDeclarationOfArray]
+                  ) [SingleFormalParameter]
+                ) [SingleOrEndOfListParameter]
+              ) [ListOfParameters]
+            ) [ListOfParameters]
+          ) [ListOfParameters]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  03:06:31,880 - ====================================
+INFO  03:06:31,884 - Kreirana je promenjiva niz[] na liniji 6
+INFO  03:06:31,884 - Kreirana je promenjiva niz2[] na liniji 6
+INFO  03:06:31,884 - Kreirana je promenjiva a na liniji 6
+INFO  03:06:31,884 - Kreirana je promenjiva b na liniji 6
+INFO  03:06:31,884 - Kreirana je promenjiva nizch[] na liniji 7
+INFO  03:06:31,884 - Kreirana je klasa Kvadar na liniji 9
+INFO  03:06:31,884 - CONSTRUCTOR: (
+ERROR 03:06:31,884 - SEMANTICKA GRESKA: Konstruktor sa formalnim parametrima vec postoji. na liniji 13
+INFO  03:06:31,885 - Definicija funkcije p na liniji 20
+INFO  03:06:31,885 - Definicija funkcije main na liniji 25
+INFO  03:06:31,885 - Print count calls = 0
+INFO  03:06:31,885 - ====================================

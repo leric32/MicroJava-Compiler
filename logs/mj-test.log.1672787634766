@@ -1,0 +1,81 @@
+INFO  00:13:25,588 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:13:25,701 - #2 program
+INFO  00:13:25,701 - #47 test301
+INFO  00:13:25,702 - #43 {
+INFO  00:13:25,705 - #14 void
+INFO  00:13:25,707 - #47 main
+INFO  00:13:25,708 - #39 (
+INFO  00:13:25,708 - #40 )
+INFO  00:13:25,708 - #43 {
+INFO  00:13:25,710 - #3 print
+INFO  00:13:25,714 - #39 (
+INFO  00:13:25,714 - #47 ord
+INFO  00:13:25,714 - #39 (
+INFO  00:13:25,714 - #48 A
+INFO  00:13:25,714 - #40 )
+INFO  00:13:25,717 - #40 )
+INFO  00:13:25,719 - #35 ;
+INFO  00:13:25,719 - #44 }
+INFO  00:13:25,720 - #44 }
+INFO  00:13:25,730 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementPrintWithoutWidth(
+          PrintEmptyDummy(
+          ) [PrintEmptyDummy]
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                FuncCallFactor(
+                  FuncCallFactorDesignator(
+                    SimpleDesignator(
+                     ord
+                    ) [SimpleDesignator]
+                  ) [FuncCallFactorDesignator]
+                  Actuals(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            CharConstFactor(
+                             A
+                            ) [CharConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCallFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:13:25,733 - ====================================
+INFO  00:13:25,741 - Definicija funkcije main na liniji 6
+INFO  00:13:25,741 - FCord na liniji 8
+INFO  00:13:25,741 - 0  na liniji 8
+INFO  00:13:25,741 - Prepoznata naredba print
+INFO  00:13:25,741 - Print count calls = 1
+INFO  00:13:25,741 - ====================================
+INFO  00:13:25,743 - Parsiranje uspesno zavrseno!

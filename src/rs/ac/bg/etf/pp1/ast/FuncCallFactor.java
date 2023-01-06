@@ -1,28 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/11/2022 22:27:57
+// 4/0/2023 0:9:16
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class FuncCallFactor extends Factor {
 
-    private Designator Designator;
+    private FuncCallFactorDes FuncCallFactorDes;
     private ActPars ActPars;
 
-    public FuncCallFactor (Designator Designator, ActPars ActPars) {
-        this.Designator=Designator;
-        if(Designator!=null) Designator.setParent(this);
+    public FuncCallFactor (FuncCallFactorDes FuncCallFactorDes, ActPars ActPars) {
+        this.FuncCallFactorDes=FuncCallFactorDes;
+        if(FuncCallFactorDes!=null) FuncCallFactorDes.setParent(this);
         this.ActPars=ActPars;
         if(ActPars!=null) ActPars.setParent(this);
     }
 
-    public Designator getDesignator() {
-        return Designator;
+    public FuncCallFactorDes getFuncCallFactorDes() {
+        return FuncCallFactorDes;
     }
 
-    public void setDesignator(Designator Designator) {
-        this.Designator=Designator;
+    public void setFuncCallFactorDes(FuncCallFactorDes FuncCallFactorDes) {
+        this.FuncCallFactorDes=FuncCallFactorDes;
     }
 
     public ActPars getActPars() {
@@ -38,18 +38,18 @@ public class FuncCallFactor extends Factor {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Designator!=null) Designator.accept(visitor);
+        if(FuncCallFactorDes!=null) FuncCallFactorDes.accept(visitor);
         if(ActPars!=null) ActPars.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Designator!=null) Designator.traverseTopDown(visitor);
+        if(FuncCallFactorDes!=null) FuncCallFactorDes.traverseTopDown(visitor);
         if(ActPars!=null) ActPars.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Designator!=null) Designator.traverseBottomUp(visitor);
+        if(FuncCallFactorDes!=null) FuncCallFactorDes.traverseBottomUp(visitor);
         if(ActPars!=null) ActPars.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -59,8 +59,8 @@ public class FuncCallFactor extends Factor {
         buffer.append(tab);
         buffer.append("FuncCallFactor(\n");
 
-        if(Designator!=null)
-            buffer.append(Designator.toString("  "+tab));
+        if(FuncCallFactorDes!=null)
+            buffer.append(FuncCallFactorDes.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

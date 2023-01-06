@@ -110,9 +110,12 @@ nonterminal DesignatorOrEpsilon DesignatorOrEpsilon;
 nonterminal ForEachLoop ForEachLoop;
 nonterminal WhileLoop WhileLoop;
 nonterminal FunctionCall FunctionCall;
+nonterminal ConstructorDeclName ConstructorDeclName;
+nonterminal PrintEmpty PrintEmpty;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodTypeName, ListOfFactors, Factor, Expr, Term, ClassExtended;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodTypeName, ListOfFactors, Factor, Expr, Term, ClassExtended, FuncCallFactorDes;
+
 precedence left ELSE;
 
 
@@ -219,7 +222,9 @@ ConstructorDeclList ::= (ListOfConstructorDeclarations) ConstructorDeclList:C1 C
 						(SingleOrLastConstructorDeclaration) ConstructorDecl:C1 {: RESULT=new SingleOrLastConstructorDeclaration(C1); RESULT.setLine(C1left); :}
 						;
 
-ConstructorDecl ::= (ConstructorDeclaration) IDENT:constructorName LPAREN FormPars:F1 ConstructorVarDecl:C2 LBRACE StatementList:S3 RBRACE {: RESULT=new ConstructorDeclaration(constructorName, F1, C2, S3); RESULT.setLine(constructorNameleft); :};
+ConstructorDecl ::= (ConstructorDeclaration) ConstructorDeclName:C1 LPAREN FormPars:F2 ConstructorVarDecl:C3 LBRACE StatementList:S4 RBRACE {: RESULT=new ConstructorDeclaration(C1, F2, C3, S4); RESULT.setLine(C1left); :};
+
+ConstructorDeclName ::= (ConstructorDeclarationName) IDENT:constructorName {: RESULT=new ConstructorDeclarationName(constructorName); RESULT.setLine(constructorNameleft); :};
 
 
 FormPars ::= (FormalParameters) FormParsList:F1 {: RESULT=new FormalParameters(F1); RESULT.setLine(F1left); :}
@@ -293,14 +298,16 @@ Statement ::= (StatementDesignator) DesignatorStatement:D1 {: RESULT=new Stateme
 			  |
 			  (StatementRead) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new StatementRead(D1); RESULT.setLine(D1left); :}
 			  |
-			  (StatementPrintWithoutWidth) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new StatementPrintWithoutWidth(E1); RESULT.setLine(E1left); :}
+			  (StatementPrintWithoutWidth) PrintEmpty:P1 PRINT LPAREN Expr:E2 RPAREN SEMI {: RESULT=new StatementPrintWithoutWidth(P1, E2); RESULT.setLine(P1left); :}
 			  |
-			  (StatementPrintWithWidth) PRINT LPAREN Expr:E1 COMMA NUMBER:width RPAREN SEMI {: RESULT=new StatementPrintWithWidth(E1, width); RESULT.setLine(E1left); :}
+			  (StatementPrintWithWidth) PrintEmpty:P1 PRINT LPAREN Expr:E2 COMMA NUMBER:width RPAREN SEMI {: RESULT=new StatementPrintWithWidth(P1, E2, width); RESULT.setLine(P1left); :}
 			  |
 			  (StatementForeach) Designator:D1 ForEachLoop:F2 IDENT:feVar LAMBDA Statement:S3 RPAREN SEMI {: RESULT=new StatementForeach(D1, F2, feVar, S3); RESULT.setLine(D1left); :}
 			  |
 			  (StatementBlock) LBRACE StatementList:S1 RBRACE {: RESULT=new StatementBlock(S1); RESULT.setLine(S1left); :}
 			  ;  
+
+PrintEmpty ::= (PrintEmptyDummy) {: RESULT=new PrintEmptyDummy(); :} /* epsilon */;
 
 IfCond ::= (IfCondition) IF LPAREN Condition:C1 RPAREN {: RESULT=new IfCondition(C1); RESULT.setLine(C1left); :}
 		   |
@@ -394,13 +401,14 @@ Factor ::= (DesignatorFactor) Designator:varValue {: RESULT=new DesignatorFactor
 		   |
 		   (ExprFactor) LPAREN Expr:e RPAREN {: RESULT=new ExprFactor(e); RESULT.setLine(eleft); :}
 		   |
-		   (FuncCallFactor) Designator:func LPAREN ActPars:A1 RPAREN {: RESULT=new FuncCallFactor(func, A1); RESULT.setLine(funcleft); :}
+		   (FuncCallFactor) FuncCallFactorDes:F1 LPAREN ActPars:A2 RPAREN {: RESULT=new FuncCallFactor(F1, A2); RESULT.setLine(F1left); :}
 		   |
 		   (NewArrayOperatorFactor) NEW Type:arrName LBRACKET Expr:arrindex RBRACKET {: RESULT=new NewArrayOperatorFactor(arrName, arrindex); RESULT.setLine(arrNameleft); :}
 		   |
 		   (NewClassWithActParsOperatorFactor) NEW Type:arrName LPAREN ActPars:A1 RPAREN {: RESULT=new NewClassWithActParsOperatorFactor(arrName, A1); RESULT.setLine(arrNameleft); :}
 		   ;
 
+FuncCallFactorDes ::= (FuncCallFactorDesignator) Designator:func {: RESULT=new FuncCallFactorDesignator(func); RESULT.setLine(funcleft); :};
 
 Relop ::= (EqualOperator) EQUAL {: RESULT=new EqualOperator(); :}
 		  | 

@@ -1,0 +1,136 @@
+INFO  00:41:28,720 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:41:28,838 - #2 program
+INFO  00:41:28,839 - #47 test301
+INFO  00:41:28,840 - #47 int
+INFO  00:41:28,844 - #47 niz
+INFO  00:41:28,846 - #41 [
+INFO  00:41:28,847 - #42 ]
+INFO  00:41:28,847 - #35 ;
+INFO  00:41:28,850 - #43 {
+INFO  00:41:28,852 - #14 void
+INFO  00:41:28,854 - #47 main
+INFO  00:41:28,854 - #39 (
+INFO  00:41:28,855 - #40 )
+INFO  00:41:28,855 - #43 {
+INFO  00:41:28,862 - #47 niz
+INFO  00:41:28,864 - #32 =
+INFO  00:41:28,864 - #12 new
+INFO  00:41:28,865 - #47 int
+INFO  00:41:28,865 - #41 [
+INFO  00:41:28,865 - #46 3
+INFO  00:41:28,865 - #42 ]
+INFO  00:41:28,869 - #35 ;
+INFO  00:41:28,870 - #3 print
+INFO  00:41:28,873 - #39 (
+INFO  00:41:28,873 - #47 len
+INFO  00:41:28,873 - #39 (
+INFO  00:41:28,874 - #47 niz
+INFO  00:41:28,875 - #40 )
+INFO  00:41:28,877 - #40 )
+INFO  00:41:28,878 - #35 ;
+INFO  00:41:28,878 - #44 }
+INFO  00:41:28,879 - #44 }
+INFO  00:41:28,902 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         niz
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          StatementDesignator(
+            DesignatorAssignment(
+              SimpleDesignator(
+               niz
+              ) [SimpleDesignator]
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    NewArrayOperatorFactor(
+                      Type(
+                       int
+                      ) [Type]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             3
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [NewArrayOperatorFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [DesignatorAssignment]
+          ) [StatementDesignator]
+        ) [Statements]
+        StatementPrintWithoutWidth(
+          PrintEmptyDummy(
+          ) [PrintEmptyDummy]
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                FuncCallFactor(
+                  FuncCallFactorDesignator(
+                    SimpleDesignator(
+                     len
+                    ) [SimpleDesignator]
+                  ) [FuncCallFactorDesignator]
+                  Actuals(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               niz
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCallFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:41:28,903 - ====================================
+INFO  00:41:28,919 - Kreirana je promenjiva niz[] na liniji 3
+INFO  00:41:28,920 - Definicija funkcije main na liniji 7
+INFO  00:41:28,920 - FClen na liniji 11
+INFO  00:41:28,921 - 0  na liniji 11

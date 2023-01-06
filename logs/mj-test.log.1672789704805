@@ -1,0 +1,152 @@
+INFO  00:47:32,928 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:47:33,033 - #2 program
+INFO  00:47:33,034 - #47 test301
+INFO  00:47:33,034 - #47 int
+INFO  00:47:33,037 - #47 niz
+INFO  00:47:33,038 - #41 [
+INFO  00:47:33,038 - #42 ]
+INFO  00:47:33,038 - #37 ,
+INFO  00:47:33,040 - #47 niz2
+INFO  00:47:33,040 - #35 ;
+INFO  00:47:33,042 - #43 {
+INFO  00:47:33,043 - #14 void
+INFO  00:47:33,046 - #47 main
+INFO  00:47:33,046 - #39 (
+INFO  00:47:33,046 - #40 )
+INFO  00:47:33,047 - #43 {
+INFO  00:47:33,048 - #47 niz
+INFO  00:47:33,049 - #32 =
+INFO  00:47:33,050 - #12 new
+INFO  00:47:33,050 - #47 int
+INFO  00:47:33,051 - #41 [
+INFO  00:47:33,052 - #46 3
+INFO  00:47:33,053 - #42 ]
+INFO  00:47:33,054 - #35 ;
+INFO  00:47:33,054 - #3 print
+INFO  00:47:33,057 - #39 (
+INFO  00:47:33,057 - #47 len
+INFO  00:47:33,057 - #39 (
+INFO  00:47:33,057 - #47 niz2
+INFO  00:47:33,057 - #40 )
+INFO  00:47:33,058 - #40 )
+INFO  00:47:33,058 - #35 ;
+INFO  00:47:33,058 - #44 }
+INFO  00:47:33,058 - #44 }
+INFO  00:47:33,068 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationNotLast(
+        NotLastVarDeclarations(
+         niz
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [NotLastVarDeclarations]
+        VarDeclarationLast(
+          LastVarDeclarations(
+           niz2
+            VarDeclarationOfNotArray(
+            ) [VarDeclarationOfNotArray]
+          ) [LastVarDeclarations]
+        ) [VarDeclarationLast]
+      ) [VarDeclarationNotLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          StatementDesignator(
+            DesignatorAssignment(
+              SimpleDesignator(
+               niz
+              ) [SimpleDesignator]
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    NewArrayOperatorFactor(
+                      Type(
+                       int
+                      ) [Type]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             3
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [NewArrayOperatorFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [DesignatorAssignment]
+          ) [StatementDesignator]
+        ) [Statements]
+        StatementPrintWithoutWidth(
+          PrintEmptyDummy(
+          ) [PrintEmptyDummy]
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                FuncCallFactor(
+                  FuncCallFactorDesignator(
+                    SimpleDesignator(
+                     len
+                    ) [SimpleDesignator]
+                  ) [FuncCallFactorDesignator]
+                  Actuals(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               niz2
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCallFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:47:33,069 - ====================================
+INFO  00:47:33,078 - Kreirana je promenjiva niz[] na liniji 3
+INFO  00:47:33,078 - Kreirana je promenjiva niz2 na liniji 3
+INFO  00:47:33,078 - Definicija funkcije main na liniji 7
+INFO  00:47:33,078 - FClen na liniji 11
+ERROR 00:47:33,079 - SEMANTICKA GRESKA: Tip izraza u funkciji len mora biti nizovskog tipa, a ne tipa int na liniji 11
+INFO  00:47:33,079 - 0  na liniji 11
+ERROR 00:47:33,079 - SEMANTICKA GRESKA: Formalni parametar funkcije len koji je tipa Array of int nije kompatibilan sa stvarnim argumentom koji je tipa none na liniji 11
+INFO  00:47:33,079 - Prepoznata naredba print
+INFO  00:47:33,080 - Print count calls = 1
+INFO  00:47:33,080 - ====================================
+ERROR 00:47:33,081 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,75 @@
+INFO  00:05:18,280 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:05:18,377 - #2 program
+INFO  00:05:18,377 - #47 test301
+INFO  00:05:18,377 - #43 {
+INFO  00:05:18,379 - #14 void
+INFO  00:05:18,380 - #47 main
+INFO  00:05:18,380 - #39 (
+INFO  00:05:18,381 - #40 )
+INFO  00:05:18,381 - #43 {
+INFO  00:05:18,383 - #3 print
+INFO  00:05:18,384 - #39 (
+INFO  00:05:18,384 - #47 ord
+INFO  00:05:18,384 - #39 (
+INFO  00:05:18,385 - #48 A
+INFO  00:05:18,385 - #40 )
+INFO  00:05:18,387 - #40 )
+INFO  00:05:18,387 - #35 ;
+INFO  00:05:18,387 - #44 }
+INFO  00:05:18,387 - #44 }
+INFO  00:05:18,394 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementPrintWithoutWidth(
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                FuncCallFactor(
+                  FuncCallFactorDesignator(
+                    SimpleDesignator(
+                     ord
+                    ) [SimpleDesignator]
+                  ) [FuncCallFactorDesignator]
+                  Actuals(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            CharConstFactor(
+                             A
+                            ) [CharConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCallFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:05:18,395 - ====================================
+INFO  00:05:18,400 - Definicija funkcije main na liniji 6
+INFO  00:05:18,400 - FCord na liniji 8
+INFO  00:05:18,400 - 0  na liniji 8

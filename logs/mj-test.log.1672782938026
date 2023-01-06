@@ -1,0 +1,2391 @@
+INFO  22:53:33,337 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\test302.mj
+INFO  22:53:33,381 - #2 program
+INFO  22:53:33,381 - #47 test302
+INFO  22:53:33,381 - #8 const
+INFO  22:53:33,383 - #47 int
+INFO  22:53:33,383 - #47 jedan
+INFO  22:53:33,383 - #32 =
+INFO  22:53:33,383 - #46 1
+INFO  22:53:33,384 - #35 ;
+INFO  22:53:33,385 - #47 int
+INFO  22:53:33,385 - #47 i
+INFO  22:53:33,385 - #35 ;
+INFO  22:53:33,388 - #47 bool
+INFO  22:53:33,388 - #47 ibool
+INFO  22:53:33,388 - #35 ;
+INFO  22:53:33,388 - #47 int
+INFO  22:53:33,389 - #47 niz2
+INFO  22:53:33,389 - #35 ;
+INFO  22:53:33,389 - #47 int
+INFO  22:53:33,389 - #47 niz
+INFO  22:53:33,389 - #41 [
+INFO  22:53:33,389 - #42 ]
+INFO  22:53:33,389 - #35 ;
+INFO  22:53:33,390 - #47 int
+INFO  22:53:33,390 - #47 a
+INFO  22:53:33,390 - #37 ,
+INFO  22:53:33,390 - #47 curr
+INFO  22:53:33,390 - #35 ;
+INFO  22:53:33,390 - #43 {
+INFO  22:53:33,390 - #47 int
+INFO  22:53:33,391 - #47 sum
+INFO  22:53:33,391 - #39 (
+INFO  22:53:33,391 - #47 int
+INFO  22:53:33,391 - #47 z
+INFO  22:53:33,391 - #37 ,
+INFO  22:53:33,392 - #47 int
+INFO  22:53:33,392 - #47 d
+INFO  22:53:33,392 - #40 )
+INFO  22:53:33,392 - #43 {
+INFO  22:53:33,392 - #4 return
+INFO  22:53:33,393 - #47 z
+INFO  22:53:33,393 - #19 +
+INFO  22:53:33,394 - #47 d
+INFO  22:53:33,395 - #35 ;
+INFO  22:53:33,395 - #44 }
+INFO  22:53:33,395 - #47 int
+INFO  22:53:33,395 - #47 inkrement
+INFO  22:53:33,395 - #39 (
+INFO  22:53:33,395 - #47 int
+INFO  22:53:33,395 - #47 a
+INFO  22:53:33,396 - #37 ,
+INFO  22:53:33,396 - #47 int
+INFO  22:53:33,396 - #47 inc
+INFO  22:53:33,396 - #40 )
+INFO  22:53:33,396 - #47 int
+INFO  22:53:33,396 - #47 pom
+INFO  22:53:33,396 - #35 ;
+INFO  22:53:33,396 - #43 {
+INFO  22:53:33,396 - #9 if
+INFO  22:53:33,396 - #39 (
+INFO  22:53:33,396 - #47 inc
+INFO  22:53:33,396 - #24 ==
+INFO  22:53:33,396 - #47 jedan
+INFO  22:53:33,397 - #40 )
+INFO  22:53:33,397 - #47 pom
+INFO  22:53:33,398 - #32 =
+INFO  22:53:33,398 - #46 1
+INFO  22:53:33,398 - #35 ;
+INFO  22:53:33,398 - #7 else
+INFO  22:53:33,398 - #9 if
+INFO  22:53:33,398 - #39 (
+INFO  22:53:33,398 - #47 inc
+INFO  22:53:33,398 - #24 ==
+INFO  22:53:33,398 - #46 2
+INFO  22:53:33,398 - #40 )
+INFO  22:53:33,398 - #47 pom
+INFO  22:53:33,399 - #32 =
+INFO  22:53:33,399 - #47 a
+INFO  22:53:33,399 - #35 ;
+INFO  22:53:33,399 - #4 return
+INFO  22:53:33,399 - #47 sum
+INFO  22:53:33,399 - #39 (
+INFO  22:53:33,399 - #47 a
+INFO  22:53:33,399 - #37 ,
+INFO  22:53:33,399 - #47 pom
+INFO  22:53:33,399 - #40 )
+INFO  22:53:33,400 - #35 ;
+INFO  22:53:33,400 - #44 }
+INFO  22:53:33,400 - #47 bool
+INFO  22:53:33,400 - #47 verify
+INFO  22:53:33,400 - #39 (
+INFO  22:53:33,400 - #40 )
+INFO  22:53:33,400 - #43 {
+INFO  22:53:33,401 - #3 print
+INFO  22:53:33,401 - #39 (
+INFO  22:53:33,401 - #48 v
+INFO  22:53:33,401 - #40 )
+INFO  22:53:33,401 - #35 ;
+INFO  22:53:33,401 - #4 return
+INFO  22:53:33,402 - #49 false
+INFO  22:53:33,402 - #35 ;
+INFO  22:53:33,402 - #44 }
+INFO  22:53:33,402 - #14 void
+INFO  22:53:33,402 - #47 main
+INFO  22:53:33,402 - #39 (
+INFO  22:53:33,402 - #40 )
+INFO  22:53:33,402 - #43 {
+INFO  22:53:33,403 - #9 if
+INFO  22:53:33,403 - #39 (
+INFO  22:53:33,403 - #46 1
+INFO  22:53:33,403 - #25 !=
+INFO  22:53:33,403 - #46 1
+INFO  22:53:33,404 - #40 )
+INFO  22:53:33,404 - #3 print
+INFO  22:53:33,404 - #39 (
+INFO  22:53:33,404 - #20 -
+INFO  22:53:33,404 - #46 6
+INFO  22:53:33,404 - #40 )
+INFO  22:53:33,404 - #35 ;
+INFO  22:53:33,404 - #7 else
+INFO  22:53:33,404 - #3 print
+INFO  22:53:33,404 - #39 (
+INFO  22:53:33,404 - #46 0
+INFO  22:53:33,405 - #40 )
+INFO  22:53:33,405 - #35 ;
+INFO  22:53:33,405 - #47 ibool
+INFO  22:53:33,405 - #32 =
+INFO  22:53:33,405 - #49 false
+INFO  22:53:33,405 - #35 ;
+INFO  22:53:33,405 - #47 i
+INFO  22:53:33,405 - #32 =
+INFO  22:53:33,405 - #46 0
+INFO  22:53:33,405 - #35 ;
+INFO  22:53:33,405 - #11 while
+INFO  22:53:33,405 - #39 (
+INFO  22:53:33,405 - #47 i
+INFO  22:53:33,407 - #28 <
+INFO  22:53:33,407 - #46 5
+INFO  22:53:33,407 - #40 )
+INFO  22:53:33,407 - #43 {
+INFO  22:53:33,407 - #9 if
+INFO  22:53:33,407 - #39 (
+INFO  22:53:33,407 - #47 i
+INFO  22:53:33,407 - #24 ==
+INFO  22:53:33,407 - #46 2
+INFO  22:53:33,407 - #40 )
+INFO  22:53:33,408 - #47 ibool
+INFO  22:53:33,408 - #32 =
+INFO  22:53:33,408 - #49 true
+INFO  22:53:33,408 - #35 ;
+INFO  22:53:33,408 - #47 i
+INFO  22:53:33,408 - #33 ++
+INFO  22:53:33,408 - #35 ;
+INFO  22:53:33,408 - #44 }
+INFO  22:53:33,408 - #9 if
+INFO  22:53:33,408 - #39 (
+INFO  22:53:33,408 - #47 ibool
+INFO  22:53:33,408 - #40 )
+INFO  22:53:33,408 - #9 if
+INFO  22:53:33,408 - #39 (
+INFO  22:53:33,408 - #47 i
+INFO  22:53:33,408 - #24 ==
+INFO  22:53:33,408 - #46 5
+INFO  22:53:33,408 - #40 )
+INFO  22:53:33,408 - #3 print
+INFO  22:53:33,409 - #39 (
+INFO  22:53:33,409 - #46 1
+INFO  22:53:33,409 - #40 )
+INFO  22:53:33,409 - #35 ;
+INFO  22:53:33,409 - #7 else
+INFO  22:53:33,409 - #3 print
+INFO  22:53:33,409 - #39 (
+INFO  22:53:33,409 - #20 -
+INFO  22:53:33,409 - #46 1
+INFO  22:53:33,409 - #40 )
+INFO  22:53:33,409 - #35 ;
+INFO  22:53:33,409 - #47 a
+INFO  22:53:33,409 - #32 =
+INFO  22:53:33,409 - #46 2
+INFO  22:53:33,409 - #35 ;
+INFO  22:53:33,409 - #47 niz
+INFO  22:53:33,409 - #32 =
+INFO  22:53:33,409 - #12 new
+INFO  22:53:33,409 - #47 int
+INFO  22:53:33,409 - #41 [
+INFO  22:53:33,409 - #46 3
+INFO  22:53:33,409 - #42 ]
+INFO  22:53:33,410 - #35 ;
+INFO  22:53:33,410 - #47 niz
+INFO  22:53:33,410 - #41 [
+INFO  22:53:33,410 - #46 0
+INFO  22:53:33,410 - #42 ]
+INFO  22:53:33,410 - #32 =
+INFO  22:53:33,410 - #46 1
+INFO  22:53:33,410 - #21 *
+INFO  22:53:33,410 - #47 a
+INFO  22:53:33,411 - #35 ;
+INFO  22:53:33,412 - #47 niz
+INFO  22:53:33,412 - #41 [
+INFO  22:53:33,412 - #46 1
+INFO  22:53:33,412 - #42 ]
+INFO  22:53:33,412 - #32 =
+INFO  22:53:33,412 - #46 2
+INFO  22:53:33,412 - #21 *
+INFO  22:53:33,412 - #47 a
+INFO  22:53:33,412 - #35 ;
+INFO  22:53:33,412 - #47 niz
+INFO  22:53:33,412 - #41 [
+INFO  22:53:33,412 - #46 2
+INFO  22:53:33,412 - #42 ]
+INFO  22:53:33,412 - #32 =
+INFO  22:53:33,412 - #47 sum
+INFO  22:53:33,412 - #39 (
+INFO  22:53:33,412 - #47 niz
+INFO  22:53:33,412 - #41 [
+INFO  22:53:33,412 - #46 1
+INFO  22:53:33,413 - #42 ]
+INFO  22:53:33,413 - #37 ,
+INFO  22:53:33,413 - #47 niz
+INFO  22:53:33,413 - #41 [
+INFO  22:53:33,413 - #46 0
+INFO  22:53:33,413 - #42 ]
+INFO  22:53:33,413 - #40 )
+INFO  22:53:33,413 - #21 *
+INFO  22:53:33,413 - #47 a
+INFO  22:53:33,413 - #19 +
+INFO  22:53:33,413 - #46 1
+INFO  22:53:33,413 - #35 ;
+INFO  22:53:33,413 - #9 if
+INFO  22:53:33,414 - #39 (
+INFO  22:53:33,414 - #47 verify
+INFO  22:53:33,414 - #39 (
+INFO  22:53:33,414 - #40 )
+INFO  22:53:33,414 - #31 ||
+INFO  22:53:33,415 - #47 niz
+INFO  22:53:33,415 - #41 [
+INFO  22:53:33,415 - #46 2
+INFO  22:53:33,415 - #42 ]
+INFO  22:53:33,415 - #24 ==
+INFO  22:53:33,415 - #46 4
+INFO  22:53:33,415 - #40 )
+INFO  22:53:33,415 - #3 print
+INFO  22:53:33,415 - #39 (
+INFO  22:53:33,415 - #47 ord
+INFO  22:53:33,415 - #39 (
+INFO  22:53:33,415 - #48 A
+INFO  22:53:33,415 - #40 )
+INFO  22:53:33,415 - #40 )
+INFO  22:53:33,415 - #35 ;
+INFO  22:53:33,415 - #7 else
+INFO  22:53:33,415 - #3 print
+INFO  22:53:33,415 - #39 (
+INFO  22:53:33,415 - #47 ord
+INFO  22:53:33,415 - #39 (
+INFO  22:53:33,415 - #48 a
+INFO  22:53:33,415 - #40 )
+INFO  22:53:33,416 - #40 )
+INFO  22:53:33,416 - #35 ;
+INFO  22:53:33,416 - #3 print
+INFO  22:53:33,416 - #39 (
+INFO  22:53:33,416 - #47 eol
+INFO  22:53:33,416 - #40 )
+INFO  22:53:33,416 - #35 ;
+INFO  22:53:33,416 - #47 i
+INFO  22:53:33,416 - #32 =
+INFO  22:53:33,416 - #46 0
+INFO  22:53:33,416 - #35 ;
+INFO  22:53:33,416 - #11 while
+INFO  22:53:33,416 - #39 (
+INFO  22:53:33,416 - #47 i
+INFO  22:53:33,416 - #28 <
+INFO  22:53:33,416 - #46 10
+INFO  22:53:33,416 - #40 )
+INFO  22:53:33,416 - #43 {
+INFO  22:53:33,417 - #9 if
+INFO  22:53:33,417 - #39 (
+INFO  22:53:33,417 - #47 i
+INFO  22:53:33,417 - #24 ==
+INFO  22:53:33,417 - #46 3
+INFO  22:53:33,417 - #40 )
+INFO  22:53:33,417 - #43 {
+INFO  22:53:33,417 - #47 i
+INFO  22:53:33,417 - #33 ++
+INFO  22:53:33,417 - #35 ;
+INFO  22:53:33,417 - #16 continue
+INFO  22:53:33,417 - #35 ;
+INFO  22:53:33,417 - #44 }
+INFO  22:53:33,418 - #9 if
+INFO  22:53:33,418 - #39 (
+INFO  22:53:33,418 - #47 i
+INFO  22:53:33,418 - #24 ==
+INFO  22:53:33,418 - #46 4
+INFO  22:53:33,418 - #40 )
+INFO  22:53:33,418 - #18 break
+INFO  22:53:33,418 - #35 ;
+INFO  22:53:33,418 - #47 i
+INFO  22:53:33,419 - #32 =
+INFO  22:53:33,419 - #47 inkrement
+INFO  22:53:33,419 - #39 (
+INFO  22:53:33,420 - #47 i
+INFO  22:53:33,420 - #37 ,
+INFO  22:53:33,420 - #46 1
+INFO  22:53:33,420 - #40 )
+INFO  22:53:33,420 - #35 ;
+INFO  22:53:33,420 - #44 }
+INFO  22:53:33,420 - #9 if
+INFO  22:53:33,420 - #39 (
+INFO  22:53:33,420 - #47 i
+INFO  22:53:33,420 - #24 ==
+INFO  22:53:33,420 - #46 3
+INFO  22:53:33,420 - #30 &&
+INFO  22:53:33,420 - #47 verify
+INFO  22:53:33,420 - #39 (
+INFO  22:53:33,420 - #40 )
+INFO  22:53:33,420 - #40 )
+INFO  22:53:33,420 - #3 print
+INFO  22:53:33,421 - #39 (
+INFO  22:53:33,421 - #20 -
+INFO  22:53:33,421 - #46 4
+INFO  22:53:33,421 - #40 )
+INFO  22:53:33,421 - #35 ;
+INFO  22:53:33,421 - #7 else
+INFO  22:53:33,421 - #3 print
+INFO  22:53:33,421 - #39 (
+INFO  22:53:33,421 - #46 4
+INFO  22:53:33,421 - #40 )
+INFO  22:53:33,421 - #35 ;
+INFO  22:53:33,421 - #13 read
+INFO  22:53:33,421 - #39 (
+INFO  22:53:33,421 - #47 niz
+INFO  22:53:33,421 - #41 [
+INFO  22:53:33,421 - #46 0
+INFO  22:53:33,421 - #42 ]
+INFO  22:53:33,421 - #40 )
+INFO  22:53:33,421 - #35 ;
+INFO  22:53:33,421 - #13 read
+INFO  22:53:33,422 - #39 (
+INFO  22:53:33,422 - #47 niz
+INFO  22:53:33,422 - #41 [
+INFO  22:53:33,422 - #46 1
+INFO  22:53:33,422 - #42 ]
+INFO  22:53:33,422 - #40 )
+INFO  22:53:33,422 - #35 ;
+INFO  22:53:33,422 - #13 read
+INFO  22:53:33,422 - #39 (
+INFO  22:53:33,422 - #47 niz
+INFO  22:53:33,422 - #41 [
+INFO  22:53:33,422 - #46 2
+INFO  22:53:33,422 - #42 ]
+INFO  22:53:33,422 - #40 )
+INFO  22:53:33,422 - #35 ;
+INFO  22:53:33,422 - #3 print
+INFO  22:53:33,423 - #39 (
+INFO  22:53:33,423 - #47 eol
+INFO  22:53:33,423 - #40 )
+INFO  22:53:33,423 - #35 ;
+INFO  22:53:33,423 - #3 print
+INFO  22:53:33,423 - #39 (
+INFO  22:53:33,423 - #47 sum
+INFO  22:53:33,423 - #39 (
+INFO  22:53:33,423 - #47 sum
+INFO  22:53:33,423 - #39 (
+INFO  22:53:33,423 - #47 niz
+INFO  22:53:33,423 - #41 [
+INFO  22:53:33,423 - #46 0
+INFO  22:53:33,423 - #42 ]
+INFO  22:53:33,423 - #37 ,
+INFO  22:53:33,423 - #47 niz
+INFO  22:53:33,424 - #41 [
+INFO  22:53:33,424 - #46 1
+INFO  22:53:33,424 - #42 ]
+INFO  22:53:33,424 - #40 )
+INFO  22:53:33,424 - #37 ,
+INFO  22:53:33,424 - #47 niz
+INFO  22:53:33,424 - #41 [
+INFO  22:53:33,424 - #46 2
+INFO  22:53:33,424 - #42 ]
+INFO  22:53:33,424 - #40 )
+INFO  22:53:33,424 - #40 )
+INFO  22:53:33,424 - #35 ;
+INFO  22:53:33,424 - #3 print
+INFO  22:53:33,424 - #39 (
+INFO  22:53:33,424 - #47 eol
+INFO  22:53:33,424 - #40 )
+INFO  22:53:33,425 - #35 ;
+INFO  22:53:33,425 - #3 print
+INFO  22:53:33,425 - #39 (
+INFO  22:53:33,425 - #47 inkrement
+INFO  22:53:33,425 - #39 (
+INFO  22:53:33,425 - #47 niz
+INFO  22:53:33,425 - #41 [
+INFO  22:53:33,425 - #46 2
+INFO  22:53:33,425 - #42 ]
+INFO  22:53:33,425 - #37 ,
+INFO  22:53:33,425 - #46 2
+INFO  22:53:33,425 - #40 )
+INFO  22:53:33,425 - #40 )
+INFO  22:53:33,425 - #35 ;
+INFO  22:53:33,425 - #47 a
+INFO  22:53:33,425 - #32 =
+INFO  22:53:33,425 - #46 3
+INFO  22:53:33,425 - #35 ;
+INFO  22:53:33,425 - #47 i
+INFO  22:53:33,425 - #32 =
+INFO  22:53:33,425 - #46 0
+INFO  22:53:33,425 - #35 ;
+INFO  22:53:33,425 - #11 while
+INFO  22:53:33,425 - #39 (
+INFO  22:53:33,425 - #47 i
+INFO  22:53:33,425 - #28 <
+INFO  22:53:33,425 - #46 3
+INFO  22:53:33,425 - #40 )
+INFO  22:53:33,425 - #43 {
+INFO  22:53:33,425 - #47 niz
+INFO  22:53:33,426 - #41 [
+INFO  22:53:33,426 - #47 i
+INFO  22:53:33,426 - #42 ]
+INFO  22:53:33,426 - #32 =
+INFO  22:53:33,426 - #47 niz
+INFO  22:53:33,426 - #41 [
+INFO  22:53:33,426 - #47 i
+INFO  22:53:33,426 - #42 ]
+INFO  22:53:33,426 - #21 *
+INFO  22:53:33,426 - #46 2
+INFO  22:53:33,426 - #21 *
+INFO  22:53:33,426 - #47 a
+INFO  22:53:33,426 - #35 ;
+INFO  22:53:33,426 - #47 i
+INFO  22:53:33,426 - #33 ++
+INFO  22:53:33,426 - #35 ;
+INFO  22:53:33,426 - #44 }
+INFO  22:53:33,426 - #47 niz
+INFO  22:53:33,426 - #38 .
+INFO  22:53:33,426 - #17 foreach
+INFO  22:53:33,426 - #39 (
+INFO  22:53:33,426 - #47 curr
+INFO  22:53:33,427 - #45 =>
+INFO  22:53:33,427 - #3 print
+INFO  22:53:33,427 - #39 (
+INFO  22:53:33,428 - #47 curr
+INFO  22:53:33,428 - #40 )
+INFO  22:53:33,428 - #35 ;
+INFO  22:53:33,428 - #40 )
+INFO  22:53:33,428 - #35 ;
+INFO  22:53:33,428 - #3 print
+INFO  22:53:33,428 - #39 (
+INFO  22:53:33,428 - #47 eol
+INFO  22:53:33,428 - #40 )
+INFO  22:53:33,428 - #35 ;
+INFO  22:53:33,428 - #47 niz2
+INFO  22:53:33,428 - #32 =
+INFO  22:53:33,428 - #46 0
+INFO  22:53:33,428 - #35 ;
+INFO  22:53:33,428 - #47 niz
+INFO  22:53:33,428 - #38 .
+INFO  22:53:33,428 - #17 foreach
+INFO  22:53:33,428 - #39 (
+INFO  22:53:33,428 - #47 curr
+INFO  22:53:33,428 - #45 =>
+INFO  22:53:33,428 - #43 {
+INFO  22:53:33,428 - #47 niz2
+INFO  22:53:33,428 - #32 =
+INFO  22:53:33,428 - #47 niz2
+INFO  22:53:33,428 - #19 +
+INFO  22:53:33,428 - #47 curr
+INFO  22:53:33,428 - #21 *
+INFO  22:53:33,428 - #47 curr
+INFO  22:53:33,428 - #35 ;
+INFO  22:53:33,428 - #44 }
+INFO  22:53:33,428 - #40 )
+INFO  22:53:33,428 - #35 ;
+INFO  22:53:33,428 - #3 print
+INFO  22:53:33,429 - #39 (
+INFO  22:53:33,429 - #47 niz2
+INFO  22:53:33,429 - #40 )
+INFO  22:53:33,429 - #35 ;
+INFO  22:53:33,429 - #44 }
+INFO  22:53:33,429 - #44 }
+INFO  22:53:33,441 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          VarDeclarations(
+            ConstDeclarations(
+              NoVarDecl(
+              ) [NoVarDecl]
+              ConstDeclaration(
+                Type(
+                 int
+                ) [Type]
+                ConstantValueNumber(
+                 jedan
+                 1
+                ) [ConstantValueNumber]
+                EndOfListOfCharDeclarations(
+                ) [EndOfListOfCharDeclarations]
+              ) [ConstDeclaration]
+            ) [ConstDeclarations]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 i
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclaration]
+          ) [VarDeclarations]
+          VarDeclaration(
+            Type(
+             bool
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               ibool
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             niz2
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationLast(
+          LastVarDeclarations(
+           niz
+            VarDeclarationOfArray(
+            ) [VarDeclarationOfArray]
+          ) [LastVarDeclarations]
+        ) [VarDeclarationLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationNotLast(
+        NotLastVarDeclarations(
+         a
+          VarDeclarationOfNotArray(
+          ) [VarDeclarationOfNotArray]
+        ) [NotLastVarDeclarations]
+        VarDeclarationLast(
+          LastVarDeclarations(
+           curr
+            VarDeclarationOfNotArray(
+            ) [VarDeclarationOfNotArray]
+          ) [LastVarDeclarations]
+        ) [VarDeclarationLast]
+      ) [VarDeclarationNotLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        MethodDeclarations(
+          NoMethodDeclarations(
+          ) [NoMethodDeclarations]
+          MethodDeclaration(
+            ReturnMethodTypeName(
+              Type(
+               int
+              ) [Type]
+             sum
+            ) [ReturnMethodTypeName]
+            FormalParameters(
+              ListOfParameters(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 z
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+                SingleOrEndOfListParameter(
+                  SingleFormalParameter(
+                    Type(
+                     int
+                    ) [Type]
+                   d
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [SingleFormalParameter]
+                ) [SingleOrEndOfListParameter]
+              ) [ListOfParameters]
+            ) [FormalParameters]
+            MethodWithoutVariables(
+            ) [MethodWithoutVariables]
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementReturnExpr(
+                AddExpr(
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           z
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                  PlusOperator(
+                  ) [PlusOperator]
+                  Term(
+                    SingleFactor(
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         d
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [AddExpr]
+              ) [StatementReturnExpr]
+            ) [Statements]
+          ) [MethodDeclaration]
+        ) [MethodDeclarations]
+        MethodDeclaration(
+          ReturnMethodTypeName(
+            Type(
+             int
+            ) [Type]
+           inkrement
+          ) [ReturnMethodTypeName]
+          FormalParameters(
+            ListOfParameters(
+              SingleFormalParameter(
+                Type(
+                 int
+                ) [Type]
+               a
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [SingleFormalParameter]
+              SingleOrEndOfListParameter(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 inc
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+              ) [SingleOrEndOfListParameter]
+            ) [ListOfParameters]
+          ) [FormalParameters]
+          MethodVariables(
+            MethodWithoutVariables(
+            ) [MethodWithoutVariables]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 pom
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclaration]
+          ) [MethodVariables]
+          Statements(
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementIfElse(
+                IfCondition(
+                  ConditionsWithoutOr(
+                    ConditionsWithoutAnd(
+                      RelopCondition(
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 inc
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                        EqualOperator(
+                        ) [EqualOperator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 jedan
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [RelopCondition]
+                    ) [ConditionsWithoutAnd]
+                  ) [ConditionsWithoutOr]
+                ) [IfCondition]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    SimpleDesignator(
+                     pom
+                    ) [SimpleDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           1
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+                StatementIf(
+                  IfCondition(
+                    ConditionsWithoutOr(
+                      ConditionsWithoutAnd(
+                        RelopCondition(
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   inc
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                          EqualOperator(
+                          ) [EqualOperator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 2
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [RelopCondition]
+                      ) [ConditionsWithoutAnd]
+                    ) [ConditionsWithoutOr]
+                  ) [IfCondition]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      SimpleDesignator(
+                       pom
+                      ) [SimpleDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               a
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [StatementIf]
+              ) [StatementIfElse]
+            ) [Statements]
+            StatementReturnExpr(
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    FuncCallFactor(
+                      FuncCallFactorDesignator(
+                        SimpleDesignator(
+                         sum
+                        ) [SimpleDesignator]
+                      ) [FuncCallFactorDesignator]
+                      Actuals(
+                        ActualParams(
+                          ActualParam(
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  DesignatorFactor(
+                                    SimpleDesignator(
+                                     a
+                                    ) [SimpleDesignator]
+                                  ) [DesignatorFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [ActualParam]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   pom
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [ActualParams]
+                      ) [Actuals]
+                    ) [FuncCallFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [StatementReturnExpr]
+          ) [Statements]
+        ) [MethodDeclaration]
+      ) [MethodDeclarations]
+      MethodDeclaration(
+        ReturnMethodTypeName(
+          Type(
+           bool
+          ) [Type]
+         verify
+        ) [ReturnMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        Statements(
+          Statements(
+            NoStatements(
+            ) [NoStatements]
+            StatementPrintWithoutWidth(
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    CharConstFactor(
+                     v
+                    ) [CharConstFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [StatementPrintWithoutWidth]
+          ) [Statements]
+          StatementReturnExpr(
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  BooleanConstFactor(
+                   false
+                  ) [BooleanConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementReturnExpr]
+        ) [Statements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      Statements(
+                                        Statements(
+                                          Statements(
+                                            Statements(
+                                              Statements(
+                                                Statements(
+                                                  Statements(
+                                                    Statements(
+                                                      Statements(
+                                                        Statements(
+                                                          Statements(
+                                                            Statements(
+                                                              Statements(
+                                                                Statements(
+                                                                  NoStatements(
+                                                                  ) [NoStatements]
+                                                                  StatementIfElse(
+                                                                    IfCondition(
+                                                                      ConditionsWithoutOr(
+                                                                        ConditionsWithoutAnd(
+                                                                          RelopCondition(
+                                                                            TermPositiveExpr(
+                                                                              Term(
+                                                                                SingleFactor(
+                                                                                  NumberConstFactor(
+                                                                                   1
+                                                                                  ) [NumberConstFactor]
+                                                                                ) [SingleFactor]
+                                                                              ) [Term]
+                                                                            ) [TermPositiveExpr]
+                                                                            NotEqualOperator(
+                                                                            ) [NotEqualOperator]
+                                                                            TermPositiveExpr(
+                                                                              Term(
+                                                                                SingleFactor(
+                                                                                  NumberConstFactor(
+                                                                                   1
+                                                                                  ) [NumberConstFactor]
+                                                                                ) [SingleFactor]
+                                                                              ) [Term]
+                                                                            ) [TermPositiveExpr]
+                                                                          ) [RelopCondition]
+                                                                        ) [ConditionsWithoutAnd]
+                                                                      ) [ConditionsWithoutOr]
+                                                                    ) [IfCondition]
+                                                                    StatementPrintWithoutWidth(
+                                                                      TermNegativeExpr(
+                                                                        Term(
+                                                                          SingleFactor(
+                                                                            NumberConstFactor(
+                                                                             6
+                                                                            ) [NumberConstFactor]
+                                                                          ) [SingleFactor]
+                                                                        ) [Term]
+                                                                      ) [TermNegativeExpr]
+                                                                    ) [StatementPrintWithoutWidth]
+                                                                    StatementPrintWithoutWidth(
+                                                                      TermPositiveExpr(
+                                                                        Term(
+                                                                          SingleFactor(
+                                                                            NumberConstFactor(
+                                                                             0
+                                                                            ) [NumberConstFactor]
+                                                                          ) [SingleFactor]
+                                                                        ) [Term]
+                                                                      ) [TermPositiveExpr]
+                                                                    ) [StatementPrintWithoutWidth]
+                                                                  ) [StatementIfElse]
+                                                                ) [Statements]
+                                                                StatementDesignator(
+                                                                  DesignatorAssignment(
+                                                                    SimpleDesignator(
+                                                                     ibool
+                                                                    ) [SimpleDesignator]
+                                                                    TermPositiveExpr(
+                                                                      Term(
+                                                                        SingleFactor(
+                                                                          BooleanConstFactor(
+                                                                           false
+                                                                          ) [BooleanConstFactor]
+                                                                        ) [SingleFactor]
+                                                                      ) [Term]
+                                                                    ) [TermPositiveExpr]
+                                                                  ) [DesignatorAssignment]
+                                                                ) [StatementDesignator]
+                                                              ) [Statements]
+                                                              StatementDesignator(
+                                                                DesignatorAssignment(
+                                                                  SimpleDesignator(
+                                                                   i
+                                                                  ) [SimpleDesignator]
+                                                                  TermPositiveExpr(
+                                                                    Term(
+                                                                      SingleFactor(
+                                                                        NumberConstFactor(
+                                                                         0
+                                                                        ) [NumberConstFactor]
+                                                                      ) [SingleFactor]
+                                                                    ) [Term]
+                                                                  ) [TermPositiveExpr]
+                                                                ) [DesignatorAssignment]
+                                                              ) [StatementDesignator]
+                                                            ) [Statements]
+                                                            StatementWhile(
+                                                              WhileLoopParen(
+                                                              ) [WhileLoopParen]
+                                                              ConditionsWithoutOr(
+                                                                ConditionsWithoutAnd(
+                                                                  RelopCondition(
+                                                                    TermPositiveExpr(
+                                                                      Term(
+                                                                        SingleFactor(
+                                                                          DesignatorFactor(
+                                                                            SimpleDesignator(
+                                                                             i
+                                                                            ) [SimpleDesignator]
+                                                                          ) [DesignatorFactor]
+                                                                        ) [SingleFactor]
+                                                                      ) [Term]
+                                                                    ) [TermPositiveExpr]
+                                                                    LessOperator(
+                                                                    ) [LessOperator]
+                                                                    TermPositiveExpr(
+                                                                      Term(
+                                                                        SingleFactor(
+                                                                          NumberConstFactor(
+                                                                           5
+                                                                          ) [NumberConstFactor]
+                                                                        ) [SingleFactor]
+                                                                      ) [Term]
+                                                                    ) [TermPositiveExpr]
+                                                                  ) [RelopCondition]
+                                                                ) [ConditionsWithoutAnd]
+                                                              ) [ConditionsWithoutOr]
+                                                              StatementBlock(
+                                                                Statements(
+                                                                  Statements(
+                                                                    NoStatements(
+                                                                    ) [NoStatements]
+                                                                    StatementIf(
+                                                                      IfCondition(
+                                                                        ConditionsWithoutOr(
+                                                                          ConditionsWithoutAnd(
+                                                                            RelopCondition(
+                                                                              TermPositiveExpr(
+                                                                                Term(
+                                                                                  SingleFactor(
+                                                                                    DesignatorFactor(
+                                                                                      SimpleDesignator(
+                                                                                       i
+                                                                                      ) [SimpleDesignator]
+                                                                                    ) [DesignatorFactor]
+                                                                                  ) [SingleFactor]
+                                                                                ) [Term]
+                                                                              ) [TermPositiveExpr]
+                                                                              EqualOperator(
+                                                                              ) [EqualOperator]
+                                                                              TermPositiveExpr(
+                                                                                Term(
+                                                                                  SingleFactor(
+                                                                                    NumberConstFactor(
+                                                                                     2
+                                                                                    ) [NumberConstFactor]
+                                                                                  ) [SingleFactor]
+                                                                                ) [Term]
+                                                                              ) [TermPositiveExpr]
+                                                                            ) [RelopCondition]
+                                                                          ) [ConditionsWithoutAnd]
+                                                                        ) [ConditionsWithoutOr]
+                                                                      ) [IfCondition]
+                                                                      StatementDesignator(
+                                                                        DesignatorAssignment(
+                                                                          SimpleDesignator(
+                                                                           ibool
+                                                                          ) [SimpleDesignator]
+                                                                          TermPositiveExpr(
+                                                                            Term(
+                                                                              SingleFactor(
+                                                                                BooleanConstFactor(
+                                                                                 true
+                                                                                ) [BooleanConstFactor]
+                                                                              ) [SingleFactor]
+                                                                            ) [Term]
+                                                                          ) [TermPositiveExpr]
+                                                                        ) [DesignatorAssignment]
+                                                                      ) [StatementDesignator]
+                                                                    ) [StatementIf]
+                                                                  ) [Statements]
+                                                                  StatementDesignator(
+                                                                    DesignatorInc(
+                                                                      SimpleDesignator(
+                                                                       i
+                                                                      ) [SimpleDesignator]
+                                                                    ) [DesignatorInc]
+                                                                  ) [StatementDesignator]
+                                                                ) [Statements]
+                                                              ) [StatementBlock]
+                                                            ) [StatementWhile]
+                                                          ) [Statements]
+                                                          StatementIf(
+                                                            IfCondition(
+                                                              ConditionsWithoutOr(
+                                                                ConditionsWithoutAnd(
+                                                                  SingleCondition(
+                                                                    TermPositiveExpr(
+                                                                      Term(
+                                                                        SingleFactor(
+                                                                          DesignatorFactor(
+                                                                            SimpleDesignator(
+                                                                             ibool
+                                                                            ) [SimpleDesignator]
+                                                                          ) [DesignatorFactor]
+                                                                        ) [SingleFactor]
+                                                                      ) [Term]
+                                                                    ) [TermPositiveExpr]
+                                                                  ) [SingleCondition]
+                                                                ) [ConditionsWithoutAnd]
+                                                              ) [ConditionsWithoutOr]
+                                                            ) [IfCondition]
+                                                            StatementIfElse(
+                                                              IfCondition(
+                                                                ConditionsWithoutOr(
+                                                                  ConditionsWithoutAnd(
+                                                                    RelopCondition(
+                                                                      TermPositiveExpr(
+                                                                        Term(
+                                                                          SingleFactor(
+                                                                            DesignatorFactor(
+                                                                              SimpleDesignator(
+                                                                               i
+                                                                              ) [SimpleDesignator]
+                                                                            ) [DesignatorFactor]
+                                                                          ) [SingleFactor]
+                                                                        ) [Term]
+                                                                      ) [TermPositiveExpr]
+                                                                      EqualOperator(
+                                                                      ) [EqualOperator]
+                                                                      TermPositiveExpr(
+                                                                        Term(
+                                                                          SingleFactor(
+                                                                            NumberConstFactor(
+                                                                             5
+                                                                            ) [NumberConstFactor]
+                                                                          ) [SingleFactor]
+                                                                        ) [Term]
+                                                                      ) [TermPositiveExpr]
+                                                                    ) [RelopCondition]
+                                                                  ) [ConditionsWithoutAnd]
+                                                                ) [ConditionsWithoutOr]
+                                                              ) [IfCondition]
+                                                              StatementPrintWithoutWidth(
+                                                                TermPositiveExpr(
+                                                                  Term(
+                                                                    SingleFactor(
+                                                                      NumberConstFactor(
+                                                                       1
+                                                                      ) [NumberConstFactor]
+                                                                    ) [SingleFactor]
+                                                                  ) [Term]
+                                                                ) [TermPositiveExpr]
+                                                              ) [StatementPrintWithoutWidth]
+                                                              StatementPrintWithoutWidth(
+                                                                TermNegativeExpr(
+                                                                  Term(
+                                                                    SingleFactor(
+                                                                      NumberConstFactor(
+                                                                       1
+                                                                      ) [NumberConstFactor]
+                                                                    ) [SingleFactor]
+                                                                  ) [Term]
+                                                                ) [TermNegativeExpr]
+                                                              ) [StatementPrintWithoutWidth]
+                                                            ) [StatementIfElse]
+                                                          ) [StatementIf]
+                                                        ) [Statements]
+                                                        StatementDesignator(
+                                                          DesignatorAssignment(
+                                                            SimpleDesignator(
+                                                             a
+                                                            ) [SimpleDesignator]
+                                                            TermPositiveExpr(
+                                                              Term(
+                                                                SingleFactor(
+                                                                  NumberConstFactor(
+                                                                   2
+                                                                  ) [NumberConstFactor]
+                                                                ) [SingleFactor]
+                                                              ) [Term]
+                                                            ) [TermPositiveExpr]
+                                                          ) [DesignatorAssignment]
+                                                        ) [StatementDesignator]
+                                                      ) [Statements]
+                                                      StatementDesignator(
+                                                        DesignatorAssignment(
+                                                          SimpleDesignator(
+                                                           niz
+                                                          ) [SimpleDesignator]
+                                                          TermPositiveExpr(
+                                                            Term(
+                                                              SingleFactor(
+                                                                NewArrayOperatorFactor(
+                                                                  Type(
+                                                                   int
+                                                                  ) [Type]
+                                                                  TermPositiveExpr(
+                                                                    Term(
+                                                                      SingleFactor(
+                                                                        NumberConstFactor(
+                                                                         3
+                                                                        ) [NumberConstFactor]
+                                                                      ) [SingleFactor]
+                                                                    ) [Term]
+                                                                  ) [TermPositiveExpr]
+                                                                ) [NewArrayOperatorFactor]
+                                                              ) [SingleFactor]
+                                                            ) [Term]
+                                                          ) [TermPositiveExpr]
+                                                        ) [DesignatorAssignment]
+                                                      ) [StatementDesignator]
+                                                    ) [Statements]
+                                                    StatementDesignator(
+                                                      DesignatorAssignment(
+                                                        ArrayDesignator(
+                                                          SimpleDesignator(
+                                                           niz
+                                                          ) [SimpleDesignator]
+                                                          TermPositiveExpr(
+                                                            Term(
+                                                              SingleFactor(
+                                                                NumberConstFactor(
+                                                                 0
+                                                                ) [NumberConstFactor]
+                                                              ) [SingleFactor]
+                                                            ) [Term]
+                                                          ) [TermPositiveExpr]
+                                                        ) [ArrayDesignator]
+                                                        TermPositiveExpr(
+                                                          Term(
+                                                            MultipleFactors(
+                                                              SingleFactor(
+                                                                NumberConstFactor(
+                                                                 1
+                                                                ) [NumberConstFactor]
+                                                              ) [SingleFactor]
+                                                              MultiplyOperator(
+                                                              ) [MultiplyOperator]
+                                                              DesignatorFactor(
+                                                                SimpleDesignator(
+                                                                 a
+                                                                ) [SimpleDesignator]
+                                                              ) [DesignatorFactor]
+                                                            ) [MultipleFactors]
+                                                          ) [Term]
+                                                        ) [TermPositiveExpr]
+                                                      ) [DesignatorAssignment]
+                                                    ) [StatementDesignator]
+                                                  ) [Statements]
+                                                  StatementDesignator(
+                                                    DesignatorAssignment(
+                                                      ArrayDesignator(
+                                                        SimpleDesignator(
+                                                         niz
+                                                        ) [SimpleDesignator]
+                                                        TermPositiveExpr(
+                                                          Term(
+                                                            SingleFactor(
+                                                              NumberConstFactor(
+                                                               1
+                                                              ) [NumberConstFactor]
+                                                            ) [SingleFactor]
+                                                          ) [Term]
+                                                        ) [TermPositiveExpr]
+                                                      ) [ArrayDesignator]
+                                                      TermPositiveExpr(
+                                                        Term(
+                                                          MultipleFactors(
+                                                            SingleFactor(
+                                                              NumberConstFactor(
+                                                               2
+                                                              ) [NumberConstFactor]
+                                                            ) [SingleFactor]
+                                                            MultiplyOperator(
+                                                            ) [MultiplyOperator]
+                                                            DesignatorFactor(
+                                                              SimpleDesignator(
+                                                               a
+                                                              ) [SimpleDesignator]
+                                                            ) [DesignatorFactor]
+                                                          ) [MultipleFactors]
+                                                        ) [Term]
+                                                      ) [TermPositiveExpr]
+                                                    ) [DesignatorAssignment]
+                                                  ) [StatementDesignator]
+                                                ) [Statements]
+                                                StatementDesignator(
+                                                  DesignatorAssignment(
+                                                    ArrayDesignator(
+                                                      SimpleDesignator(
+                                                       niz
+                                                      ) [SimpleDesignator]
+                                                      TermPositiveExpr(
+                                                        Term(
+                                                          SingleFactor(
+                                                            NumberConstFactor(
+                                                             2
+                                                            ) [NumberConstFactor]
+                                                          ) [SingleFactor]
+                                                        ) [Term]
+                                                      ) [TermPositiveExpr]
+                                                    ) [ArrayDesignator]
+                                                    AddExpr(
+                                                      TermPositiveExpr(
+                                                        Term(
+                                                          MultipleFactors(
+                                                            SingleFactor(
+                                                              FuncCallFactor(
+                                                                FuncCallFactorDesignator(
+                                                                  SimpleDesignator(
+                                                                   sum
+                                                                  ) [SimpleDesignator]
+                                                                ) [FuncCallFactorDesignator]
+                                                                Actuals(
+                                                                  ActualParams(
+                                                                    ActualParam(
+                                                                      TermPositiveExpr(
+                                                                        Term(
+                                                                          SingleFactor(
+                                                                            DesignatorFactor(
+                                                                              ArrayDesignator(
+                                                                                SimpleDesignator(
+                                                                                 niz
+                                                                                ) [SimpleDesignator]
+                                                                                TermPositiveExpr(
+                                                                                  Term(
+                                                                                    SingleFactor(
+                                                                                      NumberConstFactor(
+                                                                                       1
+                                                                                      ) [NumberConstFactor]
+                                                                                    ) [SingleFactor]
+                                                                                  ) [Term]
+                                                                                ) [TermPositiveExpr]
+                                                                              ) [ArrayDesignator]
+                                                                            ) [DesignatorFactor]
+                                                                          ) [SingleFactor]
+                                                                        ) [Term]
+                                                                      ) [TermPositiveExpr]
+                                                                    ) [ActualParam]
+                                                                    TermPositiveExpr(
+                                                                      Term(
+                                                                        SingleFactor(
+                                                                          DesignatorFactor(
+                                                                            ArrayDesignator(
+                                                                              SimpleDesignator(
+                                                                               niz
+                                                                              ) [SimpleDesignator]
+                                                                              TermPositiveExpr(
+                                                                                Term(
+                                                                                  SingleFactor(
+                                                                                    NumberConstFactor(
+                                                                                     0
+                                                                                    ) [NumberConstFactor]
+                                                                                  ) [SingleFactor]
+                                                                                ) [Term]
+                                                                              ) [TermPositiveExpr]
+                                                                            ) [ArrayDesignator]
+                                                                          ) [DesignatorFactor]
+                                                                        ) [SingleFactor]
+                                                                      ) [Term]
+                                                                    ) [TermPositiveExpr]
+                                                                  ) [ActualParams]
+                                                                ) [Actuals]
+                                                              ) [FuncCallFactor]
+                                                            ) [SingleFactor]
+                                                            MultiplyOperator(
+                                                            ) [MultiplyOperator]
+                                                            DesignatorFactor(
+                                                              SimpleDesignator(
+                                                               a
+                                                              ) [SimpleDesignator]
+                                                            ) [DesignatorFactor]
+                                                          ) [MultipleFactors]
+                                                        ) [Term]
+                                                      ) [TermPositiveExpr]
+                                                      PlusOperator(
+                                                      ) [PlusOperator]
+                                                      Term(
+                                                        SingleFactor(
+                                                          NumberConstFactor(
+                                                           1
+                                                          ) [NumberConstFactor]
+                                                        ) [SingleFactor]
+                                                      ) [Term]
+                                                    ) [AddExpr]
+                                                  ) [DesignatorAssignment]
+                                                ) [StatementDesignator]
+                                              ) [Statements]
+                                              StatementIfElse(
+                                                IfCondition(
+                                                  ConditionsWithOr(
+                                                    ConditionsWithoutOr(
+                                                      ConditionsWithoutAnd(
+                                                        SingleCondition(
+                                                          TermPositiveExpr(
+                                                            Term(
+                                                              SingleFactor(
+                                                                FuncCallFactor(
+                                                                  FuncCallFactorDesignator(
+                                                                    SimpleDesignator(
+                                                                     verify
+                                                                    ) [SimpleDesignator]
+                                                                  ) [FuncCallFactorDesignator]
+                                                                  NoActuals(
+                                                                  ) [NoActuals]
+                                                                ) [FuncCallFactor]
+                                                              ) [SingleFactor]
+                                                            ) [Term]
+                                                          ) [TermPositiveExpr]
+                                                        ) [SingleCondition]
+                                                      ) [ConditionsWithoutAnd]
+                                                    ) [ConditionsWithoutOr]
+                                                    ConditionsWithoutAnd(
+                                                      RelopCondition(
+                                                        TermPositiveExpr(
+                                                          Term(
+                                                            SingleFactor(
+                                                              DesignatorFactor(
+                                                                ArrayDesignator(
+                                                                  SimpleDesignator(
+                                                                   niz
+                                                                  ) [SimpleDesignator]
+                                                                  TermPositiveExpr(
+                                                                    Term(
+                                                                      SingleFactor(
+                                                                        NumberConstFactor(
+                                                                         2
+                                                                        ) [NumberConstFactor]
+                                                                      ) [SingleFactor]
+                                                                    ) [Term]
+                                                                  ) [TermPositiveExpr]
+                                                                ) [ArrayDesignator]
+                                                              ) [DesignatorFactor]
+                                                            ) [SingleFactor]
+                                                          ) [Term]
+                                                        ) [TermPositiveExpr]
+                                                        EqualOperator(
+                                                        ) [EqualOperator]
+                                                        TermPositiveExpr(
+                                                          Term(
+                                                            SingleFactor(
+                                                              NumberConstFactor(
+                                                               4
+                                                              ) [NumberConstFactor]
+                                                            ) [SingleFactor]
+                                                          ) [Term]
+                                                        ) [TermPositiveExpr]
+                                                      ) [RelopCondition]
+                                                    ) [ConditionsWithoutAnd]
+                                                  ) [ConditionsWithOr]
+                                                ) [IfCondition]
+                                                StatementPrintWithoutWidth(
+                                                  TermPositiveExpr(
+                                                    Term(
+                                                      SingleFactor(
+                                                        FuncCallFactor(
+                                                          FuncCallFactorDesignator(
+                                                            SimpleDesignator(
+                                                             ord
+                                                            ) [SimpleDesignator]
+                                                          ) [FuncCallFactorDesignator]
+                                                          Actuals(
+                                                            ActualParam(
+                                                              TermPositiveExpr(
+                                                                Term(
+                                                                  SingleFactor(
+                                                                    CharConstFactor(
+                                                                     A
+                                                                    ) [CharConstFactor]
+                                                                  ) [SingleFactor]
+                                                                ) [Term]
+                                                              ) [TermPositiveExpr]
+                                                            ) [ActualParam]
+                                                          ) [Actuals]
+                                                        ) [FuncCallFactor]
+                                                      ) [SingleFactor]
+                                                    ) [Term]
+                                                  ) [TermPositiveExpr]
+                                                ) [StatementPrintWithoutWidth]
+                                                StatementPrintWithoutWidth(
+                                                  TermPositiveExpr(
+                                                    Term(
+                                                      SingleFactor(
+                                                        FuncCallFactor(
+                                                          FuncCallFactorDesignator(
+                                                            SimpleDesignator(
+                                                             ord
+                                                            ) [SimpleDesignator]
+                                                          ) [FuncCallFactorDesignator]
+                                                          Actuals(
+                                                            ActualParam(
+                                                              TermPositiveExpr(
+                                                                Term(
+                                                                  SingleFactor(
+                                                                    CharConstFactor(
+                                                                     a
+                                                                    ) [CharConstFactor]
+                                                                  ) [SingleFactor]
+                                                                ) [Term]
+                                                              ) [TermPositiveExpr]
+                                                            ) [ActualParam]
+                                                          ) [Actuals]
+                                                        ) [FuncCallFactor]
+                                                      ) [SingleFactor]
+                                                    ) [Term]
+                                                  ) [TermPositiveExpr]
+                                                ) [StatementPrintWithoutWidth]
+                                              ) [StatementIfElse]
+                                            ) [Statements]
+                                            StatementPrintWithoutWidth(
+                                              TermPositiveExpr(
+                                                Term(
+                                                  SingleFactor(
+                                                    DesignatorFactor(
+                                                      SimpleDesignator(
+                                                       eol
+                                                      ) [SimpleDesignator]
+                                                    ) [DesignatorFactor]
+                                                  ) [SingleFactor]
+                                                ) [Term]
+                                              ) [TermPositiveExpr]
+                                            ) [StatementPrintWithoutWidth]
+                                          ) [Statements]
+                                          StatementDesignator(
+                                            DesignatorAssignment(
+                                              SimpleDesignator(
+                                               i
+                                              ) [SimpleDesignator]
+                                              TermPositiveExpr(
+                                                Term(
+                                                  SingleFactor(
+                                                    NumberConstFactor(
+                                                     0
+                                                    ) [NumberConstFactor]
+                                                  ) [SingleFactor]
+                                                ) [Term]
+                                              ) [TermPositiveExpr]
+                                            ) [DesignatorAssignment]
+                                          ) [StatementDesignator]
+                                        ) [Statements]
+                                        StatementWhile(
+                                          WhileLoopParen(
+                                          ) [WhileLoopParen]
+                                          ConditionsWithoutOr(
+                                            ConditionsWithoutAnd(
+                                              RelopCondition(
+                                                TermPositiveExpr(
+                                                  Term(
+                                                    SingleFactor(
+                                                      DesignatorFactor(
+                                                        SimpleDesignator(
+                                                         i
+                                                        ) [SimpleDesignator]
+                                                      ) [DesignatorFactor]
+                                                    ) [SingleFactor]
+                                                  ) [Term]
+                                                ) [TermPositiveExpr]
+                                                LessOperator(
+                                                ) [LessOperator]
+                                                TermPositiveExpr(
+                                                  Term(
+                                                    SingleFactor(
+                                                      NumberConstFactor(
+                                                       10
+                                                      ) [NumberConstFactor]
+                                                    ) [SingleFactor]
+                                                  ) [Term]
+                                                ) [TermPositiveExpr]
+                                              ) [RelopCondition]
+                                            ) [ConditionsWithoutAnd]
+                                          ) [ConditionsWithoutOr]
+                                          StatementBlock(
+                                            Statements(
+                                              Statements(
+                                                Statements(
+                                                  NoStatements(
+                                                  ) [NoStatements]
+                                                  StatementIf(
+                                                    IfCondition(
+                                                      ConditionsWithoutOr(
+                                                        ConditionsWithoutAnd(
+                                                          RelopCondition(
+                                                            TermPositiveExpr(
+                                                              Term(
+                                                                SingleFactor(
+                                                                  DesignatorFactor(
+                                                                    SimpleDesignator(
+                                                                     i
+                                                                    ) [SimpleDesignator]
+                                                                  ) [DesignatorFactor]
+                                                                ) [SingleFactor]
+                                                              ) [Term]
+                                                            ) [TermPositiveExpr]
+                                                            EqualOperator(
+                                                            ) [EqualOperator]
+                                                            TermPositiveExpr(
+                                                              Term(
+                                                                SingleFactor(
+                                                                  NumberConstFactor(
+                                                                   3
+                                                                  ) [NumberConstFactor]
+                                                                ) [SingleFactor]
+                                                              ) [Term]
+                                                            ) [TermPositiveExpr]
+                                                          ) [RelopCondition]
+                                                        ) [ConditionsWithoutAnd]
+                                                      ) [ConditionsWithoutOr]
+                                                    ) [IfCondition]
+                                                    StatementBlock(
+                                                      Statements(
+                                                        Statements(
+                                                          NoStatements(
+                                                          ) [NoStatements]
+                                                          StatementDesignator(
+                                                            DesignatorInc(
+                                                              SimpleDesignator(
+                                                               i
+                                                              ) [SimpleDesignator]
+                                                            ) [DesignatorInc]
+                                                          ) [StatementDesignator]
+                                                        ) [Statements]
+                                                        StatementContinue(
+                                                        ) [StatementContinue]
+                                                      ) [Statements]
+                                                    ) [StatementBlock]
+                                                  ) [StatementIf]
+                                                ) [Statements]
+                                                StatementIf(
+                                                  IfCondition(
+                                                    ConditionsWithoutOr(
+                                                      ConditionsWithoutAnd(
+                                                        RelopCondition(
+                                                          TermPositiveExpr(
+                                                            Term(
+                                                              SingleFactor(
+                                                                DesignatorFactor(
+                                                                  SimpleDesignator(
+                                                                   i
+                                                                  ) [SimpleDesignator]
+                                                                ) [DesignatorFactor]
+                                                              ) [SingleFactor]
+                                                            ) [Term]
+                                                          ) [TermPositiveExpr]
+                                                          EqualOperator(
+                                                          ) [EqualOperator]
+                                                          TermPositiveExpr(
+                                                            Term(
+                                                              SingleFactor(
+                                                                NumberConstFactor(
+                                                                 4
+                                                                ) [NumberConstFactor]
+                                                              ) [SingleFactor]
+                                                            ) [Term]
+                                                          ) [TermPositiveExpr]
+                                                        ) [RelopCondition]
+                                                      ) [ConditionsWithoutAnd]
+                                                    ) [ConditionsWithoutOr]
+                                                  ) [IfCondition]
+                                                  StatementBreak(
+                                                  ) [StatementBreak]
+                                                ) [StatementIf]
+                                              ) [Statements]
+                                              StatementDesignator(
+                                                DesignatorAssignment(
+                                                  SimpleDesignator(
+                                                   i
+                                                  ) [SimpleDesignator]
+                                                  TermPositiveExpr(
+                                                    Term(
+                                                      SingleFactor(
+                                                        FuncCallFactor(
+                                                          FuncCallFactorDesignator(
+                                                            SimpleDesignator(
+                                                             inkrement
+                                                            ) [SimpleDesignator]
+                                                          ) [FuncCallFactorDesignator]
+                                                          Actuals(
+                                                            ActualParams(
+                                                              ActualParam(
+                                                                TermPositiveExpr(
+                                                                  Term(
+                                                                    SingleFactor(
+                                                                      DesignatorFactor(
+                                                                        SimpleDesignator(
+                                                                         i
+                                                                        ) [SimpleDesignator]
+                                                                      ) [DesignatorFactor]
+                                                                    ) [SingleFactor]
+                                                                  ) [Term]
+                                                                ) [TermPositiveExpr]
+                                                              ) [ActualParam]
+                                                              TermPositiveExpr(
+                                                                Term(
+                                                                  SingleFactor(
+                                                                    NumberConstFactor(
+                                                                     1
+                                                                    ) [NumberConstFactor]
+                                                                  ) [SingleFactor]
+                                                                ) [Term]
+                                                              ) [TermPositiveExpr]
+                                                            ) [ActualParams]
+                                                          ) [Actuals]
+                                                        ) [FuncCallFactor]
+                                                      ) [SingleFactor]
+                                                    ) [Term]
+                                                  ) [TermPositiveExpr]
+                                                ) [DesignatorAssignment]
+                                              ) [StatementDesignator]
+                                            ) [Statements]
+                                          ) [StatementBlock]
+                                        ) [StatementWhile]
+                                      ) [Statements]
+                                      StatementIfElse(
+                                        IfCondition(
+                                          ConditionsWithoutOr(
+                                            ConditionsWithAnd(
+                                              ConditionsWithoutAnd(
+                                                RelopCondition(
+                                                  TermPositiveExpr(
+                                                    Term(
+                                                      SingleFactor(
+                                                        DesignatorFactor(
+                                                          SimpleDesignator(
+                                                           i
+                                                          ) [SimpleDesignator]
+                                                        ) [DesignatorFactor]
+                                                      ) [SingleFactor]
+                                                    ) [Term]
+                                                  ) [TermPositiveExpr]
+                                                  EqualOperator(
+                                                  ) [EqualOperator]
+                                                  TermPositiveExpr(
+                                                    Term(
+                                                      SingleFactor(
+                                                        NumberConstFactor(
+                                                         3
+                                                        ) [NumberConstFactor]
+                                                      ) [SingleFactor]
+                                                    ) [Term]
+                                                  ) [TermPositiveExpr]
+                                                ) [RelopCondition]
+                                              ) [ConditionsWithoutAnd]
+                                              SingleCondition(
+                                                TermPositiveExpr(
+                                                  Term(
+                                                    SingleFactor(
+                                                      FuncCallFactor(
+                                                        FuncCallFactorDesignator(
+                                                          SimpleDesignator(
+                                                           verify
+                                                          ) [SimpleDesignator]
+                                                        ) [FuncCallFactorDesignator]
+                                                        NoActuals(
+                                                        ) [NoActuals]
+                                                      ) [FuncCallFactor]
+                                                    ) [SingleFactor]
+                                                  ) [Term]
+                                                ) [TermPositiveExpr]
+                                              ) [SingleCondition]
+                                            ) [ConditionsWithAnd]
+                                          ) [ConditionsWithoutOr]
+                                        ) [IfCondition]
+                                        StatementPrintWithoutWidth(
+                                          TermNegativeExpr(
+                                            Term(
+                                              SingleFactor(
+                                                NumberConstFactor(
+                                                 4
+                                                ) [NumberConstFactor]
+                                              ) [SingleFactor]
+                                            ) [Term]
+                                          ) [TermNegativeExpr]
+                                        ) [StatementPrintWithoutWidth]
+                                        StatementPrintWithoutWidth(
+                                          TermPositiveExpr(
+                                            Term(
+                                              SingleFactor(
+                                                NumberConstFactor(
+                                                 4
+                                                ) [NumberConstFactor]
+                                              ) [SingleFactor]
+                                            ) [Term]
+                                          ) [TermPositiveExpr]
+                                        ) [StatementPrintWithoutWidth]
+                                      ) [StatementIfElse]
+                                    ) [Statements]
+                                    StatementRead(
+                                      ArrayDesignator(
+                                        SimpleDesignator(
+                                         niz
+                                        ) [SimpleDesignator]
+                                        TermPositiveExpr(
+                                          Term(
+                                            SingleFactor(
+                                              NumberConstFactor(
+                                               0
+                                              ) [NumberConstFactor]
+                                            ) [SingleFactor]
+                                          ) [Term]
+                                        ) [TermPositiveExpr]
+                                      ) [ArrayDesignator]
+                                    ) [StatementRead]
+                                  ) [Statements]
+                                  StatementRead(
+                                    ArrayDesignator(
+                                      SimpleDesignator(
+                                       niz
+                                      ) [SimpleDesignator]
+                                      TermPositiveExpr(
+                                        Term(
+                                          SingleFactor(
+                                            NumberConstFactor(
+                                             1
+                                            ) [NumberConstFactor]
+                                          ) [SingleFactor]
+                                        ) [Term]
+                                      ) [TermPositiveExpr]
+                                    ) [ArrayDesignator]
+                                  ) [StatementRead]
+                                ) [Statements]
+                                StatementRead(
+                                  ArrayDesignator(
+                                    SimpleDesignator(
+                                     niz
+                                    ) [SimpleDesignator]
+                                    TermPositiveExpr(
+                                      Term(
+                                        SingleFactor(
+                                          NumberConstFactor(
+                                           2
+                                          ) [NumberConstFactor]
+                                        ) [SingleFactor]
+                                      ) [Term]
+                                    ) [TermPositiveExpr]
+                                  ) [ArrayDesignator]
+                                ) [StatementRead]
+                              ) [Statements]
+                              StatementPrintWithoutWidth(
+                                TermPositiveExpr(
+                                  Term(
+                                    SingleFactor(
+                                      DesignatorFactor(
+                                        SimpleDesignator(
+                                         eol
+                                        ) [SimpleDesignator]
+                                      ) [DesignatorFactor]
+                                    ) [SingleFactor]
+                                  ) [Term]
+                                ) [TermPositiveExpr]
+                              ) [StatementPrintWithoutWidth]
+                            ) [Statements]
+                            StatementPrintWithoutWidth(
+                              TermPositiveExpr(
+                                Term(
+                                  SingleFactor(
+                                    FuncCallFactor(
+                                      FuncCallFactorDesignator(
+                                        SimpleDesignator(
+                                         sum
+                                        ) [SimpleDesignator]
+                                      ) [FuncCallFactorDesignator]
+                                      Actuals(
+                                        ActualParams(
+                                          ActualParam(
+                                            TermPositiveExpr(
+                                              Term(
+                                                SingleFactor(
+                                                  FuncCallFactor(
+                                                    FuncCallFactorDesignator(
+                                                      SimpleDesignator(
+                                                       sum
+                                                      ) [SimpleDesignator]
+                                                    ) [FuncCallFactorDesignator]
+                                                    Actuals(
+                                                      ActualParams(
+                                                        ActualParam(
+                                                          TermPositiveExpr(
+                                                            Term(
+                                                              SingleFactor(
+                                                                DesignatorFactor(
+                                                                  ArrayDesignator(
+                                                                    SimpleDesignator(
+                                                                     niz
+                                                                    ) [SimpleDesignator]
+                                                                    TermPositiveExpr(
+                                                                      Term(
+                                                                        SingleFactor(
+                                                                          NumberConstFactor(
+                                                                           0
+                                                                          ) [NumberConstFactor]
+                                                                        ) [SingleFactor]
+                                                                      ) [Term]
+                                                                    ) [TermPositiveExpr]
+                                                                  ) [ArrayDesignator]
+                                                                ) [DesignatorFactor]
+                                                              ) [SingleFactor]
+                                                            ) [Term]
+                                                          ) [TermPositiveExpr]
+                                                        ) [ActualParam]
+                                                        TermPositiveExpr(
+                                                          Term(
+                                                            SingleFactor(
+                                                              DesignatorFactor(
+                                                                ArrayDesignator(
+                                                                  SimpleDesignator(
+                                                                   niz
+                                                                  ) [SimpleDesignator]
+                                                                  TermPositiveExpr(
+                                                                    Term(
+                                                                      SingleFactor(
+                                                                        NumberConstFactor(
+                                                                         1
+                                                                        ) [NumberConstFactor]
+                                                                      ) [SingleFactor]
+                                                                    ) [Term]
+                                                                  ) [TermPositiveExpr]
+                                                                ) [ArrayDesignator]
+                                                              ) [DesignatorFactor]
+                                                            ) [SingleFactor]
+                                                          ) [Term]
+                                                        ) [TermPositiveExpr]
+                                                      ) [ActualParams]
+                                                    ) [Actuals]
+                                                  ) [FuncCallFactor]
+                                                ) [SingleFactor]
+                                              ) [Term]
+                                            ) [TermPositiveExpr]
+                                          ) [ActualParam]
+                                          TermPositiveExpr(
+                                            Term(
+                                              SingleFactor(
+                                                DesignatorFactor(
+                                                  ArrayDesignator(
+                                                    SimpleDesignator(
+                                                     niz
+                                                    ) [SimpleDesignator]
+                                                    TermPositiveExpr(
+                                                      Term(
+                                                        SingleFactor(
+                                                          NumberConstFactor(
+                                                           2
+                                                          ) [NumberConstFactor]
+                                                        ) [SingleFactor]
+                                                      ) [Term]
+                                                    ) [TermPositiveExpr]
+                                                  ) [ArrayDesignator]
+                                                ) [DesignatorFactor]
+                                              ) [SingleFactor]
+                                            ) [Term]
+                                          ) [TermPositiveExpr]
+                                        ) [ActualParams]
+                                      ) [Actuals]
+                                    ) [FuncCallFactor]
+                                  ) [SingleFactor]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                            ) [StatementPrintWithoutWidth]
+                          ) [Statements]
+                          StatementPrintWithoutWidth(
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  DesignatorFactor(
+                                    SimpleDesignator(
+                                     eol
+                                    ) [SimpleDesignator]
+                                  ) [DesignatorFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [StatementPrintWithoutWidth]
+                        ) [Statements]
+                        StatementPrintWithoutWidth(
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                FuncCallFactor(
+                                  FuncCallFactorDesignator(
+                                    SimpleDesignator(
+                                     inkrement
+                                    ) [SimpleDesignator]
+                                  ) [FuncCallFactorDesignator]
+                                  Actuals(
+                                    ActualParams(
+                                      ActualParam(
+                                        TermPositiveExpr(
+                                          Term(
+                                            SingleFactor(
+                                              DesignatorFactor(
+                                                ArrayDesignator(
+                                                  SimpleDesignator(
+                                                   niz
+                                                  ) [SimpleDesignator]
+                                                  TermPositiveExpr(
+                                                    Term(
+                                                      SingleFactor(
+                                                        NumberConstFactor(
+                                                         2
+                                                        ) [NumberConstFactor]
+                                                      ) [SingleFactor]
+                                                    ) [Term]
+                                                  ) [TermPositiveExpr]
+                                                ) [ArrayDesignator]
+                                              ) [DesignatorFactor]
+                                            ) [SingleFactor]
+                                          ) [Term]
+                                        ) [TermPositiveExpr]
+                                      ) [ActualParam]
+                                      TermPositiveExpr(
+                                        Term(
+                                          SingleFactor(
+                                            NumberConstFactor(
+                                             2
+                                            ) [NumberConstFactor]
+                                          ) [SingleFactor]
+                                        ) [Term]
+                                      ) [TermPositiveExpr]
+                                    ) [ActualParams]
+                                  ) [Actuals]
+                                ) [FuncCallFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [StatementPrintWithoutWidth]
+                      ) [Statements]
+                      StatementDesignator(
+                        DesignatorAssignment(
+                          SimpleDesignator(
+                           a
+                          ) [SimpleDesignator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 3
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [DesignatorAssignment]
+                      ) [StatementDesignator]
+                    ) [Statements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        SimpleDesignator(
+                         i
+                        ) [SimpleDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              NumberConstFactor(
+                               0
+                              ) [NumberConstFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                  StatementWhile(
+                    WhileLoopParen(
+                    ) [WhileLoopParen]
+                    ConditionsWithoutOr(
+                      ConditionsWithoutAnd(
+                        RelopCondition(
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   i
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                          LessOperator(
+                          ) [LessOperator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 3
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [RelopCondition]
+                      ) [ConditionsWithoutAnd]
+                    ) [ConditionsWithoutOr]
+                    StatementBlock(
+                      Statements(
+                        Statements(
+                          NoStatements(
+                          ) [NoStatements]
+                          StatementDesignator(
+                            DesignatorAssignment(
+                              ArrayDesignator(
+                                SimpleDesignator(
+                                 niz
+                                ) [SimpleDesignator]
+                                TermPositiveExpr(
+                                  Term(
+                                    SingleFactor(
+                                      DesignatorFactor(
+                                        SimpleDesignator(
+                                         i
+                                        ) [SimpleDesignator]
+                                      ) [DesignatorFactor]
+                                    ) [SingleFactor]
+                                  ) [Term]
+                                ) [TermPositiveExpr]
+                              ) [ArrayDesignator]
+                              TermPositiveExpr(
+                                Term(
+                                  MultipleFactors(
+                                    MultipleFactors(
+                                      SingleFactor(
+                                        DesignatorFactor(
+                                          ArrayDesignator(
+                                            SimpleDesignator(
+                                             niz
+                                            ) [SimpleDesignator]
+                                            TermPositiveExpr(
+                                              Term(
+                                                SingleFactor(
+                                                  DesignatorFactor(
+                                                    SimpleDesignator(
+                                                     i
+                                                    ) [SimpleDesignator]
+                                                  ) [DesignatorFactor]
+                                                ) [SingleFactor]
+                                              ) [Term]
+                                            ) [TermPositiveExpr]
+                                          ) [ArrayDesignator]
+                                        ) [DesignatorFactor]
+                                      ) [SingleFactor]
+                                      MultiplyOperator(
+                                      ) [MultiplyOperator]
+                                      NumberConstFactor(
+                                       2
+                                      ) [NumberConstFactor]
+                                    ) [MultipleFactors]
+                                    MultiplyOperator(
+                                    ) [MultiplyOperator]
+                                    DesignatorFactor(
+                                      SimpleDesignator(
+                                       a
+                                      ) [SimpleDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [MultipleFactors]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                            ) [DesignatorAssignment]
+                          ) [StatementDesignator]
+                        ) [Statements]
+                        StatementDesignator(
+                          DesignatorInc(
+                            SimpleDesignator(
+                             i
+                            ) [SimpleDesignator]
+                          ) [DesignatorInc]
+                        ) [StatementDesignator]
+                      ) [Statements]
+                    ) [StatementBlock]
+                  ) [StatementWhile]
+                ) [Statements]
+                StatementForeach(
+                  SimpleDesignator(
+                   niz
+                  ) [SimpleDesignator]
+                  ForEachLoopParen(
+                  ) [ForEachLoopParen]
+                 curr
+                  StatementPrintWithoutWidth(
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             curr
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [StatementPrintWithoutWidth]
+                ) [StatementForeach]
+              ) [Statements]
+              StatementPrintWithoutWidth(
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         eol
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementPrintWithoutWidth]
+            ) [Statements]
+            StatementDesignator(
+              DesignatorAssignment(
+                SimpleDesignator(
+                 niz2
+                ) [SimpleDesignator]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      NumberConstFactor(
+                       0
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [DesignatorAssignment]
+            ) [StatementDesignator]
+          ) [Statements]
+          StatementForeach(
+            SimpleDesignator(
+             niz
+            ) [SimpleDesignator]
+            ForEachLoopParen(
+            ) [ForEachLoopParen]
+           curr
+            StatementBlock(
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    SimpleDesignator(
+                     niz2
+                    ) [SimpleDesignator]
+                    AddExpr(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               niz2
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                      PlusOperator(
+                      ) [PlusOperator]
+                      Term(
+                        MultipleFactors(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               curr
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                          MultiplyOperator(
+                          ) [MultiplyOperator]
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             curr
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [MultipleFactors]
+                      ) [Term]
+                    ) [AddExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+            ) [StatementBlock]
+          ) [StatementForeach]
+        ) [Statements]
+        StatementPrintWithoutWidth(
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                DesignatorFactor(
+                  SimpleDesignator(
+                   niz2
+                  ) [SimpleDesignator]
+                ) [DesignatorFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  22:53:33,444 - ====================================
+INFO  22:53:33,449 - Kreirana je promenjiva i na liniji 7
+INFO  22:53:33,449 - Kreirana je promenjiva ibool na liniji 8
+INFO  22:53:33,449 - Kreirana je promenjiva niz2 na liniji 10
+INFO  22:53:33,449 - Kreirana je promenjiva niz[] na liniji 12
+INFO  22:53:33,449 - Kreirana je promenjiva a na liniji 13
+INFO  22:53:33,449 - Kreirana je promenjiva curr na liniji 13
+INFO  22:53:33,449 - Definicija funkcije sum na liniji 17
+INFO  22:53:33,449 - Definicija funkcije inkrement na liniji 23
+INFO  22:53:33,449 - Kreirana je promenjiva pom na liniji 24
+INFO  22:53:33,449 - FCsum na liniji 29
+INFO  22:53:33,449 - 0  na liniji 29
+INFO  22:53:33,449 - Definicija funkcije verify na liniji 32
+INFO  22:53:33,449 - Prepoznata naredba print
+INFO  22:53:33,450 - Definicija funkcije main na liniji 37
+INFO  22:53:33,450 - Prepoznata naredba print
+INFO  22:53:33,450 - Prepoznata naredba print
+INFO  22:53:33,450 - Prepoznata naredba print
+INFO  22:53:33,450 - Prepoznata naredba print
+INFO  22:53:33,450 - Pristup elemntu niza niz na liniji 55
+INFO  22:53:33,450 - Pristup elemntu niza niz na liniji 56
+INFO  22:53:33,450 - Pristup elemntu niza niz na liniji 57
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom sum na liniji 57
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 57
+INFO  22:53:33,450 - Pristup elemntu niza niz na liniji 57
+INFO  22:53:33,450 - 0  na liniji 57
+INFO  22:53:33,450 - Pristup elemntu niza niz na liniji 57
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: Tip svih cinilaca mora biti int na liniji 57
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: Levi i desni sabirak nisu kompatibilni  na liniji 57
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 57
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom verify na liniji 58
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 58
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: Tip izraza u uslovu if, while ili foreach petlje treba biti tipa bool, a nije na liniji 58
+INFO  22:53:33,450 - Pristup elemntu niza niz na liniji 58
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom ord na liniji 58
+ERROR 22:53:33,450 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 58
+INFO  22:53:33,450 - 0  na liniji 58
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Formalni parametar funkcije sum koji je tipa int nije kompatibilan sa stvarnim argumentom koji je tipa char na liniji 58
+INFO  22:53:33,451 - Prepoznata naredba print
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Expr na liniji 58 nije tipa int, char ili bool na liniji 58
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom ord na liniji 59
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 59
+INFO  22:53:33,451 - 0  na liniji 59
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Formalni parametar funkcije sum koji je tipa int nije kompatibilan sa stvarnim argumentom koji je tipa char na liniji 59
+INFO  22:53:33,451 - Prepoznata naredba print
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Expr na liniji 59 nije tipa int, char ili bool na liniji 59
+INFO  22:53:33,451 - Prepoznata naredba print
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom inkrement na liniji 70
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 70
+INFO  22:53:33,451 - 0  na liniji 70
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 70
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom verify na liniji 73
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 73
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Tip izraza u uslovu if, while ili foreach petlje treba biti tipa bool, a nije na liniji 73
+INFO  22:53:33,451 - Prepoznata naredba print
+INFO  22:53:33,451 - Prepoznata naredba print
+INFO  22:53:33,451 - Pristup elemntu niza niz na liniji 76
+INFO  22:53:33,451 - Pristup elemntu niza niz na liniji 77
+INFO  22:53:33,451 - Pristup elemntu niza niz na liniji 78
+INFO  22:53:33,451 - Prepoznata naredba print
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom sum na liniji 80
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 80
+ERROR 22:53:33,451 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom sum na liniji 80
+ERROR 22:53:33,452 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 80
+INFO  22:53:33,452 - Pristup elemntu niza niz na liniji 80
+INFO  22:53:33,452 - 0  na liniji 80
+INFO  22:53:33,452 - Pristup elemntu niza niz na liniji 80
+INFO  22:53:33,452 - 0  na liniji 80
+ERROR 22:53:33,452 - SEMANTICKA GRESKA: Formalni parametar funkcije sum koji je tipa int nije kompatibilan sa stvarnim argumentom koji je tipa none na liniji 80
+INFO  22:53:33,452 - Pristup elemntu niza niz na liniji 80
+INFO  22:53:33,452 - Prepoznata naredba print
+ERROR 22:53:33,452 - SEMANTICKA GRESKA: Expr na liniji 80 nije tipa int, char ili bool na liniji 80
+INFO  22:53:33,452 - Prepoznata naredba print
+ERROR 22:53:33,452 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom inkrement na liniji 83
+ERROR 22:53:33,452 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 83
+INFO  22:53:33,452 - Pristup elemntu niza niz na liniji 83
+INFO  22:53:33,452 - 0  na liniji 83
+INFO  22:53:33,452 - Prepoznata naredba print
+ERROR 22:53:33,452 - SEMANTICKA GRESKA: Expr na liniji 83 nije tipa int, char ili bool na liniji 83
+INFO  22:53:33,452 - Pristup elemntu niza niz na liniji 88
+INFO  22:53:33,452 - Pristup elemntu niza niz na liniji 88
+INFO  22:53:33,452 - Prepoznata naredba print
+INFO  22:53:33,452 - Prepoznata naredba print
+INFO  22:53:33,452 - Prepoznata naredba print
+INFO  22:53:33,452 - Print count calls = 17
+INFO  22:53:33,452 - ====================================
+ERROR 22:53:33,453 - Parsiranje NIJE uspesno zavrseno!

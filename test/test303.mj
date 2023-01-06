@@ -6,7 +6,7 @@ const int cinilac = 4, delilac = 3;
 
 class Predmet
 {
-	 int d;
+	 int tezina;
 	 char vrsta;
 	{
 		 
@@ -30,12 +30,12 @@ class Sfera extends Predmet
 	{
 		Sfera() {
 		  vrsta = 's';
-		  postaviPoluprecnik(1);
+		  r = 1;
 		}
 		
 		Sfera(int r) {
 			vrsta = 's';
-			postaviPoluprecnik(r);
+			this.r = r;
 		}
 		
 		 void postaviPoluprecnik(int r) {this.r = r; }
@@ -56,17 +56,23 @@ class Kvadar extends Predmet
 	{
 		Kvadar() {
 		  vrsta = 'k';
-		  postaviStranice(1, 2, 3);
+		  a = 1;
+		  b = 2;
+		  c = 3;
 		}
 
 		Kvadar(int a, int b, int c) {
 		  vrsta = 'k';
-		  postaviStranice(a, b, c);
+		  this.a = a;
+		  this.b = b;
+                  this.c = c;
 		}
 		
 		Kvadar(int a) {
 		  vrsta = 'k';
-		  postaviStranice(a, a + 1, a + 2);
+		  this.a = a;
+		  b = a + 1;
+                  c = a + 2;
 		}
 		
 		 void postaviStranice(int a, int b, int c) {this.a = a; this.b = b; this.c = c;}

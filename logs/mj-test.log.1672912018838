@@ -1,0 +1,221 @@
+INFO  13:29:30,144 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  13:29:30,220 - #2 program
+INFO  13:29:30,220 - #47 test301
+INFO  13:29:30,221 - #47 int
+INFO  13:29:30,222 - #47 i
+INFO  13:29:30,223 - #37 ,
+INFO  13:29:30,224 - #47 j
+INFO  13:29:30,225 - #35 ;
+INFO  13:29:30,225 - #43 {
+INFO  13:29:30,225 - #14 void
+INFO  13:29:30,226 - #47 main
+INFO  13:29:30,226 - #39 (
+INFO  13:29:30,226 - #40 )
+INFO  13:29:30,227 - #43 {
+INFO  13:29:30,229 - #47 i
+INFO  13:29:30,230 - #32 =
+INFO  13:29:30,231 - #46 1
+INFO  13:29:30,231 - #35 ;
+INFO  13:29:30,232 - #47 j
+INFO  13:29:30,232 - #32 =
+INFO  13:29:30,233 - #46 2
+INFO  13:29:30,235 - #35 ;
+INFO  13:29:30,235 - #11 while
+INFO  13:29:30,235 - #39 (
+INFO  13:29:30,235 - #47 i
+INFO  13:29:30,237 - #28 <
+INFO  13:29:30,238 - #46 1
+INFO  13:29:30,239 - #40 )
+INFO  13:29:30,239 - #43 {
+INFO  13:29:30,239 - #11 while
+INFO  13:29:30,240 - #39 (
+INFO  13:29:30,240 - #47 j
+INFO  13:29:30,240 - #26 >
+INFO  13:29:30,240 - #46 5
+INFO  13:29:30,241 - #40 )
+INFO  13:29:30,241 - #43 {
+INFO  13:29:30,241 - #18 break
+INFO  13:29:30,241 - #35 ;
+INFO  13:29:30,241 - #44 }
+INFO  13:29:30,242 - #16 continue
+INFO  13:29:30,242 - #35 ;
+INFO  13:29:30,242 - #44 }
+INFO  13:29:30,243 - #18 break
+INFO  13:29:30,243 - #35 ;
+INFO  13:29:30,243 - #44 }
+INFO  13:29:30,243 - #44 }
+INFO  13:29:30,251 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationNotLast(
+        NotLastVarDeclarations(
+         i
+          VarDeclarationOfNotArray(
+          ) [VarDeclarationOfNotArray]
+        ) [NotLastVarDeclarations]
+        VarDeclarationLast(
+          LastVarDeclarations(
+           j
+            VarDeclarationOfNotArray(
+            ) [VarDeclarationOfNotArray]
+          ) [LastVarDeclarations]
+        ) [VarDeclarationLast]
+      ) [VarDeclarationNotLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  SimpleDesignator(
+                   i
+                  ) [SimpleDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         1
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+            StatementDesignator(
+              DesignatorAssignment(
+                SimpleDesignator(
+                 j
+                ) [SimpleDesignator]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      NumberConstFactor(
+                       2
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [DesignatorAssignment]
+            ) [StatementDesignator]
+          ) [Statements]
+          StatementWhile(
+            WhileLoopParen(
+            ) [WhileLoopParen]
+            ConditionsWithoutOr(
+              ConditionsWithoutAnd(
+                RelopCondition(
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           i
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                  LessOperator(
+                  ) [LessOperator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         1
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [RelopCondition]
+              ) [ConditionsWithoutAnd]
+            ) [ConditionsWithoutOr]
+            StatementBlock(
+              Statements(
+                Statements(
+                  NoStatements(
+                  ) [NoStatements]
+                  StatementWhile(
+                    WhileLoopParen(
+                    ) [WhileLoopParen]
+                    ConditionsWithoutOr(
+                      ConditionsWithoutAnd(
+                        RelopCondition(
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   j
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                          GreaterOperator(
+                          ) [GreaterOperator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 5
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [RelopCondition]
+                      ) [ConditionsWithoutAnd]
+                    ) [ConditionsWithoutOr]
+                    StatementBlock(
+                      Statements(
+                        NoStatements(
+                        ) [NoStatements]
+                        StatementBreak(
+                        ) [StatementBreak]
+                      ) [Statements]
+                    ) [StatementBlock]
+                  ) [StatementWhile]
+                ) [Statements]
+                StatementContinue(
+                ) [StatementContinue]
+              ) [Statements]
+            ) [StatementBlock]
+          ) [StatementWhile]
+        ) [Statements]
+        StatementBreak(
+        ) [StatementBreak]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  13:29:30,252 - ====================================
+INFO  13:29:30,259 - Kreirana je promenjiva i na liniji 3
+INFO  13:29:30,259 - Kreirana je promenjiva j na liniji 3
+INFO  13:29:30,260 - Definicija funkcije main na liniji 5
+ERROR 13:29:30,260 - SEMANTICKA GRESKA: Naredba break mora biti u while ili foreach izrazu
+INFO  13:29:30,260 - Print count calls = 0
+INFO  13:29:30,260 - ====================================
+ERROR 13:29:30,260 - Parsiranje NIJE uspesno zavrseno!

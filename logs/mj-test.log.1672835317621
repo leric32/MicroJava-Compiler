@@ -1,0 +1,154 @@
+INFO  00:48:49,439 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:48:49,547 - #2 program
+INFO  00:48:49,548 - #47 test301
+INFO  00:48:49,548 - #5 class
+INFO  00:48:49,551 - #47 Predmet
+INFO  00:48:49,551 - #43 {
+INFO  00:48:49,552 - #47 int
+INFO  00:48:49,553 - #47 tezina
+INFO  00:48:49,554 - #35 ;
+INFO  00:48:49,557 - #47 char
+INFO  00:48:49,558 - #47 vrsta
+INFO  00:48:49,558 - #35 ;
+INFO  00:48:49,558 - #43 {
+INFO  00:48:49,558 - #14 void
+INFO  00:48:49,559 - #47 postaviTezinu
+INFO  00:48:49,559 - #39 (
+INFO  00:48:49,559 - #47 int
+INFO  00:48:49,560 - #47 tezina
+INFO  00:48:49,560 - #40 )
+INFO  00:48:49,560 - #43 {
+INFO  00:48:49,562 - #47 this
+INFO  00:48:49,563 - #38 .
+INFO  00:48:49,563 - #47 tezina
+INFO  00:48:49,564 - #32 =
+INFO  00:48:49,564 - #47 tezina
+INFO  00:48:49,564 - #35 ;
+INFO  00:48:49,565 - #44 }
+INFO  00:48:49,566 - #44 }
+INFO  00:48:49,566 - #44 }
+INFO  00:48:49,566 - #43 {
+INFO  00:48:49,567 - #14 void
+INFO  00:48:49,568 - #47 main
+INFO  00:48:49,568 - #39 (
+INFO  00:48:49,568 - #40 )
+INFO  00:48:49,569 - #43 {
+INFO  00:48:49,570 - #44 }
+INFO  00:48:49,570 - #44 }
+INFO  00:48:49,579 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ClassDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    ClassDeclaration(
+      NameOfClass(
+       Predmet
+      ) [NameOfClass]
+      ClassIsNotExtended(
+      ) [ClassIsNotExtended]
+      ClassBodyWithMethodNoConstructor(
+        ClassVariables(
+          ClassVariables(
+            NoClassVariables(
+            ) [NoClassVariables]
+            ClassVarDeclaration(
+              Type(
+               int
+              ) [Type]
+              ClassVarDecLast(
+                ClassVariable(
+                 tezina
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecLast]
+            ) [ClassVarDeclaration]
+          ) [ClassVariables]
+          ClassVarDeclaration(
+            Type(
+             char
+            ) [Type]
+            ClassVarDecLast(
+              ClassVariable(
+               vrsta
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [ClassVariable]
+            ) [ClassVarDecLast]
+          ) [ClassVarDeclaration]
+        ) [ClassVariables]
+        SingleOrEndOfListMethod(
+          MethodDeclaration(
+            VoidMethodTypeName(
+             postaviTezinu
+            ) [VoidMethodTypeName]
+            FormalParameters(
+              SingleOrEndOfListParameter(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 tezina
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+              ) [SingleOrEndOfListParameter]
+            ) [FormalParameters]
+            MethodWithoutVariables(
+            ) [MethodWithoutVariables]
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  ClassFieldDesignator(
+                    SimpleDesignator(
+                     this
+                    ) [SimpleDesignator]
+                   tezina
+                  ) [ClassFieldDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           tezina
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+          ) [MethodDeclaration]
+        ) [SingleOrEndOfListMethod]
+      ) [ClassBodyWithMethodNoConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:48:49,580 - ====================================
+INFO  00:48:49,589 - Kreirana je klasa Predmet na liniji 3
+INFO  00:48:49,590 - Definicija funkcije postaviTezinu na liniji 9
+ERROR 00:48:49,590 - SEMANTICKA GRESKA: Promenljiva sa leve strane nije deklarisana  na liniji 9
+INFO  00:48:49,591 - Definicija funkcije main na liniji 15
+INFO  00:48:49,591 - Print count calls = 0
+INFO  00:48:49,591 - ====================================
+ERROR 00:48:49,592 - Parsiranje NIJE uspesno zavrseno!

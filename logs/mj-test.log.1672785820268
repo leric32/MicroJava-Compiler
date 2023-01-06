@@ -1,0 +1,69 @@
+INFO  23:43:24,415 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  23:43:24,463 - #2 program
+INFO  23:43:24,463 - #47 test301
+INFO  23:43:24,463 - #43 {
+INFO  23:43:24,464 - #14 void
+INFO  23:43:24,465 - #47 main
+INFO  23:43:24,465 - #39 (
+INFO  23:43:24,465 - #40 )
+INFO  23:43:24,465 - #43 {
+INFO  23:43:24,466 - #47 ord
+INFO  23:43:24,466 - #39 (
+INFO  23:43:24,467 - #48 A
+INFO  23:43:24,467 - #40 )
+INFO  23:43:24,468 - #35 ;
+INFO  23:43:24,469 - #44 }
+INFO  23:43:24,469 - #44 }
+INFO  23:43:24,474 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          DesignatorFuncCall(
+            FunctionCallName(
+              SimpleDesignator(
+               ord
+              ) [SimpleDesignator]
+            ) [FunctionCallName]
+            Actuals(
+              ActualParam(
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      CharConstFactor(
+                       A
+                      ) [CharConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [ActualParam]
+            ) [Actuals]
+          ) [DesignatorFuncCall]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:43:24,475 - ====================================
+INFO  23:43:24,479 - Definicija funkcije main na liniji 6
+INFO  23:43:24,479 - FCN  0
+INFO  23:43:24,479 - 0  na liniji 8
+INFO  23:43:24,479 - Print count calls = 0
+INFO  23:43:24,479 - ====================================
+INFO  23:43:24,479 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,342 @@
+INFO  22:47:21,973 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  22:47:22,019 - #2 program
+INFO  22:47:22,019 - #47 test301
+INFO  22:47:22,019 - #47 int
+INFO  22:47:22,021 - #47 a
+INFO  22:47:22,022 - #32 =
+ERROR 22:47:22,022 - 
+Sintaksna greska na liniji 3
+INFO  22:47:22,022 - #46 0
+INFO  22:47:22,022 - #35 ;
+INFO  22:47:22,023 - #43 {
+INFO  22:47:22,023 - #14 void
+INFO  22:47:22,023 - #47 main
+ERROR 22:47:22,023 - Izvrsen oporavak do ; u liniji 3
+INFO  22:47:22,031 - #39 (
+INFO  22:47:22,031 - #40 )
+INFO  22:47:22,032 - #47 int
+INFO  22:47:22,032 - #47 niz
+INFO  22:47:22,032 - #41 [
+INFO  22:47:22,033 - #42 ]
+INFO  22:47:22,033 - #35 ;
+INFO  22:47:22,034 - #43 {
+INFO  22:47:22,034 - #47 niz
+INFO  22:47:22,035 - #32 =
+INFO  22:47:22,035 - #12 new
+INFO  22:47:22,035 - #47 int
+INFO  22:47:22,035 - #41 [
+INFO  22:47:22,035 - #46 3
+INFO  22:47:22,035 - #42 ]
+INFO  22:47:22,037 - #35 ;
+INFO  22:47:22,037 - #47 niz
+INFO  22:47:22,038 - #41 [
+INFO  22:47:22,038 - #46 0
+INFO  22:47:22,038 - #42 ]
+INFO  22:47:22,038 - #32 =
+INFO  22:47:22,038 - #46 1
+INFO  22:47:22,038 - #21 *
+INFO  22:47:22,038 - #47 a
+INFO  22:47:22,039 - #35 ;
+INFO  22:47:22,039 - #47 niz
+INFO  22:47:22,039 - #41 [
+INFO  22:47:22,040 - #46 1
+INFO  22:47:22,040 - #42 ]
+INFO  22:47:22,040 - #32 =
+INFO  22:47:22,040 - #46 2
+INFO  22:47:22,040 - #21 *
+INFO  22:47:22,040 - #47 a
+INFO  22:47:22,040 - #35 ;
+INFO  22:47:22,040 - #47 niz
+INFO  22:47:22,040 - #41 [
+INFO  22:47:22,040 - #46 2
+INFO  22:47:22,040 - #42 ]
+INFO  22:47:22,040 - #32 =
+INFO  22:47:22,040 - #47 sum
+INFO  22:47:22,040 - #39 (
+INFO  22:47:22,040 - #47 niz
+INFO  22:47:22,040 - #41 [
+INFO  22:47:22,040 - #46 1
+INFO  22:47:22,040 - #42 ]
+INFO  22:47:22,041 - #37 ,
+INFO  22:47:22,041 - #47 niz
+INFO  22:47:22,041 - #41 [
+INFO  22:47:22,041 - #46 0
+INFO  22:47:22,041 - #42 ]
+INFO  22:47:22,041 - #40 )
+INFO  22:47:22,041 - #21 *
+INFO  22:47:22,041 - #47 a
+INFO  22:47:22,041 - #19 +
+INFO  22:47:22,042 - #46 1
+INFO  22:47:22,042 - #35 ;
+INFO  22:47:22,042 - #44 }
+INFO  22:47:22,042 - #44 }
+INFO  22:47:22,047 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        ErrorVarDeclLast(
+        ) [ErrorVarDeclLast]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             niz
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  SimpleDesignator(
+                   niz
+                  ) [SimpleDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NewArrayOperatorFactor(
+                          Type(
+                           int
+                          ) [Type]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 3
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [NewArrayOperatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+            StatementDesignator(
+              DesignatorAssignment(
+                ArrayDesignator(
+                  SimpleDesignator(
+                   niz
+                  ) [SimpleDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         0
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [ArrayDesignator]
+                TermPositiveExpr(
+                  Term(
+                    MultipleFactors(
+                      SingleFactor(
+                        NumberConstFactor(
+                         1
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                      MultiplyOperator(
+                      ) [MultiplyOperator]
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         a
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [MultipleFactors]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [DesignatorAssignment]
+            ) [StatementDesignator]
+          ) [Statements]
+          StatementDesignator(
+            DesignatorAssignment(
+              ArrayDesignator(
+                SimpleDesignator(
+                 niz
+                ) [SimpleDesignator]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      NumberConstFactor(
+                       1
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [ArrayDesignator]
+              TermPositiveExpr(
+                Term(
+                  MultipleFactors(
+                    SingleFactor(
+                      NumberConstFactor(
+                       2
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                    MultiplyOperator(
+                    ) [MultiplyOperator]
+                    DesignatorFactor(
+                      SimpleDesignator(
+                       a
+                      ) [SimpleDesignator]
+                    ) [DesignatorFactor]
+                  ) [MultipleFactors]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [DesignatorAssignment]
+          ) [StatementDesignator]
+        ) [Statements]
+        StatementDesignator(
+          DesignatorAssignment(
+            ArrayDesignator(
+              SimpleDesignator(
+               niz
+              ) [SimpleDesignator]
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    NumberConstFactor(
+                     2
+                    ) [NumberConstFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [ArrayDesignator]
+            AddExpr(
+              TermPositiveExpr(
+                Term(
+                  MultipleFactors(
+                    SingleFactor(
+                      FuncCallFactor(
+                        FuncCallFactorDesignator(
+                          SimpleDesignator(
+                           sum
+                          ) [SimpleDesignator]
+                        ) [FuncCallFactorDesignator]
+                        Actuals(
+                          ActualParams(
+                            ActualParam(
+                              TermPositiveExpr(
+                                Term(
+                                  SingleFactor(
+                                    DesignatorFactor(
+                                      ArrayDesignator(
+                                        SimpleDesignator(
+                                         niz
+                                        ) [SimpleDesignator]
+                                        TermPositiveExpr(
+                                          Term(
+                                            SingleFactor(
+                                              NumberConstFactor(
+                                               1
+                                              ) [NumberConstFactor]
+                                            ) [SingleFactor]
+                                          ) [Term]
+                                        ) [TermPositiveExpr]
+                                      ) [ArrayDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [SingleFactor]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                            ) [ActualParam]
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  DesignatorFactor(
+                                    ArrayDesignator(
+                                      SimpleDesignator(
+                                       niz
+                                      ) [SimpleDesignator]
+                                      TermPositiveExpr(
+                                        Term(
+                                          SingleFactor(
+                                            NumberConstFactor(
+                                             0
+                                            ) [NumberConstFactor]
+                                          ) [SingleFactor]
+                                        ) [Term]
+                                      ) [TermPositiveExpr]
+                                    ) [ArrayDesignator]
+                                  ) [DesignatorFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [ActualParams]
+                        ) [Actuals]
+                      ) [FuncCallFactor]
+                    ) [SingleFactor]
+                    MultiplyOperator(
+                    ) [MultiplyOperator]
+                    DesignatorFactor(
+                      SimpleDesignator(
+                       a
+                      ) [SimpleDesignator]
+                    ) [DesignatorFactor]
+                  ) [MultipleFactors]
+                ) [Term]
+              ) [TermPositiveExpr]
+              PlusOperator(
+              ) [PlusOperator]
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   1
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [AddExpr]
+          ) [DesignatorAssignment]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  22:47:22,047 - ====================================
+INFO  22:47:22,051 - Definicija funkcije main na liniji 6
+INFO  22:47:22,051 - Kreirana je promenjiva niz[] na liniji 7
+INFO  22:47:22,051 - Pristup elemntu niza niz na liniji 10
+ERROR 22:47:22,051 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom a na liniji 10
+ERROR 22:47:22,051 - SEMANTICKA GRESKA: Tip svih cinilaca mora biti int na liniji 10
+ERROR 22:47:22,051 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 10
+INFO  22:47:22,051 - Pristup elemntu niza niz na liniji 11
+ERROR 22:47:22,052 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom a na liniji 11
+ERROR 22:47:22,052 - SEMANTICKA GRESKA: Tip svih cinilaca mora biti int na liniji 11
+ERROR 22:47:22,052 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 11
+INFO  22:47:22,052 - Pristup elemntu niza niz na liniji 12
+ERROR 22:47:22,052 - SEMANTICKA GRESKA: Nije deklarisana promenljiva sa imenom sum na liniji 12
+ERROR 22:47:22,052 - SEMANTICKA GRESKA: noObj ne predstavlja funkciju na liniji 12
+INFO  22:47:22,052 - Pristup elemntu niza niz na liniji 12

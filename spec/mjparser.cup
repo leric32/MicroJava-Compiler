@@ -72,10 +72,11 @@ nonterminal VarDeclList, VarDecl, ListOfVarDec, VarDeclNotLast, VarDeclBrackets,
 nonterminal ConstDecl, ConstAssignment, ListOfCharDec, ClassDecl, ClassBody, ListOfClassVar, ClassVarDecl, ListOfClassVarDec, ClassVar, ConstructorDecl;
 nonterminal FormPars, FormParsList, OneFormalParam, ConstructorVarDecl, ClassMethodDecl, MethodDeclList, MethodDecl, MethodVarDeclList;
 nonterminal StatementList, Statement, ActPars, ActualParamList, Condition, CondTerm, CondFact, DesignatorStatement, DesignatorList;
-nonterminal Relop, Addop, Mulop, IfCond, ConstructorDeclList, DesignatorOrEpsilon, ForEachLoop, WhileLoop, FunctionCall;
+nonterminal Relop, Addop, Mulop, IfCond, ConstructorDeclList, DesignatorOrEpsilon, ForEachLoop, WhileLoop, FunctionCall, ConstructorDeclName, PrintEmpty;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodTypeName, ListOfFactors, Factor, Expr, Term, ClassExtended;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodTypeName, ListOfFactors, Factor, Expr, Term, ClassExtended, FuncCallFactorDes;
+
 precedence left ELSE;
 
 
@@ -182,7 +183,9 @@ ConstructorDeclList ::= (ListOfConstructorDeclarations) ConstructorDeclList Cons
 						(SingleOrLastConstructorDeclaration) ConstructorDecl
 						;
 
-ConstructorDecl ::= (ConstructorDeclaration) IDENT:constructorName LPAREN FormPars ConstructorVarDecl LBRACE StatementList RBRACE;
+ConstructorDecl ::= (ConstructorDeclaration) ConstructorDeclName LPAREN FormPars ConstructorVarDecl LBRACE StatementList RBRACE;
+
+ConstructorDeclName ::= (ConstructorDeclarationName) IDENT:constructorName;
 
 
 FormPars ::= (FormalParameters) FormParsList
@@ -256,14 +259,16 @@ Statement ::= (StatementDesignator) DesignatorStatement
 			  |
 			  (StatementRead) READ LPAREN Designator RPAREN SEMI
 			  |
-			  (StatementPrintWithoutWidth) PRINT LPAREN Expr RPAREN SEMI
+			  (StatementPrintWithoutWidth) PrintEmpty PRINT LPAREN Expr RPAREN SEMI
 			  |
-			  (StatementPrintWithWidth) PRINT LPAREN Expr COMMA NUMBER:width RPAREN SEMI
+			  (StatementPrintWithWidth) PrintEmpty PRINT LPAREN Expr COMMA NUMBER:width RPAREN SEMI
 			  |
 			  (StatementForeach) Designator ForEachLoop IDENT:feVar LAMBDA Statement RPAREN SEMI
 			  |
 			  (StatementBlock) LBRACE StatementList RBRACE
 			  ;  
+
+PrintEmpty ::= (PrintEmptyDummy) /* epsilon */;
 
 IfCond ::= (IfCondition) IF LPAREN Condition RPAREN
 		   |
@@ -357,13 +362,14 @@ Factor ::= (DesignatorFactor) Designator:varValue
 		   |
 		   (ExprFactor) LPAREN Expr:e RPAREN
 		   |
-		   (FuncCallFactor) Designator:func LPAREN ActPars RPAREN
+		   (FuncCallFactor) FuncCallFactorDes LPAREN ActPars RPAREN
 		   |
 		   (NewArrayOperatorFactor) NEW Type:arrName LBRACKET Expr:arrindex RBRACKET
 		   |
 		   (NewClassWithActParsOperatorFactor) NEW Type:arrName LPAREN ActPars RPAREN
 		   ;
 
+FuncCallFactorDes ::= (FuncCallFactorDesignator) Designator:func;
 
 Relop ::= (EqualOperator) EQUAL
 		  | 

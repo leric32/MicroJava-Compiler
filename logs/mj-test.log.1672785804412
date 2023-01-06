@@ -1,0 +1,81 @@
+INFO  23:38:09,220 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  23:38:09,266 - #2 program
+INFO  23:38:09,266 - #47 test301
+INFO  23:38:09,266 - #43 {
+INFO  23:38:09,268 - #14 void
+INFO  23:38:09,269 - #47 main
+INFO  23:38:09,269 - #39 (
+INFO  23:38:09,269 - #40 )
+INFO  23:38:09,269 - #43 {
+INFO  23:38:09,270 - #3 print
+INFO  23:38:09,271 - #39 (
+INFO  23:38:09,271 - #47 ord
+INFO  23:38:09,271 - #39 (
+INFO  23:38:09,272 - #48 A
+INFO  23:38:09,272 - #40 )
+INFO  23:38:09,274 - #40 )
+INFO  23:38:09,274 - #35 ;
+INFO  23:38:09,274 - #44 }
+INFO  23:38:09,274 - #44 }
+INFO  23:38:09,279 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementPrintWithoutWidth(
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                FuncCallFactor(
+                  FuncCallFactorDesignator(
+                    SimpleDesignator(
+                     ord
+                    ) [SimpleDesignator]
+                  ) [FuncCallFactorDesignator]
+                  Actuals(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            CharConstFactor(
+                             A
+                            ) [CharConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCallFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:38:09,280 - ====================================
+INFO  23:38:09,284 - Definicija funkcije main na liniji 6
+INFO  23:38:09,284 - FCord na liniji 8
+INFO  23:38:09,284 - 0  na liniji 8
+ERROR 23:38:09,284 - SEMANTICKA GRESKA: Tip izraza u funkciji ord mora biti tipa char, a ne tipa int na liniji 8
+INFO  23:38:09,284 - Prepoznata naredba print
+ERROR 23:38:09,284 - SEMANTICKA GRESKA: Expr na liniji 8 nije tipa int, char ili bool na liniji 8
+INFO  23:38:09,284 - Print count calls = 1
+INFO  23:38:09,285 - ====================================
+ERROR 23:38:09,285 - Parsiranje NIJE uspesno zavrseno!
