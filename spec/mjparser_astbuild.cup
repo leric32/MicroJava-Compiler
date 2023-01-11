@@ -112,9 +112,10 @@ nonterminal WhileLoop WhileLoop;
 nonterminal FunctionCall FunctionCall;
 nonterminal ConstructorDeclName ConstructorDeclName;
 nonterminal PrintEmpty PrintEmpty;
+nonterminal ArrayDesig ArrayDesig;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, MethodTypeName, ListOfFactors, Factor, Expr, Term, ClassExtended, FuncCallFactorDes;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ListOfFactors, Factor, Expr, Term, ClassExtended;
 
 precedence left ELSE;
 
@@ -347,7 +348,7 @@ DesignatorStatement ::= (DesignatorAssignment) Designator:dest ASSIGN Expr:e SEM
 			    		(ErrorDesignatorAssignment) error SEMI:l
 			    		{: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :} {: RESULT=new ErrorDesignatorAssignment(); :}
 			    		|
-						(DesignatorFuncCall) FunctionCall:F1 LPAREN ActPars:A2 RPAREN SEMI {: RESULT=new DesignatorFuncCall(F1, A2); RESULT.setLine(F1left); :}
+						(DesignatorFuncCall) FuncCallFactorDes:F1 LPAREN ActPars:A2 RPAREN SEMI {: RESULT=new DesignatorFuncCall(F1, A2); RESULT.setLine(F1left); :}
 						|
 						(DesignatorInc) Designator:varName INC SEMI {: RESULT=new DesignatorInc(varName); RESULT.setLine(varNameleft); :}
 						|
@@ -372,9 +373,12 @@ DesignatorOrEpsilon ::= (DesignArrAssignment) Designator:des {: RESULT=new Desig
 
 Designator ::= (ClassFieldDesignator) Designator:D1 POINT IDENT:classField {: RESULT=new ClassFieldDesignator(D1, classField); RESULT.setLine(D1left); :}
 			   |
-			   (ArrayDesignator) Designator:D1 LBRACKET Expr:arrIndex RBRACKET {: RESULT=new ArrayDesignator(D1, arrIndex); RESULT.setLine(D1left); :}
+			   (ArrayDesignator) ArrayDesig:A1 LBRACKET Expr:arrIndex RBRACKET {: RESULT=new ArrayDesignator(A1, arrIndex); RESULT.setLine(A1left); :}
 			   |
 			   (SimpleDesignator) IDENT:name {: RESULT=new SimpleDesignator(name); RESULT.setLine(nameleft); :} 
+			   ;
+
+ArrayDesig ::= (ArrayDesig) Designator:D1 {: RESULT=new ArrayDesig(D1); RESULT.setLine(D1left); :}
 			   ;
 
 Expr ::= (AddExpr) Expr:E1 Addop:A2 Term:T3 {: RESULT=new AddExpr(E1, A2, T3); RESULT.setLine(E1left); :}

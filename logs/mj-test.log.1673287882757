@@ -1,0 +1,353 @@
+INFO  19:10:50,070 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  19:10:50,117 - #2 program
+INFO  19:10:50,117 - #47 test301
+INFO  19:10:50,117 - #43 {
+INFO  19:10:50,118 - #14 void
+INFO  19:10:50,119 - #47 main
+INFO  19:10:50,119 - #39 (
+INFO  19:10:50,119 - #40 )
+INFO  19:10:50,119 - #47 int
+INFO  19:10:50,121 - #47 a
+INFO  19:10:50,121 - #37 ,
+INFO  19:10:50,123 - #47 b
+INFO  19:10:50,123 - #37 ,
+INFO  19:10:50,123 - #47 niz
+INFO  19:10:50,123 - #41 [
+INFO  19:10:50,123 - #42 ]
+INFO  19:10:50,123 - #37 ,
+INFO  19:10:50,124 - #47 niz2
+INFO  19:10:50,124 - #41 [
+INFO  19:10:50,124 - #42 ]
+INFO  19:10:50,124 - #35 ;
+INFO  19:10:50,124 - #43 {
+INFO  19:10:50,124 - #47 niz
+INFO  19:10:50,125 - #32 =
+INFO  19:10:50,125 - #12 new
+INFO  19:10:50,125 - #47 int
+INFO  19:10:50,125 - #41 [
+INFO  19:10:50,125 - #46 3
+INFO  19:10:50,125 - #42 ]
+INFO  19:10:50,126 - #35 ;
+INFO  19:10:50,126 - #47 niz
+INFO  19:10:50,127 - #41 [
+INFO  19:10:50,127 - #46 0
+INFO  19:10:50,127 - #42 ]
+INFO  19:10:50,127 - #32 =
+INFO  19:10:50,128 - #46 1
+INFO  19:10:50,128 - #35 ;
+INFO  19:10:50,128 - #47 niz
+INFO  19:10:50,128 - #41 [
+INFO  19:10:50,128 - #46 1
+INFO  19:10:50,128 - #42 ]
+INFO  19:10:50,128 - #32 =
+INFO  19:10:50,128 - #46 3
+INFO  19:10:50,128 - #35 ;
+INFO  19:10:50,128 - #47 niz2
+INFO  19:10:50,128 - #32 =
+INFO  19:10:50,128 - #12 new
+INFO  19:10:50,128 - #47 int
+INFO  19:10:50,129 - #41 [
+INFO  19:10:50,129 - #46 1
+INFO  19:10:50,129 - #42 ]
+INFO  19:10:50,129 - #35 ;
+INFO  19:10:50,129 - #41 [
+INFO  19:10:50,129 - #47 niz2
+INFO  19:10:50,129 - #41 [
+INFO  19:10:50,129 - #46 0
+INFO  19:10:50,129 - #42 ]
+INFO  19:10:50,129 - #37 ,
+INFO  19:10:50,129 - #47 b
+INFO  19:10:50,129 - #42 ]
+INFO  19:10:50,129 - #32 =
+INFO  19:10:50,130 - #47 niz
+INFO  19:10:50,130 - #35 ;
+INFO  19:10:50,130 - #3 print
+INFO  19:10:50,131 - #39 (
+INFO  19:10:50,131 - #47 niz2
+INFO  19:10:50,131 - #41 [
+INFO  19:10:50,132 - #46 0
+INFO  19:10:50,132 - #42 ]
+INFO  19:10:50,132 - #40 )
+INFO  19:10:50,132 - #35 ;
+INFO  19:10:50,132 - #3 print
+INFO  19:10:50,132 - #39 (
+INFO  19:10:50,132 - #47 b
+INFO  19:10:50,132 - #40 )
+INFO  19:10:50,132 - #35 ;
+INFO  19:10:50,132 - #44 }
+INFO  19:10:50,132 - #44 }
+INFO  19:10:50,137 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             a
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               b
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationNotLast(
+                NotLastVarDeclarations(
+                 niz
+                  VarDeclarationOfArray(
+                  ) [VarDeclarationOfArray]
+                ) [NotLastVarDeclarations]
+                VarDeclarationLast(
+                  LastVarDeclarations(
+                   niz2
+                    VarDeclarationOfArray(
+                    ) [VarDeclarationOfArray]
+                  ) [LastVarDeclarations]
+                ) [VarDeclarationLast]
+              ) [VarDeclarationNotLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    NoStatements(
+                    ) [NoStatements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        SimpleDesignator(
+                         niz
+                        ) [SimpleDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              NewArrayOperatorFactor(
+                                Type(
+                                 int
+                                ) [Type]
+                                TermPositiveExpr(
+                                  Term(
+                                    SingleFactor(
+                                      NumberConstFactor(
+                                       3
+                                      ) [NumberConstFactor]
+                                    ) [SingleFactor]
+                                  ) [Term]
+                                ) [TermPositiveExpr]
+                              ) [NewArrayOperatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      ArrayDesignator(
+                        ArrayDesig(
+                          SimpleDesignator(
+                           niz
+                          ) [SimpleDesignator]
+                        ) [ArrayDesig]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              NumberConstFactor(
+                               0
+                              ) [NumberConstFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [ArrayDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             1
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [Statements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    ArrayDesignator(
+                      ArrayDesig(
+                        SimpleDesignator(
+                         niz
+                        ) [SimpleDesignator]
+                      ) [ArrayDesig]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             1
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ArrayDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           3
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  SimpleDesignator(
+                   niz2
+                  ) [SimpleDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NewArrayOperatorFactor(
+                          Type(
+                           int
+                          ) [Type]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 1
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [NewArrayOperatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+            StatementDesignator(
+              DesignatorArrayAssignment(
+                ListOfDesignator(
+                  SingleOrEndOfListDesignator(
+                    DesignArrAssignment(
+                      ArrayDesignator(
+                        ArrayDesig(
+                          SimpleDesignator(
+                           niz2
+                          ) [SimpleDesignator]
+                        ) [ArrayDesig]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              NumberConstFactor(
+                               0
+                              ) [NumberConstFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [ArrayDesignator]
+                    ) [DesignArrAssignment]
+                  ) [SingleOrEndOfListDesignator]
+                  DesignArrAssignment(
+                    SimpleDesignator(
+                     b
+                    ) [SimpleDesignator]
+                  ) [DesignArrAssignment]
+                ) [ListOfDesignator]
+                SimpleDesignator(
+                 niz
+                ) [SimpleDesignator]
+              ) [DesignatorArrayAssignment]
+            ) [StatementDesignator]
+          ) [Statements]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  DesignatorFactor(
+                    ArrayDesignator(
+                      ArrayDesig(
+                        SimpleDesignator(
+                         niz2
+                        ) [SimpleDesignator]
+                      ) [ArrayDesig]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             0
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ArrayDesignator]
+                  ) [DesignatorFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [Statements]
+        StatementPrintWithoutWidth(
+          PrintEmptyDummy(
+          ) [PrintEmptyDummy]
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                DesignatorFactor(
+                  SimpleDesignator(
+                   b
+                  ) [SimpleDesignator]
+                ) [DesignatorFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:10:50,137 - ====================================
+INFO  19:10:50,141 - Definicija funkcije main na liniji 4
+INFO  19:10:50,141 - Kreirana je promenjiva a na liniji 5
+INFO  19:10:50,141 - Kreirana je promenjiva b na liniji 5
+INFO  19:10:50,141 - Kreirana je promenjiva niz[] na liniji 5
+INFO  19:10:50,142 - Kreirana je promenjiva niz2[] na liniji 5
+INFO  19:10:50,142 - Pristup elemntu niza niz na liniji 8
+INFO  19:10:50,142 - Pristup elemntu niza niz na liniji 9
+INFO  19:10:50,142 - Pristup elemntu niza niz2 na liniji 11
+INFO  19:10:50,142 - Pristup elemntu niza niz2 na liniji 13
+INFO  19:10:50,142 - Prepoznata naredba print
+INFO  19:10:50,142 - Prepoznata naredba print
+INFO  19:10:50,142 - Print count calls = 2
+INFO  19:10:50,143 - ====================================
+INFO  19:10:50,147 - Parsiranje uspesno zavrseno!

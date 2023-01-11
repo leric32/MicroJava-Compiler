@@ -1,0 +1,160 @@
+INFO  19:13:24,946 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  19:13:24,990 - #2 program
+INFO  19:13:24,991 - #47 test301
+INFO  19:13:24,991 - #5 class
+INFO  19:13:24,992 - #47 Predmet
+INFO  19:13:24,992 - #43 {
+INFO  19:13:24,992 - #47 int
+INFO  19:13:24,995 - #47 tezina
+INFO  19:13:24,996 - #35 ;
+INFO  19:13:24,997 - #47 char
+INFO  19:13:24,998 - #47 vrstagf
+INFO  19:13:24,998 - #47 dfg
+ERROR 19:13:24,998 - 
+Sintaksna greska na liniji 7
+INFO  19:13:24,998 - #47 g
+INFO  19:13:24,998 - #35 ;
+INFO  19:13:24,998 - #43 {
+INFO  19:13:24,998 - #47 Predmet
+INFO  19:13:24,999 - #39 (
+ERROR 19:13:24,999 - Izvrsen oporavak do ; u liniji 7
+INFO  19:13:25,001 - #40 )
+INFO  19:13:25,001 - #43 {
+INFO  19:13:25,002 - #44 }
+INFO  19:13:25,003 - #14 void
+INFO  19:13:25,004 - #47 postaviTezinu
+INFO  19:13:25,004 - #39 (
+INFO  19:13:25,004 - #47 int
+INFO  19:13:25,004 - #47 tezina
+INFO  19:13:25,004 - #40 )
+INFO  19:13:25,004 - #43 {
+INFO  19:13:25,005 - #47 this
+INFO  19:13:25,005 - #38 .
+INFO  19:13:25,005 - #47 tezina
+INFO  19:13:25,005 - #32 =
+INFO  19:13:25,006 - #47 tezina
+INFO  19:13:25,006 - #35 ;
+INFO  19:13:25,007 - #44 }
+INFO  19:13:25,007 - #44 }
+INFO  19:13:25,008 - #44 }
+INFO  19:13:25,008 - #43 {
+INFO  19:13:25,008 - #14 void
+INFO  19:13:25,009 - #47 main
+INFO  19:13:25,009 - #39 (
+INFO  19:13:25,009 - #40 )
+INFO  19:13:25,009 - #43 {
+INFO  19:13:25,009 - #44 }
+INFO  19:13:25,009 - #44 }
+INFO  19:13:25,014 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ClassDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    ClassDeclaration(
+      NameOfClass(
+       Predmet
+      ) [NameOfClass]
+      ClassIsNotExtended(
+      ) [ClassIsNotExtended]
+      ClassBodyWithMethodAndConstructor(
+        ClassVariables(
+          ClassVariables(
+            NoClassVariables(
+            ) [NoClassVariables]
+            ClassVarDeclaration(
+              Type(
+               int
+              ) [Type]
+              ClassVarDecLast(
+                ClassVariable(
+                 tezina
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecLast]
+            ) [ClassVarDeclaration]
+          ) [ClassVariables]
+          ErrorClassVarDeclaration(
+          ) [ErrorClassVarDeclaration]
+        ) [ClassVariables]
+        SingleOrLastConstructorDeclaration(
+          ConstructorDeclaration(
+            ConstructorDeclarationName(
+             Predmet
+            ) [ConstructorDeclarationName]
+            NoFormalParameters(
+            ) [NoFormalParameters]
+            ConstructorWithoutVar(
+            ) [ConstructorWithoutVar]
+            NoStatements(
+            ) [NoStatements]
+          ) [ConstructorDeclaration]
+        ) [SingleOrLastConstructorDeclaration]
+        SingleOrEndOfListMethod(
+          MethodDeclaration(
+            VoidMethodTypeName(
+             postaviTezinu
+            ) [VoidMethodTypeName]
+            FormalParameters(
+              SingleOrEndOfListParameter(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 tezina
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+              ) [SingleOrEndOfListParameter]
+            ) [FormalParameters]
+            MethodWithoutVariables(
+            ) [MethodWithoutVariables]
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  ClassFieldDesignator(
+                    SimpleDesignator(
+                     this
+                    ) [SimpleDesignator]
+                   tezina
+                  ) [ClassFieldDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           tezina
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+          ) [MethodDeclaration]
+        ) [SingleOrEndOfListMethod]
+      ) [ClassBodyWithMethodAndConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:13:25,014 - ====================================

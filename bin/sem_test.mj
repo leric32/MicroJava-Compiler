@@ -1,19 +1,34 @@
+// Test301
+
 program test301
 
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
 
-class Predmet
+	int niz[], niz2[], a, b;
+	char nizch[];
+	
 {
-	 int tezina;
-	 char vrsta;
+	void main()	
+		int bodovi;
+		bool bt;
 	{
-		 Predmet(){}
-		 void postaviTezinu(int tezina) {this.tezina = tezina;}  
-		 
+		niz = new int[3];
+		niz[nula] = jedan;
+		niz[1] = 2;
+		
+		
+		niz2 = new int[2];
+		[niz2[0],,niz2[niz[nula]]] = niz;
+
+		//print(niz2[0]);	// niz[0] -> 1
+		//print(niz2[1]); // niz[2] -> 6 
+		
+		// [niz2[0],,,niz2[niz[nula]]] = niz; // runtime error! 
+		
+			
 	}
 }
 
-	{
-	void main()
-	{	
-	}
-}
+

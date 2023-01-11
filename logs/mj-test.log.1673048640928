@@ -1,0 +1,315 @@
+INFO  00:39:41,888 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  00:39:41,931 - #2 program
+INFO  00:39:41,931 - #47 test
+INFO  00:39:41,931 - #47 int
+INFO  00:39:41,933 - #47 x
+INFO  00:39:41,933 - #35 ;
+INFO  00:39:41,935 - #43 {
+INFO  00:39:41,936 - #47 int
+INFO  00:39:41,937 - #47 k
+INFO  00:39:41,937 - #39 (
+INFO  00:39:41,937 - #40 )
+INFO  00:39:41,937 - #47 int
+INFO  00:39:41,938 - #47 c
+INFO  00:39:41,938 - #35 ;
+INFO  00:39:41,938 - #43 {
+INFO  00:39:41,938 - #47 c
+INFO  00:39:41,939 - #32 =
+INFO  00:39:41,939 - #46 2
+INFO  00:39:41,939 - #35 ;
+INFO  00:39:41,940 - #3 print
+INFO  00:39:41,941 - #39 (
+INFO  00:39:41,943 - #46 0
+INFO  00:39:41,944 - #40 )
+INFO  00:39:41,944 - #35 ;
+INFO  00:39:41,944 - #4 return
+INFO  00:39:41,944 - #47 c
+INFO  00:39:41,944 - #19 +
+INFO  00:39:41,944 - #46 2
+INFO  00:39:41,945 - #35 ;
+INFO  00:39:41,945 - #44 }
+INFO  00:39:41,945 - #47 int
+INFO  00:39:41,946 - #47 main
+INFO  00:39:41,946 - #39 (
+INFO  00:39:41,946 - #40 )
+INFO  00:39:41,946 - #43 {
+INFO  00:39:41,946 - #47 x
+INFO  00:39:41,946 - #32 =
+INFO  00:39:41,946 - #46 5
+INFO  00:39:41,946 - #35 ;
+INFO  00:39:41,946 - #3 print
+INFO  00:39:41,946 - #39 (
+INFO  00:39:41,946 - #46 1
+INFO  00:39:41,946 - #40 )
+INFO  00:39:41,946 - #35 ;
+INFO  00:39:41,947 - #3 print
+INFO  00:39:41,947 - #39 (
+INFO  00:39:41,947 - #46 2
+INFO  00:39:41,947 - #40 )
+INFO  00:39:41,947 - #35 ;
+INFO  00:39:41,947 - #3 print
+INFO  00:39:41,947 - #39 (
+INFO  00:39:41,947 - #48 a
+INFO  00:39:41,947 - #40 )
+INFO  00:39:41,947 - #35 ;
+INFO  00:39:41,947 - #47 k
+INFO  00:39:41,947 - #39 (
+INFO  00:39:41,948 - #40 )
+INFO  00:39:41,948 - #35 ;
+INFO  00:39:41,948 - #3 print
+INFO  00:39:41,948 - #39 (
+INFO  00:39:41,948 - #47 x
+INFO  00:39:41,948 - #40 )
+INFO  00:39:41,948 - #35 ;
+INFO  00:39:41,948 - #4 return
+INFO  00:39:41,949 - #46 0
+INFO  00:39:41,949 - #35 ;
+INFO  00:39:41,949 - #44 }
+INFO  00:39:41,949 - #44 }
+INFO  00:39:41,953 - Program(
+  ProgName(
+   test
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         x
+          VarDeclarationOfNotArray(
+          ) [VarDeclarationOfNotArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        ReturnMethodTypeName(
+          Type(
+           int
+          ) [Type]
+         k
+        ) [ReturnMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               c
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        Statements(
+          Statements(
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  SimpleDesignator(
+                   c
+                  ) [SimpleDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         2
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+            StatementPrintWithoutWidth(
+              PrintEmptyDummy(
+              ) [PrintEmptyDummy]
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    NumberConstFactor(
+                     0
+                    ) [NumberConstFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [StatementPrintWithoutWidth]
+          ) [Statements]
+          StatementReturnExpr(
+            AddExpr(
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    DesignatorFactor(
+                      SimpleDesignator(
+                       c
+                      ) [SimpleDesignator]
+                    ) [DesignatorFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+              PlusOperator(
+              ) [PlusOperator]
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   2
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [AddExpr]
+          ) [StatementReturnExpr]
+        ) [Statements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      ReturnMethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    NoStatements(
+                    ) [NoStatements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        SimpleDesignator(
+                         x
+                        ) [SimpleDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              NumberConstFactor(
+                               5
+                              ) [NumberConstFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                  StatementPrintWithoutWidth(
+                    PrintEmptyDummy(
+                    ) [PrintEmptyDummy]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           1
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [StatementPrintWithoutWidth]
+                ) [Statements]
+                StatementPrintWithoutWidth(
+                  PrintEmptyDummy(
+                  ) [PrintEmptyDummy]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         2
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [StatementPrintWithoutWidth]
+              ) [Statements]
+              StatementPrintWithoutWidth(
+                PrintEmptyDummy(
+                ) [PrintEmptyDummy]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      CharConstFactor(
+                       a
+                      ) [CharConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementPrintWithoutWidth]
+            ) [Statements]
+            StatementDesignator(
+              DesignatorFuncCall(
+                FuncCallFactorDesignator(
+                  SimpleDesignator(
+                   k
+                  ) [SimpleDesignator]
+                ) [FuncCallFactorDesignator]
+                NoActuals(
+                ) [NoActuals]
+              ) [DesignatorFuncCall]
+            ) [StatementDesignator]
+          ) [Statements]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  DesignatorFactor(
+                    SimpleDesignator(
+                     x
+                    ) [SimpleDesignator]
+                  ) [DesignatorFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [Statements]
+        StatementReturnExpr(
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                NumberConstFactor(
+                 0
+                ) [NumberConstFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:39:41,953 - ====================================
+INFO  00:39:41,957 - Kreirana je promenjiva x na liniji 2
+INFO  00:39:41,957 - Definicija funkcije k na liniji 4
+INFO  00:39:41,957 - Kreirana je promenjiva c na liniji 4
+INFO  00:39:41,958 - Prepoznata naredba print
+INFO  00:39:41,958 - Definicija funkcije main na liniji 12
+INFO  00:39:41,958 - Prepoznata naredba print
+INFO  00:39:41,958 - Prepoznata naredba print
+INFO  00:39:41,958 - Prepoznata naredba print
+INFO  00:39:41,958 - Prepoznata naredba print
+INFO  00:39:41,958 - Print count calls = 5
+INFO  00:39:41,958 - ====================================
+INFO  00:39:41,963 - Parsiranje uspesno zavrseno!

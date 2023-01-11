@@ -1,0 +1,128 @@
+INFO  01:47:05,472 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:47:05,578 - #2 program
+INFO  01:47:05,578 - #47 test301
+INFO  01:47:05,579 - #43 {
+INFO  01:47:05,582 - #14 void
+INFO  01:47:05,583 - #47 main
+INFO  01:47:05,583 - #39 (
+INFO  01:47:05,583 - #40 )
+INFO  01:47:05,584 - #47 int
+INFO  01:47:05,585 - #47 a
+INFO  01:47:05,587 - #41 [
+INFO  01:47:05,587 - #42 ]
+INFO  01:47:05,588 - #37 ,
+INFO  01:47:05,590 - #47 b
+INFO  01:47:05,591 - #37 ,
+INFO  01:47:05,592 - #47 niz
+INFO  01:47:05,592 - #41 [
+INFO  01:47:05,592 - #42 ]
+INFO  01:47:05,592 - #35 ;
+INFO  01:47:05,592 - #43 {
+INFO  01:47:05,593 - #41 [
+INFO  01:47:05,597 - #47 a
+INFO  01:47:05,597 - #41 [
+INFO  01:47:05,599 - #46 0
+INFO  01:47:05,599 - #42 ]
+INFO  01:47:05,601 - #37 ,
+INFO  01:47:05,601 - #47 b
+INFO  01:47:05,602 - #42 ]
+INFO  01:47:05,602 - #32 =
+INFO  01:47:05,602 - #47 niz
+INFO  01:47:05,602 - #35 ;
+INFO  01:47:05,602 - #44 }
+INFO  01:47:05,603 - #44 }
+INFO  01:47:05,613 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             a
+              VarDeclarationOfArray(
+              ) [VarDeclarationOfArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               b
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 niz
+                  VarDeclarationOfArray(
+                  ) [VarDeclarationOfArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          DesignatorArrayAssignment(
+            ListOfDesignator(
+              SingleOrEndOfListDesignator(
+                DesignArrAssignment(
+                  ArrayDesignator(
+                    ArrayDesig(
+                      SimpleDesignator(
+                       a
+                      ) [SimpleDesignator]
+                    ) [ArrayDesig]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           0
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [ArrayDesignator]
+                ) [DesignArrAssignment]
+              ) [SingleOrEndOfListDesignator]
+              DesignArrAssignment(
+                SimpleDesignator(
+                 b
+                ) [SimpleDesignator]
+              ) [DesignArrAssignment]
+            ) [ListOfDesignator]
+            SimpleDesignator(
+             niz
+            ) [SimpleDesignator]
+          ) [DesignatorArrayAssignment]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:47:05,614 - ====================================
+INFO  01:47:05,623 - Definicija funkcije main na liniji 4
+INFO  01:47:05,623 - Kreirana je promenjiva a[] na liniji 5
+INFO  01:47:05,623 - Kreirana je promenjiva b na liniji 5
+INFO  01:47:05,623 - Kreirana je promenjiva niz[] na liniji 5
+INFO  01:47:05,624 - Pristup elemntu niza a na liniji 7
+INFO  01:47:05,624 - Print count calls = 0
+INFO  01:47:05,624 - ====================================
+INFO  01:47:05,633 - Parsiranje uspesno zavrseno!

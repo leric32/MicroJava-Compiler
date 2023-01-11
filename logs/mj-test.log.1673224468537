@@ -1,0 +1,117 @@
+INFO  01:33:50,113 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:33:50,331 - #2 program
+INFO  01:33:50,331 - #47 test301
+INFO  01:33:50,332 - #47 int
+INFO  01:33:50,337 - #47 a
+INFO  01:33:50,343 - #37 ,
+INFO  01:33:50,351 - #47 b
+INFO  01:33:50,352 - #35 ;
+INFO  01:33:50,352 - #47 int
+INFO  01:33:50,353 - #47 niz
+INFO  01:33:50,354 - #41 [
+INFO  01:33:50,354 - #42 ]
+INFO  01:33:50,354 - #35 ;
+INFO  01:33:50,356 - #43 {
+INFO  01:33:50,357 - #14 void
+INFO  01:33:50,360 - #47 main
+INFO  01:33:50,360 - #39 (
+INFO  01:33:50,361 - #40 )
+INFO  01:33:50,361 - #43 {
+INFO  01:33:50,365 - #41 [
+INFO  01:33:50,369 - #47 a
+INFO  01:33:50,369 - #37 ,
+INFO  01:33:50,370 - #47 b
+INFO  01:33:50,370 - #42 ]
+INFO  01:33:50,371 - #32 =
+INFO  01:33:50,371 - #47 niz
+INFO  01:33:50,371 - #35 ;
+INFO  01:33:50,372 - #44 }
+INFO  01:33:50,372 - #44 }
+INFO  01:33:50,387 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationNotLast(
+          NotLastVarDeclarations(
+           a
+            VarDeclarationOfNotArray(
+            ) [VarDeclarationOfNotArray]
+          ) [NotLastVarDeclarations]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             b
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclarationNotLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         niz
+          VarDeclarationOfArray(
+          ) [VarDeclarationOfArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementDesignator(
+          DesignatorArrayAssignment(
+            ListOfDesignator(
+              SingleOrEndOfListDesignator(
+                DesignArrAssignment(
+                  SimpleDesignator(
+                   a
+                  ) [SimpleDesignator]
+                ) [DesignArrAssignment]
+              ) [SingleOrEndOfListDesignator]
+              DesignArrAssignment(
+                SimpleDesignator(
+                 b
+                ) [SimpleDesignator]
+              ) [DesignArrAssignment]
+            ) [ListOfDesignator]
+            SimpleDesignator(
+             niz
+            ) [SimpleDesignator]
+          ) [DesignatorArrayAssignment]
+        ) [StatementDesignator]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:33:50,388 - ====================================
+INFO  01:33:50,404 - Kreirana je promenjiva a na liniji 3
+INFO  01:33:50,404 - Kreirana je promenjiva b na liniji 3
+INFO  01:33:50,404 - Kreirana je promenjiva niz[] na liniji 5
+INFO  01:33:50,405 - Definicija funkcije main na liniji 8
+INFO  01:33:50,406 - Print count calls = 0
+INFO  01:33:50,406 - ====================================
+INFO  01:33:50,420 - Parsiranje uspesno zavrseno!

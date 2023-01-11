@@ -1,0 +1,133 @@
+INFO  20:59:25,376 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  20:59:25,424 - #2 program
+INFO  20:59:25,424 - #47 test
+INFO  20:59:25,424 - #43 {
+INFO  20:59:25,426 - #47 int
+INFO  20:59:25,426 - #47 main
+INFO  20:59:25,427 - #39 (
+INFO  20:59:25,427 - #40 )
+INFO  20:59:25,427 - #43 {
+INFO  20:59:25,428 - #3 print
+INFO  20:59:25,429 - #39 (
+INFO  20:59:25,429 - #46 1
+INFO  20:59:25,429 - #40 )
+INFO  20:59:25,430 - #35 ;
+INFO  20:59:25,430 - #3 print
+INFO  20:59:25,430 - #39 (
+INFO  20:59:25,430 - #46 2
+INFO  20:59:25,430 - #40 )
+INFO  20:59:25,430 - #35 ;
+INFO  20:59:25,430 - #3 print
+INFO  20:59:25,431 - #39 (
+INFO  20:59:25,432 - #48 a
+INFO  20:59:25,432 - #40 )
+INFO  20:59:25,432 - #35 ;
+INFO  20:59:25,432 - #3 print
+INFO  20:59:25,433 - #39 (
+INFO  20:59:25,433 - #49 true
+INFO  20:59:25,433 - #40 )
+INFO  20:59:25,433 - #35 ;
+INFO  20:59:25,433 - #4 return
+INFO  20:59:25,433 - #46 0
+INFO  20:59:25,433 - #35 ;
+INFO  20:59:25,433 - #44 }
+INFO  20:59:25,434 - #44 }
+INFO  20:59:25,438 - Program(
+  ProgName(
+   test
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      ReturnMethodTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [ReturnMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                StatementPrintWithoutWidth(
+                  PrintEmptyDummy(
+                  ) [PrintEmptyDummy]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         1
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [StatementPrintWithoutWidth]
+              ) [Statements]
+              StatementPrintWithoutWidth(
+                PrintEmptyDummy(
+                ) [PrintEmptyDummy]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      NumberConstFactor(
+                       2
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementPrintWithoutWidth]
+            ) [Statements]
+            StatementPrintWithoutWidth(
+              PrintEmptyDummy(
+              ) [PrintEmptyDummy]
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    CharConstFactor(
+                     a
+                    ) [CharConstFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [StatementPrintWithoutWidth]
+          ) [Statements]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  BooleanConstFactor(
+                   true
+                  ) [BooleanConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [Statements]
+        StatementReturnExpr(
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                NumberConstFactor(
+                 0
+                ) [NumberConstFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:59:25,439 - ====================================

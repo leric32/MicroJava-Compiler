@@ -215,7 +215,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	// METHODS
 	public void visit(ReturnMethodTypeName returnMethodTypeName) {
 		methName = returnMethodTypeName.getMethName();
-		returnMethodTypeName.struct = currType;
 		
 		//check if the name is already in symbol table in current scope--------DODAJ ZA CLASS-------------
 		Obj methNode = Tab.currentScope().findSymbol(methName);
@@ -228,6 +227,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		//Add if it is overrided
 		//Insert into symbol table new name of method
 		currMeth = Tab.insert(Obj.Meth, methName, currType);
+		returnMethodTypeName.obj = currMeth;
 		
 		//open of inner scope of method
 		Tab.openScope();
@@ -250,8 +250,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(VoidMethodTypeName voidMethodTypeName) {
 		methName = voidMethodTypeName.getMethName();
-		voidMethodTypeName.struct = Tab.noType;
-		
 		//check if the name is already in symbol table in current scope--------DODAJ ZA CLASS-------------
 		Obj methNode = Tab.currentScope().findSymbol(methName);
 		if(methNode != null) {
@@ -263,6 +261,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		//Add if it is overrided
 		//Insert into symbol table new name of method
 		currMeth = Tab.insert(Obj.Meth, methName, Tab.noType);
+		voidMethodTypeName.obj = currMeth;
 		
 		//open of inner scope of method
 		Tab.openScope();
@@ -903,23 +902,26 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		if(funcCallFactorDesignator.getDesignator().obj.getKind() != Obj.Meth) {
     		report_error("SEMANTICKA GRESKA: " + funcCallFactorDesignator.getDesignator().obj.getName() + " ne predstavlja funkciju", funcCallFactorDesignator);        	    		
-    		funcCallFactorDesignator.struct =  Tab.noType;
+    		funcCallFactorDesignator.obj =  Tab.noObj;
     		return;
     	}
 		
 		callingMeth.add(funcCallFactorDesignator.getDesignator().obj);
-		report_info("FC" + funcCallFactorDesignator.getDesignator().obj.getName(), funcCallFactorDesignator);
+		//report_info("FC" + funcCallFactorDesignator.getDesignator().obj.getName(), funcCallFactorDesignator);
 		
-		funcCallFactorDesignator.struct = funcCallFactorDesignator.getDesignator().obj.getType();
+		funcCallFactorDesignator.obj = funcCallFactorDesignator.getDesignator().obj;
 		
 	}
 	
 	public void visit(FuncCallFactor funcCallFactor) {
 		
-		//check for len, chr and ord
-		//report_info("FC" + funcCallFactor.getDesignator().obj.getName(), funcCallFactor);
+		//check if the method or function has a return value
+		if(funcCallFactor.getFuncCallFactorDes().obj.getType() == Tab.noType) {
+			report_error("SEMANTICKA GRESKA: " + funcCallFactor.getFuncCallFactorDes().obj.getName() + " nema povratnu vrednost, a nalazi se u izrazu", funcCallFactor);        	
+    		
+		}
 		
-		funcCallFactor.struct = funcCallFactor.getFuncCallFactorDes().struct;
+		funcCallFactor.struct = funcCallFactor.getFuncCallFactorDes().obj.getType();
 		actParsNum = 0;
 		callingMeth.remove(callingMeth.size() - 1);
 		
@@ -950,9 +952,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(ArrayDesignator arrayDesignator) {
-		if(arrayDesignator.getDesignator().obj.getType().getKind() != Struct.Array) {
+		if(arrayDesignator.getArrayDesig().getDesignator().obj.getType().getKind() != Struct.Array) {
 			arrayDesignator.obj = Tab.noObj;
-			report_error("SEMANTICKA GRESKA: " + arrayDesignator.getDesignator().obj.getName() + " mora bit niz nekog tipa", arrayDesignator);
+			report_error("SEMANTICKA GRESKA: " + arrayDesignator.getArrayDesig().getDesignator().obj.getName() + " mora bit niz nekog tipa", arrayDesignator);
 			return;
 		}
 		
@@ -962,12 +964,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			return;
 		}
 		
-		arrayDesignator.obj = new Obj(Obj.Elem, arrayDesignator.getDesignator().obj.getName(),
-				arrayDesignator.getDesignator().obj.getType().getElemType());
+		arrayDesignator.obj = new Obj(Obj.Elem, arrayDesignator.getArrayDesig().getDesignator().obj.getName(),
+				arrayDesignator.getArrayDesig().getDesignator().obj.getType().getElemType());
 		
-		report_info("Pristup elemntu niza " + arrayDesignator.getDesignator().obj.getName(), arrayDesignator);
+		report_info("Pristup elemntu niza " + arrayDesignator.getArrayDesig().getDesignator().obj.getName(), arrayDesignator);
 		
 	}
+	
+	
+	
 	
 	public void visit(SimpleDesignator simpleDesignator) {
 		
@@ -987,8 +992,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		simpleDesignator.obj = varObj;
 	}
-	
-	
 	
 	
 	//CLASSES
