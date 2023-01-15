@@ -1,0 +1,304 @@
+INFO  02:21:37,747 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:21:37,817 - #2 program
+INFO  02:21:37,817 - #47 test301
+INFO  02:21:37,817 - #43 {
+INFO  02:21:37,818 - #14 void
+INFO  02:21:37,818 - #47 main
+INFO  02:21:37,819 - #39 (
+INFO  02:21:37,819 - #40 )
+INFO  02:21:37,819 - #47 int
+INFO  02:21:37,820 - #47 x
+INFO  02:21:37,820 - #37 ,
+INFO  02:21:37,823 - #47 y
+INFO  02:21:37,823 - #35 ;
+INFO  02:21:37,823 - #43 {
+INFO  02:21:37,823 - #9 if
+INFO  02:21:37,824 - #39 (
+INFO  02:21:37,825 - #47 x
+INFO  02:21:37,825 - #27 >=
+INFO  02:21:37,826 - #46 0
+INFO  02:21:37,827 - #30 &&
+INFO  02:21:37,827 - #47 x
+INFO  02:21:37,827 - #27 >=
+INFO  02:21:37,827 - #46 0
+INFO  02:21:37,827 - #30 &&
+INFO  02:21:37,828 - #47 x
+INFO  02:21:37,828 - #27 >=
+INFO  02:21:37,828 - #46 0
+INFO  02:21:37,828 - #31 ||
+INFO  02:21:37,828 - #47 x
+INFO  02:21:37,828 - #27 >=
+INFO  02:21:37,828 - #46 0
+INFO  02:21:37,828 - #31 ||
+INFO  02:21:37,828 - #47 x
+INFO  02:21:37,829 - #24 ==
+INFO  02:21:37,829 - #46 0
+INFO  02:21:37,829 - #30 &&
+INFO  02:21:37,829 - #47 x
+INFO  02:21:37,829 - #28 <
+INFO  02:21:37,829 - #46 0
+INFO  02:21:37,830 - #40 )
+INFO  02:21:37,830 - #3 print
+INFO  02:21:37,832 - #39 (
+INFO  02:21:37,832 - #46 2
+INFO  02:21:37,832 - #40 )
+INFO  02:21:37,832 - #35 ;
+INFO  02:21:37,832 - #7 else
+INFO  02:21:37,834 - #3 print
+INFO  02:21:37,834 - #39 (
+INFO  02:21:37,834 - #46 3
+INFO  02:21:37,834 - #40 )
+INFO  02:21:37,834 - #35 ;
+INFO  02:21:37,834 - #44 }
+INFO  02:21:37,834 - #44 }
+INFO  02:21:37,839 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             x
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               y
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementIfElse(
+          IfCondition(
+            OnlyIf(
+            ) [OnlyIf]
+            ConditionsWithOr(
+              ConditionsWithOr(
+                ConditionsWithoutOr(
+                  ConditionsWithAnd(
+                    ConditionsWithAnd(
+                      ConditionsWithoutAnd(
+                        RelopCondition(
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   x
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                          GreaterEqualOperator(
+                          ) [GreaterEqualOperator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 0
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [RelopCondition]
+                      ) [ConditionsWithoutAnd]
+                      RelopCondition(
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 x
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                        GreaterEqualOperator(
+                        ) [GreaterEqualOperator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              NumberConstFactor(
+                               0
+                              ) [NumberConstFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [RelopCondition]
+                    ) [ConditionsWithAnd]
+                    RelopCondition(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               x
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                      GreaterEqualOperator(
+                      ) [GreaterEqualOperator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             0
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [RelopCondition]
+                  ) [ConditionsWithAnd]
+                ) [ConditionsWithoutOr]
+                ConditionsWithoutAnd(
+                  RelopCondition(
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             x
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                    GreaterEqualOperator(
+                    ) [GreaterEqualOperator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           0
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [RelopCondition]
+                ) [ConditionsWithoutAnd]
+              ) [ConditionsWithOr]
+              ConditionsWithAnd(
+                ConditionsWithoutAnd(
+                  RelopCondition(
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             x
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                    EqualOperator(
+                    ) [EqualOperator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           0
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [RelopCondition]
+                ) [ConditionsWithoutAnd]
+                RelopCondition(
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           x
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                  LessOperator(
+                  ) [LessOperator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         0
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [RelopCondition]
+              ) [ConditionsWithAnd]
+            ) [ConditionsWithOr]
+            FirstFixupForIf(
+            ) [FirstFixupForIf]
+          ) [IfCondition]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   2
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+          SecondFixupForIf(
+          ) [SecondFixupForIf]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   3
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [StatementIfElse]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:21:37,840 - ====================================
+INFO  02:21:37,843 - Definicija funkcije main na liniji 6
+INFO  02:21:37,843 - Kreirana je promenjiva x na liniji 7
+INFO  02:21:37,843 - Kreirana je promenjiva y na liniji 7
+INFO  02:21:37,844 - Prepoznata naredba print
+INFO  02:21:37,844 - Prepoznata naredba print
+INFO  02:21:37,844 - Print count calls = 2
+INFO  02:21:37,844 - ====================================

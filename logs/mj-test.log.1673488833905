@@ -1,0 +1,144 @@
+INFO  02:59:12,830 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:59:12,875 - #2 program
+INFO  02:59:12,875 - #47 test301
+INFO  02:59:12,875 - #43 {
+INFO  02:59:12,876 - #14 void
+INFO  02:59:12,878 - #47 main
+INFO  02:59:12,878 - #39 (
+INFO  02:59:12,878 - #40 )
+INFO  02:59:12,878 - #47 int
+INFO  02:59:12,880 - #47 x
+INFO  02:59:12,880 - #37 ,
+INFO  02:59:12,882 - #47 y
+INFO  02:59:12,882 - #35 ;
+INFO  02:59:12,882 - #47 bool
+INFO  02:59:12,883 - #47 i
+INFO  02:59:12,883 - #35 ;
+INFO  02:59:12,883 - #43 {
+INFO  02:59:12,883 - #11 while
+INFO  02:59:12,883 - #39 (
+INFO  02:59:12,883 - #47 x
+INFO  02:59:12,886 - #28 <
+INFO  02:59:12,888 - #46 2
+INFO  02:59:12,889 - #40 )
+INFO  02:59:12,889 - #43 {
+INFO  02:59:12,889 - #47 x
+INFO  02:59:12,889 - #33 ++
+INFO  02:59:12,889 - #35 ;
+INFO  02:59:12,889 - #44 }
+INFO  02:59:12,889 - #44 }
+INFO  02:59:12,889 - #44 }
+INFO  02:59:12,894 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarDeclarationNotLast(
+              NotLastVarDeclarations(
+               x
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [NotLastVarDeclarations]
+              VarDeclarationLast(
+                LastVarDeclarations(
+                 y
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [LastVarDeclarations]
+              ) [VarDeclarationLast]
+            ) [VarDeclarationNotLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           bool
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementWhile(
+          WhileLoopParen(
+          ) [WhileLoopParen]
+          FirstFixupForWhile(
+          ) [FirstFixupForWhile]
+          ConditionsWithoutOr(
+            ConditionsWithoutAnd(
+              RelopCondition(
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         x
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+                LessOperator(
+                ) [LessOperator]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      NumberConstFactor(
+                       2
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [RelopCondition]
+            ) [ConditionsWithoutAnd]
+          ) [ConditionsWithoutOr]
+          StatementBlock(
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                DesignatorInc(
+                  SimpleDesignator(
+                   x
+                  ) [SimpleDesignator]
+                ) [DesignatorInc]
+              ) [StatementDesignator]
+            ) [Statements]
+          ) [StatementBlock]
+        ) [StatementWhile]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:59:12,894 - ====================================
+INFO  02:59:12,899 - Definicija funkcije main na liniji 6
+INFO  02:59:12,900 - Kreirana je promenjiva x na liniji 7
+INFO  02:59:12,900 - Kreirana je promenjiva y na liniji 7
+INFO  02:59:12,900 - Kreirana je promenjiva i na liniji 8
+INFO  02:59:12,900 - Print count calls = 0
+INFO  02:59:12,900 - ====================================
+INFO  02:59:12,904 - Parsiranje uspesno zavrseno!

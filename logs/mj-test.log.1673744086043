@@ -1,0 +1,894 @@
+INFO  01:54:25,467 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:54:25,511 - #2 program
+INFO  01:54:25,511 - #47 test302
+INFO  01:54:25,511 - #8 const
+INFO  01:54:25,512 - #47 int
+INFO  01:54:25,512 - #47 cinilac
+INFO  01:54:25,513 - #32 =
+INFO  01:54:25,513 - #46 4
+INFO  01:54:25,513 - #37 ,
+INFO  01:54:25,514 - #47 delilac
+INFO  01:54:25,514 - #32 =
+INFO  01:54:25,514 - #46 3
+INFO  01:54:25,514 - #35 ;
+INFO  01:54:25,515 - #5 class
+INFO  01:54:25,515 - #47 Predmet
+INFO  01:54:25,515 - #43 {
+INFO  01:54:25,515 - #47 int
+INFO  01:54:25,516 - #47 tezina
+INFO  01:54:25,516 - #35 ;
+INFO  01:54:25,517 - #47 char
+INFO  01:54:25,519 - #47 vrsta
+INFO  01:54:25,519 - #35 ;
+INFO  01:54:25,519 - #43 {
+INFO  01:54:25,519 - #14 void
+INFO  01:54:25,520 - #47 postaviTezinu
+INFO  01:54:25,520 - #39 (
+INFO  01:54:25,520 - #47 int
+INFO  01:54:25,520 - #47 tezina
+INFO  01:54:25,520 - #40 )
+INFO  01:54:25,520 - #43 {
+INFO  01:54:25,521 - #47 this
+INFO  01:54:25,522 - #38 .
+INFO  01:54:25,522 - #47 tezina
+INFO  01:54:25,522 - #32 =
+INFO  01:54:25,522 - #47 tezina
+INFO  01:54:25,522 - #35 ;
+INFO  01:54:25,525 - #44 }
+INFO  01:54:25,525 - #14 void
+INFO  01:54:25,525 - #47 ucitajTezinu
+INFO  01:54:25,525 - #39 (
+INFO  01:54:25,525 - #40 )
+INFO  01:54:25,525 - #43 {
+INFO  01:54:25,526 - #13 read
+INFO  01:54:25,526 - #39 (
+INFO  01:54:25,526 - #47 tezina
+INFO  01:54:25,526 - #40 )
+INFO  01:54:25,526 - #35 ;
+INFO  01:54:25,526 - #44 }
+INFO  01:54:25,527 - #47 int
+INFO  01:54:25,527 - #47 zapremina
+INFO  01:54:25,527 - #39 (
+INFO  01:54:25,527 - #40 )
+INFO  01:54:25,527 - #43 {
+INFO  01:54:25,527 - #4 return
+INFO  01:54:25,527 - #46 0
+INFO  01:54:25,527 - #35 ;
+INFO  01:54:25,527 - #44 }
+INFO  01:54:25,527 - #47 int
+INFO  01:54:25,527 - #47 Q
+INFO  01:54:25,527 - #39 (
+INFO  01:54:25,527 - #40 )
+INFO  01:54:25,528 - #43 {
+INFO  01:54:25,528 - #4 return
+INFO  01:54:25,528 - #47 zapremina
+INFO  01:54:25,528 - #39 (
+INFO  01:54:25,528 - #40 )
+INFO  01:54:25,529 - #21 *
+INFO  01:54:25,529 - #47 tezina
+INFO  01:54:25,530 - #35 ;
+INFO  01:54:25,530 - #44 }
+INFO  01:54:25,530 - #14 void
+INFO  01:54:25,530 - #47 postaviVrstu
+INFO  01:54:25,530 - #39 (
+INFO  01:54:25,530 - #47 char
+INFO  01:54:25,530 - #47 vrsta
+INFO  01:54:25,530 - #40 )
+INFO  01:54:25,530 - #43 {
+INFO  01:54:25,530 - #47 this
+INFO  01:54:25,530 - #38 .
+INFO  01:54:25,530 - #47 vrsta
+INFO  01:54:25,530 - #32 =
+INFO  01:54:25,531 - #47 vrsta
+INFO  01:54:25,531 - #35 ;
+INFO  01:54:25,531 - #44 }
+INFO  01:54:25,531 - #47 char
+INFO  01:54:25,531 - #47 dohvVrstu
+INFO  01:54:25,531 - #39 (
+INFO  01:54:25,531 - #40 )
+INFO  01:54:25,531 - #43 {
+INFO  01:54:25,531 - #4 return
+INFO  01:54:25,531 - #47 vrsta
+INFO  01:54:25,531 - #35 ;
+INFO  01:54:25,531 - #44 }
+INFO  01:54:25,532 - #47 int
+INFO  01:54:25,532 - #47 dohvTezinu
+INFO  01:54:25,532 - #39 (
+INFO  01:54:25,532 - #40 )
+INFO  01:54:25,532 - #43 {
+INFO  01:54:25,532 - #4 return
+INFO  01:54:25,532 - #47 tezina
+INFO  01:54:25,532 - #35 ;
+INFO  01:54:25,532 - #44 }
+INFO  01:54:25,532 - #14 void
+INFO  01:54:25,533 - #47 ispisi
+INFO  01:54:25,533 - #39 (
+INFO  01:54:25,533 - #40 )
+INFO  01:54:25,533 - #43 {
+INFO  01:54:25,533 - #3 print
+INFO  01:54:25,534 - #39 (
+INFO  01:54:25,534 - #47 vrsta
+INFO  01:54:25,534 - #40 )
+INFO  01:54:25,534 - #35 ;
+INFO  01:54:25,534 - #3 print
+INFO  01:54:25,535 - #39 (
+INFO  01:54:25,535 - #47 Q
+INFO  01:54:25,535 - #39 (
+INFO  01:54:25,535 - #40 )
+INFO  01:54:25,535 - #40 )
+INFO  01:54:25,535 - #35 ;
+INFO  01:54:25,535 - #44 }
+INFO  01:54:25,535 - #44 }
+INFO  01:54:25,535 - #44 }
+INFO  01:54:25,535 - #5 class
+INFO  01:54:25,536 - #47 Sfera
+INFO  01:54:25,536 - #15 extends
+INFO  01:54:25,536 - #47 Predmet
+INFO  01:54:25,536 - #43 {
+INFO  01:54:25,537 - #47 int
+INFO  01:54:25,537 - #47 r
+INFO  01:54:25,537 - #35 ;
+INFO  01:54:25,537 - #43 {
+INFO  01:54:25,537 - #47 Sfera
+INFO  01:54:25,537 - #39 (
+INFO  01:54:25,538 - #40 )
+INFO  01:54:25,538 - #43 {
+INFO  01:54:25,538 - #47 vrsta
+INFO  01:54:25,539 - #32 =
+INFO  01:54:25,539 - #48 s
+INFO  01:54:25,539 - #35 ;
+INFO  01:54:25,539 - #47 r
+INFO  01:54:25,539 - #32 =
+INFO  01:54:25,539 - #46 1
+INFO  01:54:25,539 - #35 ;
+INFO  01:54:25,539 - #44 }
+INFO  01:54:25,539 - #47 Sfera
+INFO  01:54:25,540 - #39 (
+INFO  01:54:25,540 - #47 int
+INFO  01:54:25,540 - #47 r
+INFO  01:54:25,540 - #40 )
+INFO  01:54:25,540 - #43 {
+INFO  01:54:25,540 - #47 vrsta
+INFO  01:54:25,540 - #32 =
+INFO  01:54:25,540 - #48 s
+INFO  01:54:25,540 - #35 ;
+INFO  01:54:25,540 - #47 this
+INFO  01:54:25,540 - #38 .
+INFO  01:54:25,540 - #47 r
+INFO  01:54:25,540 - #32 =
+INFO  01:54:25,540 - #47 r
+INFO  01:54:25,540 - #35 ;
+INFO  01:54:25,540 - #44 }
+INFO  01:54:25,540 - #14 void
+INFO  01:54:25,540 - #47 postaviPoluprecnik
+INFO  01:54:25,540 - #39 (
+INFO  01:54:25,540 - #47 int
+INFO  01:54:25,541 - #47 r
+INFO  01:54:25,541 - #40 )
+INFO  01:54:25,541 - #43 {
+INFO  01:54:25,541 - #47 this
+INFO  01:54:25,541 - #38 .
+INFO  01:54:25,541 - #47 r
+INFO  01:54:25,541 - #32 =
+INFO  01:54:25,541 - #47 r
+INFO  01:54:25,541 - #35 ;
+INFO  01:54:25,541 - #44 }
+INFO  01:54:25,541 - #47 int
+INFO  01:54:25,541 - #47 zapremina
+INFO  01:54:25,541 - #39 (
+INFO  01:54:25,541 - #40 )
+INFO  01:54:25,541 - #47 int
+INFO  01:54:25,541 - #47 z
+INFO  01:54:25,541 - #35 ;
+INFO  01:54:25,541 - #43 {
+INFO  01:54:25,542 - #47 z
+INFO  01:54:25,542 - #32 =
+INFO  01:54:25,542 - #47 cinilac
+INFO  01:54:25,542 - #35 ;
+INFO  01:54:25,542 - #4 return
+INFO  01:54:25,542 - #47 z
+INFO  01:54:25,542 - #21 *
+INFO  01:54:25,542 - #39 (
+INFO  01:54:25,542 - #47 r
+INFO  01:54:25,543 - #22 /
+INFO  01:54:25,543 - #47 delilac
+INFO  01:54:25,543 - #40 )
+INFO  01:54:25,543 - #35 ;
+INFO  01:54:25,543 - #44 }
+INFO  01:54:25,544 - #44 }
+INFO  01:54:25,544 - #44 }
+INFO  01:54:25,544 - #43 {
+INFO  01:54:25,544 - #14 void
+INFO  01:54:25,545 - #47 main
+INFO  01:54:25,545 - #39 (
+INFO  01:54:25,545 - #40 )
+INFO  01:54:25,545 - #43 {
+INFO  01:54:25,545 - #44 }
+INFO  01:54:25,545 - #44 }
+INFO  01:54:25,553 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ClassDeclarations(
+    ClassDeclarations(
+      ConstDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           cinilac
+           4
+          ) [ConstantValueNumber]
+          ListOfCharDeclarations(
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+            ConstantValueNumber(
+             delilac
+             3
+            ) [ConstantValueNumber]
+          ) [ListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      ClassDeclaration(
+        NameOfClass(
+         Predmet
+        ) [NameOfClass]
+        ClassIsNotExtended(
+        ) [ClassIsNotExtended]
+        ClassBodyWithMethodNoConstructor(
+          ClassVariables(
+            ClassVariables(
+              NoClassVariables(
+              ) [NoClassVariables]
+              ClassVarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                ClassVarDecLast(
+                  ClassVariable(
+                   tezina
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [ClassVariable]
+                ) [ClassVarDecLast]
+              ) [ClassVarDeclaration]
+            ) [ClassVariables]
+            ClassVarDeclaration(
+              Type(
+               char
+              ) [Type]
+              ClassVarDecLast(
+                ClassVariable(
+                 vrsta
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecLast]
+            ) [ClassVarDeclaration]
+          ) [ClassVariables]
+          ListOfMethodsInClass(
+            ListOfMethodsInClass(
+              ListOfMethodsInClass(
+                ListOfMethodsInClass(
+                  ListOfMethodsInClass(
+                    ListOfMethodsInClass(
+                      ListOfMethodsInClass(
+                        SingleOrEndOfListMethod(
+                          MethodDeclaration(
+                            VoidMethodTypeName(
+                             postaviTezinu
+                            ) [VoidMethodTypeName]
+                            FormalParameters(
+                              SingleOrEndOfListParameter(
+                                SingleFormalParameter(
+                                  Type(
+                                   int
+                                  ) [Type]
+                                 tezina
+                                  VarDeclarationOfNotArray(
+                                  ) [VarDeclarationOfNotArray]
+                                ) [SingleFormalParameter]
+                              ) [SingleOrEndOfListParameter]
+                            ) [FormalParameters]
+                            MethodWithoutVariables(
+                            ) [MethodWithoutVariables]
+                            Statements(
+                              NoStatements(
+                              ) [NoStatements]
+                              StatementDesignator(
+                                DesignatorAssignment(
+                                  ClassFieldDesignator(
+                                    SimpleDesignator(
+                                     this
+                                    ) [SimpleDesignator]
+                                   tezina
+                                  ) [ClassFieldDesignator]
+                                  TermPositiveExpr(
+                                    Term(
+                                      SingleFactor(
+                                        DesignatorFactor(
+                                          SimpleDesignator(
+                                           tezina
+                                          ) [SimpleDesignator]
+                                        ) [DesignatorFactor]
+                                      ) [SingleFactor]
+                                    ) [Term]
+                                  ) [TermPositiveExpr]
+                                ) [DesignatorAssignment]
+                              ) [StatementDesignator]
+                            ) [Statements]
+                          ) [MethodDeclaration]
+                        ) [SingleOrEndOfListMethod]
+                        MethodDeclaration(
+                          VoidMethodTypeName(
+                           ucitajTezinu
+                          ) [VoidMethodTypeName]
+                          NoFormalParameters(
+                          ) [NoFormalParameters]
+                          MethodWithoutVariables(
+                          ) [MethodWithoutVariables]
+                          Statements(
+                            NoStatements(
+                            ) [NoStatements]
+                            StatementRead(
+                              SimpleDesignator(
+                               tezina
+                              ) [SimpleDesignator]
+                            ) [StatementRead]
+                          ) [Statements]
+                        ) [MethodDeclaration]
+                      ) [ListOfMethodsInClass]
+                      MethodDeclaration(
+                        ReturnMethodTypeName(
+                          Type(
+                           int
+                          ) [Type]
+                         zapremina
+                        ) [ReturnMethodTypeName]
+                        NoFormalParameters(
+                        ) [NoFormalParameters]
+                        MethodWithoutVariables(
+                        ) [MethodWithoutVariables]
+                        Statements(
+                          NoStatements(
+                          ) [NoStatements]
+                          StatementReturnExpr(
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  NumberConstFactor(
+                                   0
+                                  ) [NumberConstFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [StatementReturnExpr]
+                        ) [Statements]
+                      ) [MethodDeclaration]
+                    ) [ListOfMethodsInClass]
+                    MethodDeclaration(
+                      ReturnMethodTypeName(
+                        Type(
+                         int
+                        ) [Type]
+                       Q
+                      ) [ReturnMethodTypeName]
+                      NoFormalParameters(
+                      ) [NoFormalParameters]
+                      MethodWithoutVariables(
+                      ) [MethodWithoutVariables]
+                      Statements(
+                        NoStatements(
+                        ) [NoStatements]
+                        StatementReturnExpr(
+                          TermPositiveExpr(
+                            Term(
+                              MultipleFactors(
+                                SingleFactor(
+                                  FuncCallFactor(
+                                    FuncCallFactorDesignator(
+                                      SimpleDesignator(
+                                       zapremina
+                                      ) [SimpleDesignator]
+                                    ) [FuncCallFactorDesignator]
+                                    NoActuals(
+                                    ) [NoActuals]
+                                  ) [FuncCallFactor]
+                                ) [SingleFactor]
+                                MultiplyOperator(
+                                ) [MultiplyOperator]
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   tezina
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [MultipleFactors]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [StatementReturnExpr]
+                      ) [Statements]
+                    ) [MethodDeclaration]
+                  ) [ListOfMethodsInClass]
+                  MethodDeclaration(
+                    VoidMethodTypeName(
+                     postaviVrstu
+                    ) [VoidMethodTypeName]
+                    FormalParameters(
+                      SingleOrEndOfListParameter(
+                        SingleFormalParameter(
+                          Type(
+                           char
+                          ) [Type]
+                         vrsta
+                          VarDeclarationOfNotArray(
+                          ) [VarDeclarationOfNotArray]
+                        ) [SingleFormalParameter]
+                      ) [SingleOrEndOfListParameter]
+                    ) [FormalParameters]
+                    MethodWithoutVariables(
+                    ) [MethodWithoutVariables]
+                    Statements(
+                      NoStatements(
+                      ) [NoStatements]
+                      StatementDesignator(
+                        DesignatorAssignment(
+                          ClassFieldDesignator(
+                            SimpleDesignator(
+                             this
+                            ) [SimpleDesignator]
+                           vrsta
+                          ) [ClassFieldDesignator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   vrsta
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [DesignatorAssignment]
+                      ) [StatementDesignator]
+                    ) [Statements]
+                  ) [MethodDeclaration]
+                ) [ListOfMethodsInClass]
+                MethodDeclaration(
+                  ReturnMethodTypeName(
+                    Type(
+                     char
+                    ) [Type]
+                   dohvVrstu
+                  ) [ReturnMethodTypeName]
+                  NoFormalParameters(
+                  ) [NoFormalParameters]
+                  MethodWithoutVariables(
+                  ) [MethodWithoutVariables]
+                  Statements(
+                    NoStatements(
+                    ) [NoStatements]
+                    StatementReturnExpr(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               vrsta
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [StatementReturnExpr]
+                  ) [Statements]
+                ) [MethodDeclaration]
+              ) [ListOfMethodsInClass]
+              MethodDeclaration(
+                ReturnMethodTypeName(
+                  Type(
+                   int
+                  ) [Type]
+                 dohvTezinu
+                ) [ReturnMethodTypeName]
+                NoFormalParameters(
+                ) [NoFormalParameters]
+                MethodWithoutVariables(
+                ) [MethodWithoutVariables]
+                Statements(
+                  NoStatements(
+                  ) [NoStatements]
+                  StatementReturnExpr(
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             tezina
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [StatementReturnExpr]
+                ) [Statements]
+              ) [MethodDeclaration]
+            ) [ListOfMethodsInClass]
+            MethodDeclaration(
+              VoidMethodTypeName(
+               ispisi
+              ) [VoidMethodTypeName]
+              NoFormalParameters(
+              ) [NoFormalParameters]
+              MethodWithoutVariables(
+              ) [MethodWithoutVariables]
+              Statements(
+                Statements(
+                  NoStatements(
+                  ) [NoStatements]
+                  StatementPrintWithoutWidth(
+                    PrintEmptyDummy(
+                    ) [PrintEmptyDummy]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             vrsta
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [StatementPrintWithoutWidth]
+                ) [Statements]
+                StatementPrintWithoutWidth(
+                  PrintEmptyDummy(
+                  ) [PrintEmptyDummy]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        FuncCallFactor(
+                          FuncCallFactorDesignator(
+                            SimpleDesignator(
+                             Q
+                            ) [SimpleDesignator]
+                          ) [FuncCallFactorDesignator]
+                          NoActuals(
+                          ) [NoActuals]
+                        ) [FuncCallFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [StatementPrintWithoutWidth]
+              ) [Statements]
+            ) [MethodDeclaration]
+          ) [ListOfMethodsInClass]
+        ) [ClassBodyWithMethodNoConstructor]
+      ) [ClassDeclaration]
+    ) [ClassDeclarations]
+    ClassDeclaration(
+      NameOfClass(
+       Sfera
+      ) [NameOfClass]
+      ClassIsExtended(
+        Type(
+         Predmet
+        ) [Type]
+      ) [ClassIsExtended]
+      ClassBodyWithMethodAndConstructor(
+        ClassVariables(
+          NoClassVariables(
+          ) [NoClassVariables]
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            ClassVarDecLast(
+              ClassVariable(
+               r
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [ClassVariable]
+            ) [ClassVarDecLast]
+          ) [ClassVarDeclaration]
+        ) [ClassVariables]
+        ListOfConstructorDeclarations(
+          SingleOrLastConstructorDeclaration(
+            ConstructorDeclaration(
+              ConstructorDeclarationName(
+               Sfera
+              ) [ConstructorDeclarationName]
+              NoFormalParameters(
+              ) [NoFormalParameters]
+              ConstructorWithoutVar(
+              ) [ConstructorWithoutVar]
+              Statements(
+                Statements(
+                  NoStatements(
+                  ) [NoStatements]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      SimpleDesignator(
+                       vrsta
+                      ) [SimpleDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            CharConstFactor(
+                             s
+                            ) [CharConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [Statements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    SimpleDesignator(
+                     r
+                    ) [SimpleDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           1
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+            ) [ConstructorDeclaration]
+          ) [SingleOrLastConstructorDeclaration]
+          ConstructorDeclaration(
+            ConstructorDeclarationName(
+             Sfera
+            ) [ConstructorDeclarationName]
+            FormalParameters(
+              SingleOrEndOfListParameter(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 r
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+              ) [SingleOrEndOfListParameter]
+            ) [FormalParameters]
+            ConstructorWithoutVar(
+            ) [ConstructorWithoutVar]
+            Statements(
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    SimpleDesignator(
+                     vrsta
+                    ) [SimpleDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          CharConstFactor(
+                           s
+                          ) [CharConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  ClassFieldDesignator(
+                    SimpleDesignator(
+                     this
+                    ) [SimpleDesignator]
+                   r
+                  ) [ClassFieldDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           r
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+          ) [ConstructorDeclaration]
+        ) [ListOfConstructorDeclarations]
+        ListOfMethodsInClass(
+          SingleOrEndOfListMethod(
+            MethodDeclaration(
+              VoidMethodTypeName(
+               postaviPoluprecnik
+              ) [VoidMethodTypeName]
+              FormalParameters(
+                SingleOrEndOfListParameter(
+                  SingleFormalParameter(
+                    Type(
+                     int
+                    ) [Type]
+                   r
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [SingleFormalParameter]
+                ) [SingleOrEndOfListParameter]
+              ) [FormalParameters]
+              MethodWithoutVariables(
+              ) [MethodWithoutVariables]
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    ClassFieldDesignator(
+                      SimpleDesignator(
+                       this
+                      ) [SimpleDesignator]
+                     r
+                    ) [ClassFieldDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             r
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+            ) [MethodDeclaration]
+          ) [SingleOrEndOfListMethod]
+          MethodDeclaration(
+            ReturnMethodTypeName(
+              Type(
+               int
+              ) [Type]
+             zapremina
+            ) [ReturnMethodTypeName]
+            NoFormalParameters(
+            ) [NoFormalParameters]
+            MethodVariables(
+              MethodWithoutVariables(
+              ) [MethodWithoutVariables]
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                VarDeclarationLast(
+                  LastVarDeclarations(
+                   z
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [LastVarDeclarations]
+                ) [VarDeclarationLast]
+              ) [VarDeclaration]
+            ) [MethodVariables]
+            Statements(
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    SimpleDesignator(
+                     z
+                    ) [SimpleDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             cinilac
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+              StatementReturnExpr(
+                TermPositiveExpr(
+                  Term(
+                    MultipleFactors(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           z
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                      MultiplyOperator(
+                      ) [MultiplyOperator]
+                      ExprFactor(
+                        TermPositiveExpr(
+                          Term(
+                            MultipleFactors(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   r
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                              DivideOperator(
+                              ) [DivideOperator]
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 delilac
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [MultipleFactors]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [ExprFactor]
+                    ) [MultipleFactors]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementReturnExpr]
+            ) [Statements]
+          ) [MethodDeclaration]
+        ) [ListOfMethodsInClass]
+      ) [ClassBodyWithMethodAndConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:54:25,554 - ====================================
+INFO  01:54:25,560 - Kreirana je klasa Predmet na liniji 7
+INFO  01:54:25,561 - Definicija metode postaviTezinu na liniji 13
+INFO  01:54:25,561 - Definicija metode ucitajTezinu na liniji 14
+INFO  01:54:25,561 - Definicija metode zapremina na liniji 15
+INFO  01:54:25,561 - Definicija metode Q na liniji 16
+INFO  01:54:25,561 - Definicija metode postaviVrstu na liniji 17
+INFO  01:54:25,561 - Definicija metode dohvVrstu na liniji 18
+INFO  01:54:25,561 - Definicija metode dohvTezinu na liniji 19
+INFO  01:54:25,561 - Definicija metode ispisi na liniji 20
+INFO  01:54:25,562 - Prepoznata naredba print
+INFO  01:54:25,562 - Prepoznata naredba print
+INFO  01:54:25,562 - Broj konstruktora: 0
+INFO  01:54:25,562 - Kreirana je klasa Sfera na liniji 27
+INFO  01:54:25,562 - Konst broj: 0
+INFO  01:54:25,562 - NAPRAVLJEN KONST SA FORM PARS0
+INFO  01:54:25,562 - Konst broj: 1
+INFO  01:54:25,563 - CONSTRUCTOR: Sfera
+INFO  01:54:25,563 - NAPRAVLJEN KONST SA FORM PARS1
+INFO  01:54:25,563 - Definicija metode postaviPoluprecnik na liniji 41
+INFO  01:54:25,563 - Definicija metode zapremina na liniji 43
+INFO  01:54:25,563 - Kreirana je promenjiva z na liniji 44
+INFO  01:54:25,563 - Broj konstruktora: 2
+INFO  01:54:25,563 - Definicija funkcije main na liniji 58
+INFO  01:54:25,563 - Print count calls = 2
+INFO  01:54:25,563 - ====================================
+INFO  01:54:25,564 - Parsiranje uspesno zavrseno!

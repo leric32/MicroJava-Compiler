@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/0/2023 20:21:12
+// 14/0/2023 19:7:47
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,6 +10,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ListOfCharDec ListOfCharDec) { }
     public void visit(Mulop Mulop) { }
     public void visit(MethodDecl MethodDecl) { }
+    public void visit(CheckForeach2 CheckForeach2) { }
     public void visit(ConstructorDecl ConstructorDecl) { }
     public void visit(Relop Relop) { }
     public void visit(ListOfClassVarDec ListOfClassVarDec) { }
@@ -24,8 +25,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(PrintEmpty PrintEmpty) { }
     public void visit(ListOfVarDec ListOfVarDec) { }
     public void visit(Factor Factor) { }
+    public void visit(FixupIf2 FixupIf2) { }
     public void visit(CondTerm CondTerm) { }
-    public void visit(ForEachLoop ForEachLoop) { }
+    public void visit(FixupIf1 FixupIf1) { }
     public void visit(VarDeclNotLast VarDeclNotLast) { }
     public void visit(Designator Designator) { }
     public void visit(ConstAssignment ConstAssignment) { }
@@ -34,6 +36,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Condition Condition) { }
     public void visit(IfCond IfCond) { }
     public void visit(ConstructorDeclName ConstructorDeclName) { }
+    public void visit(FixupWhile1 FixupWhile1) { }
     public void visit(ClassVar ClassVar) { }
     public void visit(WhileLoop WhileLoop) { }
     public void visit(ActualParamList ActualParamList) { }
@@ -56,8 +59,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondFact CondFact) { }
     public void visit(MethodVarDeclList MethodVarDeclList) { }
     public void visit(MethodDeclList MethodDeclList) { }
+    public void visit(IfOnly IfOnly) { }
     public void visit(FormPars FormPars) { }
     public void visit(ClassMethodDecl ClassMethodDecl) { }
+    public void visit(CondJump CondJump) { }
     public void visit(ListOfClassVar ListOfClassVar) { }
     public void visit(ModuoOperator ModuoOperator) { visit(); }
     public void visit(DivideOperator DivideOperator) { visit(); }
@@ -102,6 +107,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorAssignment DesignatorAssignment) { visit(); }
     public void visit(SingleCondition SingleCondition) { visit(); }
     public void visit(RelopCondition RelopCondition) { visit(); }
+    public void visit(ConditionalJump ConditionalJump) { visit(); }
     public void visit(ConditionsWithoutAnd ConditionsWithoutAnd) { visit(); }
     public void visit(ConditionsWithAnd ConditionsWithAnd) { visit(); }
     public void visit(ConditionsWithoutOr ConditionsWithoutOr) { visit(); }
@@ -110,8 +116,14 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ActualParams ActualParams) { visit(); }
     public void visit(NoActuals NoActuals) { visit(); }
     public void visit(Actuals Actuals) { visit(); }
-    public void visit(ForEachLoopParen ForEachLoopParen) { visit(); }
+    public void visit(ForEachIdent ForEachIdent) { visit(); }
+    public void visit(CheckForeachTwo CheckForeachTwo) { visit(); }
+    public void visit(ForEachLoop ForEachLoop) { visit(); }
     public void visit(WhileLoopParen WhileLoopParen) { visit(); }
+    public void visit(FirstFixupForWhile FirstFixupForWhile) { visit(); }
+    public void visit(SecondFixupForIf SecondFixupForIf) { visit(); }
+    public void visit(FirstFixupForIf FirstFixupForIf) { visit(); }
+    public void visit(OnlyIf OnlyIf) { visit(); }
     public void visit(ErrorIfCondition ErrorIfCondition) { visit(); }
     public void visit(IfCondition IfCondition) { visit(); }
     public void visit(PrintEmptyDummy PrintEmptyDummy) { visit(); }

@@ -1,0 +1,116 @@
+INFO  18:28:16,871 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  18:28:16,922 - #2 program
+INFO  18:28:16,923 - #47 test301
+INFO  18:28:16,923 - #43 {
+INFO  18:28:16,924 - #14 void
+INFO  18:28:16,925 - #47 main
+INFO  18:28:16,925 - #39 (
+INFO  18:28:16,926 - #40 )
+INFO  18:28:16,926 - #47 bool
+INFO  18:28:16,927 - #47 ibool
+INFO  18:28:16,929 - #35 ;
+INFO  18:28:16,931 - #47 int
+INFO  18:28:16,931 - #47 i
+INFO  18:28:16,931 - #35 ;
+INFO  18:28:16,931 - #43 {
+INFO  18:28:16,932 - #3 print
+INFO  18:28:16,933 - #39 (
+INFO  18:28:16,933 - #47 ord
+INFO  18:28:16,933 - #39 (
+INFO  18:28:16,934 - #48 a
+INFO  18:28:16,934 - #40 )
+INFO  18:28:16,936 - #40 )
+INFO  18:28:16,936 - #35 ;
+INFO  18:28:16,936 - #44 }
+INFO  18:28:16,936 - #44 }
+INFO  18:28:16,941 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             bool
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               ibool
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementPrintWithoutWidth(
+          PrintEmptyDummy(
+          ) [PrintEmptyDummy]
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                FuncCallFactor(
+                  FuncCallFactorDesignator(
+                    SimpleDesignator(
+                     ord
+                    ) [SimpleDesignator]
+                  ) [FuncCallFactorDesignator]
+                  Actuals(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            CharConstFactor(
+                             a
+                            ) [CharConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCallFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:28:16,941 - ====================================
+INFO  18:28:16,946 - Definicija funkcije main na liniji 6
+INFO  18:28:16,947 - Kreirana je promenjiva ibool na liniji 7
+INFO  18:28:16,947 - Kreirana je promenjiva i na liniji 8
+INFO  18:28:16,947 - 0  na liniji 10
+INFO  18:28:16,947 - Prepoznata naredba print
+INFO  18:28:16,947 - Print count calls = 1
+INFO  18:28:16,947 - ====================================
+INFO  18:28:16,951 - Parsiranje uspesno zavrseno!

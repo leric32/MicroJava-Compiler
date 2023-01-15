@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/0/2023 20:21:12
+// 14/0/2023 19:7:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,12 +9,15 @@ public class StatementIf extends Statement {
 
     private IfCond IfCond;
     private Statement Statement;
+    private FixupIf2 FixupIf2;
 
-    public StatementIf (IfCond IfCond, Statement Statement) {
+    public StatementIf (IfCond IfCond, Statement Statement, FixupIf2 FixupIf2) {
         this.IfCond=IfCond;
         if(IfCond!=null) IfCond.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+        this.FixupIf2=FixupIf2;
+        if(FixupIf2!=null) FixupIf2.setParent(this);
     }
 
     public IfCond getIfCond() {
@@ -33,6 +36,14 @@ public class StatementIf extends Statement {
         this.Statement=Statement;
     }
 
+    public FixupIf2 getFixupIf2() {
+        return FixupIf2;
+    }
+
+    public void setFixupIf2(FixupIf2 FixupIf2) {
+        this.FixupIf2=FixupIf2;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
@@ -40,17 +51,20 @@ public class StatementIf extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(IfCond!=null) IfCond.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
+        if(FixupIf2!=null) FixupIf2.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(IfCond!=null) IfCond.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(FixupIf2!=null) FixupIf2.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(IfCond!=null) IfCond.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(FixupIf2!=null) FixupIf2.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -67,6 +81,12 @@ public class StatementIf extends Statement {
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(FixupIf2!=null)
+            buffer.append(FixupIf2.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,0 +1,182 @@
+INFO  02:29:29,482 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:29:29,543 - #2 program
+INFO  02:29:29,544 - #47 test301
+INFO  02:29:29,544 - #43 {
+INFO  02:29:29,545 - #14 void
+INFO  02:29:29,545 - #47 main
+INFO  02:29:29,546 - #39 (
+INFO  02:29:29,546 - #40 )
+INFO  02:29:29,546 - #47 int
+INFO  02:29:29,547 - #47 x
+INFO  02:29:29,548 - #37 ,
+INFO  02:29:29,549 - #47 y
+INFO  02:29:29,549 - #35 ;
+INFO  02:29:29,549 - #43 {
+INFO  02:29:29,549 - #9 if
+INFO  02:29:29,550 - #39 (
+INFO  02:29:29,551 - #47 x
+INFO  02:29:29,551 - #26 >
+INFO  02:29:29,552 - #46 0
+INFO  02:29:29,553 - #31 ||
+INFO  02:29:29,554 - #47 x
+INFO  02:29:29,554 - #24 ==
+INFO  02:29:29,554 - #46 0
+INFO  02:29:29,555 - #40 )
+INFO  02:29:29,556 - #3 print
+INFO  02:29:29,558 - #39 (
+INFO  02:29:29,558 - #46 2
+INFO  02:29:29,558 - #40 )
+INFO  02:29:29,558 - #35 ;
+INFO  02:29:29,558 - #7 else
+INFO  02:29:29,559 - #3 print
+INFO  02:29:29,559 - #39 (
+INFO  02:29:29,559 - #46 3
+INFO  02:29:29,559 - #40 )
+INFO  02:29:29,559 - #35 ;
+INFO  02:29:29,559 - #44 }
+INFO  02:29:29,559 - #44 }
+INFO  02:29:29,565 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             x
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               y
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementIfElse(
+          IfCondition(
+            OnlyIf(
+            ) [OnlyIf]
+            ConditionsWithOr(
+              ConditionsWithoutOr(
+                ConditionsWithoutAnd(
+                  RelopCondition(
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             x
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                    GreaterOperator(
+                    ) [GreaterOperator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           0
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [RelopCondition]
+                ) [ConditionsWithoutAnd]
+              ) [ConditionsWithoutOr]
+              ConditionsWithoutAnd(
+                RelopCondition(
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           x
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                  EqualOperator(
+                  ) [EqualOperator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         0
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [RelopCondition]
+              ) [ConditionsWithoutAnd]
+            ) [ConditionsWithOr]
+            FirstFixupForIf(
+            ) [FirstFixupForIf]
+          ) [IfCondition]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   2
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+          SecondFixupForIf(
+          ) [SecondFixupForIf]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   3
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [StatementIfElse]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:29:29,565 - ====================================
+INFO  02:29:29,570 - Definicija funkcije main na liniji 6
+INFO  02:29:29,570 - Kreirana je promenjiva x na liniji 7
+INFO  02:29:29,571 - Kreirana je promenjiva y na liniji 7
+INFO  02:29:29,571 - Prepoznata naredba print
+INFO  02:29:29,571 - Prepoznata naredba print
+INFO  02:29:29,571 - Print count calls = 2
+INFO  02:29:29,571 - ====================================

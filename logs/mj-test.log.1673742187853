@@ -1,0 +1,462 @@
+INFO  01:20:12,134 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:20:12,177 - #2 program
+INFO  01:20:12,177 - #47 test302
+INFO  01:20:12,177 - #8 const
+INFO  01:20:12,178 - #47 int
+INFO  01:20:12,179 - #47 cinilac
+INFO  01:20:12,180 - #32 =
+INFO  01:20:12,180 - #46 4
+INFO  01:20:12,180 - #37 ,
+INFO  01:20:12,181 - #47 delilac
+INFO  01:20:12,181 - #32 =
+INFO  01:20:12,181 - #46 3
+INFO  01:20:12,181 - #35 ;
+INFO  01:20:12,181 - #5 class
+INFO  01:20:12,182 - #47 Kvadar
+INFO  01:20:12,182 - #43 {
+INFO  01:20:12,182 - #47 int
+INFO  01:20:12,183 - #47 a
+INFO  01:20:12,183 - #37 ,
+INFO  01:20:12,184 - #47 b
+INFO  01:20:12,186 - #37 ,
+INFO  01:20:12,186 - #47 c
+INFO  01:20:12,186 - #35 ;
+INFO  01:20:12,186 - #43 {
+INFO  01:20:12,186 - #47 Kvadar
+INFO  01:20:12,187 - #39 (
+INFO  01:20:12,187 - #40 )
+INFO  01:20:12,187 - #43 {
+INFO  01:20:12,188 - #44 }
+INFO  01:20:12,189 - #47 Kvadar
+INFO  01:20:12,189 - #39 (
+INFO  01:20:12,189 - #47 int
+INFO  01:20:12,189 - #47 a
+INFO  01:20:12,189 - #40 )
+INFO  01:20:12,189 - #43 {
+INFO  01:20:12,190 - #44 }
+INFO  01:20:12,190 - #47 Kvadar
+INFO  01:20:12,190 - #39 (
+INFO  01:20:12,190 - #47 int
+INFO  01:20:12,190 - #47 a
+INFO  01:20:12,190 - #40 )
+INFO  01:20:12,190 - #43 {
+INFO  01:20:12,190 - #44 }
+INFO  01:20:12,190 - #14 void
+INFO  01:20:12,190 - #47 postaviStranice
+INFO  01:20:12,190 - #39 (
+INFO  01:20:12,190 - #47 int
+INFO  01:20:12,190 - #47 a
+INFO  01:20:12,190 - #37 ,
+INFO  01:20:12,191 - #47 int
+INFO  01:20:12,191 - #47 b
+INFO  01:20:12,191 - #37 ,
+INFO  01:20:12,191 - #47 int
+INFO  01:20:12,191 - #47 c
+INFO  01:20:12,191 - #40 )
+INFO  01:20:12,191 - #43 {
+INFO  01:20:12,192 - #47 this
+INFO  01:20:12,192 - #38 .
+INFO  01:20:12,192 - #47 a
+INFO  01:20:12,192 - #32 =
+INFO  01:20:12,192 - #47 a
+INFO  01:20:12,192 - #35 ;
+INFO  01:20:12,193 - #47 this
+INFO  01:20:12,193 - #38 .
+INFO  01:20:12,194 - #47 b
+INFO  01:20:12,194 - #32 =
+INFO  01:20:12,194 - #47 b
+INFO  01:20:12,194 - #35 ;
+INFO  01:20:12,194 - #47 this
+INFO  01:20:12,194 - #38 .
+INFO  01:20:12,194 - #47 c
+INFO  01:20:12,194 - #32 =
+INFO  01:20:12,194 - #47 c
+INFO  01:20:12,194 - #35 ;
+INFO  01:20:12,194 - #44 }
+INFO  01:20:12,194 - #47 int
+INFO  01:20:12,195 - #47 zapremina
+INFO  01:20:12,195 - #39 (
+INFO  01:20:12,195 - #40 )
+INFO  01:20:12,195 - #47 int
+INFO  01:20:12,195 - #47 z
+INFO  01:20:12,195 - #35 ;
+INFO  01:20:12,195 - #43 {
+INFO  01:20:12,195 - #47 z
+INFO  01:20:12,196 - #32 =
+INFO  01:20:12,196 - #47 a
+INFO  01:20:12,196 - #21 *
+INFO  01:20:12,196 - #47 b
+INFO  01:20:12,197 - #21 *
+INFO  01:20:12,197 - #47 c
+INFO  01:20:12,197 - #35 ;
+INFO  01:20:12,197 - #4 return
+INFO  01:20:12,197 - #47 z
+INFO  01:20:12,198 - #35 ;
+INFO  01:20:12,198 - #44 }
+INFO  01:20:12,198 - #44 }
+INFO  01:20:12,198 - #44 }
+INFO  01:20:12,198 - #43 {
+INFO  01:20:12,198 - #14 void
+INFO  01:20:12,199 - #47 main
+INFO  01:20:12,199 - #39 (
+INFO  01:20:12,199 - #40 )
+INFO  01:20:12,199 - #43 {
+INFO  01:20:12,199 - #44 }
+INFO  01:20:12,199 - #44 }
+INFO  01:20:12,205 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ClassDeclarations(
+    ConstDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      ConstDeclaration(
+        Type(
+         int
+        ) [Type]
+        ConstantValueNumber(
+         cinilac
+         4
+        ) [ConstantValueNumber]
+        ListOfCharDeclarations(
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+          ConstantValueNumber(
+           delilac
+           3
+          ) [ConstantValueNumber]
+        ) [ListOfCharDeclarations]
+      ) [ConstDeclaration]
+    ) [ConstDeclarations]
+    ClassDeclaration(
+      NameOfClass(
+       Kvadar
+      ) [NameOfClass]
+      ClassIsNotExtended(
+      ) [ClassIsNotExtended]
+      ClassBodyWithMethodAndConstructor(
+        ClassVariables(
+          NoClassVariables(
+          ) [NoClassVariables]
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            ClassVarDecNotLast(
+              ClassVarDecNotLast(
+                ClassVarDecLast(
+                  ClassVariable(
+                   a
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [ClassVariable]
+                ) [ClassVarDecLast]
+                ClassVariable(
+                 b
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecNotLast]
+              ClassVariable(
+               c
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [ClassVariable]
+            ) [ClassVarDecNotLast]
+          ) [ClassVarDeclaration]
+        ) [ClassVariables]
+        ListOfConstructorDeclarations(
+          ListOfConstructorDeclarations(
+            SingleOrLastConstructorDeclaration(
+              ConstructorDeclaration(
+                ConstructorDeclarationName(
+                 Kvadar
+                ) [ConstructorDeclarationName]
+                NoFormalParameters(
+                ) [NoFormalParameters]
+                ConstructorWithoutVar(
+                ) [ConstructorWithoutVar]
+                NoStatements(
+                ) [NoStatements]
+              ) [ConstructorDeclaration]
+            ) [SingleOrLastConstructorDeclaration]
+            ConstructorDeclaration(
+              ConstructorDeclarationName(
+               Kvadar
+              ) [ConstructorDeclarationName]
+              FormalParameters(
+                SingleOrEndOfListParameter(
+                  SingleFormalParameter(
+                    Type(
+                     int
+                    ) [Type]
+                   a
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [SingleFormalParameter]
+                ) [SingleOrEndOfListParameter]
+              ) [FormalParameters]
+              ConstructorWithoutVar(
+              ) [ConstructorWithoutVar]
+              NoStatements(
+              ) [NoStatements]
+            ) [ConstructorDeclaration]
+          ) [ListOfConstructorDeclarations]
+          ConstructorDeclaration(
+            ConstructorDeclarationName(
+             Kvadar
+            ) [ConstructorDeclarationName]
+            FormalParameters(
+              SingleOrEndOfListParameter(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+              ) [SingleOrEndOfListParameter]
+            ) [FormalParameters]
+            ConstructorWithoutVar(
+            ) [ConstructorWithoutVar]
+            NoStatements(
+            ) [NoStatements]
+          ) [ConstructorDeclaration]
+        ) [ListOfConstructorDeclarations]
+        ListOfMethodsInClass(
+          SingleOrEndOfListMethod(
+            MethodDeclaration(
+              VoidMethodTypeName(
+               postaviStranice
+              ) [VoidMethodTypeName]
+              FormalParameters(
+                ListOfParameters(
+                  SingleFormalParameter(
+                    Type(
+                     int
+                    ) [Type]
+                   a
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [SingleFormalParameter]
+                  ListOfParameters(
+                    SingleFormalParameter(
+                      Type(
+                       int
+                      ) [Type]
+                     b
+                      VarDeclarationOfNotArray(
+                      ) [VarDeclarationOfNotArray]
+                    ) [SingleFormalParameter]
+                    SingleOrEndOfListParameter(
+                      SingleFormalParameter(
+                        Type(
+                         int
+                        ) [Type]
+                       c
+                        VarDeclarationOfNotArray(
+                        ) [VarDeclarationOfNotArray]
+                      ) [SingleFormalParameter]
+                    ) [SingleOrEndOfListParameter]
+                  ) [ListOfParameters]
+                ) [ListOfParameters]
+              ) [FormalParameters]
+              MethodWithoutVariables(
+              ) [MethodWithoutVariables]
+              Statements(
+                Statements(
+                  Statements(
+                    NoStatements(
+                    ) [NoStatements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        ClassFieldDesignator(
+                          SimpleDesignator(
+                           this
+                          ) [SimpleDesignator]
+                         a
+                        ) [ClassFieldDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 a
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      ClassFieldDesignator(
+                        SimpleDesignator(
+                         this
+                        ) [SimpleDesignator]
+                       b
+                      ) [ClassFieldDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               b
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [Statements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    ClassFieldDesignator(
+                      SimpleDesignator(
+                       this
+                      ) [SimpleDesignator]
+                     c
+                    ) [ClassFieldDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             c
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+            ) [MethodDeclaration]
+          ) [SingleOrEndOfListMethod]
+          MethodDeclaration(
+            ReturnMethodTypeName(
+              Type(
+               int
+              ) [Type]
+             zapremina
+            ) [ReturnMethodTypeName]
+            NoFormalParameters(
+            ) [NoFormalParameters]
+            MethodVariables(
+              MethodWithoutVariables(
+              ) [MethodWithoutVariables]
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                VarDeclarationLast(
+                  LastVarDeclarations(
+                   z
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [LastVarDeclarations]
+                ) [VarDeclarationLast]
+              ) [VarDeclaration]
+            ) [MethodVariables]
+            Statements(
+              Statements(
+                NoStatements(
+                ) [NoStatements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    SimpleDesignator(
+                     z
+                    ) [SimpleDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        MultipleFactors(
+                          MultipleFactors(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 a
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                            MultiplyOperator(
+                            ) [MultiplyOperator]
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               b
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [MultipleFactors]
+                          MultiplyOperator(
+                          ) [MultiplyOperator]
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             c
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [MultipleFactors]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+              StatementReturnExpr(
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         z
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementReturnExpr]
+            ) [Statements]
+          ) [MethodDeclaration]
+        ) [ListOfMethodsInClass]
+      ) [ClassBodyWithMethodAndConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:20:12,205 - ====================================
+INFO  01:20:12,210 - Kreirana je klasa Kvadar na liniji 7
+INFO  01:20:12,210 - Konst broj: 0
+INFO  01:20:12,210 - NAPRAVLJEN KONST SA FORM PARS0
+INFO  01:20:12,210 - Konst broj: 1
+INFO  01:20:12,211 - CONSTRUCTOR: Kvadar
+INFO  01:20:12,211 - NAPRAVLJEN KONST SA FORM PARS1
+INFO  01:20:12,211 - Konst broj: 1
+INFO  01:20:12,212 - CONSTRUCTOR: Kvadar
+INFO  01:20:12,212 - int
+INFO  01:20:12,212 - Sa kojim uporedjujem konst ima paramatera: 1
+INFO  01:20:12,212 - Trenutni konst ima paramatera: 1
+INFO  01:20:12,212 - NAPRAVLJEN KONST SA FORM PARS1
+INFO  01:20:12,212 - Definicija metode postaviStranice na liniji 20
+INFO  01:20:12,212 - Definicija metode zapremina na liniji 21
+INFO  01:20:12,212 - Kreirana je promenjiva z na liniji 22
+INFO  01:20:12,213 - Broj konstruktora: 1
+INFO  01:20:12,213 - Definicija funkcije main na liniji 34
+INFO  01:20:12,213 - Print count calls = 0
+INFO  01:20:12,213 - ====================================
+INFO  01:20:12,213 - Parsiranje uspesno zavrseno!

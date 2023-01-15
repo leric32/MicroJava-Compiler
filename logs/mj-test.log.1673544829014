@@ -1,0 +1,158 @@
+INFO  18:32:36,645 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  18:32:36,705 - #2 program
+INFO  18:32:36,706 - #47 test301
+INFO  18:32:36,706 - #43 {
+INFO  18:32:36,707 - #14 void
+INFO  18:32:36,708 - #47 main
+INFO  18:32:36,708 - #39 (
+INFO  18:32:36,708 - #40 )
+INFO  18:32:36,709 - #47 bool
+INFO  18:32:36,710 - #47 ibool
+INFO  18:32:36,712 - #35 ;
+INFO  18:32:36,713 - #47 int
+INFO  18:32:36,714 - #47 i
+INFO  18:32:36,714 - #35 ;
+INFO  18:32:36,714 - #43 {
+INFO  18:32:36,715 - #3 print
+INFO  18:32:36,717 - #39 (
+INFO  18:32:36,717 - #47 ord
+INFO  18:32:36,717 - #39 (
+INFO  18:32:36,718 - #48 a
+INFO  18:32:36,718 - #40 )
+INFO  18:32:36,720 - #40 )
+INFO  18:32:36,720 - #35 ;
+INFO  18:32:36,720 - #3 print
+INFO  18:32:36,721 - #39 (
+INFO  18:32:36,721 - #47 chr
+INFO  18:32:36,721 - #39 (
+INFO  18:32:36,722 - #46 98
+INFO  18:32:36,722 - #40 )
+INFO  18:32:36,722 - #40 )
+INFO  18:32:36,723 - #35 ;
+INFO  18:32:36,723 - #44 }
+INFO  18:32:36,723 - #44 }
+INFO  18:32:36,730 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             bool
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               ibool
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        Statements(
+          NoStatements(
+          ) [NoStatements]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  FuncCallFactor(
+                    FuncCallFactorDesignator(
+                      SimpleDesignator(
+                       ord
+                      ) [SimpleDesignator]
+                    ) [FuncCallFactorDesignator]
+                    Actuals(
+                      ActualParam(
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              CharConstFactor(
+                               a
+                              ) [CharConstFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [ActualParam]
+                    ) [Actuals]
+                  ) [FuncCallFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [Statements]
+        StatementPrintWithoutWidth(
+          PrintEmptyDummy(
+          ) [PrintEmptyDummy]
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                FuncCallFactor(
+                  FuncCallFactorDesignator(
+                    SimpleDesignator(
+                     chr
+                    ) [SimpleDesignator]
+                  ) [FuncCallFactorDesignator]
+                  Actuals(
+                    ActualParam(
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            NumberConstFactor(
+                             98
+                            ) [NumberConstFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCallFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  18:32:36,731 - ====================================
+INFO  18:32:36,736 - Definicija funkcije main na liniji 6
+INFO  18:32:36,736 - Kreirana je promenjiva ibool na liniji 7
+INFO  18:32:36,736 - Kreirana je promenjiva i na liniji 8
+INFO  18:32:36,736 - 0  na liniji 10
+INFO  18:32:36,737 - Prepoznata naredba print
+INFO  18:32:36,737 - 0  na liniji 11
+INFO  18:32:36,737 - Prepoznata naredba print
+INFO  18:32:36,737 - Print count calls = 2
+INFO  18:32:36,737 - ====================================
+INFO  18:32:36,744 - Parsiranje uspesno zavrseno!

@@ -114,8 +114,15 @@ nonterminal ConstructorDeclName ConstructorDeclName;
 nonterminal PrintEmpty PrintEmpty;
 nonterminal ArrayDesig ArrayDesig;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes, ForEachIdent;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ListOfFactors, Factor, Expr, Term, ClassExtended;
+
+nonterminal IfOnly IfOnly;
+nonterminal FixupIf1 FixupIf1;
+nonterminal FixupIf2 FixupIf2;
+nonterminal CondJump CondJump;
+nonterminal FixupWhile1 FixupWhile1;
+nonterminal CheckForeach2 CheckForeach2;
 
 precedence left ELSE;
 
@@ -283,11 +290,11 @@ StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new State
 
 Statement ::= (StatementDesignator) DesignatorStatement:D1 {: RESULT=new StatementDesignator(D1); RESULT.setLine(D1left); :}
 			  |
-			  (StatementIf) IfCond:I1 Statement:S2 {: RESULT=new StatementIf(I1, S2); RESULT.setLine(I1left); :}
+			  (StatementIf) IfCond:I1 Statement:S2 FixupIf2:F3 {: RESULT=new StatementIf(I1, S2, F3); RESULT.setLine(I1left); :}
 			  |
-			  (StatementIfElse) IfCond:I1 Statement:S2 ELSE Statement:S3 {: RESULT=new StatementIfElse(I1, S2, S3); RESULT.setLine(I1left); :}
+			  (StatementIfElse) IfCond:I1 Statement:S2 FixupIf2:F3 ELSE Statement:S4 {: RESULT=new StatementIfElse(I1, S2, F3, S4); RESULT.setLine(I1left); :}
 			  |
-			  (StatementWhile) WhileLoop:W1 Condition:C2 RPAREN Statement:S3 {: RESULT=new StatementWhile(W1, C2, S3); RESULT.setLine(W1left); :}
+			  (StatementWhile) WhileLoop:W1 FixupWhile1:F2 Condition:C3 RPAREN Statement:S4 {: RESULT=new StatementWhile(W1, F2, C3, S4); RESULT.setLine(W1left); :}
 			  |
 			  (StatementBreak) BREAK SEMI {: RESULT=new StatementBreak(); :}
 			  |
@@ -303,21 +310,33 @@ Statement ::= (StatementDesignator) DesignatorStatement:D1 {: RESULT=new Stateme
 			  |
 			  (StatementPrintWithWidth) PrintEmpty:P1 PRINT LPAREN Expr:E2 COMMA NUMBER:width RPAREN SEMI {: RESULT=new StatementPrintWithWidth(P1, E2, width); RESULT.setLine(P1left); :}
 			  |
-			  (StatementForeach) Designator:D1 ForEachLoop:F2 IDENT:feVar LAMBDA Statement:S3 RPAREN SEMI {: RESULT=new StatementForeach(D1, F2, feVar, S3); RESULT.setLine(D1left); :}
+			  (StatementForeach) ForEachLoop:F1 ForEachIdent:F2 LAMBDA Statement:S3 CheckForeach2:C4 RPAREN SEMI {: RESULT=new StatementForeach(F1, F2, S3, C4); RESULT.setLine(F1left); :}
 			  |
 			  (StatementBlock) LBRACE StatementList:S1 RBRACE {: RESULT=new StatementBlock(S1); RESULT.setLine(S1left); :}
 			  ;  
 
 PrintEmpty ::= (PrintEmptyDummy) {: RESULT=new PrintEmptyDummy(); :} /* epsilon */;
 
-IfCond ::= (IfCondition) IF LPAREN Condition:C1 RPAREN {: RESULT=new IfCondition(C1); RESULT.setLine(C1left); :}
+IfCond ::= (IfCondition) IfOnly:I1 LPAREN Condition:C2 RPAREN FixupIf1:F3 {: RESULT=new IfCondition(I1, C2, F3); RESULT.setLine(I1left); :}
 		   |
-		   (ErrorIfCondition) IF LPAREN error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null); :} RPAREN {: RESULT=new ErrorIfCondition(); :}
+		   (ErrorIfCondition) IfOnly:I1 LPAREN error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null); :} RPAREN {: RESULT=new ErrorIfCondition(I1); RESULT.setLine(I1left); :}
 		   ;
+
+IfOnly ::= (OnlyIf) IF {: RESULT=new OnlyIf(); :};
+
+FixupIf1 ::= (FirstFixupForIf) {: RESULT=new FirstFixupForIf(); :} /* epsilon */;
+
+FixupIf2 ::= (SecondFixupForIf) {: RESULT=new SecondFixupForIf(); :} /* epsilon */;
+
+FixupWhile1 ::= (FirstFixupForWhile) {: RESULT=new FirstFixupForWhile(); :} /* epsilon */;
 
 WhileLoop ::= (WhileLoopParen) WHILE LPAREN {: RESULT=new WhileLoopParen(); :};
 
-ForEachLoop ::= (ForEachLoopParen) POINT FOREACH LPAREN {: RESULT=new ForEachLoopParen(); :};
+ForEachLoop ::= (ForEachLoop) Designator:D1 POINT FOREACH LPAREN {: RESULT=new ForEachLoop(D1); RESULT.setLine(D1left); :};
+
+CheckForeach2 ::= (CheckForeachTwo) {: RESULT=new CheckForeachTwo(); :} /* epsilon */;
+
+ForEachIdent ::= (ForEachIdent) IDENT:feVar {: RESULT=new ForEachIdent(feVar); RESULT.setLine(feVarleft); :};
 
 ActPars ::= (Actuals) ActualParamList:A1 {: RESULT=new Actuals(A1); RESULT.setLine(A1left); :} 
 			| 
@@ -329,7 +348,7 @@ ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:E2 {: RESULT=ne
 					(ActualParam) Expr:E1 {: RESULT=new ActualParam(E1); RESULT.setLine(E1left); :}
 					;
 
-Condition ::= (ConditionsWithOr) Condition:C1 OR CondTerm:C2 {: RESULT=new ConditionsWithOr(C1, C2); RESULT.setLine(C1left); :}
+Condition ::= (ConditionsWithOr) Condition:C1 CondJump:C2 OR CondTerm:C3 {: RESULT=new ConditionsWithOr(C1, C2, C3); RESULT.setLine(C1left); :}
 			  |
 			  (ConditionsWithoutOr) CondTerm:C1 {: RESULT=new ConditionsWithoutOr(C1); RESULT.setLine(C1left); :}
 			  ;
@@ -337,7 +356,9 @@ Condition ::= (ConditionsWithOr) Condition:C1 OR CondTerm:C2 {: RESULT=new Condi
 CondTerm ::= (ConditionsWithAnd) CondTerm:C1 AND CondFact:C2 {: RESULT=new ConditionsWithAnd(C1, C2); RESULT.setLine(C1left); :}
 			 |
 			 (ConditionsWithoutAnd) CondFact:C1 {: RESULT=new ConditionsWithoutAnd(C1); RESULT.setLine(C1left); :};
-			 
+
+CondJump ::= (ConditionalJump) {: RESULT=new ConditionalJump(); :} /* epsilon */;
+
 CondFact ::= (RelopCondition) Expr:leftExpr Relop:r Expr:rightExpr {: RESULT=new RelopCondition(leftExpr, r, rightExpr); RESULT.setLine(leftExprleft); :}
 			 |
 			 (SingleCondition) Expr:e {: RESULT=new SingleCondition(e); RESULT.setLine(eleft); :}

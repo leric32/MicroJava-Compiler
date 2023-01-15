@@ -1,0 +1,183 @@
+INFO  02:46:34,852 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:46:34,897 - #2 program
+INFO  02:46:34,898 - #47 test301
+INFO  02:46:34,898 - #43 {
+INFO  02:46:34,899 - #14 void
+INFO  02:46:34,899 - #47 main
+INFO  02:46:34,899 - #39 (
+INFO  02:46:34,900 - #40 )
+INFO  02:46:34,900 - #47 int
+INFO  02:46:34,901 - #47 x
+INFO  02:46:34,902 - #37 ,
+INFO  02:46:34,905 - #47 y
+INFO  02:46:34,905 - #35 ;
+INFO  02:46:34,905 - #43 {
+INFO  02:46:34,906 - #9 if
+INFO  02:46:34,907 - #39 (
+INFO  02:46:34,908 - #47 x
+INFO  02:46:34,909 - #26 >
+INFO  02:46:34,910 - #46 0
+INFO  02:46:34,911 - #31 ||
+INFO  02:46:34,912 - #47 x
+INFO  02:46:34,913 - #24 ==
+INFO  02:46:34,913 - #46 0
+INFO  02:46:34,913 - #40 )
+INFO  02:46:34,913 - #3 print
+INFO  02:46:34,914 - #39 (
+INFO  02:46:34,915 - #46 2
+INFO  02:46:34,915 - #40 )
+INFO  02:46:34,915 - #35 ;
+INFO  02:46:34,915 - #7 else
+INFO  02:46:34,916 - #3 print
+INFO  02:46:34,916 - #39 (
+INFO  02:46:34,916 - #46 3
+INFO  02:46:34,916 - #40 )
+INFO  02:46:34,917 - #35 ;
+INFO  02:46:34,917 - #44 }
+INFO  02:46:34,917 - #44 }
+INFO  02:46:34,921 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             x
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               y
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementIfElse(
+          IfCondition(
+            OnlyIf(
+            ) [OnlyIf]
+            ConditionsWithOr(
+              ConditionsWithoutOr(
+                ConditionsWithoutAnd(
+                  RelopCondition(
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             x
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                    GreaterOperator(
+                    ) [GreaterOperator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          NumberConstFactor(
+                           0
+                          ) [NumberConstFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [RelopCondition]
+                ) [ConditionsWithoutAnd]
+              ) [ConditionsWithoutOr]
+              ConditionsWithoutAnd(
+                RelopCondition(
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           x
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                  EqualOperator(
+                  ) [EqualOperator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         0
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [RelopCondition]
+              ) [ConditionsWithoutAnd]
+            ) [ConditionsWithOr]
+            FirstFixupForIf(
+            ) [FirstFixupForIf]
+          ) [IfCondition]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   2
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+          SecondFixupForIf(
+          ) [SecondFixupForIf]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   3
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [StatementIfElse]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:46:34,921 - ====================================
+INFO  02:46:34,927 - Definicija funkcije main na liniji 6
+INFO  02:46:34,927 - Kreirana je promenjiva x na liniji 7
+INFO  02:46:34,927 - Kreirana je promenjiva y na liniji 7
+INFO  02:46:34,927 - Prepoznata naredba print
+INFO  02:46:34,927 - Prepoznata naredba print
+INFO  02:46:34,927 - Print count calls = 2
+INFO  02:46:34,927 - ====================================
+INFO  02:46:34,932 - Parsiranje uspesno zavrseno!

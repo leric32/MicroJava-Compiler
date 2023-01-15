@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/0/2023 20:21:12
+// 14/0/2023 19:7:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,13 +9,16 @@ public class StatementIfElse extends Statement {
 
     private IfCond IfCond;
     private Statement Statement;
+    private FixupIf2 FixupIf2;
     private Statement Statement1;
 
-    public StatementIfElse (IfCond IfCond, Statement Statement, Statement Statement1) {
+    public StatementIfElse (IfCond IfCond, Statement Statement, FixupIf2 FixupIf2, Statement Statement1) {
         this.IfCond=IfCond;
         if(IfCond!=null) IfCond.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+        this.FixupIf2=FixupIf2;
+        if(FixupIf2!=null) FixupIf2.setParent(this);
         this.Statement1=Statement1;
         if(Statement1!=null) Statement1.setParent(this);
     }
@@ -36,6 +39,14 @@ public class StatementIfElse extends Statement {
         this.Statement=Statement;
     }
 
+    public FixupIf2 getFixupIf2() {
+        return FixupIf2;
+    }
+
+    public void setFixupIf2(FixupIf2 FixupIf2) {
+        this.FixupIf2=FixupIf2;
+    }
+
     public Statement getStatement1() {
         return Statement1;
     }
@@ -51,6 +62,7 @@ public class StatementIfElse extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(IfCond!=null) IfCond.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
+        if(FixupIf2!=null) FixupIf2.accept(visitor);
         if(Statement1!=null) Statement1.accept(visitor);
     }
 
@@ -58,12 +70,14 @@ public class StatementIfElse extends Statement {
         accept(visitor);
         if(IfCond!=null) IfCond.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(FixupIf2!=null) FixupIf2.traverseTopDown(visitor);
         if(Statement1!=null) Statement1.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(IfCond!=null) IfCond.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(FixupIf2!=null) FixupIf2.traverseBottomUp(visitor);
         if(Statement1!=null) Statement1.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -81,6 +95,12 @@ public class StatementIfElse extends Statement {
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(FixupIf2!=null)
+            buffer.append(FixupIf2.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

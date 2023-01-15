@@ -26,8 +26,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	Map<String, List<Struct>> allMethods = new HashMap<String, List<Struct>>();
 	
 	//maps of class constructors
-	Map<String, List<Struct>> allClassConstr = new HashMap<String, List<Struct>>();
-	List<Struct> constrPars = new ArrayList<Struct>();
+	List<List<Struct>> allClassConstr = new ArrayList<List<Struct>>();
+	
+	public class CustomPair{
+		public String name;
+		public Struct struct;
+		
+		public CustomPair(String name, Struct struct) {
+			this.name = name;
+			this.struct = struct;
+		}
+		
+	}
+	List<CustomPair> constrPars = new ArrayList<CustomPair>();
 	boolean isConstr = false;
 	
 	//classes
@@ -218,7 +229,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		//check if the name is already in symbol table in current scope--------DODAJ ZA CLASS-------------
 		Obj methNode = Tab.currentScope().findSymbol(methName);
-		if(methNode != null) {
+		if(methNode != null && currClass == null) {
 			report_error("SEMANTICKA GRESKA: Ime metode ili funkcije " + methName + " je ranije vec deklarisano", returnMethodTypeName);
 			Tab.openScope();
 			return;
@@ -252,7 +263,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		methName = voidMethodTypeName.getMethName();
 		//check if the name is already in symbol table in current scope--------DODAJ ZA CLASS-------------
 		Obj methNode = Tab.currentScope().findSymbol(methName);
-		if(methNode != null) {
+		if(methNode != null && currClass == null) {
 			report_error("SEMANTICKA GRESKA: Ime metode " + methName + " je ranije vec deklarisano", voidMethodTypeName);
 			Tab.openScope();
 			return;
@@ -304,7 +315,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					allMethods.put(currMeth.getName(), listOfMethods);
 				}
 			}else {
-				constrPars.add(new Struct(Struct.Array, currType));
+				constrPars.add(new CustomPair(singleFormalParameter.getParamName(), new Struct(Struct.Array, currType)));
 			}
 
 			isArr = false;
@@ -317,7 +328,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					allMethods.put(currMeth.getName(), listOfMethods);
 				}
 			}else {
-				constrPars.add(currType);
+				constrPars.add(new CustomPair(singleFormalParameter.getParamName(), currType));
 			}
 		}
 		
@@ -367,6 +378,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 		//add number of formal parameters
+		if(currClass != null)
+			numOfFormPars++; //for this
 		currMeth.setLevel(numOfFormPars);
 		Tab.chainLocalSymbols(currMeth);
 		
@@ -574,7 +587,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		whileLoopsNum++;
 	}
 	
-	public void visit(ForEachLoopParen forEachLoopParen) {
+	public void visit(ForEachLoop forEachLoop) {
 		foreachLoopsNum++;
 	}
 	
@@ -587,27 +600,32 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		foreachLoopsNum--;
 		
 		//type of designator in foreach loop must be array
-		if(statementForeach.getDesignator().obj.getType().getKind() != Struct.Array) {
+		if(statementForeach.getForEachLoop().getDesignator().obj.getType().getKind() != Struct.Array) {
 			report_error("SEMANTICKA GRESKA: Designator u foreach petlje treba biti niz proizvoljnog tipa, a ne "
-					+ typeOfStructNode(statementForeach.getDesignator().obj.getType().getKind()) + " tipa", statementForeach);        	
+					+ typeOfStructNode(statementForeach.getForEachLoop().getDesignator().obj.getType().getKind()) + " tipa", statementForeach);        	
 			return;
 		}
 		
 		//ident must be local or global var
-		Obj varNode = Tab.find(statementForeach.getFeVar());
+		Obj varNode = Tab.find(statementForeach.getForEachIdent().getFeVar());
 		if(varNode.getKind() != Obj.Var) {
 			report_error("SEMANTICKA GRESKA: Identifikator u foreach pelji mora biti promnljiva, a nije", statementForeach);
 			return;
 		}
 		
 		//ident must be same type as type od array element
-		if(varNode.getType() != statementForeach.getDesignator().obj.getType().getElemType()) {
+		if(varNode.getType() != statementForeach.getForEachLoop().getDesignator().obj.getType().getElemType()) {
 			report_error("SEMANTICKA GRESKA: Identifikator u foreach pelji mora biti istog tipa kao i elementi niza -" + 
-					typeOfStructNode(statementForeach.getDesignator().obj.getType().getElemType().getKind()) + ", a ident je tipa - "
+					typeOfStructNode(statementForeach.getForEachLoop().getDesignator().obj.getType().getElemType().getKind()) + ", a ident je tipa - "
 			+ typeOfStructNode(varNode.getType().getKind()), statementForeach);
 			return;
 		}
 		
+	}
+	
+	public void visit(ForEachIdent forEachIdent) {
+		Obj varNode = Tab.find(forEachIdent.getFeVar());
+		forEachIdent.obj = varNode;
 	}
 	
 	public void visit(SingleCondition singleCondition) {
@@ -941,6 +959,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(NewClassWithActParsOperatorFactor newClassWithActParsOperatorFactor) {
 		//UARDI ZA KRIRANJE KLASA
+		if(newClassWithActParsOperatorFactor.getType().struct.getKind() != Struct.Class){
+			report_error("SEMANTICKA GRESKA: Tip "+ typeOfStructNode(newClassWithActParsOperatorFactor.getType().struct.getKind()) + 
+					" nije tipa Class", newClassWithActParsOperatorFactor);
+			newClassWithActParsOperatorFactor.struct = Tab.noType;
+			return;
+		}
+		newClassWithActParsOperatorFactor.struct = newClassWithActParsOperatorFactor.getType().struct;
 	}
 	
 	//DESIGNATORS
@@ -948,7 +973,33 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(ClassFieldDesignator classFieldDesignator) {
 		//UARDI ZA KRIRANJE KLASA
-		classFieldDesignator.obj = Tab.noObj;
+		
+		if(classFieldDesignator.getDesignator().obj.getType().getKind() == Struct.Class) {
+			
+			if(currClass != null && currClass.getType() == classFieldDesignator.getDesignator().obj.getType()) {
+				Obj tmpObj = Tab.currentScope().getOuter().findSymbol(classFieldDesignator.getClassField());
+				if(tmpObj == null) {
+					report_error(classFieldDesignator.getClassField() + " nije polje na klase " + classFieldDesignator.getDesignator().obj.getName(), classFieldDesignator);
+					classFieldDesignator.obj = Tab.noObj;
+					return;
+				}
+				classFieldDesignator.obj = tmpObj;
+			}else {
+				//prolazimo polja druge klase
+				for(Obj m: classFieldDesignator.getDesignator().obj.getType().getMembers()) {
+					if(m.getName().equals(classFieldDesignator.getClassField())) {
+						report_info("Pristup polju " + classFieldDesignator.getDesignator().obj.getName() + "." + classFieldDesignator.getClassField(), classFieldDesignator);
+						classFieldDesignator.obj = m;
+						return;
+					}
+				}
+			}
+			
+			
+		}else {
+			report_error(classFieldDesignator.getDesignator().obj.getName() + " ne predstavlja referencu na klasu, vec je tipa " + typeOfStructNode(classFieldDesignator.getDesignator().obj.getType().getKind()), classFieldDesignator);
+			classFieldDesignator.obj = Tab.noObj;
+		}
 	}
 	
 	public void visit(ArrayDesignator arrayDesignator) {
@@ -1050,6 +1101,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				Tab.insert(Obj.Fld, m.getName(), m.getType());
 			}
 		}
+		
+		
+		//copy method from superclass
+		if(superClass != null) {
+			for(Obj m: superClass.getType().getMembers()) {
+				if(m.getKind() == Obj.Meth && !m.getName().contains("#")) {
+					Tab.currentScope().addToLocals(m);
+				}
+			}
+		}
 	}
 	
 	public void visit(ClassIsNotExtended classIsNotExtended) {
@@ -1058,10 +1119,23 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(ClassDeclaration classDeclaration) {
+		report_info("Broj konstruktora: " + allClassConstr.size(), null);
+		//dodajemo podarzumevani konstruktor
+		if(allClassConstr.size() == 0) {
+			Obj tmpConstObj = Tab.insert(Obj.Meth, classDeclaration.getClassName().obj.getName() + "#" + allClassConstr.size(), Tab.noType);
+			Tab.openScope();
+			
+			//insert this into function
+			Tab.insert(Obj.Var, "this", currClass.getType());
+			tmpConstObj.setLevel(1);
+			Tab.chainLocalSymbols(tmpConstObj);
+			Tab.closeScope();
+		}
 		Tab.chainLocalSymbols(currClass.getType());
 		Tab.closeScope();
 		currClass = null;
 		superClass = null;
+		allClassConstr.clear();
 	}
 	
 	public void visit(ClassVariable classVariable) {
@@ -1086,24 +1160,28 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(ConstructorDeclaration constructorDeclaration) {
 				
 		//print
-		for (Map.Entry<String, List<Struct>> e : allClassConstr.entrySet()) {
-			report_info("CONSTRUCTOR: " + e.getKey(), null);
-			for(Struct s: e.getValue()) {
+		for (List<Struct> e : allClassConstr) {
+			report_info("CONSTRUCTOR: " + currClass.getName(), null);
+			for(Struct s: e) {
 				report_info("" + typeOfStructNode(s.getKind()), null);
 			}
 		}
 		
 		//check if there is some construcotr with the same formal parameters
-		for (Map.Entry<String, List<Struct>> e : allClassConstr.entrySet()) {
-			if(e.getValue().size() == constrPars.size() && e.getKey().equals(currClass.getName())) {
+		for (List<Struct> e : allClassConstr) {
+			if(e.size() == constrPars.size()) {
 				int ind = 0;
 				for(int i = 0; i < constrPars.size(); i++) {
-					if(e.getValue().get(i).equals(constrPars.get(i))) {
+					//report_info("STRUCT CURRENT: " + e.getValue().get(i), null);
+					//report_info("STRUCT PARENT: " + constrPars.get(i).struct, null);
+					if(e.get(i).equals(constrPars.get(i).struct)) {
 						ind++;
 					}
 				}
+				report_info("Sa kojim uporedjujem konst ima paramatera: " + ind, null);
+				report_info("Trenutni konst ima paramatera: " + constrPars.size(), null);
 				if(ind == constrPars.size()) {
-					//we have found construxtor with the same formal parameters
+					//we have found constructor with the same formal parameters
 					report_error("SEMANTICKA GRESKA: Konstruktor sa formalnim parametrima vec postoji", constructorDeclaration);
 					isConstr = false;
 					currMeth.setLevel(constrPars.size() + 1);
@@ -1116,6 +1194,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 		//add number of formal parameters
+		List<Struct> tmpList = new ArrayList<Struct>();
+		for(CustomPair cp: constrPars) {
+			Tab.insert(Obj.Var, cp.name, cp.struct);
+			tmpList.add(cp.struct);
+		}
 		currMeth.setLevel(constrPars.size() + 1);
 		Tab.chainLocalSymbols(currMeth);
 		
@@ -1124,17 +1207,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		currMeth = null;
 		isConstr = false;
-		allClassConstr.put(currClass.getName(), constrPars);
+		numOfFormPars = 0;
+		allClassConstr.add(tmpList);
+		report_info("NAPRAVLJEN KONST SA FORM PARS" + constrPars.size(), null);
 		constrPars.clear();
 		
-		//copy method from super class
-		if(superClass != null) {
-			for(Obj m: superClass.getType().getMembers()) {
-				if(m.getKind() == Obj.Meth && !superClass.getName().equals(m.getName())) {
-					Tab.currentScope().addToLocals(m);
-				}
-			}
-		}
+		
 		
 		
 	}
@@ -1151,11 +1229,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			//return;
 		}
 		
-		currMeth = Tab.insert(Obj.Meth, constructorDeclarationName.getConstructorName() + "_" + allClassConstr.size(), Tab.noType);
+		report_info("Konst broj: " + allClassConstr.size(), null);
+		currMeth = Tab.insert(Obj.Meth, constructorDeclarationName.getConstructorName() + "#" + allClassConstr.size(), Tab.noType);
 		Tab.openScope();
 		
 		//insert this into function
-		report_info(currClass.getType().getElemType().getKind() + "", null);
 		Tab.insert(Obj.Var, "this", currClass.getType());
 		
 		isConstr = true;

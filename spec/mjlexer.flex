@@ -98,7 +98,7 @@ import java_cup.runtime.Symbol;
 // BOOLEAN AND CHAR VALUES
 "true" 		{ return new_symbol(sym.BOOLEAN, true); }
 "false" 	{ return new_symbol(sym.BOOLEAN, false); }
-'.'		{ return new_symbol(sym.CHAR, new Character(yytext().charAt(1))); }
+'.'		{ return new_symbol(sym.CHAR, yytext().charAt(1)); }
 
 // NUMBERS AND IDENTIFICATORS
 [0-9]+  						{ return new_symbol(sym.NUMBER, Integer.valueOf(yytext())); }

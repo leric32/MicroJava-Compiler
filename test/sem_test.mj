@@ -1,34 +1,27 @@
-// Test301
+//Test 302
 
-program test301
+program test302
 
-	const int nula = 0;
-	const int jedan = 1;
-	const int pet = 5;
 
-	int niz[], niz2[], a, b;
-	char nizch[];
-	
+
 {
-	void main()	
-		int bodovi;
-		bool bt;
+	
+	
+	void main()
+	int niz[], niz2[], a, b;
 	{
+		
 		niz = new int[3];
-		niz[nula] = jedan;
+		niz[0] = 1;
 		niz[1] = 2;
-		
-		
-		niz2 = new int[2];
-		[niz2[0],,niz2[niz[nula]]] = niz;
+		niz[2] = 3;
 
-		//print(niz2[0]);	// niz[0] -> 1
-		//print(niz2[1]); // niz[2] -> 6 
+		niz2 = new int[2];
+		[niz2[0],,niz2[1]] = niz;
 		
-		// [niz2[0],,,niz2[niz[nula]]] = niz; // runtime error! 
 		
-			
+		print(niz2[0]);	// niz[0] -> 1
+		print(niz2[1]); // niz[2] -> 6 
 	}
 }
-
 

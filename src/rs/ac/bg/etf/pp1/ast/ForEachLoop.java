@@ -1,15 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/0/2023 20:21:12
+// 14/0/2023 19:7:47
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class ForEachLoop implements SyntaxNode {
+public class ForEachLoop implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
+    private Designator Designator;
+
+    public ForEachLoop (Designator Designator) {
+        this.Designator=Designator;
+        if(Designator!=null) Designator.setParent(this);
+    }
+
+    public Designator getDesignator() {
+        return Designator;
+    }
+
+    public void setDesignator(Designator Designator) {
+        this.Designator=Designator;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -27,11 +40,37 @@ public abstract class ForEachLoop implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+        if(Designator!=null) Designator.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(Designator!=null) Designator.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(Designator!=null) Designator.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("ForEachLoop(\n");
+
+        if(Designator!=null)
+            buffer.append(Designator.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [ForEachLoop]");
+        return buffer.toString();
+    }
 }

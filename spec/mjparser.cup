@@ -74,8 +74,10 @@ nonterminal FormPars, FormParsList, OneFormalParam, ConstructorVarDecl, ClassMet
 nonterminal StatementList, Statement, ActPars, ActualParamList, Condition, CondTerm, CondFact, DesignatorStatement, DesignatorList;
 nonterminal Relop, Addop, Mulop, IfCond, ConstructorDeclList, DesignatorOrEpsilon, ForEachLoop, WhileLoop, FunctionCall, ConstructorDeclName, PrintEmpty, ArrayDesig;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes, ForEachIdent;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ListOfFactors, Factor, Expr, Term, ClassExtended;
+
+nonterminal IfOnly, FixupIf1, FixupIf2, CondJump, FixupWhile1, CheckForeach2;
 
 precedence left ELSE;
 
@@ -243,11 +245,11 @@ StatementList ::= (Statements) StatementList Statement
 
 Statement ::= (StatementDesignator) DesignatorStatement
 			  |
-			  (StatementIf) IfCond Statement
+			  (StatementIf) IfCond Statement FixupIf2
 			  |
-			  (StatementIfElse) IfCond Statement ELSE Statement
+			  (StatementIfElse) IfCond Statement FixupIf2 ELSE Statement
 			  |
-			  (StatementWhile) WhileLoop Condition RPAREN Statement
+			  (StatementWhile) WhileLoop FixupWhile1 Condition RPAREN Statement
 			  |
 			  (StatementBreak) BREAK SEMI
 			  |
@@ -263,21 +265,33 @@ Statement ::= (StatementDesignator) DesignatorStatement
 			  |
 			  (StatementPrintWithWidth) PrintEmpty PRINT LPAREN Expr COMMA NUMBER:width RPAREN SEMI
 			  |
-			  (StatementForeach) Designator ForEachLoop IDENT:feVar LAMBDA Statement RPAREN SEMI
+			  (StatementForeach) ForEachLoop ForEachIdent LAMBDA Statement CheckForeach2 RPAREN SEMI
 			  |
 			  (StatementBlock) LBRACE StatementList RBRACE
 			  ;  
 
 PrintEmpty ::= (PrintEmptyDummy) /* epsilon */;
 
-IfCond ::= (IfCondition) IF LPAREN Condition RPAREN
+IfCond ::= (IfCondition) IfOnly LPAREN Condition RPAREN FixupIf1
 		   |
-		   (ErrorIfCondition) IF LPAREN error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null); :} RPAREN
+		   (ErrorIfCondition) IfOnly LPAREN error:l {: parser.report_error("Izvrsen oporavak do ) u liniji " + lleft, null); :} RPAREN
 		   ;
+
+IfOnly ::= (OnlyIf) IF;
+
+FixupIf1 ::= (FirstFixupForIf) /* epsilon */;
+
+FixupIf2 ::= (SecondFixupForIf) /* epsilon */;
+
+FixupWhile1 ::= (FirstFixupForWhile) /* epsilon */;
 
 WhileLoop ::= (WhileLoopParen) WHILE LPAREN;
 
-ForEachLoop ::= (ForEachLoopParen) POINT FOREACH LPAREN;
+ForEachLoop ::= (ForEachLoop) Designator POINT FOREACH LPAREN;
+
+CheckForeach2 ::= (CheckForeachTwo) /* epsilon */;
+
+ForEachIdent ::= (ForEachIdent) IDENT:feVar;
 
 ActPars ::= (Actuals) ActualParamList 
 			| 
@@ -289,7 +303,7 @@ ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
 					(ActualParam) Expr
 					;
 
-Condition ::= (ConditionsWithOr) Condition OR CondTerm
+Condition ::= (ConditionsWithOr) Condition CondJump OR CondTerm
 			  |
 			  (ConditionsWithoutOr) CondTerm
 			  ;
@@ -297,7 +311,9 @@ Condition ::= (ConditionsWithOr) Condition OR CondTerm
 CondTerm ::= (ConditionsWithAnd) CondTerm AND CondFact
 			 |
 			 (ConditionsWithoutAnd) CondFact;
-			 
+
+CondJump ::= (ConditionalJump) /* epsilon */;
+
 CondFact ::= (RelopCondition) Expr:leftExpr Relop:r Expr:rightExpr
 			 |
 			 (SingleCondition) Expr:e

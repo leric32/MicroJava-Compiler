@@ -1,0 +1,151 @@
+INFO  02:11:44,865 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  02:11:44,909 - #2 program
+INFO  02:11:44,909 - #47 test301
+INFO  02:11:44,909 - #43 {
+INFO  02:11:44,910 - #14 void
+INFO  02:11:44,911 - #47 main
+INFO  02:11:44,911 - #39 (
+INFO  02:11:44,911 - #40 )
+INFO  02:11:44,911 - #47 int
+INFO  02:11:44,912 - #47 x
+INFO  02:11:44,913 - #37 ,
+INFO  02:11:44,914 - #47 y
+INFO  02:11:44,914 - #35 ;
+INFO  02:11:44,914 - #43 {
+INFO  02:11:44,915 - #9 if
+INFO  02:11:44,915 - #39 (
+INFO  02:11:44,916 - #47 x
+INFO  02:11:44,916 - #24 ==
+INFO  02:11:44,918 - #46 1
+INFO  02:11:44,919 - #40 )
+INFO  02:11:44,919 - #3 print
+INFO  02:11:44,923 - #39 (
+INFO  02:11:44,923 - #46 2
+INFO  02:11:44,923 - #40 )
+INFO  02:11:44,923 - #35 ;
+INFO  02:11:44,923 - #7 else
+INFO  02:11:44,924 - #3 print
+INFO  02:11:44,924 - #39 (
+INFO  02:11:44,924 - #46 3
+INFO  02:11:44,924 - #40 )
+INFO  02:11:44,924 - #35 ;
+INFO  02:11:44,924 - #44 }
+INFO  02:11:44,925 - #44 }
+INFO  02:11:44,929 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoVarDecl(
+  ) [NoVarDecl]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationNotLast(
+            NotLastVarDeclarations(
+             x
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [NotLastVarDeclarations]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               y
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclarationNotLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        NoStatements(
+        ) [NoStatements]
+        StatementIfElse(
+          IfCondition(
+            OnlyIf(
+            ) [OnlyIf]
+            ConditionsWithoutOr(
+              ConditionsWithoutAnd(
+                RelopCondition(
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           x
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                  EqualOperator(
+                  ) [EqualOperator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        NumberConstFactor(
+                         1
+                        ) [NumberConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [RelopCondition]
+              ) [ConditionsWithoutAnd]
+            ) [ConditionsWithoutOr]
+            FirstFixupForIf(
+            ) [FirstFixupForIf]
+          ) [IfCondition]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   2
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+          SecondFixupForIf(
+          ) [SecondFixupForIf]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  NumberConstFactor(
+                   3
+                  ) [NumberConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [StatementIfElse]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  02:11:44,929 - ====================================
+INFO  02:11:44,933 - Definicija funkcije main na liniji 6
+INFO  02:11:44,933 - Kreirana je promenjiva x na liniji 7
+INFO  02:11:44,933 - Kreirana je promenjiva y na liniji 7
+INFO  02:11:44,933 - Prepoznata naredba print
+INFO  02:11:44,934 - Prepoznata naredba print
+INFO  02:11:44,934 - Print count calls = 2
+INFO  02:11:44,934 - ====================================
+INFO  02:11:44,937 - Parsiranje uspesno zavrseno!

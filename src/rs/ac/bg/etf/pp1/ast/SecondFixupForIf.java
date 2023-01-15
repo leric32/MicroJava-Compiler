@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/0/2023 20:21:12
+// 14/0/2023 19:7:47
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ForEachLoopParen extends ForEachLoop {
+public class SecondFixupForIf extends FixupIf2 {
 
-    public ForEachLoopParen () {
+    public SecondFixupForIf () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class ForEachLoopParen extends ForEachLoop {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ForEachLoopParen(\n");
+        buffer.append("SecondFixupForIf(\n");
 
         buffer.append(tab);
-        buffer.append(") [ForEachLoopParen]");
+        buffer.append(") [SecondFixupForIf]");
         return buffer.toString();
     }
 }
