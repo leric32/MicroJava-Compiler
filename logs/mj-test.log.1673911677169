@@ -1,0 +1,176 @@
+INFO  00:07:58,550 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\linked_list.mj
+INFO  00:07:58,592 - #2 program
+INFO  00:07:58,592 - #47 list
+INFO  00:07:58,592 - #8 const
+INFO  00:07:58,593 - #47 int
+INFO  00:07:58,593 - #47 A
+INFO  00:07:58,594 - #32 =
+INFO  00:07:58,594 - #46 15342
+INFO  00:07:58,594 - #37 ,
+INFO  00:07:58,595 - #47 C
+INFO  00:07:58,595 - #32 =
+INFO  00:07:58,595 - #46 45194
+INFO  00:07:58,595 - #35 ;
+INFO  00:07:58,595 - #8 const
+INFO  00:07:58,595 - #47 int
+INFO  00:07:58,596 - #47 RAND_MAX
+INFO  00:07:58,596 - #32 =
+INFO  00:07:58,596 - #46 100000
+INFO  00:07:58,596 - #35 ;
+INFO  00:07:58,596 - #5 class
+INFO  00:07:58,598 - #47 Node
+INFO  00:07:58,598 - #43 {
+INFO  00:07:58,598 - #47 int
+INFO  00:07:58,599 - #47 data
+INFO  00:07:58,599 - #35 ;
+INFO  00:07:58,600 - #47 Node
+INFO  00:07:58,600 - #47 next
+INFO  00:07:58,600 - #35 ;
+INFO  00:07:58,600 - #43 {
+INFO  00:07:58,600 - #44 }
+INFO  00:07:58,600 - #44 }
+INFO  00:07:58,600 - #47 int
+INFO  00:07:58,601 - #47 seed
+INFO  00:07:58,601 - #35 ;
+INFO  00:07:58,601 - #43 {
+INFO  00:07:58,602 - #14 void
+INFO  00:07:58,602 - #47 main
+INFO  00:07:58,603 - #39 (
+INFO  00:07:58,603 - #40 )
+INFO  00:07:58,603 - #47 int
+INFO  00:07:58,603 - #47 i
+INFO  00:07:58,604 - #35 ;
+INFO  00:07:58,604 - #43 {
+INFO  00:07:58,604 - #44 }
+INFO  00:07:58,604 - #44 }
+INFO  00:07:58,609 - Program(
+  ProgName(
+   list
+  ) [ProgName]
+  VarDeclarations(
+    ClassDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             A
+             15342
+            ) [ConstantValueNumber]
+            ListOfCharDeclarations(
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+              ConstantValueNumber(
+               C
+               45194
+              ) [ConstantValueNumber]
+            ) [ListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           RAND_MAX
+           100000
+          ) [ConstantValueNumber]
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      ClassDeclaration(
+        NameOfClass(
+         Node
+        ) [NameOfClass]
+        ClassIsNotExtended(
+        ) [ClassIsNotExtended]
+        ClassBodyNoMethodWithEmptyBrackets(
+          ClassVariables(
+            ClassVariables(
+              NoClassVariables(
+              ) [NoClassVariables]
+              ClassVarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                ClassVarDecLast(
+                  ClassVariable(
+                   data
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [ClassVariable]
+                ) [ClassVarDecLast]
+              ) [ClassVarDeclaration]
+            ) [ClassVariables]
+            ClassVarDeclaration(
+              Type(
+               Node
+              ) [Type]
+              ClassVarDecLast(
+                ClassVariable(
+                 next
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecLast]
+            ) [ClassVarDeclaration]
+          ) [ClassVariables]
+        ) [ClassBodyNoMethodWithEmptyBrackets]
+      ) [ClassDeclaration]
+    ) [ClassDeclarations]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         seed
+          VarDeclarationOfNotArray(
+          ) [VarDeclarationOfNotArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:07:58,609 - ====================================
+INFO  00:07:58,614 - Kreirana je klasa Node na liniji 6
+INFO  00:07:58,614 - Broj konstruktora: 0
+INFO  00:07:58,614 - Kreirana je promenjiva seed na liniji 15
+INFO  00:07:58,614 - Definicija funkcije main na liniji 19
+INFO  00:07:58,614 - Kreirana je promenjiva i na liniji 19
+INFO  00:07:58,614 - Print count calls = 0
+INFO  00:07:58,614 - ====================================

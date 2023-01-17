@@ -1,0 +1,139 @@
+INFO  01:11:21,376 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:11:21,419 - #2 program
+INFO  01:11:21,419 - #47 test302
+INFO  01:11:21,420 - #5 class
+INFO  01:11:21,421 - #47 Sfera
+INFO  01:11:21,421 - #43 {
+INFO  01:11:21,421 - #47 int
+INFO  01:11:21,422 - #47 r
+INFO  01:11:21,423 - #35 ;
+INFO  01:11:21,423 - #43 {
+INFO  01:11:21,424 - #47 Sfera
+INFO  01:11:21,424 - #39 (
+INFO  01:11:21,424 - #47 int
+INFO  01:11:21,424 - #47 r
+INFO  01:11:21,424 - #40 )
+INFO  01:11:21,424 - #43 {
+INFO  01:11:21,425 - #47 this
+INFO  01:11:21,425 - #38 .
+INFO  01:11:21,425 - #47 r
+INFO  01:11:21,425 - #32 =
+INFO  01:11:21,426 - #47 r
+INFO  01:11:21,427 - #35 ;
+INFO  01:11:21,429 - #44 }
+INFO  01:11:21,429 - #44 }
+INFO  01:11:21,429 - #44 }
+INFO  01:11:21,429 - #43 {
+INFO  01:11:21,430 - #14 void
+INFO  01:11:21,430 - #47 main
+INFO  01:11:21,430 - #39 (
+INFO  01:11:21,430 - #40 )
+INFO  01:11:21,431 - #43 {
+INFO  01:11:21,431 - #44 }
+INFO  01:11:21,431 - #44 }
+INFO  01:11:21,437 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ClassDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    ClassDeclaration(
+      NameOfClass(
+       Sfera
+      ) [NameOfClass]
+      ClassIsNotExtended(
+      ) [ClassIsNotExtended]
+      ClassBodyNoMethodWithConstructor(
+        ClassVariables(
+          NoClassVariables(
+          ) [NoClassVariables]
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            ClassVarDecLast(
+              ClassVariable(
+               r
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [ClassVariable]
+            ) [ClassVarDecLast]
+          ) [ClassVarDeclaration]
+        ) [ClassVariables]
+        SingleOrLastConstructorDeclaration(
+          ConstructorDeclaration(
+            ConstructorDeclarationName(
+             Sfera
+            ) [ConstructorDeclarationName]
+            FormalParameters(
+              SingleOrEndOfListParameter(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 r
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+              ) [SingleOrEndOfListParameter]
+            ) [FormalParameters]
+            ConstructorWithoutVar(
+            ) [ConstructorWithoutVar]
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                DesignatorAssignment(
+                  ClassFieldDesignator(
+                    SimpleDesignator(
+                     this
+                    ) [SimpleDesignator]
+                   r
+                  ) [ClassFieldDesignator]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           r
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [DesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+          ) [ConstructorDeclaration]
+        ) [SingleOrLastConstructorDeclaration]
+      ) [ClassBodyNoMethodWithConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:11:21,437 - ====================================
+INFO  01:11:21,441 - Kreirana je klasa Sfera na liniji 5
+INFO  01:11:21,441 - Konst broj: 0
+INFO  01:11:21,442 - NAPRAVLJEN KONST SA FORM PARS1
+INFO  01:11:21,442 - Broj konstruktora: 1
+INFO  01:11:21,442 - Definicija funkcije main na liniji 18
+INFO  01:11:21,442 - Print count calls = 0
+INFO  01:11:21,442 - ====================================
+INFO  01:11:21,445 - r na liniji 11
+INFO  01:11:21,445 - 4 na liniji 11
+INFO  01:11:21,447 - Parsiranje uspesno zavrseno!

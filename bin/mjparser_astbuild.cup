@@ -110,11 +110,10 @@ nonterminal DesignatorOrEpsilon DesignatorOrEpsilon;
 nonterminal ForEachLoop ForEachLoop;
 nonterminal WhileLoop WhileLoop;
 nonterminal FunctionCall FunctionCall;
-nonterminal ConstructorDeclName ConstructorDeclName;
 nonterminal PrintEmpty PrintEmpty;
 nonterminal ArrayDesig ArrayDesig;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes, ForEachIdent;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes, ForEachIdent, ConstructorDeclName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ListOfFactors, Factor, Expr, Term, ClassExtended;
 
 nonterminal IfOnly IfOnly;

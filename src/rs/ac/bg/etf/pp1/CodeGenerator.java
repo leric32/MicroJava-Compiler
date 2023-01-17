@@ -2,6 +2,8 @@ package rs.ac.bg.etf.pp1;
 
 import java.util.*;
 
+import org.apache.log4j.Logger;
+
 import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
 import rs.ac.bg.etf.pp1.ast.*;
@@ -13,7 +15,30 @@ import rs.etf.pp1.symboltable.concepts.*;
 	
 		private int mainPc;
 		private List<Obj> aaList = new ArrayList<>(); 
+		private List<Obj> allClass = new ArrayList<>();
+		private List<Obj> allVirtualMethods = new ArrayList<>();
+		Obj currClass = null;
+		Obj makingClass = null;
+		boolean isConst = false;
 		
+		List<Obj> callingMeth = new ArrayList<>();
+		
+		public class MapClassVF{
+			public int adr;
+			public String name;
+		}
+		
+		public class Constr{
+			public String name;
+			public List<Struct> types;
+			public int adr;
+		}
+		
+		List<MapClassVF> allClassVF = new ArrayList<>();
+		List<Constr> allConstrs = new ArrayList<Constr>();
+		
+		List<Struct> actParsList = null;
+ 		
 		public int getMainPc() {
 			return mainPc;
 		}
@@ -98,10 +123,74 @@ import rs.etf.pp1.symboltable.concepts.*;
 		
 	}
 	
+	void tableVirtualFunction() {
+		
+		int staticTop = SemanticAnalyzer.nVars;
+		
+		for(Obj oc: allClass) {
+			
+			//put maybe in some map
+			MapClassVF tmpMCVF = new MapClassVF();
+			tmpMCVF.adr = staticTop;
+			tmpMCVF.name = oc.getName();
+			allClassVF.add(tmpMCVF);
+			
+			for(Obj om: oc.getType().getMembers()) {
+				
+				if(om.getKind() == Obj.Meth && !om.getName().contains("#") && !om.getName().contains("~")) {
+					
+					int nameLen = om.getName().length();
+					
+					//System.out.println(oc.getName() + ":" +om.getName());
+					
+					//allVirtualMethods.add(om);
+					
+					for(int i = 0; i < nameLen; i++) {
+						
+						char c = om.getName().charAt(i);
+						Code.loadConst(c);
+						Code.put(Code.putstatic);
+						Code.put2(staticTop);
+						staticTop++;
+					}
+					
+					//end of methods
+					Code.put(Code.const_m1);
+					Code.put(Code.putstatic);
+					Code.put2(staticTop);
+					staticTop++;
+					
+					//add address
+					Code.loadConst(om.getAdr());
+					Code.put(Code.putstatic);
+					Code.put2(staticTop);
+					staticTop++;
+				}
+				
+			}
+			
+			//end of table of virtual functions
+			Code.loadConst(-2);
+			Code.put(Code.putstatic);
+			Code.put2(staticTop);
+			staticTop++;
+			
+		}
+		
+		SemanticAnalyzer.nVars = staticTop;
+		
+	}
+	
 	// Method type name
 	public void visit(ReturnMethodTypeName returnMethodTypeName) {
+		
+		if(currClass != null) {
+			allVirtualMethods.add(returnMethodTypeName.obj);
+		}
+		
 		if ("main".equalsIgnoreCase(returnMethodTypeName.getMethName())) {
 			mainPc = Code.pc;
+			tableVirtualFunction();
 		}
 		returnMethodTypeName.obj.setAdr(Code.pc);
 		
@@ -114,13 +203,19 @@ import rs.etf.pp1.symboltable.concepts.*;
 		
 		// Generate the entry 
 		Code.put(Code.enter);
-		Code.put(fpCnt.getCount());
-		Code.put(varCnt.getCount() + fpCnt.getCount());
+		Code.put(returnMethodTypeName.obj.getLevel());
+		Code.put(returnMethodTypeName.obj.getLocalSymbols().size());
 	}
 	
 	public void visit(VoidMethodTypeName voidMethodTypeName) {
+		
+		if(currClass != null) {
+			allVirtualMethods.add(voidMethodTypeName.obj);
+		}
+		
 		if ("main".equalsIgnoreCase(voidMethodTypeName.getMethName())) {
 			mainPc = Code.pc;
+			tableVirtualFunction();
 		}
 		voidMethodTypeName.obj.setAdr(Code.pc);
 		
@@ -133,15 +228,35 @@ import rs.etf.pp1.symboltable.concepts.*;
 		
 		// Generate the entry 
 		Code.put(Code.enter);
-		Code.put(fpCnt.getCount());
-		Code.put(varCnt.getCount() + fpCnt.getCount());
+		Code.put(voidMethodTypeName.obj.getLevel());
+		Code.put(voidMethodTypeName.obj.getLocalSymbols().size());
 	}
 	
 	public void visit(MethodDeclaration methodDeclaration) {
 		
-		Code.put(Code.exit);
-		Code.put(Code.return_);
+			Code.put(Code.exit);
+			Code.put(Code.return_);
 		
+	}
+	
+	public void visit(FuncCallFactorDesignator funcCallFactorDesignator) {
+		
+		boolean indik = false;
+		
+		callingMeth.add(funcCallFactorDesignator.getDesignator().obj);
+		
+		//System.out.println("all virtual methods" + allVirtualMethods.size());
+		for(Obj o: allVirtualMethods) {
+			if(funcCallFactorDesignator.getDesignator().obj.getName().equals(o.getName())) {
+				indik = true;
+				break;
+			}
+		}
+		
+		if(indik) {
+			Code.put(Code.load_n + 0);
+			Code.put(Code.dup);
+		}
 	}
 	
 	// DESIGNATOR
@@ -151,15 +266,35 @@ import rs.etf.pp1.symboltable.concepts.*;
 		Code.store(designatorAssignment.getDesignator().obj);
 	}
 	
+	Logger log = Logger.getLogger(getClass());
+	
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message); 
+		int line = (info == null) ? 0: info.getLine();
+		if (line != 0)
+			msg.append (" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+	
 	public void visit(DesignatorFactor designatorFactor) {
 		//uradiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii bolje
+//		if(isConst) {
+//			report_info(designatorFactor.getDesignator().obj.getName(), designatorFactor);
+//			report_info(designatorFactor.getDesignator().obj.getKind() + "", designatorFactor);
+//		}
 		Code.load(designatorFactor.getDesignator().obj);
 		
 	}
 	
 	public void visit(ClassFieldDesignator classFieldDesignator) {
+
+		if(classFieldDesignator.obj.getName().equals("ispisi")) {
+			//report_info("uso " + classFieldDesignator.getDesignator().obj.getKind(), classFieldDesignator);
+		}
 		
-		Code.load(classFieldDesignator.getDesignator().obj);
+		if(classFieldDesignator.obj.getKind() != Obj.Meth) {
+			Code.load(classFieldDesignator.getDesignator().obj);
+		}
 		
 	}
 	List<Obj> reverseList = new ArrayList<Obj>();
@@ -167,6 +302,17 @@ import rs.etf.pp1.symboltable.concepts.*;
 		
 		Code.load(ArrayDesig.getDesignator().obj);
 		
+	}
+	
+	public void visit(SimpleDesignator simpleDesignator) {
+		
+		
+		if(simpleDesignator.obj.getKind() == Obj.Fld ) {
+			if(simpleDesignator.getParent() instanceof DesignatorStatement || simpleDesignator.getParent() instanceof DesignatorFactor) {
+				Code.put(Code.load_n + 0);
+			}
+			
+		}
 	}
 	
 	boolean ind = false;
@@ -254,10 +400,38 @@ import rs.etf.pp1.symboltable.concepts.*;
 			return;
 		}
 		
-		int offset = funcCallFactor.getFuncCallFactorDes().obj.getAdr() - Code.pc;
+		boolean ind = false;
 		
-		Code.put(Code.call); 
-		Code.put2(offset);
+		for(Obj o: allVirtualMethods) {
+			if(funcCallFactor.getFuncCallFactorDes().obj.getName().equals(o.getName())) {
+				ind = true;
+				break;
+			}
+		}
+		
+		if(!ind) {
+			int offset = funcCallFactor.getFuncCallFactorDes().obj.getAdr() - Code.pc;
+			
+			Code.put(Code.call); 
+			Code.put2(offset);
+		}else {
+			
+			//Code.put(Code.load_n + 0);
+			//Code.put(Code.dup);
+			Code.put(Code.getfield);
+			Code.put2(0);
+			
+			Code.put(Code.invokevirtual);
+			
+			for(int i = 0; i < funcCallFactor.getFuncCallFactorDes().obj.getName().length(); i++) {
+				Code.put4(funcCallFactor.getFuncCallFactorDes().obj.getName().charAt(i));
+			}
+			
+			Code.put4(-1);
+			
+		}
+		
+		callingMeth.remove(callingMeth.size() - 1);
 		
 	}
 	
@@ -276,28 +450,55 @@ import rs.etf.pp1.symboltable.concepts.*;
 			return;
 		}
 		
-		int offset = designatorFuncCall.getFuncCallFactorDes().obj.getAdr() - Code.pc;
+		boolean ind = false;
 		
-		Code.put(Code.call);
-		Code.put2(offset);
-	
-		if(designatorFuncCall.getFuncCallFactorDes().obj.getType() != Tab.noType) {
-			Code.put(Code.pop);
+		
+		//System.out.println(allVirtualMethods.size());
+		for(Obj o: allVirtualMethods) {
+			if(designatorFuncCall.getFuncCallFactorDes().obj.getName().equals(o.getName())) {
+				ind = true;
+				break;
+			}
+		}
+		if(!ind) {
+			int offset = designatorFuncCall.getFuncCallFactorDes().obj.getAdr() - Code.pc;
+			
+			Code.put(Code.call);
+			Code.put2(offset);
+		
+			if(designatorFuncCall.getFuncCallFactorDes().obj.getType() != Tab.noType) {
+				Code.put(Code.pop);
+			}
+		}else {
+			
+			//Code.put(Code.load_n + 0);
+			//Code.put(Code.dup);
+			Code.put(Code.getfield);
+			Code.put2(0);
+			
+			Code.put(Code.invokevirtual);
+			
+			for(int i = 0; i < designatorFuncCall.getFuncCallFactorDes().obj.getName().length(); i++) {
+				Code.put4(designatorFuncCall.getFuncCallFactorDes().obj.getName().charAt(i));
+			}
+			
+			Code.put4(-1);
 		}
 		
+		callingMeth.remove(callingMeth.size() - 1);
 	}
 	
 	public void visit(StatementReturnEmpty statementReturnEmpty) {
 		
-		Code.put(Code.exit);
-		Code.put(Code.return_);
+		//Code.put(Code.exit);
+		//Code.put(Code.return_);
 		
 	}
 	
 	public void visit(StatementReturnExpr statementReturnExpr) {
 		
-		Code.put(Code.exit);
-		Code.put(Code.return_);
+		//Code.put(Code.exit);
+		//Code.put(Code.return_);
 		
 	}
 	
@@ -602,12 +803,12 @@ import rs.etf.pp1.symboltable.concepts.*;
 	}
 	
 	// CLASS
-	Obj currClass = null;
+	
 	
 	public void visit(NameOfClass nameOfClass) {
 		
 		currClass = nameOfClass.obj;
-		
+		allClass.add(nameOfClass.obj);
 	}
 	
 	public void visit(ClassDeclaration classDeclaration) {
@@ -619,9 +820,239 @@ import rs.etf.pp1.symboltable.concepts.*;
 	public void visit(ConstructorDeclaration constructorDeclaration) {
 		Code.put(Code.exit);
 		Code.put(Code.return_);
+		
+		isConst = false;
 	}
 	
+	public void visit(Type type) {
+			
+		Obj tmpClassObj = Tab.find(type.getTypeName());
+		if(type.getParent() instanceof NewClassWithActParsOperatorFactor) {
+			
+			makingClass = tmpClassObj;
+			actParsList = new ArrayList<Struct>();
+			//System.out.println("KLASNI TIP:" + nameOfConstr);
+		}
+	}
 	
+	public void visit(NewClassWithActParsOperatorFactor newClassWithActParsOperatorFactor) {
+		Code.put(Code.new_);
+		Code.put2(newClassWithActParsOperatorFactor.struct.getNumberOfFields() * 4);
+		
+		Code.put(Code.dup);
+		Code.put(Code.dup);
+		
+		int tmpAdr = -1;
+		
+		for(MapClassVF k: allClassVF) {
+			if(k.name.equals(newClassWithActParsOperatorFactor.getType().getTypeName())) {
+				tmpAdr = k.adr;
+			}
+		}
+		
+		Code.loadConst(tmpAdr);
+		
+		
+		String nameClass =  newClassWithActParsOperatorFactor.getType().getTypeName();
+		int tmpA = -1;
+		
+		for(Constr c: allConstrs) {
+			System.out.println(c.name + "-" + c.types.size());
+			if(c.name.contains(nameClass) && c.types.size() == actParsList.size()) {
+				
+				if(actParsList.size() == 0) {
+					tmpA = c.adr;
+					break;
+				}
+				
+				int num = 0;
+				
+				for(int j = 0; j < actParsList.size(); j++) {
+					if(c.types.get(j).getKind() == actParsList.get(j).getKind()) {
+						num++;
+					}
+				}
+				
+				if(num == c.types.size()) {
+					tmpA = c.adr;
+					break;
+				}
+				
+			}
+		}
+		
+		//funcCallFactor.getFuncCallFactorDes().obj.getAdr()
+		
+		System.out.println(tmpA);
+		
+		
+		Code.put(Code.putfield);
+		Code.put2(0);
+		
+		Code.put(Code.call); 
+		Code.put2(tmpA - Code.pc - 2);
+		
+		makingClass = null;
+		
+		actParsList.clear();
+		
+		//call cosnructor
+	}
 	
+	public void visit(ClassBodyNoMethod classBodyNoMethod) {
+		
+		Obj objTmp = null;
+		
+		for(Obj o: currClass.getType().getMembers()) {
+			if(o.getName().contains("~")) {
+				objTmp = o;
+				break;
+			}
+		}
+		
+		Constr tmpC = new Constr();
+		tmpC.name = objTmp.getName();
+		tmpC.types = new ArrayList<Struct>();
+		tmpC.adr = Code.pc;
+		allConstrs.add(tmpC);
+		
+		//enter
+		Code.put(Code.enter);
+		Code.put(objTmp.getLevel()); 
+		Code.put(objTmp.getLocalSymbols().size());
+		
+		// exit 
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+	}
+	
+	public void visit(ClassBodyWithMethodNoConstructor classBodyWithMethodNoConstructor) {
+		
+		Obj objTmp = null;
+		
+		for(Obj o: currClass.getType().getMembers()) {
+			if(o.getName().contains("~")) {
+				objTmp = o;
+				break;
+			}
+		}
+		
+		Constr tmpC = new Constr();
+		tmpC.name = objTmp.getName();
+		tmpC.types = new ArrayList<Struct>();
+		tmpC.adr = Code.pc;
+		allConstrs.add(tmpC);
+		
+		//enter
+		Code.put(Code.enter);
+		Code.put(objTmp.getLevel()); 
+		Code.put(objTmp.getLocalSymbols().size());
+		
+		// exit 
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+	}
+
+	public void visit(ClassBodyNoMethodWithEmptyBrackets classBodyNoMethodWithEmptyBrackets) {
+		
+		Obj objTmp = null;
+		
+		for(Obj o: currClass.getType().getMembers()) {
+			if(o.getName().contains("~")) {
+				objTmp = o;
+				break;
+			}
+		}
+		
+		Constr tmpC = new Constr();
+		tmpC.name = objTmp.getName();
+		tmpC.types = new ArrayList<Struct>();
+		tmpC.adr = Code.pc;
+		allConstrs.add(tmpC);
+		
+		//enter
+		Code.put(Code.enter);
+		Code.put(objTmp.getLevel()); 
+		Code.put(objTmp.getLocalSymbols().size());
+		
+		// exit 
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+	}
+	
+	public void visit(ConstructorDeclarationName constructorDeclarationName) {
+		
+		//callingMeth.add(funcCallFactorDesignator.getDesignator().obj);
+		
+		Code.put(Code.enter);
+		Code.put(constructorDeclarationName.obj.getLevel());
+		Code.put(constructorDeclarationName.obj.getLocalSymbols().size());
+		
+		isConst = true;
+		
+		Constr tmpC = new Constr();
+		tmpC.name = constructorDeclarationName.obj.getName();
+		tmpC.types = new ArrayList<Struct>();
+		tmpC.adr = Code.pc;
+		allConstrs.add(tmpC);
+		
+	}
+	
+	public void visit(SingleFormalParameter SingleFormalParameter) {
+		if(isConst) {
+			Constr t = allConstrs.get(allConstrs.size() - 1);
+			t.types.add(SingleFormalParameter.getType().struct);
+		}
+	}
+	
+	public void visit(ActualParam actualParam) {
+		
+		//boolean indik = false;
+		
+		
+		if(makingClass != null) {
+//			Obj tmpObj = callingMeth.get(callingMeth.size() - 1);
+//			
+//			//System.out.println("all virtual methods" + allVirtualMethods.size());
+//			for(Obj o: allVirtualMethods) {
+//				if(tmpObj.getName().equals(o.getName())) {
+//					indik = true;
+//					break;
+//				}
+//			}
+			actParsList.add(actualParam.getExpr().struct);
+//			if(indik) {
+				//Code.put(Code.dup_x1);
+				//Code.put(Code.pop);
+			//}
+		}
+		
+	}
+	
+public void visit(ActualParams actualParams) {
+		
+		//boolean indik = false;
+		
+		if(makingClass != null) {
+			//Obj tmpObj = callingMeth.get(callingMeth.size() - 1);
+			
+			//System.out.println("all virtual methods" + allVirtualMethods.size());
+//			for(Obj o: allVirtualMethods) {
+//				if(tmpObj.getName().equals(o.getName())) {
+//					indik = true;
+//					break;
+//				}
+//			}
+			actParsList.add(actualParams.getExpr().struct);
+			//if(indik) {
+				//Code.put(Code.dup_x1);
+				//Code.put(Code.pop);
+			//}
+		}
+		
+	}
 	
 }

@@ -72,9 +72,9 @@ nonterminal VarDeclList, VarDecl, ListOfVarDec, VarDeclNotLast, VarDeclBrackets,
 nonterminal ConstDecl, ConstAssignment, ListOfCharDec, ClassDecl, ClassBody, ListOfClassVar, ClassVarDecl, ListOfClassVarDec, ClassVar, ConstructorDecl;
 nonterminal FormPars, FormParsList, OneFormalParam, ConstructorVarDecl, ClassMethodDecl, MethodDeclList, MethodDecl, MethodVarDeclList;
 nonterminal StatementList, Statement, ActPars, ActualParamList, Condition, CondTerm, CondFact, DesignatorStatement, DesignatorList;
-nonterminal Relop, Addop, Mulop, IfCond, ConstructorDeclList, DesignatorOrEpsilon, ForEachLoop, WhileLoop, FunctionCall, ConstructorDeclName, PrintEmpty, ArrayDesig;
+nonterminal Relop, Addop, Mulop, IfCond, ConstructorDeclList, DesignatorOrEpsilon, ForEachLoop, WhileLoop, FunctionCall, PrintEmpty, ArrayDesig;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes, ForEachIdent;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, ClassName, MethodTypeName, FuncCallFactorDes, ForEachIdent, ConstructorDeclName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ListOfFactors, Factor, Expr, Term, ClassExtended;
 
 nonterminal IfOnly, FixupIf1, FixupIf2, CondJump, FixupWhile1, CheckForeach2;

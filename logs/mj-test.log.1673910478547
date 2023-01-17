@@ -1,0 +1,160 @@
+INFO  00:06:30,080 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\linked_list.mj
+INFO  00:06:30,124 - #2 program
+INFO  00:06:30,124 - #47 list
+INFO  00:06:30,124 - #8 const
+INFO  00:06:30,126 - #47 int
+INFO  00:06:30,126 - #47 A
+INFO  00:06:30,127 - #32 =
+INFO  00:06:30,127 - #46 15342
+INFO  00:06:30,127 - #37 ,
+INFO  00:06:30,128 - #47 C
+INFO  00:06:30,128 - #32 =
+INFO  00:06:30,129 - #46 45194
+INFO  00:06:30,129 - #35 ;
+INFO  00:06:30,129 - #8 const
+INFO  00:06:30,129 - #47 int
+INFO  00:06:30,129 - #47 RAND_MAX
+INFO  00:06:30,129 - #32 =
+INFO  00:06:30,129 - #46 100000
+INFO  00:06:30,129 - #35 ;
+INFO  00:06:30,129 - #5 class
+INFO  00:06:30,131 - #47 Node
+INFO  00:06:30,131 - #43 {
+INFO  00:06:30,131 - #47 int
+INFO  00:06:30,132 - #47 data
+INFO  00:06:30,132 - #35 ;
+INFO  00:06:30,133 - #43 {
+INFO  00:06:30,134 - #44 }
+INFO  00:06:30,134 - #44 }
+INFO  00:06:30,134 - #47 int
+INFO  00:06:30,134 - #47 seed
+INFO  00:06:30,134 - #35 ;
+INFO  00:06:30,134 - #43 {
+INFO  00:06:30,135 - #14 void
+INFO  00:06:30,135 - #47 main
+INFO  00:06:30,135 - #39 (
+INFO  00:06:30,135 - #40 )
+INFO  00:06:30,136 - #47 int
+INFO  00:06:30,136 - #47 i
+INFO  00:06:30,137 - #35 ;
+INFO  00:06:30,137 - #43 {
+INFO  00:06:30,137 - #44 }
+INFO  00:06:30,138 - #44 }
+INFO  00:06:30,142 - Program(
+  ProgName(
+   list
+  ) [ProgName]
+  VarDeclarations(
+    ClassDeclarations(
+      ConstDeclarations(
+        ConstDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             A
+             15342
+            ) [ConstantValueNumber]
+            ListOfCharDeclarations(
+              EndOfListOfCharDeclarations(
+              ) [EndOfListOfCharDeclarations]
+              ConstantValueNumber(
+               C
+               45194
+              ) [ConstantValueNumber]
+            ) [ListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           RAND_MAX
+           100000
+          ) [ConstantValueNumber]
+          EndOfListOfCharDeclarations(
+          ) [EndOfListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      ClassDeclaration(
+        NameOfClass(
+         Node
+        ) [NameOfClass]
+        ClassIsNotExtended(
+        ) [ClassIsNotExtended]
+        ClassBodyNoMethodWithEmptyBrackets(
+          ClassVariables(
+            NoClassVariables(
+            ) [NoClassVariables]
+            ClassVarDeclaration(
+              Type(
+               int
+              ) [Type]
+              ClassVarDecLast(
+                ClassVariable(
+                 data
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecLast]
+            ) [ClassVarDeclaration]
+          ) [ClassVariables]
+        ) [ClassBodyNoMethodWithEmptyBrackets]
+      ) [ClassDeclaration]
+    ) [ClassDeclarations]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         seed
+          VarDeclarationOfNotArray(
+          ) [VarDeclarationOfNotArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:06:30,143 - ====================================
+INFO  00:06:30,147 - Kreirana je klasa Node na liniji 6
+INFO  00:06:30,147 - Broj konstruktora: 0
+INFO  00:06:30,148 - Kreirana je promenjiva seed na liniji 15
+INFO  00:06:30,148 - Definicija funkcije main na liniji 19
+INFO  00:06:30,148 - Kreirana je promenjiva i na liniji 19
+INFO  00:06:30,148 - Print count calls = 0
+INFO  00:06:30,148 - ====================================
+INFO  00:06:30,148 - Parsiranje uspesno zavrseno!

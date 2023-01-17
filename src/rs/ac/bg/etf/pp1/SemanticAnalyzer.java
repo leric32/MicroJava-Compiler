@@ -14,7 +14,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	int countPrint = 0;
 	int countCall = 0;
-	int nVars;
+	static int nVars;
 	
 	boolean errorDetected = false;
 	boolean hasMainMeth = false;
@@ -44,6 +44,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	//classes
 	Obj currClass = null;
 	Obj superClass = null;
+	
+	//methods and constructors
+	List<Obj> callingMeth = new ArrayList<>();
+	int actParsNum = 0;
+	String nameOfConstr = null;
 	
 	//Constructor
 	SemanticAnalyzer(){
@@ -144,6 +149,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			else {
 				report_error("SEMANTICKA GRESKA: Ime " + type.getTypeName() + " ne predstavlja tip ", type);
 				type.struct = Tab.noType;
+			}
+			
+			Obj tmpClassObj = Tab.find(type.getTypeName());
+			if(tmpClassObj.getType().getKind() == Struct.Class && type.getParent() instanceof NewClassWithActParsOperatorFactor) {
+				
+				nameOfConstr = tmpClassObj.getName();
+				//System.out.println("KLASNI TIP:" + nameOfConstr);
 			}
 		} 
 		
@@ -315,6 +327,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					allMethods.put(currMeth.getName(), listOfMethods);
 				}
 			}else {
+				Tab.insert(Obj.Var, singleFormalParameter.getParamName(), new Struct(Struct.Array, currType));
 				constrPars.add(new CustomPair(singleFormalParameter.getParamName(), new Struct(Struct.Array, currType)));
 			}
 
@@ -328,6 +341,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					allMethods.put(currMeth.getName(), listOfMethods);
 				}
 			}else {
+				Tab.insert(Obj.Var, singleFormalParameter.getParamName(), currType);
 				constrPars.add(new CustomPair(singleFormalParameter.getParamName(), currType));
 			}
 		}
@@ -423,8 +437,44 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 		//check if right part is assignable to left
-		if(!designatorAssignment.getExpr().struct.assignableTo(designatorAssignment.getDesignator().obj.getType())) {
+//		report_info("des obj" + designatorAssignment.getDesignator().obj.getType().getKind(), designatorAssignment);
+//		report_info("expr obj" + designatorAssignment.getExpr().struct.getKind(), designatorAssignment);
+//		if(designatorAssignment.getExpr().struct.getKind() != Struct.Class && !designatorAssignment.getExpr().struct.assignableTo(designatorAssignment.getDesignator().obj.getType())) {
+//			report_info("ulazi", null);
+//		}else if(designatorAssignment.getExpr().struct.getKind() == Struct.Class && designatorAssignment.getDesignator().obj.getType().getKind() == Struct.Class){
+//			report_info("ne ulazi", null);
+//		}
+		if(designatorAssignment.getExpr().struct.getKind() != Struct.Class && !designatorAssignment.getExpr().struct.assignableTo(designatorAssignment.getDesignator().obj.getType())) {
 			report_error("SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli", designatorAssignment); 
+		}else if(designatorAssignment.getExpr().struct.getKind() == Struct.Class && designatorAssignment.getDesignator().obj.getType().getKind() == Struct.Class){
+			//System.out.println("usao u class assignment");
+			
+			//System.out.println("1 class " + designatorAssignment.getDesignator().obj.getType().getElemType());
+			//System.out.println("1 class " + designatorAssignment.getExpr().struct.getElemType().getElemType());
+			
+			Struct s1 = null;
+			Struct s2 = null;
+			boolean ind = true;
+			
+			if(designatorAssignment.getDesignator().obj.getType().getKind() == Struct.Array) {
+				s1 = designatorAssignment.getDesignator().obj.getType().getElemType();
+			}else {
+				s1 = designatorAssignment.getDesignator().obj.getType();
+			}
+			
+			s2 = designatorAssignment.getExpr().struct;
+			
+			while(s2 != null) {
+				if(s1 == s2) {
+					ind = false;
+				}
+				s2 = s2.getElemType();
+			}
+			
+			if(ind && designatorAssignment.getExpr().struct != Tab.nullType) {
+				report_error("SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli", designatorAssignment);
+			}
+			
 		}
 		
 	}
@@ -461,8 +511,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
-	List<Obj> callingMeth = new ArrayList<>();
-	int actParsNum = 0;
+	
 	
 	public void visit(FunctionCallName functionCallName) {
 		
@@ -472,14 +521,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 		callingMeth.add(functionCallName.getDesignator().obj);
-		report_info("FCN  " + actParsNum, null);
+		//report_info("FCN  " + actParsNum, null);
 	}
 	
 	public void visit(FunctionCall functionCall) {
 		
 		//reset
 		actParsNum = 0;
-		callingMeth = null;
+		callingMeth.remove(callingMeth.size() - 1);
 		
 	}
 	
@@ -501,45 +550,87 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(ActualParams actualParams) {
 		
 		//check if there is calling method
-		if(callingMeth.size() == 0) {
+		if(callingMeth.size() == 0 && nameOfConstr == null) {
 			report_error("SEMANTICKA GRESKA: Funkcija ili metoda koja se poziva ne postoji!", actualParams);
 			return;
 		}
 		
-		List<Struct> listOfPars = allMethods.get(callingMeth.get(callingMeth.size() - 1).getName());
-		
-		if(!actualParams.getExpr().struct.compatibleWith(listOfPars.get(actParsNum))) {
-			if(listOfPars.get(actParsNum).getKind() == Struct.Array) {
-				
+		if(nameOfConstr == null) {
+			List<Struct> listOfPars = allMethods.get(callingMeth.get(callingMeth.size() - 1).getName());
+			
+			if(!actualParams.getExpr().struct.compatibleWith(listOfPars.get(actParsNum))) {
+				if(listOfPars.get(actParsNum).getKind() == Struct.Array) {
+					
+				}
+				report_error("SEMANTICKA GRESKA: Formalni parametar funkcije " + callingMeth.get(callingMeth.size() - 1).getName() +
+						" koji je tipa " + (listOfPars.get(actParsNum).getKind() == Struct.Array? "Array of ": "") +  
+						typeOfStructNode(listOfPars.get(actParsNum).getKind() == Struct.Array? listOfPars.get(actParsNum).getElemType().getKind() : listOfPars.get(actParsNum).getKind()) + " nije kompatibilan sa stvarnim argumentom " +
+						"koji je tipa " + (actualParams.getExpr().struct.getKind() == Struct.Array? "Array of ": "") 
+						+ typeOfStructNode(actualParams.getExpr().struct.getKind() == Struct.Array? actualParams.getExpr().struct.getKind() : actualParams.getExpr().struct.getKind()), actualParams);
 			}
-			report_error("SEMANTICKA GRESKA: Formalni parametar funkcije " + callingMeth.get(callingMeth.size() - 1).getName() +
-					" koji je tipa " + (listOfPars.get(actParsNum).getKind() == Struct.Array? "Array of ": "") +  
-					typeOfStructNode(listOfPars.get(actParsNum).getKind() == Struct.Array? listOfPars.get(actParsNum).getElemType().getKind() : listOfPars.get(actParsNum).getKind()) + " nije kompatibilan sa stvarnim argumentom " +
-					"koji je tipa " + (actualParams.getExpr().struct.getKind() == Struct.Array? "Array of ": "") 
-					+ typeOfStructNode(actualParams.getExpr().struct.getKind() == Struct.Array? actualParams.getExpr().struct.getKind() : actualParams.getExpr().struct.getKind()), actualParams);
+		}else {
+			boolean ind = true;
+			Struct tmpStr = null;
+			for(Map.Entry<String, List<Struct>> m : allMethods.entrySet()) {
+				if(m.getKey().contains("#") && (m.getKey().contains(nameOfConstr))) {
+					List<Struct> listOfPars = m.getValue();
+					if(listOfPars.size() > actParsNum && actualParams.getExpr().struct.compatibleWith(listOfPars.get(actParsNum))) {
+						ind = false;
+						tmpStr = listOfPars.get(actParsNum);
+						//System.out.println(tmpStr);
+					}
+					
+				}
+			}
+			
+			if(ind) {
+				report_error("SEMANTICKA GRESKA: Formalni parametar konstruktora nije kompatibilan sa stvarnim argumentom " +
+						"koji je tipa "+ (actualParams.getExpr().struct.getKind() == Struct.Array? "Array of ": "") +
+						typeOfStructNode(actualParams.getExpr().struct.getKind() == Struct.Array? actualParams.getExpr().struct.getElemType().getKind() : actualParams.getExpr().struct.getKind()), actualParams);
+			}
 		}
-		
 		actParsNum++;
 	}
 	
 	public void visit(ActualParam actualParam) {
 		
 		//check if there is calling method
-		if(callingMeth.size() == 0) {
+		if(callingMeth.size() == 0 && nameOfConstr == null) {
 			report_error("SEMANTICKA GRESKA: Funkcija ili metoda koja se poziva ne postoji!", actualParam);
 			return;
 		}
 		
-		List<Struct> listOfPars = allMethods.get(callingMeth.get(callingMeth.size() - 1).getName());
-		report_info(actParsNum + " ", actualParam);
-		if(!actualParam.getExpr().struct.compatibleWith(listOfPars.get(actParsNum))) {
-			report_error("SEMANTICKA GRESKA: Formalni parametar funkcije " + callingMeth.get(callingMeth.size() - 1).getName() +
-					" koji je tipa " + (listOfPars.get(actParsNum).getKind() == Struct.Array? "Array of ": "") +
-					typeOfStructNode(listOfPars.get(actParsNum).getKind() == Struct.Array? listOfPars.get(actParsNum).getElemType().getKind() : listOfPars.get(actParsNum).getKind()) +" nije kompatibilan sa stvarnim argumentom " +
-					"koji je tipa "+ (actualParam.getExpr().struct.getKind() == Struct.Array? "Array of ": "") +
-					typeOfStructNode(actualParam.getExpr().struct.getKind() == Struct.Array? actualParam.getExpr().struct.getElemType().getKind() : actualParam.getExpr().struct.getKind()), actualParam);
-		} 
-		
+		if(nameOfConstr == null) {
+			List<Struct> listOfPars = allMethods.get(callingMeth.get(callingMeth.size() - 1).getName());
+			
+			if(!actualParam.getExpr().struct.compatibleWith(listOfPars.get(actParsNum))) {
+				report_error("SEMANTICKA GRESKA: Formalni parametar funkcije " + callingMeth.get(callingMeth.size() - 1).getName() +
+						" koji je tipa " + (listOfPars.get(actParsNum).getKind() == Struct.Array? "Array of ": "") +
+						typeOfStructNode(listOfPars.get(actParsNum).getKind() == Struct.Array? listOfPars.get(actParsNum).getElemType().getKind() : listOfPars.get(actParsNum).getKind()) +" nije kompatibilan sa stvarnim argumentom " +
+						"koji je tipa "+ (actualParam.getExpr().struct.getKind() == Struct.Array? "Array of ": "") +
+						typeOfStructNode(actualParam.getExpr().struct.getKind() == Struct.Array? actualParam.getExpr().struct.getElemType().getKind() : actualParam.getExpr().struct.getKind()), actualParam);
+			} 
+		}else {
+			boolean ind = true;
+			Struct tmpStr = null;
+			for(Map.Entry<String, List<Struct>> m : allMethods.entrySet()) {
+				if(m.getKey().contains("#") && (m.getKey().contains(nameOfConstr))) {
+					List<Struct> listOfPars = m.getValue();
+					if(listOfPars.size() > actParsNum && actualParam.getExpr().struct.compatibleWith(listOfPars.get(actParsNum))) {
+						ind = false;
+						tmpStr = listOfPars.get(actParsNum);
+						//System.out.println(tmpStr);
+					}
+					
+				}
+			}
+			
+			if(ind) {
+				report_error("SEMANTICKA GRESKA: Formalni parametar konstruktora nije kompatibilan sa stvarnim argumentom " +
+						"koji je tipa "+ (actualParam.getExpr().struct.getKind() == Struct.Array? "Array of ": "") +
+						typeOfStructNode(actualParam.getExpr().struct.getKind() == Struct.Array? actualParam.getExpr().struct.getElemType().getKind() : actualParam.getExpr().struct.getKind()), actualParam);
+			}
+		}
 		actParsNum++;
 	}
 	
@@ -966,6 +1057,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			return;
 		}
 		newClassWithActParsOperatorFactor.struct = newClassWithActParsOperatorFactor.getType().struct;
+		
+		//remove from calling
+		nameOfConstr = null;
+		actParsNum = 0;
 	}
 	
 	//DESIGNATORS
@@ -988,7 +1083,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				//prolazimo polja druge klase
 				for(Obj m: classFieldDesignator.getDesignator().obj.getType().getMembers()) {
 					if(m.getName().equals(classFieldDesignator.getClassField())) {
-						report_info("Pristup polju " + classFieldDesignator.getDesignator().obj.getName() + "." + classFieldDesignator.getClassField(), classFieldDesignator);
+						report_info("Pristup polju " + classFieldDesignator.getDesignator().obj.getName() + "." + classFieldDesignator.getClassField() + " tipa " + m.getKind(), classFieldDesignator);
 						classFieldDesignator.obj = m;
 						return;
 					}
@@ -1042,6 +1137,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 		simpleDesignator.obj = varObj;
+		
+		//if(simpleDesignator.obj.getType() == Tab.nullType) {
+		//	System.out.println("nasao null type");
+		//}
 	}
 	
 	
@@ -1104,13 +1203,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		
 		//copy method from superclass
-		if(superClass != null) {
-			for(Obj m: superClass.getType().getMembers()) {
-				if(m.getKind() == Obj.Meth && !m.getName().contains("#")) {
-					Tab.currentScope().addToLocals(m);
-				}
-			}
-		}
+//		if(superClass != null) {
+//			for(Obj m: superClass.getType().getMembers()) {
+//				if(m.getKind() == Obj.Meth && !m.getName().contains("#")) {
+//					Tab.currentScope().addToLocals(m);
+//				}
+//			}
+//		}
 	}
 	
 	public void visit(ClassIsNotExtended classIsNotExtended) {
@@ -1120,9 +1219,21 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(ClassDeclaration classDeclaration) {
 		report_info("Broj konstruktora: " + allClassConstr.size(), null);
+		
+		if(classDeclaration.getClassExtended() instanceof ClassIsExtended) {
+			if(superClass != null) {
+				for(Obj m: superClass.getType().getMembers()) {
+					Obj tmpMeth = Tab.currentScope().findSymbol(m.getName());
+					if(m.getKind() == Obj.Meth && !m.getName().contains("#") && tmpMeth == null) {
+						Tab.currentScope().addToLocals(m);
+					}
+				}
+			}
+		}
+		
 		//dodajemo podarzumevani konstruktor
 		if(allClassConstr.size() == 0) {
-			Obj tmpConstObj = Tab.insert(Obj.Meth, classDeclaration.getClassName().obj.getName() + "#" + allClassConstr.size(), Tab.noType);
+			Obj tmpConstObj = Tab.insert(Obj.Meth, classDeclaration.getClassName().obj.getName() + "~", Tab.noType);
 			Tab.openScope();
 			
 			//insert this into function
@@ -1196,7 +1307,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		//add number of formal parameters
 		List<Struct> tmpList = new ArrayList<Struct>();
 		for(CustomPair cp: constrPars) {
-			Tab.insert(Obj.Var, cp.name, cp.struct);
+			//Tab.insert(Obj.Var, cp.name, cp.struct);
 			tmpList.add(cp.struct);
 		}
 		currMeth.setLevel(constrPars.size() + 1);
@@ -1204,16 +1315,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		Tab.closeScope();
 		
-		
+		allMethods.put(currMeth.getName(), tmpList);
 		currMeth = null;
 		isConstr = false;
 		numOfFormPars = 0;
 		allClassConstr.add(tmpList);
 		report_info("NAPRAVLJEN KONST SA FORM PARS" + constrPars.size(), null);
 		constrPars.clear();
-		
-		
-		
 		
 	}
 	
@@ -1231,6 +1339,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		report_info("Konst broj: " + allClassConstr.size(), null);
 		currMeth = Tab.insert(Obj.Meth, constructorDeclarationName.getConstructorName() + "#" + allClassConstr.size(), Tab.noType);
+		constructorDeclarationName.obj = currMeth;
 		Tab.openScope();
 		
 		//insert this into function

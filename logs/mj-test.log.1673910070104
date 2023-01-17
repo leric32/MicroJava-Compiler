@@ -1,0 +1,1800 @@
+INFO  23:59:50,688 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\linked_list.mj
+INFO  23:59:50,729 - #2 program
+INFO  23:59:50,729 - #47 list
+INFO  23:59:50,729 - #8 const
+INFO  23:59:50,730 - #47 int
+INFO  23:59:50,730 - #47 A
+INFO  23:59:50,731 - #32 =
+INFO  23:59:50,731 - #46 15342
+INFO  23:59:50,731 - #37 ,
+INFO  23:59:50,732 - #47 C
+INFO  23:59:50,732 - #32 =
+INFO  23:59:50,732 - #46 45194
+INFO  23:59:50,732 - #35 ;
+INFO  23:59:50,733 - #8 const
+INFO  23:59:50,733 - #47 int
+INFO  23:59:50,733 - #47 RAND_MAX
+INFO  23:59:50,733 - #32 =
+INFO  23:59:50,733 - #46 100000
+INFO  23:59:50,733 - #35 ;
+INFO  23:59:50,734 - #5 class
+INFO  23:59:50,735 - #47 Node
+INFO  23:59:50,735 - #43 {
+INFO  23:59:50,736 - #47 int
+INFO  23:59:50,737 - #47 data
+INFO  23:59:50,737 - #35 ;
+INFO  23:59:50,738 - #47 Node
+INFO  23:59:50,738 - #47 next
+INFO  23:59:50,738 - #35 ;
+INFO  23:59:50,738 - #43 {
+INFO  23:59:50,738 - #47 Node
+INFO  23:59:50,738 - #39 (
+INFO  23:59:50,739 - #47 int
+INFO  23:59:50,739 - #47 data
+INFO  23:59:50,739 - #40 )
+INFO  23:59:50,739 - #43 {
+INFO  23:59:50,739 - #47 this
+INFO  23:59:50,741 - #38 .
+INFO  23:59:50,741 - #47 data
+INFO  23:59:50,741 - #32 =
+INFO  23:59:50,741 - #47 data
+INFO  23:59:50,741 - #35 ;
+INFO  23:59:50,742 - #47 this
+INFO  23:59:50,742 - #38 .
+INFO  23:59:50,742 - #47 next
+INFO  23:59:50,742 - #32 =
+INFO  23:59:50,743 - #47 null
+INFO  23:59:50,743 - #35 ;
+INFO  23:59:50,743 - #44 }
+INFO  23:59:50,743 - #47 Node
+INFO  23:59:50,743 - #39 (
+INFO  23:59:50,743 - #47 int
+INFO  23:59:50,743 - #47 data
+INFO  23:59:50,743 - #37 ,
+INFO  23:59:50,743 - #47 Node
+INFO  23:59:50,743 - #47 next
+INFO  23:59:50,743 - #40 )
+INFO  23:59:50,743 - #43 {
+INFO  23:59:50,743 - #47 this
+INFO  23:59:50,743 - #38 .
+INFO  23:59:50,743 - #47 data
+INFO  23:59:50,743 - #32 =
+INFO  23:59:50,744 - #47 data
+INFO  23:59:50,744 - #35 ;
+INFO  23:59:50,744 - #47 this
+INFO  23:59:50,744 - #38 .
+INFO  23:59:50,744 - #47 next
+INFO  23:59:50,744 - #32 =
+INFO  23:59:50,744 - #47 next
+INFO  23:59:50,744 - #35 ;
+INFO  23:59:50,744 - #44 }
+INFO  23:59:50,744 - #44 }
+INFO  23:59:50,744 - #44 }
+INFO  23:59:50,744 - #5 class
+INFO  23:59:50,744 - #47 LinkedList
+INFO  23:59:50,745 - #43 {
+INFO  23:59:50,745 - #47 Node
+INFO  23:59:50,745 - #47 head
+INFO  23:59:50,745 - #37 ,
+INFO  23:59:50,745 - #47 tail
+INFO  23:59:50,745 - #35 ;
+INFO  23:59:50,745 - #43 {
+INFO  23:59:50,745 - #47 LinkedList
+INFO  23:59:50,745 - #39 (
+INFO  23:59:50,745 - #40 )
+INFO  23:59:50,745 - #43 {
+INFO  23:59:50,746 - #47 head
+INFO  23:59:50,746 - #32 =
+INFO  23:59:50,746 - #47 null
+INFO  23:59:50,746 - #35 ;
+INFO  23:59:50,746 - #47 tail
+INFO  23:59:50,746 - #32 =
+INFO  23:59:50,746 - #47 null
+INFO  23:59:50,746 - #35 ;
+INFO  23:59:50,746 - #44 }
+INFO  23:59:50,746 - #14 void
+INFO  23:59:50,746 - #47 add
+INFO  23:59:50,746 - #39 (
+INFO  23:59:50,746 - #47 int
+INFO  23:59:50,747 - #47 data
+INFO  23:59:50,747 - #40 )
+INFO  23:59:50,747 - #47 Node
+INFO  23:59:50,748 - #47 node
+INFO  23:59:50,748 - #35 ;
+INFO  23:59:50,748 - #43 {
+INFO  23:59:50,748 - #47 node
+INFO  23:59:50,748 - #32 =
+INFO  23:59:50,748 - #12 new
+INFO  23:59:50,748 - #47 Node
+INFO  23:59:50,748 - #39 (
+INFO  23:59:50,748 - #47 data
+INFO  23:59:50,748 - #37 ,
+INFO  23:59:50,749 - #47 null
+INFO  23:59:50,749 - #40 )
+INFO  23:59:50,749 - #35 ;
+INFO  23:59:50,749 - #9 if
+INFO  23:59:50,750 - #39 (
+INFO  23:59:50,751 - #47 tail
+INFO  23:59:50,751 - #24 ==
+INFO  23:59:50,751 - #47 null
+INFO  23:59:50,752 - #40 )
+INFO  23:59:50,752 - #43 {
+INFO  23:59:50,753 - #47 head
+INFO  23:59:50,753 - #32 =
+INFO  23:59:50,753 - #47 node
+INFO  23:59:50,753 - #35 ;
+INFO  23:59:50,753 - #44 }
+INFO  23:59:50,754 - #7 else
+INFO  23:59:50,754 - #43 {
+INFO  23:59:50,754 - #47 tail
+INFO  23:59:50,754 - #38 .
+INFO  23:59:50,754 - #47 next
+INFO  23:59:50,755 - #32 =
+INFO  23:59:50,755 - #47 node
+INFO  23:59:50,755 - #35 ;
+INFO  23:59:50,755 - #44 }
+INFO  23:59:50,755 - #47 tail
+INFO  23:59:50,755 - #32 =
+INFO  23:59:50,755 - #47 node
+INFO  23:59:50,755 - #35 ;
+INFO  23:59:50,755 - #44 }
+INFO  23:59:50,755 - #47 int
+INFO  23:59:50,755 - #47 remove
+INFO  23:59:50,755 - #39 (
+INFO  23:59:50,755 - #40 )
+INFO  23:59:50,755 - #47 int
+INFO  23:59:50,756 - #47 ret
+INFO  23:59:50,756 - #35 ;
+INFO  23:59:50,756 - #43 {
+INFO  23:59:50,756 - #9 if
+INFO  23:59:50,756 - #39 (
+INFO  23:59:50,756 - #47 head
+INFO  23:59:50,756 - #24 ==
+INFO  23:59:50,756 - #47 null
+INFO  23:59:50,756 - #40 )
+INFO  23:59:50,756 - #43 {
+INFO  23:59:50,756 - #4 return
+INFO  23:59:50,756 - #20 -
+INFO  23:59:50,756 - #46 1
+INFO  23:59:50,756 - #35 ;
+INFO  23:59:50,756 - #44 }
+INFO  23:59:50,757 - #47 ret
+INFO  23:59:50,757 - #32 =
+INFO  23:59:50,757 - #47 head
+INFO  23:59:50,757 - #38 .
+INFO  23:59:50,757 - #47 data
+INFO  23:59:50,757 - #35 ;
+INFO  23:59:50,757 - #47 head
+INFO  23:59:50,757 - #32 =
+INFO  23:59:50,757 - #47 head
+INFO  23:59:50,757 - #38 .
+INFO  23:59:50,757 - #47 next
+INFO  23:59:50,757 - #35 ;
+INFO  23:59:50,757 - #9 if
+INFO  23:59:50,757 - #39 (
+INFO  23:59:50,757 - #47 head
+INFO  23:59:50,757 - #24 ==
+INFO  23:59:50,757 - #47 null
+INFO  23:59:50,757 - #40 )
+INFO  23:59:50,757 - #43 {
+INFO  23:59:50,758 - #47 tail
+INFO  23:59:50,758 - #32 =
+INFO  23:59:50,758 - #47 null
+INFO  23:59:50,758 - #35 ;
+INFO  23:59:50,758 - #44 }
+INFO  23:59:50,758 - #4 return
+INFO  23:59:50,758 - #47 ret
+INFO  23:59:50,758 - #35 ;
+INFO  23:59:50,758 - #44 }
+INFO  23:59:50,758 - #44 }
+INFO  23:59:50,758 - #44 }
+INFO  23:59:50,758 - #47 int
+INFO  23:59:50,758 - #47 seed
+INFO  23:59:50,758 - #35 ;
+INFO  23:59:50,759 - #43 {
+INFO  23:59:50,759 - #47 int
+INFO  23:59:50,759 - #47 rand
+INFO  23:59:50,759 - #39 (
+INFO  23:59:50,759 - #40 )
+INFO  23:59:50,759 - #43 {
+INFO  23:59:50,759 - #47 seed
+INFO  23:59:50,759 - #32 =
+INFO  23:59:50,759 - #39 (
+INFO  23:59:50,759 - #47 seed
+INFO  23:59:50,759 - #21 *
+INFO  23:59:50,759 - #47 A
+INFO  23:59:50,760 - #19 +
+INFO  23:59:50,761 - #47 C
+INFO  23:59:50,761 - #40 )
+INFO  23:59:50,761 - #23 %
+INFO  23:59:50,761 - #47 RAND_MAX
+INFO  23:59:50,762 - #35 ;
+INFO  23:59:50,762 - #4 return
+INFO  23:59:50,762 - #47 seed
+INFO  23:59:50,762 - #35 ;
+INFO  23:59:50,762 - #44 }
+INFO  23:59:50,762 - #14 void
+INFO  23:59:50,762 - #47 main
+INFO  23:59:50,762 - #39 (
+INFO  23:59:50,762 - #40 )
+INFO  23:59:50,762 - #47 LinkedList
+INFO  23:59:50,762 - #47 ll
+INFO  23:59:50,762 - #35 ;
+INFO  23:59:50,762 - #47 int
+INFO  23:59:50,763 - #47 i
+INFO  23:59:50,763 - #35 ;
+INFO  23:59:50,763 - #43 {
+INFO  23:59:50,763 - #47 ll
+INFO  23:59:50,763 - #32 =
+INFO  23:59:50,763 - #12 new
+INFO  23:59:50,763 - #47 LinkedList
+INFO  23:59:50,763 - #39 (
+INFO  23:59:50,763 - #40 )
+INFO  23:59:50,764 - #35 ;
+INFO  23:59:50,764 - #47 ll
+INFO  23:59:50,764 - #38 .
+INFO  23:59:50,764 - #47 add
+INFO  23:59:50,764 - #39 (
+INFO  23:59:50,764 - #46 1
+INFO  23:59:50,764 - #40 )
+INFO  23:59:50,764 - #35 ;
+INFO  23:59:50,764 - #47 ll
+INFO  23:59:50,764 - #38 .
+INFO  23:59:50,764 - #47 add
+INFO  23:59:50,764 - #39 (
+INFO  23:59:50,764 - #46 2
+INFO  23:59:50,764 - #40 )
+INFO  23:59:50,764 - #35 ;
+INFO  23:59:50,764 - #47 ll
+INFO  23:59:50,764 - #38 .
+INFO  23:59:50,764 - #47 add
+INFO  23:59:50,764 - #39 (
+INFO  23:59:50,765 - #46 3
+INFO  23:59:50,765 - #40 )
+INFO  23:59:50,765 - #35 ;
+INFO  23:59:50,765 - #3 print
+INFO  23:59:50,766 - #39 (
+INFO  23:59:50,767 - #47 ll
+INFO  23:59:50,767 - #38 .
+INFO  23:59:50,767 - #47 remove
+INFO  23:59:50,767 - #39 (
+INFO  23:59:50,767 - #40 )
+INFO  23:59:50,767 - #40 )
+INFO  23:59:50,767 - #35 ;
+INFO  23:59:50,767 - #3 print
+INFO  23:59:50,767 - #39 (
+INFO  23:59:50,767 - #47 ll
+INFO  23:59:50,767 - #38 .
+INFO  23:59:50,768 - #47 remove
+INFO  23:59:50,768 - #39 (
+INFO  23:59:50,768 - #40 )
+INFO  23:59:50,768 - #40 )
+INFO  23:59:50,768 - #35 ;
+INFO  23:59:50,768 - #3 print
+INFO  23:59:50,768 - #39 (
+INFO  23:59:50,768 - #47 ll
+INFO  23:59:50,768 - #38 .
+INFO  23:59:50,768 - #47 remove
+INFO  23:59:50,768 - #39 (
+INFO  23:59:50,768 - #40 )
+INFO  23:59:50,768 - #40 )
+INFO  23:59:50,768 - #35 ;
+INFO  23:59:50,768 - #3 print
+INFO  23:59:50,768 - #39 (
+INFO  23:59:50,768 - #47 ll
+INFO  23:59:50,768 - #38 .
+INFO  23:59:50,768 - #47 remove
+INFO  23:59:50,768 - #39 (
+INFO  23:59:50,768 - #40 )
+INFO  23:59:50,768 - #40 )
+INFO  23:59:50,768 - #35 ;
+INFO  23:59:50,768 - #3 print
+INFO  23:59:50,769 - #39 (
+INFO  23:59:50,769 - #47 eol
+INFO  23:59:50,769 - #40 )
+INFO  23:59:50,769 - #35 ;
+INFO  23:59:50,769 - #47 i
+INFO  23:59:50,769 - #32 =
+INFO  23:59:50,769 - #46 0
+INFO  23:59:50,769 - #35 ;
+INFO  23:59:50,769 - #11 while
+INFO  23:59:50,769 - #39 (
+INFO  23:59:50,769 - #47 i
+INFO  23:59:50,771 - #28 <
+INFO  23:59:50,771 - #46 5000
+INFO  23:59:50,771 - #40 )
+INFO  23:59:50,771 - #43 {
+INFO  23:59:50,771 - #9 if
+INFO  23:59:50,771 - #39 (
+INFO  23:59:50,771 - #47 rand
+INFO  23:59:50,771 - #39 (
+INFO  23:59:50,771 - #40 )
+INFO  23:59:50,771 - #28 <
+INFO  23:59:50,771 - #47 RAND_MAX
+INFO  23:59:50,771 - #22 /
+INFO  23:59:50,772 - #46 2
+INFO  23:59:50,772 - #40 )
+INFO  23:59:50,772 - #43 {
+INFO  23:59:50,772 - #47 ll
+INFO  23:59:50,772 - #38 .
+INFO  23:59:50,772 - #47 add
+INFO  23:59:50,772 - #39 (
+INFO  23:59:50,772 - #47 rand
+INFO  23:59:50,772 - #39 (
+INFO  23:59:50,772 - #40 )
+INFO  23:59:50,772 - #40 )
+INFO  23:59:50,772 - #35 ;
+INFO  23:59:50,772 - #44 }
+INFO  23:59:50,772 - #7 else
+INFO  23:59:50,772 - #43 {
+INFO  23:59:50,772 - #3 print
+INFO  23:59:50,772 - #39 (
+INFO  23:59:50,772 - #47 ll
+INFO  23:59:50,772 - #38 .
+INFO  23:59:50,772 - #47 remove
+INFO  23:59:50,772 - #39 (
+INFO  23:59:50,772 - #40 )
+INFO  23:59:50,772 - #40 )
+INFO  23:59:50,772 - #35 ;
+INFO  23:59:50,772 - #3 print
+INFO  23:59:50,773 - #39 (
+INFO  23:59:50,773 - #47 eol
+INFO  23:59:50,773 - #40 )
+INFO  23:59:50,773 - #35 ;
+INFO  23:59:50,773 - #44 }
+INFO  23:59:50,773 - #47 i
+INFO  23:59:50,773 - #33 ++
+INFO  23:59:50,773 - #35 ;
+INFO  23:59:50,773 - #44 }
+INFO  23:59:50,773 - #3 print
+INFO  23:59:50,773 - #39 (
+INFO  23:59:50,773 - #48 D
+INFO  23:59:50,773 - #40 )
+INFO  23:59:50,773 - #35 ;
+INFO  23:59:50,773 - #3 print
+INFO  23:59:50,773 - #39 (
+INFO  23:59:50,773 - #48 o
+INFO  23:59:50,773 - #40 )
+INFO  23:59:50,773 - #35 ;
+INFO  23:59:50,773 - #3 print
+INFO  23:59:50,774 - #39 (
+INFO  23:59:50,774 - #48 n
+INFO  23:59:50,774 - #40 )
+INFO  23:59:50,774 - #35 ;
+INFO  23:59:50,774 - #3 print
+INFO  23:59:50,774 - #39 (
+INFO  23:59:50,774 - #48 e
+INFO  23:59:50,774 - #40 )
+INFO  23:59:50,774 - #35 ;
+INFO  23:59:50,774 - #3 print
+INFO  23:59:50,774 - #39 (
+INFO  23:59:50,774 - #48 !
+INFO  23:59:50,774 - #40 )
+INFO  23:59:50,774 - #35 ;
+INFO  23:59:50,774 - #44 }
+INFO  23:59:50,774 - #44 }
+INFO  23:59:50,781 - Program(
+  ProgName(
+   list
+  ) [ProgName]
+  VarDeclarations(
+    ClassDeclarations(
+      ClassDeclarations(
+        ConstDeclarations(
+          ConstDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              ConstantValueNumber(
+               A
+               15342
+              ) [ConstantValueNumber]
+              ListOfCharDeclarations(
+                EndOfListOfCharDeclarations(
+                ) [EndOfListOfCharDeclarations]
+                ConstantValueNumber(
+                 C
+                 45194
+                ) [ConstantValueNumber]
+              ) [ListOfCharDeclarations]
+            ) [ConstDeclaration]
+          ) [ConstDeclarations]
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            ConstantValueNumber(
+             RAND_MAX
+             100000
+            ) [ConstantValueNumber]
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+          ) [ConstDeclaration]
+        ) [ConstDeclarations]
+        ClassDeclaration(
+          NameOfClass(
+           Node
+          ) [NameOfClass]
+          ClassIsNotExtended(
+          ) [ClassIsNotExtended]
+          ClassBodyNoMethodWithConstructor(
+            ClassVariables(
+              ClassVariables(
+                NoClassVariables(
+                ) [NoClassVariables]
+                ClassVarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                  ClassVarDecLast(
+                    ClassVariable(
+                     data
+                      VarDeclarationOfNotArray(
+                      ) [VarDeclarationOfNotArray]
+                    ) [ClassVariable]
+                  ) [ClassVarDecLast]
+                ) [ClassVarDeclaration]
+              ) [ClassVariables]
+              ClassVarDeclaration(
+                Type(
+                 Node
+                ) [Type]
+                ClassVarDecLast(
+                  ClassVariable(
+                   next
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [ClassVariable]
+                ) [ClassVarDecLast]
+              ) [ClassVarDeclaration]
+            ) [ClassVariables]
+            ListOfConstructorDeclarations(
+              SingleOrLastConstructorDeclaration(
+                ConstructorDeclaration(
+                  ConstructorDeclarationName(
+                   Node
+                  ) [ConstructorDeclarationName]
+                  FormalParameters(
+                    SingleOrEndOfListParameter(
+                      SingleFormalParameter(
+                        Type(
+                         int
+                        ) [Type]
+                       data
+                        VarDeclarationOfNotArray(
+                        ) [VarDeclarationOfNotArray]
+                      ) [SingleFormalParameter]
+                    ) [SingleOrEndOfListParameter]
+                  ) [FormalParameters]
+                  ConstructorWithoutVar(
+                  ) [ConstructorWithoutVar]
+                  Statements(
+                    Statements(
+                      NoStatements(
+                      ) [NoStatements]
+                      StatementDesignator(
+                        DesignatorAssignment(
+                          ClassFieldDesignator(
+                            SimpleDesignator(
+                             this
+                            ) [SimpleDesignator]
+                           data
+                          ) [ClassFieldDesignator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   data
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [DesignatorAssignment]
+                      ) [StatementDesignator]
+                    ) [Statements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        ClassFieldDesignator(
+                          SimpleDesignator(
+                           this
+                          ) [SimpleDesignator]
+                         next
+                        ) [ClassFieldDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 null
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                ) [ConstructorDeclaration]
+              ) [SingleOrLastConstructorDeclaration]
+              ConstructorDeclaration(
+                ConstructorDeclarationName(
+                 Node
+                ) [ConstructorDeclarationName]
+                FormalParameters(
+                  ListOfParameters(
+                    SingleFormalParameter(
+                      Type(
+                       int
+                      ) [Type]
+                     data
+                      VarDeclarationOfNotArray(
+                      ) [VarDeclarationOfNotArray]
+                    ) [SingleFormalParameter]
+                    SingleOrEndOfListParameter(
+                      SingleFormalParameter(
+                        Type(
+                         Node
+                        ) [Type]
+                       next
+                        VarDeclarationOfNotArray(
+                        ) [VarDeclarationOfNotArray]
+                      ) [SingleFormalParameter]
+                    ) [SingleOrEndOfListParameter]
+                  ) [ListOfParameters]
+                ) [FormalParameters]
+                ConstructorWithoutVar(
+                ) [ConstructorWithoutVar]
+                Statements(
+                  Statements(
+                    NoStatements(
+                    ) [NoStatements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        ClassFieldDesignator(
+                          SimpleDesignator(
+                           this
+                          ) [SimpleDesignator]
+                         data
+                        ) [ClassFieldDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 data
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      ClassFieldDesignator(
+                        SimpleDesignator(
+                         this
+                        ) [SimpleDesignator]
+                       next
+                      ) [ClassFieldDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               next
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [Statements]
+              ) [ConstructorDeclaration]
+            ) [ListOfConstructorDeclarations]
+          ) [ClassBodyNoMethodWithConstructor]
+        ) [ClassDeclaration]
+      ) [ClassDeclarations]
+      ClassDeclaration(
+        NameOfClass(
+         LinkedList
+        ) [NameOfClass]
+        ClassIsNotExtended(
+        ) [ClassIsNotExtended]
+        ClassBodyWithMethodAndConstructor(
+          ClassVariables(
+            NoClassVariables(
+            ) [NoClassVariables]
+            ClassVarDeclaration(
+              Type(
+               Node
+              ) [Type]
+              ClassVarDecNotLast(
+                ClassVarDecLast(
+                  ClassVariable(
+                   head
+                    VarDeclarationOfNotArray(
+                    ) [VarDeclarationOfNotArray]
+                  ) [ClassVariable]
+                ) [ClassVarDecLast]
+                ClassVariable(
+                 tail
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [ClassVariable]
+              ) [ClassVarDecNotLast]
+            ) [ClassVarDeclaration]
+          ) [ClassVariables]
+          SingleOrLastConstructorDeclaration(
+            ConstructorDeclaration(
+              ConstructorDeclarationName(
+               LinkedList
+              ) [ConstructorDeclarationName]
+              NoFormalParameters(
+              ) [NoFormalParameters]
+              ConstructorWithoutVar(
+              ) [ConstructorWithoutVar]
+              Statements(
+                Statements(
+                  NoStatements(
+                  ) [NoStatements]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      SimpleDesignator(
+                       head
+                      ) [SimpleDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               null
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [Statements]
+                StatementDesignator(
+                  DesignatorAssignment(
+                    SimpleDesignator(
+                     tail
+                    ) [SimpleDesignator]
+                    TermPositiveExpr(
+                      Term(
+                        SingleFactor(
+                          DesignatorFactor(
+                            SimpleDesignator(
+                             null
+                            ) [SimpleDesignator]
+                          ) [DesignatorFactor]
+                        ) [SingleFactor]
+                      ) [Term]
+                    ) [TermPositiveExpr]
+                  ) [DesignatorAssignment]
+                ) [StatementDesignator]
+              ) [Statements]
+            ) [ConstructorDeclaration]
+          ) [SingleOrLastConstructorDeclaration]
+          ListOfMethodsInClass(
+            SingleOrEndOfListMethod(
+              MethodDeclaration(
+                VoidMethodTypeName(
+                 add
+                ) [VoidMethodTypeName]
+                FormalParameters(
+                  SingleOrEndOfListParameter(
+                    SingleFormalParameter(
+                      Type(
+                       int
+                      ) [Type]
+                     data
+                      VarDeclarationOfNotArray(
+                      ) [VarDeclarationOfNotArray]
+                    ) [SingleFormalParameter]
+                  ) [SingleOrEndOfListParameter]
+                ) [FormalParameters]
+                MethodVariables(
+                  MethodWithoutVariables(
+                  ) [MethodWithoutVariables]
+                  VarDeclaration(
+                    Type(
+                     Node
+                    ) [Type]
+                    VarDeclarationLast(
+                      LastVarDeclarations(
+                       node
+                        VarDeclarationOfNotArray(
+                        ) [VarDeclarationOfNotArray]
+                      ) [LastVarDeclarations]
+                    ) [VarDeclarationLast]
+                  ) [VarDeclaration]
+                ) [MethodVariables]
+                Statements(
+                  Statements(
+                    Statements(
+                      NoStatements(
+                      ) [NoStatements]
+                      StatementDesignator(
+                        DesignatorAssignment(
+                          SimpleDesignator(
+                           node
+                          ) [SimpleDesignator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NewClassWithActParsOperatorFactor(
+                                  Type(
+                                   Node
+                                  ) [Type]
+                                  Actuals(
+                                    ActualParams(
+                                      ActualParam(
+                                        TermPositiveExpr(
+                                          Term(
+                                            SingleFactor(
+                                              DesignatorFactor(
+                                                SimpleDesignator(
+                                                 data
+                                                ) [SimpleDesignator]
+                                              ) [DesignatorFactor]
+                                            ) [SingleFactor]
+                                          ) [Term]
+                                        ) [TermPositiveExpr]
+                                      ) [ActualParam]
+                                      TermPositiveExpr(
+                                        Term(
+                                          SingleFactor(
+                                            DesignatorFactor(
+                                              SimpleDesignator(
+                                               null
+                                              ) [SimpleDesignator]
+                                            ) [DesignatorFactor]
+                                          ) [SingleFactor]
+                                        ) [Term]
+                                      ) [TermPositiveExpr]
+                                    ) [ActualParams]
+                                  ) [Actuals]
+                                ) [NewClassWithActParsOperatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [DesignatorAssignment]
+                      ) [StatementDesignator]
+                    ) [Statements]
+                    StatementIfElse(
+                      IfCondition(
+                        OnlyIf(
+                        ) [OnlyIf]
+                        ConditionsWithoutOr(
+                          ConditionsWithoutAnd(
+                            RelopCondition(
+                              TermPositiveExpr(
+                                Term(
+                                  SingleFactor(
+                                    DesignatorFactor(
+                                      SimpleDesignator(
+                                       tail
+                                      ) [SimpleDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [SingleFactor]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                              EqualOperator(
+                              ) [EqualOperator]
+                              TermPositiveExpr(
+                                Term(
+                                  SingleFactor(
+                                    DesignatorFactor(
+                                      SimpleDesignator(
+                                       null
+                                      ) [SimpleDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [SingleFactor]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                            ) [RelopCondition]
+                          ) [ConditionsWithoutAnd]
+                        ) [ConditionsWithoutOr]
+                        FirstFixupForIf(
+                        ) [FirstFixupForIf]
+                      ) [IfCondition]
+                      StatementBlock(
+                        Statements(
+                          NoStatements(
+                          ) [NoStatements]
+                          StatementDesignator(
+                            DesignatorAssignment(
+                              SimpleDesignator(
+                               head
+                              ) [SimpleDesignator]
+                              TermPositiveExpr(
+                                Term(
+                                  SingleFactor(
+                                    DesignatorFactor(
+                                      SimpleDesignator(
+                                       node
+                                      ) [SimpleDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [SingleFactor]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                            ) [DesignatorAssignment]
+                          ) [StatementDesignator]
+                        ) [Statements]
+                      ) [StatementBlock]
+                      SecondFixupForIf(
+                      ) [SecondFixupForIf]
+                      StatementBlock(
+                        Statements(
+                          NoStatements(
+                          ) [NoStatements]
+                          StatementDesignator(
+                            DesignatorAssignment(
+                              ClassFieldDesignator(
+                                SimpleDesignator(
+                                 tail
+                                ) [SimpleDesignator]
+                               next
+                              ) [ClassFieldDesignator]
+                              TermPositiveExpr(
+                                Term(
+                                  SingleFactor(
+                                    DesignatorFactor(
+                                      SimpleDesignator(
+                                       node
+                                      ) [SimpleDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [SingleFactor]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                            ) [DesignatorAssignment]
+                          ) [StatementDesignator]
+                        ) [Statements]
+                      ) [StatementBlock]
+                    ) [StatementIfElse]
+                  ) [Statements]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      SimpleDesignator(
+                       tail
+                      ) [SimpleDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               node
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [Statements]
+              ) [MethodDeclaration]
+            ) [SingleOrEndOfListMethod]
+            MethodDeclaration(
+              ReturnMethodTypeName(
+                Type(
+                 int
+                ) [Type]
+               remove
+              ) [ReturnMethodTypeName]
+              NoFormalParameters(
+              ) [NoFormalParameters]
+              MethodVariables(
+                MethodWithoutVariables(
+                ) [MethodWithoutVariables]
+                VarDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                  VarDeclarationLast(
+                    LastVarDeclarations(
+                     ret
+                      VarDeclarationOfNotArray(
+                      ) [VarDeclarationOfNotArray]
+                    ) [LastVarDeclarations]
+                  ) [VarDeclarationLast]
+                ) [VarDeclaration]
+              ) [MethodVariables]
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        NoStatements(
+                        ) [NoStatements]
+                        StatementIf(
+                          IfCondition(
+                            OnlyIf(
+                            ) [OnlyIf]
+                            ConditionsWithoutOr(
+                              ConditionsWithoutAnd(
+                                RelopCondition(
+                                  TermPositiveExpr(
+                                    Term(
+                                      SingleFactor(
+                                        DesignatorFactor(
+                                          SimpleDesignator(
+                                           head
+                                          ) [SimpleDesignator]
+                                        ) [DesignatorFactor]
+                                      ) [SingleFactor]
+                                    ) [Term]
+                                  ) [TermPositiveExpr]
+                                  EqualOperator(
+                                  ) [EqualOperator]
+                                  TermPositiveExpr(
+                                    Term(
+                                      SingleFactor(
+                                        DesignatorFactor(
+                                          SimpleDesignator(
+                                           null
+                                          ) [SimpleDesignator]
+                                        ) [DesignatorFactor]
+                                      ) [SingleFactor]
+                                    ) [Term]
+                                  ) [TermPositiveExpr]
+                                ) [RelopCondition]
+                              ) [ConditionsWithoutAnd]
+                            ) [ConditionsWithoutOr]
+                            FirstFixupForIf(
+                            ) [FirstFixupForIf]
+                          ) [IfCondition]
+                          StatementBlock(
+                            Statements(
+                              NoStatements(
+                              ) [NoStatements]
+                              StatementReturnExpr(
+                                TermNegativeExpr(
+                                  Term(
+                                    SingleFactor(
+                                      NumberConstFactor(
+                                       1
+                                      ) [NumberConstFactor]
+                                    ) [SingleFactor]
+                                  ) [Term]
+                                ) [TermNegativeExpr]
+                              ) [StatementReturnExpr]
+                            ) [Statements]
+                          ) [StatementBlock]
+                          SecondFixupForIf(
+                          ) [SecondFixupForIf]
+                        ) [StatementIf]
+                      ) [Statements]
+                      StatementDesignator(
+                        DesignatorAssignment(
+                          SimpleDesignator(
+                           ret
+                          ) [SimpleDesignator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  ClassFieldDesignator(
+                                    SimpleDesignator(
+                                     head
+                                    ) [SimpleDesignator]
+                                   data
+                                  ) [ClassFieldDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [DesignatorAssignment]
+                      ) [StatementDesignator]
+                    ) [Statements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        SimpleDesignator(
+                         head
+                        ) [SimpleDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                ClassFieldDesignator(
+                                  SimpleDesignator(
+                                   head
+                                  ) [SimpleDesignator]
+                                 next
+                                ) [ClassFieldDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                  StatementIf(
+                    IfCondition(
+                      OnlyIf(
+                      ) [OnlyIf]
+                      ConditionsWithoutOr(
+                        ConditionsWithoutAnd(
+                          RelopCondition(
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  DesignatorFactor(
+                                    SimpleDesignator(
+                                     head
+                                    ) [SimpleDesignator]
+                                  ) [DesignatorFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                            EqualOperator(
+                            ) [EqualOperator]
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  DesignatorFactor(
+                                    SimpleDesignator(
+                                     null
+                                    ) [SimpleDesignator]
+                                  ) [DesignatorFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [RelopCondition]
+                        ) [ConditionsWithoutAnd]
+                      ) [ConditionsWithoutOr]
+                      FirstFixupForIf(
+                      ) [FirstFixupForIf]
+                    ) [IfCondition]
+                    StatementBlock(
+                      Statements(
+                        NoStatements(
+                        ) [NoStatements]
+                        StatementDesignator(
+                          DesignatorAssignment(
+                            SimpleDesignator(
+                             tail
+                            ) [SimpleDesignator]
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  DesignatorFactor(
+                                    SimpleDesignator(
+                                     null
+                                    ) [SimpleDesignator]
+                                  ) [DesignatorFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [DesignatorAssignment]
+                        ) [StatementDesignator]
+                      ) [Statements]
+                    ) [StatementBlock]
+                    SecondFixupForIf(
+                    ) [SecondFixupForIf]
+                  ) [StatementIf]
+                ) [Statements]
+                StatementReturnExpr(
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          SimpleDesignator(
+                           ret
+                          ) [SimpleDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [StatementReturnExpr]
+              ) [Statements]
+            ) [MethodDeclaration]
+          ) [ListOfMethodsInClass]
+        ) [ClassBodyWithMethodAndConstructor]
+      ) [ClassDeclaration]
+    ) [ClassDeclarations]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         seed
+          VarDeclarationOfNotArray(
+          ) [VarDeclarationOfNotArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        ReturnMethodTypeName(
+          Type(
+           int
+          ) [Type]
+         rand
+        ) [ReturnMethodTypeName]
+        NoFormalParameters(
+        ) [NoFormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        Statements(
+          Statements(
+            NoStatements(
+            ) [NoStatements]
+            StatementDesignator(
+              DesignatorAssignment(
+                SimpleDesignator(
+                 seed
+                ) [SimpleDesignator]
+                TermPositiveExpr(
+                  Term(
+                    MultipleFactors(
+                      SingleFactor(
+                        ExprFactor(
+                          AddExpr(
+                            TermPositiveExpr(
+                              Term(
+                                MultipleFactors(
+                                  SingleFactor(
+                                    DesignatorFactor(
+                                      SimpleDesignator(
+                                       seed
+                                      ) [SimpleDesignator]
+                                    ) [DesignatorFactor]
+                                  ) [SingleFactor]
+                                  MultiplyOperator(
+                                  ) [MultiplyOperator]
+                                  DesignatorFactor(
+                                    SimpleDesignator(
+                                     A
+                                    ) [SimpleDesignator]
+                                  ) [DesignatorFactor]
+                                ) [MultipleFactors]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                            PlusOperator(
+                            ) [PlusOperator]
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   C
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [AddExpr]
+                        ) [ExprFactor]
+                      ) [SingleFactor]
+                      ModuoOperator(
+                      ) [ModuoOperator]
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         RAND_MAX
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [MultipleFactors]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [DesignatorAssignment]
+            ) [StatementDesignator]
+          ) [Statements]
+          StatementReturnExpr(
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  DesignatorFactor(
+                    SimpleDesignator(
+                     seed
+                    ) [SimpleDesignator]
+                  ) [DesignatorFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementReturnExpr]
+        ) [Statements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodVariables(
+          MethodWithoutVariables(
+          ) [MethodWithoutVariables]
+          VarDeclaration(
+            Type(
+             LinkedList
+            ) [Type]
+            VarDeclarationLast(
+              LastVarDeclarations(
+               ll
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [LastVarDeclarations]
+            ) [VarDeclarationLast]
+          ) [VarDeclaration]
+        ) [MethodVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      NoStatements(
+                                      ) [NoStatements]
+                                      StatementDesignator(
+                                        DesignatorAssignment(
+                                          SimpleDesignator(
+                                           ll
+                                          ) [SimpleDesignator]
+                                          TermPositiveExpr(
+                                            Term(
+                                              SingleFactor(
+                                                NewClassWithActParsOperatorFactor(
+                                                  Type(
+                                                   LinkedList
+                                                  ) [Type]
+                                                  NoActuals(
+                                                  ) [NoActuals]
+                                                ) [NewClassWithActParsOperatorFactor]
+                                              ) [SingleFactor]
+                                            ) [Term]
+                                          ) [TermPositiveExpr]
+                                        ) [DesignatorAssignment]
+                                      ) [StatementDesignator]
+                                    ) [Statements]
+                                    StatementDesignator(
+                                      DesignatorFuncCall(
+                                        FuncCallFactorDesignator(
+                                          ClassFieldDesignator(
+                                            SimpleDesignator(
+                                             ll
+                                            ) [SimpleDesignator]
+                                           add
+                                          ) [ClassFieldDesignator]
+                                        ) [FuncCallFactorDesignator]
+                                        Actuals(
+                                          ActualParam(
+                                            TermPositiveExpr(
+                                              Term(
+                                                SingleFactor(
+                                                  NumberConstFactor(
+                                                   1
+                                                  ) [NumberConstFactor]
+                                                ) [SingleFactor]
+                                              ) [Term]
+                                            ) [TermPositiveExpr]
+                                          ) [ActualParam]
+                                        ) [Actuals]
+                                      ) [DesignatorFuncCall]
+                                    ) [StatementDesignator]
+                                  ) [Statements]
+                                  StatementDesignator(
+                                    DesignatorFuncCall(
+                                      FuncCallFactorDesignator(
+                                        ClassFieldDesignator(
+                                          SimpleDesignator(
+                                           ll
+                                          ) [SimpleDesignator]
+                                         add
+                                        ) [ClassFieldDesignator]
+                                      ) [FuncCallFactorDesignator]
+                                      Actuals(
+                                        ActualParam(
+                                          TermPositiveExpr(
+                                            Term(
+                                              SingleFactor(
+                                                NumberConstFactor(
+                                                 2
+                                                ) [NumberConstFactor]
+                                              ) [SingleFactor]
+                                            ) [Term]
+                                          ) [TermPositiveExpr]
+                                        ) [ActualParam]
+                                      ) [Actuals]
+                                    ) [DesignatorFuncCall]
+                                  ) [StatementDesignator]
+                                ) [Statements]
+                                StatementDesignator(
+                                  DesignatorFuncCall(
+                                    FuncCallFactorDesignator(
+                                      ClassFieldDesignator(
+                                        SimpleDesignator(
+                                         ll
+                                        ) [SimpleDesignator]
+                                       add
+                                      ) [ClassFieldDesignator]
+                                    ) [FuncCallFactorDesignator]
+                                    Actuals(
+                                      ActualParam(
+                                        TermPositiveExpr(
+                                          Term(
+                                            SingleFactor(
+                                              NumberConstFactor(
+                                               3
+                                              ) [NumberConstFactor]
+                                            ) [SingleFactor]
+                                          ) [Term]
+                                        ) [TermPositiveExpr]
+                                      ) [ActualParam]
+                                    ) [Actuals]
+                                  ) [DesignatorFuncCall]
+                                ) [StatementDesignator]
+                              ) [Statements]
+                              StatementPrintWithoutWidth(
+                                PrintEmptyDummy(
+                                ) [PrintEmptyDummy]
+                                TermPositiveExpr(
+                                  Term(
+                                    SingleFactor(
+                                      FuncCallFactor(
+                                        FuncCallFactorDesignator(
+                                          ClassFieldDesignator(
+                                            SimpleDesignator(
+                                             ll
+                                            ) [SimpleDesignator]
+                                           remove
+                                          ) [ClassFieldDesignator]
+                                        ) [FuncCallFactorDesignator]
+                                        NoActuals(
+                                        ) [NoActuals]
+                                      ) [FuncCallFactor]
+                                    ) [SingleFactor]
+                                  ) [Term]
+                                ) [TermPositiveExpr]
+                              ) [StatementPrintWithoutWidth]
+                            ) [Statements]
+                            StatementPrintWithoutWidth(
+                              PrintEmptyDummy(
+                              ) [PrintEmptyDummy]
+                              TermPositiveExpr(
+                                Term(
+                                  SingleFactor(
+                                    FuncCallFactor(
+                                      FuncCallFactorDesignator(
+                                        ClassFieldDesignator(
+                                          SimpleDesignator(
+                                           ll
+                                          ) [SimpleDesignator]
+                                         remove
+                                        ) [ClassFieldDesignator]
+                                      ) [FuncCallFactorDesignator]
+                                      NoActuals(
+                                      ) [NoActuals]
+                                    ) [FuncCallFactor]
+                                  ) [SingleFactor]
+                                ) [Term]
+                              ) [TermPositiveExpr]
+                            ) [StatementPrintWithoutWidth]
+                          ) [Statements]
+                          StatementPrintWithoutWidth(
+                            PrintEmptyDummy(
+                            ) [PrintEmptyDummy]
+                            TermPositiveExpr(
+                              Term(
+                                SingleFactor(
+                                  FuncCallFactor(
+                                    FuncCallFactorDesignator(
+                                      ClassFieldDesignator(
+                                        SimpleDesignator(
+                                         ll
+                                        ) [SimpleDesignator]
+                                       remove
+                                      ) [ClassFieldDesignator]
+                                    ) [FuncCallFactorDesignator]
+                                    NoActuals(
+                                    ) [NoActuals]
+                                  ) [FuncCallFactor]
+                                ) [SingleFactor]
+                              ) [Term]
+                            ) [TermPositiveExpr]
+                          ) [StatementPrintWithoutWidth]
+                        ) [Statements]
+                        StatementPrintWithoutWidth(
+                          PrintEmptyDummy(
+                          ) [PrintEmptyDummy]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                FuncCallFactor(
+                                  FuncCallFactorDesignator(
+                                    ClassFieldDesignator(
+                                      SimpleDesignator(
+                                       ll
+                                      ) [SimpleDesignator]
+                                     remove
+                                    ) [ClassFieldDesignator]
+                                  ) [FuncCallFactorDesignator]
+                                  NoActuals(
+                                  ) [NoActuals]
+                                ) [FuncCallFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [StatementPrintWithoutWidth]
+                      ) [Statements]
+                      StatementPrintWithoutWidth(
+                        PrintEmptyDummy(
+                        ) [PrintEmptyDummy]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                SimpleDesignator(
+                                 eol
+                                ) [SimpleDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [StatementPrintWithoutWidth]
+                    ) [Statements]
+                    StatementDesignator(
+                      DesignatorAssignment(
+                        SimpleDesignator(
+                         i
+                        ) [SimpleDesignator]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              NumberConstFactor(
+                               0
+                              ) [NumberConstFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [DesignatorAssignment]
+                    ) [StatementDesignator]
+                  ) [Statements]
+                  StatementWhile(
+                    WhileLoopParen(
+                    ) [WhileLoopParen]
+                    FirstFixupForWhile(
+                    ) [FirstFixupForWhile]
+                    ConditionsWithoutOr(
+                      ConditionsWithoutAnd(
+                        RelopCondition(
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                DesignatorFactor(
+                                  SimpleDesignator(
+                                   i
+                                  ) [SimpleDesignator]
+                                ) [DesignatorFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                          LessOperator(
+                          ) [LessOperator]
+                          TermPositiveExpr(
+                            Term(
+                              SingleFactor(
+                                NumberConstFactor(
+                                 5000
+                                ) [NumberConstFactor]
+                              ) [SingleFactor]
+                            ) [Term]
+                          ) [TermPositiveExpr]
+                        ) [RelopCondition]
+                      ) [ConditionsWithoutAnd]
+                    ) [ConditionsWithoutOr]
+                    StatementBlock(
+                      Statements(
+                        Statements(
+                          NoStatements(
+                          ) [NoStatements]
+                          StatementIfElse(
+                            IfCondition(
+                              OnlyIf(
+                              ) [OnlyIf]
+                              ConditionsWithoutOr(
+                                ConditionsWithoutAnd(
+                                  RelopCondition(
+                                    TermPositiveExpr(
+                                      Term(
+                                        SingleFactor(
+                                          FuncCallFactor(
+                                            FuncCallFactorDesignator(
+                                              SimpleDesignator(
+                                               rand
+                                              ) [SimpleDesignator]
+                                            ) [FuncCallFactorDesignator]
+                                            NoActuals(
+                                            ) [NoActuals]
+                                          ) [FuncCallFactor]
+                                        ) [SingleFactor]
+                                      ) [Term]
+                                    ) [TermPositiveExpr]
+                                    LessOperator(
+                                    ) [LessOperator]
+                                    TermPositiveExpr(
+                                      Term(
+                                        MultipleFactors(
+                                          SingleFactor(
+                                            DesignatorFactor(
+                                              SimpleDesignator(
+                                               RAND_MAX
+                                              ) [SimpleDesignator]
+                                            ) [DesignatorFactor]
+                                          ) [SingleFactor]
+                                          DivideOperator(
+                                          ) [DivideOperator]
+                                          NumberConstFactor(
+                                           2
+                                          ) [NumberConstFactor]
+                                        ) [MultipleFactors]
+                                      ) [Term]
+                                    ) [TermPositiveExpr]
+                                  ) [RelopCondition]
+                                ) [ConditionsWithoutAnd]
+                              ) [ConditionsWithoutOr]
+                              FirstFixupForIf(
+                              ) [FirstFixupForIf]
+                            ) [IfCondition]
+                            StatementBlock(
+                              Statements(
+                                NoStatements(
+                                ) [NoStatements]
+                                StatementDesignator(
+                                  DesignatorFuncCall(
+                                    FuncCallFactorDesignator(
+                                      ClassFieldDesignator(
+                                        SimpleDesignator(
+                                         ll
+                                        ) [SimpleDesignator]
+                                       add
+                                      ) [ClassFieldDesignator]
+                                    ) [FuncCallFactorDesignator]
+                                    Actuals(
+                                      ActualParam(
+                                        TermPositiveExpr(
+                                          Term(
+                                            SingleFactor(
+                                              FuncCallFactor(
+                                                FuncCallFactorDesignator(
+                                                  SimpleDesignator(
+                                                   rand
+                                                  ) [SimpleDesignator]
+                                                ) [FuncCallFactorDesignator]
+                                                NoActuals(
+                                                ) [NoActuals]
+                                              ) [FuncCallFactor]
+                                            ) [SingleFactor]
+                                          ) [Term]
+                                        ) [TermPositiveExpr]
+                                      ) [ActualParam]
+                                    ) [Actuals]
+                                  ) [DesignatorFuncCall]
+                                ) [StatementDesignator]
+                              ) [Statements]
+                            ) [StatementBlock]
+                            SecondFixupForIf(
+                            ) [SecondFixupForIf]
+                            StatementBlock(
+                              Statements(
+                                Statements(
+                                  NoStatements(
+                                  ) [NoStatements]
+                                  StatementPrintWithoutWidth(
+                                    PrintEmptyDummy(
+                                    ) [PrintEmptyDummy]
+                                    TermPositiveExpr(
+                                      Term(
+                                        SingleFactor(
+                                          FuncCallFactor(
+                                            FuncCallFactorDesignator(
+                                              ClassFieldDesignator(
+                                                SimpleDesignator(
+                                                 ll
+                                                ) [SimpleDesignator]
+                                               remove
+                                              ) [ClassFieldDesignator]
+                                            ) [FuncCallFactorDesignator]
+                                            NoActuals(
+                                            ) [NoActuals]
+                                          ) [FuncCallFactor]
+                                        ) [SingleFactor]
+                                      ) [Term]
+                                    ) [TermPositiveExpr]
+                                  ) [StatementPrintWithoutWidth]
+                                ) [Statements]
+                                StatementPrintWithoutWidth(
+                                  PrintEmptyDummy(
+                                  ) [PrintEmptyDummy]
+                                  TermPositiveExpr(
+                                    Term(
+                                      SingleFactor(
+                                        DesignatorFactor(
+                                          SimpleDesignator(
+                                           eol
+                                          ) [SimpleDesignator]
+                                        ) [DesignatorFactor]
+                                      ) [SingleFactor]
+                                    ) [Term]
+                                  ) [TermPositiveExpr]
+                                ) [StatementPrintWithoutWidth]
+                              ) [Statements]
+                            ) [StatementBlock]
+                          ) [StatementIfElse]
+                        ) [Statements]
+                        StatementDesignator(
+                          DesignatorInc(
+                            SimpleDesignator(
+                             i
+                            ) [SimpleDesignator]
+                          ) [DesignatorInc]
+                        ) [StatementDesignator]
+                      ) [Statements]
+                    ) [StatementBlock]
+                  ) [StatementWhile]
+                ) [Statements]
+                StatementPrintWithoutWidth(
+                  PrintEmptyDummy(
+                  ) [PrintEmptyDummy]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        CharConstFactor(
+                         D
+                        ) [CharConstFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [StatementPrintWithoutWidth]
+              ) [Statements]
+              StatementPrintWithoutWidth(
+                PrintEmptyDummy(
+                ) [PrintEmptyDummy]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      CharConstFactor(
+                       o
+                      ) [CharConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementPrintWithoutWidth]
+            ) [Statements]
+            StatementPrintWithoutWidth(
+              PrintEmptyDummy(
+              ) [PrintEmptyDummy]
+              TermPositiveExpr(
+                Term(
+                  SingleFactor(
+                    CharConstFactor(
+                     n
+                    ) [CharConstFactor]
+                  ) [SingleFactor]
+                ) [Term]
+              ) [TermPositiveExpr]
+            ) [StatementPrintWithoutWidth]
+          ) [Statements]
+          StatementPrintWithoutWidth(
+            PrintEmptyDummy(
+            ) [PrintEmptyDummy]
+            TermPositiveExpr(
+              Term(
+                SingleFactor(
+                  CharConstFactor(
+                   e
+                  ) [CharConstFactor]
+                ) [SingleFactor]
+              ) [Term]
+            ) [TermPositiveExpr]
+          ) [StatementPrintWithoutWidth]
+        ) [Statements]
+        StatementPrintWithoutWidth(
+          PrintEmptyDummy(
+          ) [PrintEmptyDummy]
+          TermPositiveExpr(
+            Term(
+              SingleFactor(
+                CharConstFactor(
+                 !
+                ) [CharConstFactor]
+              ) [SingleFactor]
+            ) [Term]
+          ) [TermPositiveExpr]
+        ) [StatementPrintWithoutWidth]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:59:50,783 - ====================================
+INFO  23:59:50,789 - Kreirana je klasa Node na liniji 6
+INFO  23:59:50,789 - Konst broj: 0
+INFO  23:59:50,789 - ulazi na liniji 12
+ERROR 23:59:50,789 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 12
+INFO  23:59:50,790 - NAPRAVLJEN KONST SA FORM PARS1
+INFO  23:59:50,790 - Konst broj: 1
+INFO  23:59:50,790 - CONSTRUCTOR: Node
+INFO  23:59:50,790 - int
+INFO  23:59:50,790 - NAPRAVLJEN KONST SA FORM PARS2
+INFO  23:59:50,790 - Broj konstruktora: 2
+INFO  23:59:50,790 - Kreirana je klasa LinkedList na liniji 21
+INFO  23:59:50,790 - Konst broj: 0
+INFO  23:59:50,790 - ulazi na liniji 25
+ERROR 23:59:50,790 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 25
+INFO  23:59:50,790 - ulazi na liniji 26
+ERROR 23:59:50,790 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 26
+INFO  23:59:50,790 - NAPRAVLJEN KONST SA FORM PARS0
+INFO  23:59:50,790 - Definicija metode add na liniji 28
+INFO  23:59:50,790 - Kreirana je promenjiva node na liniji 28
+INFO  23:59:50,790 - Pristup polju tail.next na liniji 33
+INFO  23:59:50,790 - Definicija metode remove na liniji 37
+INFO  23:59:50,790 - Kreirana je promenjiva ret na liniji 37
+INFO  23:59:50,790 - Pristup polju head.data na liniji 41
+INFO  23:59:50,790 - Pristup polju head.next na liniji 42
+INFO  23:59:50,790 - ulazi na liniji 44
+ERROR 23:59:50,791 - SEMANTICKA GRESKA: Leva strana nije kompatibilna desnoj strani pri dodeli na liniji 44
+INFO  23:59:50,791 - Broj konstruktora: 1
+INFO  23:59:50,791 - Kreirana je promenjiva seed na liniji 51
+INFO  23:59:50,791 - Definicija funkcije rand na liniji 54
+INFO  23:59:50,791 - Definicija funkcije main na liniji 58
+INFO  23:59:50,791 - Kreirana je promenjiva ll na liniji 58
+INFO  23:59:50,791 - Kreirana je promenjiva i na liniji 58
+INFO  23:59:50,791 - Pristup polju ll.add na liniji 60
+INFO  23:59:50,791 - Pristup polju ll.add na liniji 61
+INFO  23:59:50,791 - Pristup polju ll.add na liniji 62
+INFO  23:59:50,791 - Pristup polju ll.remove na liniji 63
+INFO  23:59:50,791 - Prepoznata naredba print
+INFO  23:59:50,791 - Pristup polju ll.remove na liniji 64
+INFO  23:59:50,791 - Prepoznata naredba print
+INFO  23:59:50,791 - Pristup polju ll.remove na liniji 65
+INFO  23:59:50,791 - Prepoznata naredba print
+INFO  23:59:50,791 - Pristup polju ll.remove na liniji 66
+INFO  23:59:50,791 - Prepoznata naredba print
+INFO  23:59:50,791 - Prepoznata naredba print
+INFO  23:59:50,791 - Pristup polju ll.add na liniji 71
+INFO  23:59:50,791 - Pristup polju ll.remove na liniji 73
+INFO  23:59:50,791 - Prepoznata naredba print
+INFO  23:59:50,792 - Prepoznata naredba print
+INFO  23:59:50,792 - Prepoznata naredba print
+INFO  23:59:50,792 - Prepoznata naredba print
+INFO  23:59:50,792 - Prepoznata naredba print
+INFO  23:59:50,792 - Prepoznata naredba print
+INFO  23:59:50,792 - Prepoznata naredba print
+INFO  23:59:50,792 - Print count calls = 12
+INFO  23:59:50,792 - ====================================

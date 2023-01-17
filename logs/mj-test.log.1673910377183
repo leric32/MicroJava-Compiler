@@ -1,0 +1,122 @@
+INFO  00:06:05,079 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\linked_list.mj
+INFO  00:06:05,120 - #2 program
+INFO  00:06:05,120 - #47 list
+INFO  00:06:05,120 - #8 const
+INFO  00:06:05,121 - #47 int
+INFO  00:06:05,121 - #47 A
+INFO  00:06:05,122 - #32 =
+INFO  00:06:05,122 - #46 15342
+INFO  00:06:05,122 - #37 ,
+INFO  00:06:05,123 - #47 C
+INFO  00:06:05,123 - #32 =
+INFO  00:06:05,123 - #46 45194
+INFO  00:06:05,123 - #35 ;
+INFO  00:06:05,123 - #8 const
+INFO  00:06:05,124 - #47 int
+INFO  00:06:05,124 - #47 RAND_MAX
+INFO  00:06:05,124 - #32 =
+INFO  00:06:05,124 - #46 100000
+INFO  00:06:05,124 - #35 ;
+INFO  00:06:05,124 - #47 int
+INFO  00:06:05,126 - #47 seed
+INFO  00:06:05,126 - #35 ;
+INFO  00:06:05,127 - #43 {
+INFO  00:06:05,127 - #14 void
+INFO  00:06:05,128 - #47 main
+INFO  00:06:05,128 - #39 (
+INFO  00:06:05,128 - #40 )
+INFO  00:06:05,128 - #47 int
+INFO  00:06:05,129 - #47 i
+INFO  00:06:05,129 - #35 ;
+INFO  00:06:05,129 - #43 {
+INFO  00:06:05,129 - #44 }
+INFO  00:06:05,130 - #44 }
+INFO  00:06:05,135 - Program(
+  ProgName(
+   list
+  ) [ProgName]
+  VarDeclarations(
+    ConstDeclarations(
+      ConstDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          ConstantValueNumber(
+           A
+           15342
+          ) [ConstantValueNumber]
+          ListOfCharDeclarations(
+            EndOfListOfCharDeclarations(
+            ) [EndOfListOfCharDeclarations]
+            ConstantValueNumber(
+             C
+             45194
+            ) [ConstantValueNumber]
+          ) [ListOfCharDeclarations]
+        ) [ConstDeclaration]
+      ) [ConstDeclarations]
+      ConstDeclaration(
+        Type(
+         int
+        ) [Type]
+        ConstantValueNumber(
+         RAND_MAX
+         100000
+        ) [ConstantValueNumber]
+        EndOfListOfCharDeclarations(
+        ) [EndOfListOfCharDeclarations]
+      ) [ConstDeclaration]
+    ) [ConstDeclarations]
+    VarDeclaration(
+      Type(
+       int
+      ) [Type]
+      VarDeclarationLast(
+        LastVarDeclarations(
+         seed
+          VarDeclarationOfNotArray(
+          ) [VarDeclarationOfNotArray]
+        ) [LastVarDeclarations]
+      ) [VarDeclarationLast]
+    ) [VarDeclaration]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodVariables(
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             i
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [MethodVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  00:06:05,135 - ====================================
+INFO  00:06:05,140 - Kreirana je promenjiva seed na liniji 10
+INFO  00:06:05,140 - Definicija funkcije main na liniji 14
+INFO  00:06:05,140 - Kreirana je promenjiva i na liniji 14
+INFO  00:06:05,140 - Print count calls = 0
+INFO  00:06:05,140 - ====================================
+INFO  00:06:05,141 - Parsiranje uspesno zavrseno!

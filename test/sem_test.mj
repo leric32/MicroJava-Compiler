@@ -2,26 +2,26 @@
 
 program test302
 
-
-
+class Sfera
 {
-	
-	
-	void main()
-	int niz[], niz2[], a, b;
+	int r;
 	{
 		
-		niz = new int[3];
-		niz[0] = 1;
-		niz[1] = 2;
-		niz[2] = 3;
+		Sfera(int r) {
+			this.r = r;
+		}
+		
+		void k(int r){
+			this.r = r;
+		}
+	}
+}
 
-		niz2 = new int[2];
-		[niz2[0],,niz2[1]] = niz;
+{
 		
+	void main()
+	{
 		
-		print(niz2[0]);	// niz[0] -> 1
-		print(niz2[1]); // niz[2] -> 6 
 	}
 }
 

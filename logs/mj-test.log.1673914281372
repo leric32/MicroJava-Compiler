@@ -1,0 +1,249 @@
+INFO  01:10:55,114 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\sem_test.mj
+INFO  01:10:55,155 - #2 program
+INFO  01:10:55,155 - #47 test302
+INFO  01:10:55,155 - #5 class
+INFO  01:10:55,156 - #47 Sfera
+INFO  01:10:55,156 - #43 {
+INFO  01:10:55,157 - #47 int
+INFO  01:10:55,157 - #47 r
+INFO  01:10:55,158 - #35 ;
+INFO  01:10:55,160 - #43 {
+INFO  01:10:55,160 - #47 Sfera
+INFO  01:10:55,160 - #39 (
+INFO  01:10:55,160 - #47 int
+INFO  01:10:55,160 - #47 r
+INFO  01:10:55,160 - #40 )
+INFO  01:10:55,161 - #43 {
+INFO  01:10:55,162 - #3 print
+INFO  01:10:55,163 - #39 (
+INFO  01:10:55,163 - #47 this
+INFO  01:10:55,163 - #38 .
+INFO  01:10:55,164 - #47 r
+INFO  01:10:55,165 - #40 )
+INFO  01:10:55,166 - #35 ;
+INFO  01:10:55,166 - #3 print
+INFO  01:10:55,166 - #39 (
+INFO  01:10:55,166 - #47 r
+INFO  01:10:55,167 - #40 )
+INFO  01:10:55,167 - #35 ;
+INFO  01:10:55,167 - #47 this
+INFO  01:10:55,167 - #38 .
+INFO  01:10:55,167 - #47 r
+INFO  01:10:55,167 - #32 =
+INFO  01:10:55,167 - #47 r
+INFO  01:10:55,167 - #35 ;
+INFO  01:10:55,167 - #3 print
+INFO  01:10:55,167 - #39 (
+INFO  01:10:55,167 - #47 this
+INFO  01:10:55,167 - #38 .
+INFO  01:10:55,167 - #47 r
+INFO  01:10:55,167 - #40 )
+INFO  01:10:55,167 - #35 ;
+INFO  01:10:55,167 - #3 print
+INFO  01:10:55,168 - #39 (
+INFO  01:10:55,168 - #47 r
+INFO  01:10:55,168 - #40 )
+INFO  01:10:55,168 - #35 ;
+INFO  01:10:55,168 - #44 }
+INFO  01:10:55,168 - #44 }
+INFO  01:10:55,168 - #44 }
+INFO  01:10:55,169 - #43 {
+INFO  01:10:55,169 - #14 void
+INFO  01:10:55,170 - #47 main
+INFO  01:10:55,170 - #39 (
+INFO  01:10:55,170 - #40 )
+INFO  01:10:55,170 - #43 {
+INFO  01:10:55,171 - #44 }
+INFO  01:10:55,171 - #44 }
+INFO  01:10:55,175 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  ClassDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    ClassDeclaration(
+      NameOfClass(
+       Sfera
+      ) [NameOfClass]
+      ClassIsNotExtended(
+      ) [ClassIsNotExtended]
+      ClassBodyNoMethodWithConstructor(
+        ClassVariables(
+          NoClassVariables(
+          ) [NoClassVariables]
+          ClassVarDeclaration(
+            Type(
+             int
+            ) [Type]
+            ClassVarDecLast(
+              ClassVariable(
+               r
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [ClassVariable]
+            ) [ClassVarDecLast]
+          ) [ClassVarDeclaration]
+        ) [ClassVariables]
+        SingleOrLastConstructorDeclaration(
+          ConstructorDeclaration(
+            ConstructorDeclarationName(
+             Sfera
+            ) [ConstructorDeclarationName]
+            FormalParameters(
+              SingleOrEndOfListParameter(
+                SingleFormalParameter(
+                  Type(
+                   int
+                  ) [Type]
+                 r
+                  VarDeclarationOfNotArray(
+                  ) [VarDeclarationOfNotArray]
+                ) [SingleFormalParameter]
+              ) [SingleOrEndOfListParameter]
+            ) [FormalParameters]
+            ConstructorWithoutVar(
+            ) [ConstructorWithoutVar]
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      NoStatements(
+                      ) [NoStatements]
+                      StatementPrintWithoutWidth(
+                        PrintEmptyDummy(
+                        ) [PrintEmptyDummy]
+                        TermPositiveExpr(
+                          Term(
+                            SingleFactor(
+                              DesignatorFactor(
+                                ClassFieldDesignator(
+                                  SimpleDesignator(
+                                   this
+                                  ) [SimpleDesignator]
+                                 r
+                                ) [ClassFieldDesignator]
+                              ) [DesignatorFactor]
+                            ) [SingleFactor]
+                          ) [Term]
+                        ) [TermPositiveExpr]
+                      ) [StatementPrintWithoutWidth]
+                    ) [Statements]
+                    StatementPrintWithoutWidth(
+                      PrintEmptyDummy(
+                      ) [PrintEmptyDummy]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               r
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [StatementPrintWithoutWidth]
+                  ) [Statements]
+                  StatementDesignator(
+                    DesignatorAssignment(
+                      ClassFieldDesignator(
+                        SimpleDesignator(
+                         this
+                        ) [SimpleDesignator]
+                       r
+                      ) [ClassFieldDesignator]
+                      TermPositiveExpr(
+                        Term(
+                          SingleFactor(
+                            DesignatorFactor(
+                              SimpleDesignator(
+                               r
+                              ) [SimpleDesignator]
+                            ) [DesignatorFactor]
+                          ) [SingleFactor]
+                        ) [Term]
+                      ) [TermPositiveExpr]
+                    ) [DesignatorAssignment]
+                  ) [StatementDesignator]
+                ) [Statements]
+                StatementPrintWithoutWidth(
+                  PrintEmptyDummy(
+                  ) [PrintEmptyDummy]
+                  TermPositiveExpr(
+                    Term(
+                      SingleFactor(
+                        DesignatorFactor(
+                          ClassFieldDesignator(
+                            SimpleDesignator(
+                             this
+                            ) [SimpleDesignator]
+                           r
+                          ) [ClassFieldDesignator]
+                        ) [DesignatorFactor]
+                      ) [SingleFactor]
+                    ) [Term]
+                  ) [TermPositiveExpr]
+                ) [StatementPrintWithoutWidth]
+              ) [Statements]
+              StatementPrintWithoutWidth(
+                PrintEmptyDummy(
+                ) [PrintEmptyDummy]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      DesignatorFactor(
+                        SimpleDesignator(
+                         r
+                        ) [SimpleDesignator]
+                      ) [DesignatorFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [StatementPrintWithoutWidth]
+            ) [Statements]
+          ) [ConstructorDeclaration]
+        ) [SingleOrLastConstructorDeclaration]
+      ) [ClassBodyNoMethodWithConstructor]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    NoMethodDeclarations(
+    ) [NoMethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  01:10:55,176 - ====================================
+INFO  01:10:55,181 - Kreirana je klasa Sfera na liniji 5
+INFO  01:10:55,181 - Konst broj: 0
+INFO  01:10:55,181 - Prepoznata naredba print
+INFO  01:10:55,181 - Prepoznata naredba print
+INFO  01:10:55,182 - Prepoznata naredba print
+INFO  01:10:55,182 - Prepoznata naredba print
+INFO  01:10:55,182 - NAPRAVLJEN KONST SA FORM PARS1
+INFO  01:10:55,182 - Broj konstruktora: 1
+INFO  01:10:55,182 - Definicija funkcije main na liniji 22
+INFO  01:10:55,182 - Print count calls = 4
+INFO  01:10:55,182 - ====================================
+INFO  01:10:55,185 - r na liniji 11
+INFO  01:10:55,185 - 4 na liniji 11
+INFO  01:10:55,185 - r na liniji 12
+INFO  01:10:55,185 - 4 na liniji 12
+INFO  01:10:55,185 - r na liniji 13
+INFO  01:10:55,185 - 4 na liniji 13
+INFO  01:10:55,185 - r na liniji 14
+INFO  01:10:55,185 - 4 na liniji 14
+INFO  01:10:55,185 - r na liniji 15
+INFO  01:10:55,185 - 4 na liniji 15
+INFO  01:10:55,187 - Parsiranje uspesno zavrseno!
