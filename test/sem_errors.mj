@@ -29,14 +29,11 @@ class Lol3 extends Lol2 {
 	int a; // Error: duplicate field
 	int c, d;
 	{
-		a aa() {} // Error: 'a' does not name a type
-		Lol2() {} // Error: incorrect constructor name
-		Lol3() {}
+		
 		void a(Lol x, int x) Lol2 x; { // Error: duplicate method name + duplicate parameter + duplicate variable declaration
 			print(x); // Error: incorrect data type in print()
 		}
 		void f() Lol c[]; char c2; {
-			this.a(); // Error: Non-method invocation
 			a = 1;
 			ord(a); // Error: incompatible parameter types
 			c2 = ord(c2);

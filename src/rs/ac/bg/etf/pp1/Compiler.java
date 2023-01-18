@@ -13,10 +13,10 @@ import org.apache.log4j.xml.DOMConfigurator;
 import java_cup.runtime.Symbol;
 import rs.ac.bg.etf.pp1.ast.Program;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
-import rs.etf.pp1.mj.runtime.*;
+import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
 
-public class MJParserTest {
+public class Compiler {
 
 	static {
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
@@ -27,8 +27,9 @@ public class MJParserTest {
 		Logger log = Logger.getLogger(MJTest.class);
 		Reader br = null;
 		try {
-			
-			File sourceCode = new File("test/sem_errors.mj");	
+			System.out.println(args[0]);
+			System.out.println(args[1]);
+			File sourceCode = new File(args[0]);	
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 			
 			br = new BufferedReader(new FileReader(sourceCode));
@@ -52,7 +53,7 @@ public class MJParserTest {
 			
 			
 			if(!p.errorDetected && v.passed()) {
-				File objFile = new File("test/program.obj");
+				File objFile = new File(args[1]);
 	        	if (objFile.exists())
 	        		objFile.delete();
 	        	
@@ -71,6 +72,5 @@ public class MJParserTest {
 			if (br != null) try { br.close(); } catch (IOException e1) { log.error(e1.getMessage(), e1); }
 		}
 	}
-	
 	
 }

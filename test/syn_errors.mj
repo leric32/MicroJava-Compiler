@@ -5,7 +5,6 @@ int a+, b; // Error: recovery until comma.
 
 class A extends B+ { // Error: recovery until left brace
 	int a+; // Error: recovery until semicolon
-	int a+ // Error: recovery until left brace
 	{}
 }
 

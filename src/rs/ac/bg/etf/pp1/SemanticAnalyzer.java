@@ -227,6 +227,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(VarDeclarationOfArray varDeclarationOfArray) {
 		isArr = true;
+		
 	}
 	
 	Struct returnStruct = null;
@@ -521,7 +522,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 		callingMeth.add(functionCallName.getDesignator().obj);
-		//report_info("FCN  " + actParsNum, null);
+		
+		report_info("Detektovan je poziv funkcije " + functionCallName.getDesignator().obj.getName(), functionCallName);
 	}
 	
 	public void visit(FunctionCall functionCall) {
@@ -540,6 +542,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					" nije isti kao i broj formalnih argumenata", designatorFuncCall);
 			//return;
 		}
+		
+		report_info("Detektovan je poziv funkcije " + designatorFuncCall.getFuncCallFactorDes().obj.getName(), designatorFuncCall);
 		
 		//reset
 		actParsNum = 0;
@@ -989,22 +993,25 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(NumberConstFactor numberConstFactor) {
 		numberConstFactor.struct = Tab.intType;
 		
-		//IPSIS?
+		//report_info("Detektovana upotreba celobrojne konstante " + numberConstFactor.getNumValue(), numberConstFactor);
 	}
 	
 	public void visit(CharConstFactor charConstFactor) {
 		charConstFactor.struct = Tab.charType;
 		
-		//IPSIS?
+		//report_info("Detektovana upotreba znakovne konstante " + charConstFactor.getCharValue(), charConstFactor);
 	}
 	
 	public void visit(BooleanConstFactor booleanConstFactor) {
 		booleanConstFactor.struct = TabExtension.boolType;
 		
+		//report_info("Detektovana upotreba logicke konstante " + booleanConstFactor.getBooleanValue(), booleanConstFactor);
 	}
 	
 	public void visit(ExprFactor exprFactor) {
 		exprFactor.struct = exprFactor.getExpr().struct;
+		
+		
 	}
 	
 	public void visit(FuncCallFactorDesignator funcCallFactorDesignator) {
@@ -1058,6 +1065,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		newClassWithActParsOperatorFactor.struct = newClassWithActParsOperatorFactor.getType().struct;
 		
+		report_info("Detektovano je pravljenje objekta unutrasnje klase " + newClassWithActParsOperatorFactor.getType().getTypeName(), newClassWithActParsOperatorFactor);
+		
 		//remove from calling
 		nameOfConstr = null;
 		actParsNum = 0;
@@ -1067,7 +1076,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	
 	public void visit(ClassFieldDesignator classFieldDesignator) {
-		//UARDI ZA KRIRANJE KLASA
 		
 		if(classFieldDesignator.getDesignator().obj.getType().getKind() == Struct.Class) {
 			
@@ -1077,6 +1085,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					report_error(classFieldDesignator.getClassField() + " nije polje na klase " + classFieldDesignator.getDesignator().obj.getName(), classFieldDesignator);
 					classFieldDesignator.obj = Tab.noObj;
 					return;
+				}else {
+					report_info("Pristup polju " + classFieldDesignator.getDesignator().obj.getName() + "." + classFieldDesignator.getClassField(), classFieldDesignator);	
 				}
 				classFieldDesignator.obj = tmpObj;
 			}else {
@@ -1113,7 +1123,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		arrayDesignator.obj = new Obj(Obj.Elem, arrayDesignator.getArrayDesig().getDesignator().obj.getName(),
 				arrayDesignator.getArrayDesig().getDesignator().obj.getType().getElemType());
 		
-		report_info("Pristup elemntu niza " + arrayDesignator.getArrayDesig().getDesignator().obj.getName(), arrayDesignator);
+		report_info("Detektovan je pristup elemntu niza " + arrayDesignator.getArrayDesig().getDesignator().obj.getName(), arrayDesignator);
 		
 	}
 	
@@ -1138,9 +1148,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		simpleDesignator.obj = varObj;
 		
-		//if(simpleDesignator.obj.getType() == Tab.nullType) {
-		//	System.out.println("nasao null type");
-		//}
+		if(simpleDesignator.obj.getKind() == Obj.Con) {
+			report_info("Detektovan je pristup simbolickoj konstantni " + simpleDesignator.obj.getName(), simpleDesignator);
+		}
 	}
 	
 	
@@ -1218,7 +1228,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(ClassDeclaration classDeclaration) {
-		report_info("Broj konstruktora: " + allClassConstr.size(), null);
+		//report_info("Broj konstruktora: " + allClassConstr.size(), null);
 		
 		if(classDeclaration.getClassExtended() instanceof ClassIsExtended) {
 			if(superClass != null) {
@@ -1272,9 +1282,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				
 		//print
 		for (List<Struct> e : allClassConstr) {
-			report_info("CONSTRUCTOR: " + currClass.getName(), null);
+			//report_info("CONSTRUCTOR: " + currClass.getName(), null);
 			for(Struct s: e) {
-				report_info("" + typeOfStructNode(s.getKind()), null);
+				//report_info("" + typeOfStructNode(s.getKind()), null);
 			}
 		}
 		
@@ -1289,8 +1299,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 						ind++;
 					}
 				}
-				report_info("Sa kojim uporedjujem konst ima paramatera: " + ind, null);
-				report_info("Trenutni konst ima paramatera: " + constrPars.size(), null);
+				//report_info("Sa kojim uporedjujem konst ima paramatera: " + ind, null);
+				//report_info("Trenutni konst ima paramatera: " + constrPars.size(), null);
 				if(ind == constrPars.size()) {
 					//we have found constructor with the same formal parameters
 					report_error("SEMANTICKA GRESKA: Konstruktor sa formalnim parametrima vec postoji", constructorDeclaration);
@@ -1320,7 +1330,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		isConstr = false;
 		numOfFormPars = 0;
 		allClassConstr.add(tmpList);
-		report_info("NAPRAVLJEN KONST SA FORM PARS" + constrPars.size(), null);
+		//report_info("NAPRAVLJEN KONST SA FORM PARS" + constrPars.size(), null);
 		constrPars.clear();
 		
 	}
@@ -1337,7 +1347,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			//return;
 		}
 		
-		report_info("Konst broj: " + allClassConstr.size(), null);
+		//report_info("Konst broj: " + allClassConstr.size(), null);
 		currMeth = Tab.insert(Obj.Meth, constructorDeclarationName.getConstructorName() + "#" + allClassConstr.size(), Tab.noType);
 		constructorDeclarationName.obj = currMeth;
 		Tab.openScope();

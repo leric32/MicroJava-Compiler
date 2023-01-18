@@ -20,6 +20,8 @@ import rs.etf.pp1.symboltable.concepts.*;
 		Obj currClass = null;
 		Obj makingClass = null;
 		boolean isConst = false;
+		boolean isFunc = false;
+	
 		
 		List<Obj> callingMeth = new ArrayList<>();
 		
@@ -38,6 +40,7 @@ import rs.etf.pp1.symboltable.concepts.*;
 		List<Constr> allConstrs = new ArrayList<Constr>();
 		
 		List<Struct> actParsList = null;
+		List<Obj> actParsListObj = null;
  		
 		public int getMainPc() {
 			return mainPc;
@@ -93,33 +96,46 @@ import rs.etf.pp1.symboltable.concepts.*;
 	
 	public void visit(NumberConstFactor numberConstFactor) {
 		
-		Obj cons = Tab.insert(Obj.Con, "$const", Tab.intType);
+		Obj cons = Tab.insert(Obj.Con, "$const" + numberConstFactor.getNumValue(), Tab.intType);
 		cons.setLevel(0);
 		cons.setAdr(numberConstFactor.getNumValue());
-		Code.load(cons);
+		
+		if(makingClass == null) {
+			Code.load(cons);
+		}else {
+			actParsListObj.add(cons);
+		}
 		
 	}
 	
 	public void visit(CharConstFactor charConstFactor) {
 		
-		Obj cons = Tab.insert(Obj.Con, "$const", Tab.charType);
+		Obj cons = Tab.insert(Obj.Con, "$const" + charConstFactor.getCharValue(), Tab.charType);
 		cons.setLevel(0);
 		cons.setAdr(charConstFactor.getCharValue());
 		
-		Code.load(cons);
+		if(makingClass == null) {
+			Code.load(cons);
+		}else {
+			actParsListObj.add(cons);
+		}
 		
 	}
 
 	public void visit(BooleanConstFactor booleanConstFactor) {
-	
-		Obj cons = Tab.insert(Obj.Con, "$const", TabExtension.boolType);
+		
+		Obj cons = Tab.insert(Obj.Con, "$const" + booleanConstFactor.getBooleanValue(), TabExtension.boolType);
 		cons.setLevel(0);
 		if(booleanConstFactor.getBooleanValue())
 			cons.setAdr(1);
 		else
 			cons.setAdr(0);
 		
-		Code.load(cons);
+		if(makingClass == null) {
+			Code.load(cons);
+		}else {
+			actParsListObj.add(cons);
+		}
 		
 	}
 	
@@ -188,8 +204,11 @@ import rs.etf.pp1.symboltable.concepts.*;
 			allVirtualMethods.add(returnMethodTypeName.obj);
 		}
 		
+		isFunc = true;
+		
 		if ("main".equalsIgnoreCase(returnMethodTypeName.getMethName())) {
 			mainPc = Code.pc;
+			isFunc = false;
 			tableVirtualFunction();
 		}
 		returnMethodTypeName.obj.setAdr(Code.pc);
@@ -213,8 +232,11 @@ import rs.etf.pp1.symboltable.concepts.*;
 			allVirtualMethods.add(voidMethodTypeName.obj);
 		}
 		
+		isFunc = true;
+		
 		if ("main".equalsIgnoreCase(voidMethodTypeName.getMethName())) {
 			mainPc = Code.pc;
+			isFunc = false;
 			tableVirtualFunction();
 		}
 		voidMethodTypeName.obj.setAdr(Code.pc);
@@ -233,6 +255,8 @@ import rs.etf.pp1.symboltable.concepts.*;
 	}
 	
 	public void visit(MethodDeclaration methodDeclaration) {
+			
+			isFunc = false;
 		
 			Code.put(Code.exit);
 			Code.put(Code.return_);
@@ -254,7 +278,9 @@ import rs.etf.pp1.symboltable.concepts.*;
 		}
 		
 		if(indik) {
-			Code.put(Code.load_n + 0);
+			if(currClass != null || isFunc) {
+				Code.put(Code.load_n + 0);
+			}
 			Code.put(Code.dup);
 		}
 	}
@@ -282,7 +308,12 @@ import rs.etf.pp1.symboltable.concepts.*;
 //			report_info(designatorFactor.getDesignator().obj.getName(), designatorFactor);
 //			report_info(designatorFactor.getDesignator().obj.getKind() + "", designatorFactor);
 //		}
-		Code.load(designatorFactor.getDesignator().obj);
+		if(makingClass == null) {
+			Code.load(designatorFactor.getDesignator().obj);
+		}else {
+			actParsListObj.add(designatorFactor.getDesignator().obj);
+		}
+		
 		
 	}
 	
@@ -292,7 +323,12 @@ import rs.etf.pp1.symboltable.concepts.*;
 			//report_info("uso " + classFieldDesignator.getDesignator().obj.getKind(), classFieldDesignator);
 		}
 		
-		if(classFieldDesignator.obj.getKind() != Obj.Meth) {
+//		if(classFieldDesignator.getDesignator().obj.getKind() == Obj.Elem) {
+//			report_info("ClassFieldDesignator NAME" + classFieldDesignator.obj.getName(), classFieldDesignator);
+//			//Code.load(classFieldDesignator.getDesignator().obj);
+//		}
+		
+		if(classFieldDesignator.obj.getKind() != Obj.Meth || classFieldDesignator.getDesignator().obj.getKind() == Obj.Elem) {
 			Code.load(classFieldDesignator.getDesignator().obj);
 		}
 		
@@ -831,6 +867,7 @@ import rs.etf.pp1.symboltable.concepts.*;
 			
 			makingClass = tmpClassObj;
 			actParsList = new ArrayList<Struct>();
+			actParsListObj = new ArrayList<Obj>();
 			//System.out.println("KLASNI TIP:" + nameOfConstr);
 		}
 	}
@@ -857,7 +894,7 @@ import rs.etf.pp1.symboltable.concepts.*;
 		int tmpA = -1;
 		
 		for(Constr c: allConstrs) {
-			System.out.println(c.name + "-" + c.types.size());
+			//System.out.println(c.name + "-" + c.types.size());
 			if(c.name.contains(nameClass) && c.types.size() == actParsList.size()) {
 				
 				if(actParsList.size() == 0) {
@@ -883,11 +920,17 @@ import rs.etf.pp1.symboltable.concepts.*;
 		
 		//funcCallFactor.getFuncCallFactorDes().obj.getAdr()
 		
-		System.out.println(tmpA);
+		//System.out.println(tmpA);
+		
 		
 		
 		Code.put(Code.putfield);
 		Code.put2(0);
+		
+		for(Obj o: actParsListObj) {
+			//System.out.println(o.getAdr());
+			Code.load(o);
+		}
 		
 		Code.put(Code.call); 
 		Code.put2(tmpA - Code.pc - 2);
@@ -895,6 +938,8 @@ import rs.etf.pp1.symboltable.concepts.*;
 		makingClass = null;
 		
 		actParsList.clear();
+		actParsListObj.clear();
+		
 		
 		//call cosnructor
 	}
@@ -1010,47 +1055,53 @@ import rs.etf.pp1.symboltable.concepts.*;
 	
 	public void visit(ActualParam actualParam) {
 		
-		//boolean indik = false;
+		boolean indik = false;
 		
 		
 		if(makingClass != null) {
-//			Obj tmpObj = callingMeth.get(callingMeth.size() - 1);
-//			
-//			//System.out.println("all virtual methods" + allVirtualMethods.size());
-//			for(Obj o: allVirtualMethods) {
-//				if(tmpObj.getName().equals(o.getName())) {
-//					indik = true;
-//					break;
-//				}
-//			}
+			
 			actParsList.add(actualParam.getExpr().struct);
-//			if(indik) {
-				//Code.put(Code.dup_x1);
-				//Code.put(Code.pop);
-			//}
+			
+		}else {
+			Obj tmpObj = callingMeth.get(callingMeth.size() - 1);
+			
+			//System.out.println("all virtual methods" + allVirtualMethods.size());
+			for(Obj o: allVirtualMethods) {
+				if(tmpObj.getName().equals(o.getName())) {
+					indik = true;
+					break;
+				}
+			}
+			
+			if(indik) {
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
+			}
 		}
 		
 	}
 	
 public void visit(ActualParams actualParams) {
 		
-		//boolean indik = false;
+		boolean indik = false;
 		
 		if(makingClass != null) {
-			//Obj tmpObj = callingMeth.get(callingMeth.size() - 1);
+			actParsList.add(actualParams.getExpr().struct);
+		}else {
+			Obj tmpObj = callingMeth.get(callingMeth.size() - 1);
 			
 			//System.out.println("all virtual methods" + allVirtualMethods.size());
-//			for(Obj o: allVirtualMethods) {
-//				if(tmpObj.getName().equals(o.getName())) {
-//					indik = true;
-//					break;
-//				}
-//			}
-			actParsList.add(actualParams.getExpr().struct);
-			//if(indik) {
-				//Code.put(Code.dup_x1);
-				//Code.put(Code.pop);
-			//}
+			for(Obj o: allVirtualMethods) {
+				if(tmpObj.getName().equals(o.getName())) {
+					indik = true;
+					break;
+				}
+			}
+			
+			if(indik) {
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
+			}
 		}
 		
 	}

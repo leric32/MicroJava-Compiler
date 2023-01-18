@@ -1,0 +1,259 @@
+INFO  19:48:29,403 - Compiling source file: C:\Users\el190235d\Desktop\PP1\projekat\pp1lab.templateAST\pp1lab.templateAST\workspace\MJCompiler\test\syn_errors.mj
+INFO  19:48:29,503 - #2 program
+INFO  19:48:29,504 - #47 syntax_errors
+INFO  19:48:29,504 - #47 int
+INFO  19:48:29,507 - #47 a
+INFO  19:48:29,508 - #19 +
+ERROR 19:48:29,509 - 
+Sintaksna greska na liniji 3
+INFO  19:48:29,509 - #35 ;
+INFO  19:48:29,509 - #47 int
+INFO  19:48:29,509 - #47 a
+INFO  19:48:29,511 - #19 +
+ERROR 19:48:29,511 - Izvrsen oporavak do ; u liniji 3
+ERROR 19:48:29,513 - 
+Sintaksna greska na liniji 4
+INFO  19:48:29,513 - #37 ,
+INFO  19:48:29,514 - #47 b
+INFO  19:48:29,514 - #35 ;
+INFO  19:48:29,514 - #5 class
+ERROR 19:48:29,514 - Izvrsen oporavak do , u liniji 4
+INFO  19:48:29,517 - #47 A
+INFO  19:48:29,517 - #15 extends
+INFO  19:48:29,518 - #47 B
+INFO  19:48:29,518 - #19 +
+ERROR 19:48:29,518 - 
+Sintaksna greska na liniji 6
+INFO  19:48:29,518 - #43 {
+INFO  19:48:29,518 - #47 int
+INFO  19:48:29,518 - #47 a
+INFO  19:48:29,519 - #19 +
+ERROR 19:48:29,519 - Izvrsen oporavak do { u liniji 6
+ERROR 19:48:29,521 - 
+Sintaksna greska na liniji 7
+INFO  19:48:29,521 - #35 ;
+INFO  19:48:29,521 - #43 {
+INFO  19:48:29,521 - #44 }
+INFO  19:48:29,522 - #44 }
+ERROR 19:48:29,522 - Izvrsen oporavak do ; u liniji 7
+INFO  19:48:29,523 - #43 {
+INFO  19:48:29,524 - #14 void
+INFO  19:48:29,525 - #47 a
+INFO  19:48:29,525 - #39 (
+INFO  19:48:29,526 - #47 int
+INFO  19:48:29,526 - #47 a
+INFO  19:48:29,526 - #19 +
+ERROR 19:48:29,526 - 
+Sintaksna greska na liniji 12
+INFO  19:48:29,527 - #37 ,
+INFO  19:48:29,527 - #47 int
+INFO  19:48:29,527 - #47 b
+INFO  19:48:29,527 - #40 )
+ERROR 19:48:29,527 - Izvrsen oporavak do , u liniji 12
+INFO  19:48:29,528 - #43 {
+INFO  19:48:29,529 - #44 }
+INFO  19:48:29,530 - #14 void
+INFO  19:48:29,531 - #47 main
+INFO  19:48:29,531 - #39 (
+INFO  19:48:29,531 - #40 )
+INFO  19:48:29,531 - #43 {
+INFO  19:48:29,532 - #47 b
+INFO  19:48:29,533 - #32 =
+INFO  19:48:29,533 - #46 43
+INFO  19:48:29,533 - #19 +
+INFO  19:48:29,534 - #46 123
+INFO  19:48:29,536 - #19 +
+INFO  19:48:29,536 - #35 ;
+ERROR 19:48:29,537 - 
+Sintaksna greska na liniji 14
+INFO  19:48:29,537 - #47 b
+INFO  19:48:29,537 - #32 =
+INFO  19:48:29,537 - #46 123
+ERROR 19:48:29,537 - Izvrsen oporavak do ; u liniji 14
+INFO  19:48:29,539 - #35 ;
+INFO  19:48:29,539 - #47 b
+INFO  19:48:29,540 - #32 =
+INFO  19:48:29,540 - #46 43
+INFO  19:48:29,540 - #19 +
+INFO  19:48:29,540 - #46 123
+INFO  19:48:29,540 - #19 +
+INFO  19:48:29,540 - #35 ;
+ERROR 19:48:29,540 - 
+Sintaksna greska na liniji 16
+INFO  19:48:29,541 - #9 if
+INFO  19:48:29,541 - #39 (
+INFO  19:48:29,541 - #47 a
+ERROR 19:48:29,541 - Izvrsen oporavak do ; u liniji 16
+INFO  19:48:29,543 - #19 +
+INFO  19:48:29,544 - #26 >
+ERROR 19:48:29,544 - 
+Sintaksna greska na liniji 17
+INFO  19:48:29,544 - #47 b
+INFO  19:48:29,544 - #40 )
+INFO  19:48:29,544 - #43 {
+INFO  19:48:29,544 - #47 b
+INFO  19:48:29,544 - #32 =
+ERROR 19:48:29,544 - Izvrsen oporavak do ) u liniji 17
+INFO  19:48:29,545 - #46 43
+INFO  19:48:29,545 - #19 +
+INFO  19:48:29,545 - #46 123
+INFO  19:48:29,545 - #19 +
+INFO  19:48:29,546 - #35 ;
+ERROR 19:48:29,546 - 
+Sintaksna greska na liniji 18
+INFO  19:48:29,546 - #44 }
+INFO  19:48:29,546 - #44 }
+INFO  19:48:29,546 - #44 }
+ERROR 19:48:29,546 - Izvrsen oporavak do ; u liniji 18
+INFO  19:48:29,558 - Program(
+  ProgName(
+   syntax_errors
+  ) [ProgName]
+  ClassDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationLast(
+            ErrorVarDeclLast(
+            ) [ErrorVarDeclLast]
+          ) [VarDeclarationLast]
+        ) [VarDeclaration]
+      ) [VarDeclarations]
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationNotLast(
+          ErrorVarDeclNotLast(
+          ) [ErrorVarDeclNotLast]
+          VarDeclarationLast(
+            LastVarDeclarations(
+             b
+              VarDeclarationOfNotArray(
+              ) [VarDeclarationOfNotArray]
+            ) [LastVarDeclarations]
+          ) [VarDeclarationLast]
+        ) [VarDeclarationNotLast]
+      ) [VarDeclaration]
+    ) [VarDeclarations]
+    ClassDeclaration(
+      NameOfClass(
+       A
+      ) [NameOfClass]
+      ErrorClassExtended(
+      ) [ErrorClassExtended]
+      ClassBodyNoMethodWithEmptyBrackets(
+        ClassVariables(
+          NoClassVariables(
+          ) [NoClassVariables]
+          ErrorClassVarDeclaration(
+          ) [ErrorClassVarDeclaration]
+        ) [ClassVariables]
+      ) [ClassBodyNoMethodWithEmptyBrackets]
+    ) [ClassDeclaration]
+  ) [ClassDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDeclarations(
+      ) [NoMethodDeclarations]
+      MethodDeclaration(
+        VoidMethodTypeName(
+         a
+        ) [VoidMethodTypeName]
+        FormalParameters(
+          ErrorListOfParameters(
+            SingleOrEndOfListParameter(
+              SingleFormalParameter(
+                Type(
+                 int
+                ) [Type]
+               b
+                VarDeclarationOfNotArray(
+                ) [VarDeclarationOfNotArray]
+              ) [SingleFormalParameter]
+            ) [SingleOrEndOfListParameter]
+          ) [ErrorListOfParameters]
+        ) [FormalParameters]
+        MethodWithoutVariables(
+        ) [MethodWithoutVariables]
+        NoStatements(
+        ) [NoStatements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      VoidMethodTypeName(
+       main
+      ) [VoidMethodTypeName]
+      NoFormalParameters(
+      ) [NoFormalParameters]
+      MethodWithoutVariables(
+      ) [MethodWithoutVariables]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                ErrorDesignatorAssignment(
+                ) [ErrorDesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+            StatementDesignator(
+              DesignatorAssignment(
+                SimpleDesignator(
+                 b
+                ) [SimpleDesignator]
+                TermPositiveExpr(
+                  Term(
+                    SingleFactor(
+                      NumberConstFactor(
+                       123
+                      ) [NumberConstFactor]
+                    ) [SingleFactor]
+                  ) [Term]
+                ) [TermPositiveExpr]
+              ) [DesignatorAssignment]
+            ) [StatementDesignator]
+          ) [Statements]
+          StatementDesignator(
+            ErrorDesignatorAssignment(
+            ) [ErrorDesignatorAssignment]
+          ) [StatementDesignator]
+        ) [Statements]
+        StatementIf(
+          ErrorIfCondition(
+            OnlyIf(
+            ) [OnlyIf]
+          ) [ErrorIfCondition]
+          StatementBlock(
+            Statements(
+              NoStatements(
+              ) [NoStatements]
+              StatementDesignator(
+                ErrorDesignatorAssignment(
+                ) [ErrorDesignatorAssignment]
+              ) [StatementDesignator]
+            ) [Statements]
+          ) [StatementBlock]
+          SecondFixupForIf(
+          ) [SecondFixupForIf]
+        ) [StatementIf]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:48:29,558 - ====================================
+INFO  19:48:29,570 - Kreirana je promenjiva b na liniji 4
+INFO  19:48:29,570 - Kreirana je klasa A na liniji 6
+INFO  19:48:29,571 - Definicija funkcije a na liniji 12
+INFO  19:48:29,571 - Definicija funkcije main na liniji 13
+ERROR 19:48:29,571 - SEMANTICKA GRESKA: Izrazi u uslovu if-a nije bool tipa  na liniji 17
+INFO  19:48:29,571 - Print count calls = 0
+INFO  19:48:29,572 - ====================================
+ERROR 19:48:29,573 - Parsiranje NIJE uspesno zavrseno!
